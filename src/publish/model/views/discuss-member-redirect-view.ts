@@ -1,0 +1,71 @@
+export default {
+  redirectAppViewRefs: [
+    {
+      realTitle: '协作成员编辑视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.DISCUSS_MEMBER.EDITVIEW',
+      },
+      refAppViewId: 'plmweb.discuss_member_edit_view',
+      name: 'DISCUSS_MEMBER:EDITVIEW',
+      id: 'discuss_member:editview',
+    },
+    {
+      realTitle: '协作成员编辑视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.DISCUSS_MEMBER.EDITVIEW',
+      },
+      refAppViewId: 'plmweb.discuss_member_edit_view',
+      name: 'EDITVIEW',
+      id: 'editview',
+    },
+  ],
+  enableWorkflow: true,
+  funcViewMode: 'REDIRECTVIEW',
+  deviewCodeName: 'RedirectView',
+  deviewId: 'feedce18d7c4e127e6c04b3f2d676aba',
+  accUserMode: 2,
+  capLanguageRes: {
+    lanResTag: 'DE.LNAME.DISCUSS_MEMBER',
+  },
+  caption: '协作成员',
+  codeName: 'discuss_member_redirect_view',
+  appDataEntityId: 'plmweb.discuss_member',
+  controls: [
+    {
+      capLanguageRes: {
+        lanResTag: 'DE.LNAME.DISCUSS_MEMBER',
+      },
+      caption: '协作成员',
+      codeName: 'redirect_view_captionbar',
+      controlType: 'CAPTIONBAR',
+      appDataEntityId: 'plmweb.discuss_member',
+      controlParam: {},
+      name: 'captionbar',
+      id: 'redirect_view_captionbar',
+    },
+  ],
+  viewLayoutPanel: {
+    layoutBodyOnly: true,
+    useDefaultLayout: true,
+    layoutPanel: true,
+    codeName: 'layoutpanel',
+    controlStyle: 'APPDEREDIRECTVIEW',
+    controlType: 'VIEWLAYOUTPANEL',
+    appDataEntityId: 'plmweb.discuss_member',
+    controlParam: {},
+    id: 'layoutpanel',
+  },
+  title: '协作成员数据重定向视图',
+  titleLanguageRes: {
+    lanResTag: 'PAGE.TITLE.DISCUSS_MEMBER.REDIRECTVIEW',
+  },
+  viewStyle: 'DEFAULT',
+  viewType: 'DEREDIRECTVIEW',
+  enableDP: true,
+  redirectView: true,
+  showCaptionBar: true,
+  modelId: '9126f4c11b8719494e65157e04bcce4d',
+  modelType: 'PSAPPDEVIEW',
+  name: 'discuss_memberRedirectView',
+  id: 'plmweb.discuss_member_redirect_view',
+};

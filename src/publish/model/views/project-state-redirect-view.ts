@@ -1,0 +1,73 @@
+export default {
+  redirectAppViewRefs: [
+    {
+      realOpenMode: 'POPUPMODAL',
+      realTitle: '项目状态编辑视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.PROJECT_STATE.EDITVIEW',
+      },
+      refAppViewId: 'plmweb.project_state_edit_view',
+      name: 'PROJECT_STATE:EDITVIEW',
+      id: 'project_state:editview',
+    },
+    {
+      realOpenMode: 'POPUPMODAL',
+      realTitle: '项目状态编辑视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.PROJECT_STATE.EDITVIEW',
+      },
+      refAppViewId: 'plmweb.project_state_edit_view',
+      name: 'EDITVIEW',
+      id: 'editview',
+    },
+  ],
+  enableWorkflow: true,
+  funcViewMode: 'REDIRECTVIEW',
+  deviewCodeName: 'RedirectView',
+  deviewId: '81a732d779e762674b6d1592a6b385c7',
+  accUserMode: 2,
+  capLanguageRes: {
+    lanResTag: 'DE.LNAME.PROJECT_STATE',
+  },
+  caption: '项目状态',
+  codeName: 'project_state_redirect_view',
+  appDataEntityId: 'plmweb.project_state',
+  controls: [
+    {
+      capLanguageRes: {
+        lanResTag: 'DE.LNAME.PROJECT_STATE',
+      },
+      caption: '项目状态',
+      codeName: 'redirect_view_captionbar',
+      controlType: 'CAPTIONBAR',
+      appDataEntityId: 'plmweb.project_state',
+      controlParam: {},
+      name: 'captionbar',
+      id: 'redirect_view_captionbar',
+    },
+  ],
+  viewLayoutPanel: {
+    layoutBodyOnly: true,
+    useDefaultLayout: true,
+    layoutPanel: true,
+    codeName: 'layoutpanel',
+    controlStyle: 'APPDEREDIRECTVIEW',
+    controlType: 'VIEWLAYOUTPANEL',
+    appDataEntityId: 'plmweb.project_state',
+    controlParam: {},
+    id: 'layoutpanel',
+  },
+  title: '项目状态数据重定向视图',
+  titleLanguageRes: {
+    lanResTag: 'PAGE.TITLE.PROJECT_STATE.REDIRECTVIEW',
+  },
+  viewStyle: 'DEFAULT',
+  viewType: 'DEREDIRECTVIEW',
+  enableDP: true,
+  redirectView: true,
+  showCaptionBar: true,
+  modelId: '8e557f05ed9e887a260d074ef06b42cf',
+  modelType: 'PSAPPDEVIEW',
+  name: 'project_stateRedirectView',
+  id: 'plmweb.project_state_redirect_view',
+};

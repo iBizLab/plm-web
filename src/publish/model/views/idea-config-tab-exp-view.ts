@@ -1,0 +1,371 @@
+export default {
+  tabLayout: 'TOP',
+  loadDefault: true,
+  showDataInfoBar: true,
+  deviewCodeName: 'config_tab_exp_view',
+  deviewId: 'af92fdcbfb68d78093b99dda971d0528',
+  accUserMode: 2,
+  capLanguageRes: {
+    lanResTag: 'DE.LNAME.IDEA',
+  },
+  caption: '需求配置',
+  codeName: 'idea_config_tab_exp_view',
+  appDataEntityId: 'plmweb.idea',
+  viewLayoutPanel: {
+    viewProxyMode: true,
+    layoutMode: 'FLEX',
+    layout: {
+      layout: 'FLEX',
+    },
+    rootPanelItems: [
+      {
+        actionGroupExtractMode: 'ITEM',
+        panelItems: [
+          {
+            actionGroupExtractMode: 'ITEM',
+            panelItems: [
+              {
+                caption: '标题栏',
+                itemStyle: 'DEFAULT',
+                itemType: 'CTRLPOS',
+                layoutPos: {
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                showCaption: true,
+                id: 'captionbar',
+              },
+            ],
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              shrink: 1,
+              layout: 'FLEX',
+            },
+            id: 'view_captionbar',
+          },
+          {
+            actionGroupExtractMode: 'ITEM',
+            panelItems: [
+              {
+                caption: '分页导航',
+                itemStyle: 'DEFAULT',
+                itemType: 'CTRLPOS',
+                layoutPos: {
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                showCaption: true,
+                id: 'tabexppanel',
+              },
+            ],
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              grow: 1,
+              shrink: 1,
+              layout: 'FLEX',
+            },
+            id: 'view_tabexppanel',
+          },
+          {
+            actionGroupExtractMode: 'ITEM',
+            panelItems: [
+              {
+                rawItem: {
+                  predefinedType: 'TELEPORT_PLACEHOLDER',
+                  id: 'tabsearchbar',
+                },
+                caption: '传送部件占位',
+                itemStyle: 'DEFAULT',
+                itemType: 'RAWITEM',
+                layoutPos: {
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                showCaption: true,
+                id: 'tabsearchbar',
+              },
+              {
+                rawItem: {
+                  predefinedType: 'TELEPORT_PLACEHOLDER',
+                  id: 'tabtoolbar',
+                },
+                caption: '传送部件占位',
+                itemStyle: 'DEFAULT',
+                itemType: 'RAWITEM',
+                layoutPos: {
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                showCaption: true,
+                id: 'tabtoolbar',
+              },
+            ],
+            layout: {
+              align: 'flex-start',
+              dir: 'row',
+              layout: 'FLEX',
+              valign: 'center',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            cssStyle: 'margin-right:6px',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              shrink: 1,
+              layout: 'FLEX',
+            },
+            id: 'container2',
+          },
+        ],
+        predefinedType: 'VIEWHEADER',
+        layout: {
+          dir: 'row',
+          layout: 'FLEX',
+          valign: 'center',
+        },
+        dataRegionType: 'INHERIT',
+        caption: '容器',
+        itemStyle: 'DEFAULT',
+        itemType: 'CONTAINER',
+        layoutPos: {
+          shrink: 0,
+          layout: 'FLEX',
+        },
+        id: 'view_header',
+      },
+      {
+        actionGroupExtractMode: 'ITEM',
+        panelItems: [
+          {
+            actionGroupExtractMode: 'ITEM',
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              shrink: 0,
+              layout: 'FLEX',
+            },
+            id: 'view_tabexppanel_left',
+          },
+          {
+            actionGroupExtractMode: 'ITEM',
+            panelItems: [
+              {
+                actionGroupExtractMode: 'ITEM',
+                panelItems: [
+                  {
+                    rawItem: {
+                      predefinedType: 'NAV_POS',
+                      id: 'nav_pos',
+                    },
+                    caption: '导航区占位',
+                    itemStyle: 'DEFAULT',
+                    itemType: 'RAWITEM',
+                    layoutPos: {
+                      grow: 1,
+                      shrink: 1,
+                      layout: 'FLEX',
+                    },
+                    showCaption: true,
+                    id: 'nav_pos',
+                  },
+                ],
+                predefinedType: 'VIEWCONTENT',
+                layout: {
+                  layout: 'FLEX',
+                },
+                dataRegionType: 'INHERIT',
+                caption: '容器',
+                itemStyle: 'DEFAULT',
+                itemType: 'CONTAINER',
+                layoutPos: {
+                  grow: 1,
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                id: 'view_content',
+              },
+              {
+                actionGroupExtractMode: 'ITEM',
+                layout: {
+                  layout: 'FLEX',
+                },
+                dataRegionType: 'INHERIT',
+                caption: '容器',
+                itemStyle: 'DEFAULT',
+                itemType: 'CONTAINER',
+                layoutPos: {
+                  shrink: 0,
+                  layout: 'FLEX',
+                },
+                id: 'view_tabexppanel_bottom',
+              },
+            ],
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              grow: 1,
+              shrink: 1,
+              layout: 'FLEX',
+            },
+            id: 'container1',
+          },
+          {
+            actionGroupExtractMode: 'ITEM',
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              shrink: 0,
+              layout: 'FLEX',
+            },
+            id: 'view_tabexppanel_right',
+          },
+        ],
+        layout: {
+          dir: 'row',
+          layout: 'FLEX',
+        },
+        dataRegionType: 'INHERIT',
+        caption: '容器',
+        itemStyle: 'DEFAULT',
+        itemType: 'CONTAINER',
+        layoutPos: {
+          grow: 1,
+          shrink: 1,
+          layout: 'FLEX',
+        },
+        id: 'container',
+      },
+    ],
+    layoutPanel: true,
+    appViewEngines: [
+      {
+        engineCat: 'VIEW',
+        engineType: 'TabExpView',
+        id: 'engine',
+      },
+    ],
+    controls: [
+      {
+        dedrtabPages: [
+          {
+            caption: '需求设置',
+            appViewId: 'plmweb.idea_global_setting_view',
+            id: 'setting',
+          },
+          {
+            caption: '属性管理',
+            appViewId: 'plmweb.psde_field_global_idea_grid_view',
+            navigateContexts: [
+              {
+                key: 'PSDATAENTITY',
+                value: 'ProdMgmt.IDEA',
+                rawValue: true,
+                name: 'PSDATAENTITY',
+                id: 'psdataentity',
+              },
+              {
+                key: 'PSDENAME',
+                value: 'IDEA',
+                rawValue: true,
+                name: 'PSDENAME',
+                id: 'psdename',
+              },
+            ],
+            id: 'field_manage',
+          },
+          {
+            caption: '状态管理',
+            appViewId: 'plmweb.dictionary_data_idea_state_grid_view',
+            navigateContexts: [
+              {
+                key: 'CATALOG',
+                value: 'idea_state',
+                rawValue: true,
+                name: 'CATALOG',
+                id: 'catalog',
+              },
+            ],
+            id: 'state_manage',
+          },
+        ],
+        dataRelationTag: 'require_config_tab_exp_view_DR',
+        editItemCapLanguageRes: {
+          lanResTag: 'DE.LNAME.IDEA',
+        },
+        editItemCaption: '需求',
+        uniqueTag: 'idea_config_tab_exp_view__tabexppanel',
+        hideEditItem: true,
+        autoLoad: true,
+        showBusyIndicator: true,
+        codeName: 'require_config_tab_exp_view_dr',
+        controlType: 'DRTAB',
+        appDataEntityId: 'plmweb.idea',
+        controlParam: {
+          id: 'tabexppanel',
+        },
+        modelId: 'a627be5146261330f8e91f589aafe319',
+        modelType: 'PSDEDRTAB',
+        name: 'tabexppanel',
+        id: 'require_config_tab_exp_view_dr',
+      },
+      {
+        capLanguageRes: {
+          lanResTag: 'DE.LNAME.IDEA',
+        },
+        caption: '需求配置',
+        codeName: 'config_tab_exp_view_captionbar',
+        controlType: 'CAPTIONBAR',
+        appDataEntityId: 'plmweb.idea',
+        controlParam: {},
+        name: 'captionbar',
+        id: 'config_tab_exp_view_captionbar',
+      },
+    ],
+    codeName: 'usr0530768876',
+    controlType: 'VIEWLAYOUTPANEL',
+    logicName: 'config_tab_exp_view分页导航视图布局面板',
+    appDataEntityId: 'plmweb.idea',
+    controlParam: {},
+    modelId: 'd7d6088e393acf0073b8de856c9996ad',
+    modelType: 'PSSYSVIEWLAYOUTPANEL',
+    name: 'layoutpanel',
+    id: 'usr0530768876',
+  },
+  title: '需求配置',
+  viewStyle: 'DEFAULT',
+  viewType: 'DETABEXPVIEW',
+  enableDP: true,
+  showCaptionBar: false,
+  modelId: 'c3f8a681bc02a9e943290ad67e547e42',
+  modelType: 'PSAPPDEVIEW',
+  name: 'ideaconfig_tab_exp_view',
+  id: 'plmweb.idea_config_tab_exp_view',
+};

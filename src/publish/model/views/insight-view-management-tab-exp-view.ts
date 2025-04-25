@@ -1,0 +1,353 @@
+export default {
+  tabLayout: 'TOP',
+  loadDefault: true,
+  showDataInfoBar: true,
+  deviewCodeName: 'management_tab_exp_view',
+  deviewId: '32d0ba6a09957774cda4ac2fd6fd0c98',
+  accUserMode: 2,
+  capLanguageRes: {
+    lanResTag: 'DE.LNAME.INSIGHT_VIEW',
+  },
+  caption: '效能度量',
+  codeName: 'insight_view_management_tab_exp_view',
+  appDataEntityId: 'plmweb.insight_view',
+  viewLayoutPanel: {
+    viewProxyMode: true,
+    layoutMode: 'FLEX',
+    layout: {
+      layout: 'FLEX',
+    },
+    rootPanelItems: [
+      {
+        actionGroupExtractMode: 'ITEM',
+        panelItems: [
+          {
+            actionGroupExtractMode: 'ITEM',
+            panelItems: [
+              {
+                caption: '标题栏',
+                itemStyle: 'DEFAULT',
+                itemType: 'CTRLPOS',
+                layoutPos: {
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                showCaption: true,
+                id: 'captionbar',
+              },
+            ],
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              shrink: 1,
+              layout: 'FLEX',
+            },
+            id: 'view_captionbar',
+          },
+          {
+            actionGroupExtractMode: 'ITEM',
+            panelItems: [
+              {
+                caption: '分页导航',
+                itemStyle: 'DEFAULT',
+                itemType: 'CTRLPOS',
+                layoutPos: {
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                showCaption: true,
+                id: 'tabexppanel',
+              },
+            ],
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              grow: 1,
+              shrink: 1,
+              layout: 'FLEX',
+            },
+            id: 'view_tabexppanel',
+          },
+          {
+            actionGroupExtractMode: 'ITEM',
+            panelItems: [
+              {
+                rawItem: {
+                  predefinedType: 'TELEPORT_PLACEHOLDER',
+                  id: 'tabsearchbar',
+                },
+                caption: '传送部件占位',
+                itemStyle: 'DEFAULT',
+                itemType: 'RAWITEM',
+                layoutPos: {
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                showCaption: true,
+                id: 'tabsearchbar',
+              },
+            ],
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            cssStyle: 'margin-right:10px',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              shrink: 1,
+              layout: 'FLEX',
+            },
+            id: 'container2',
+          },
+        ],
+        predefinedType: 'VIEWHEADER',
+        layout: {
+          dir: 'row',
+          layout: 'FLEX',
+          valign: 'center',
+        },
+        dataRegionType: 'INHERIT',
+        caption: '容器',
+        itemStyle: 'DEFAULT',
+        itemType: 'CONTAINER',
+        layoutPos: {
+          shrink: 0,
+          layout: 'FLEX',
+        },
+        id: 'view_header',
+      },
+      {
+        actionGroupExtractMode: 'ITEM',
+        panelItems: [
+          {
+            actionGroupExtractMode: 'ITEM',
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              shrink: 0,
+              layout: 'FLEX',
+            },
+            id: 'view_tabexppanel_left',
+          },
+          {
+            actionGroupExtractMode: 'ITEM',
+            panelItems: [
+              {
+                actionGroupExtractMode: 'ITEM',
+                panelItems: [
+                  {
+                    rawItem: {
+                      rawItemParams: [
+                        {
+                          key: 'EXPCACHE',
+                          value: 'NO_CACHE',
+                        },
+                      ],
+                      predefinedType: 'NAV_POS',
+                      id: 'nav_pos',
+                    },
+                    caption: '导航区占位',
+                    itemStyle: 'DEFAULT',
+                    itemType: 'RAWITEM',
+                    layoutPos: {
+                      grow: 1,
+                      shrink: 1,
+                      layout: 'FLEX',
+                    },
+                    showCaption: true,
+                    id: 'nav_pos',
+                  },
+                ],
+                predefinedType: 'VIEWCONTENT',
+                layout: {
+                  layout: 'FLEX',
+                },
+                dataRegionType: 'INHERIT',
+                caption: '容器',
+                itemStyle: 'DEFAULT',
+                itemType: 'CONTAINER',
+                layoutPos: {
+                  grow: 1,
+                  shrink: 1,
+                  layout: 'FLEX',
+                },
+                id: 'view_content',
+              },
+              {
+                actionGroupExtractMode: 'ITEM',
+                layout: {
+                  layout: 'FLEX',
+                },
+                dataRegionType: 'INHERIT',
+                caption: '容器',
+                itemStyle: 'DEFAULT',
+                itemType: 'CONTAINER',
+                layoutPos: {
+                  shrink: 0,
+                  layout: 'FLEX',
+                },
+                id: 'view_tabexppanel_bottom',
+              },
+            ],
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              grow: 1,
+              shrink: 1,
+              layout: 'FLEX',
+            },
+            id: 'container1',
+          },
+          {
+            actionGroupExtractMode: 'ITEM',
+            layout: {
+              layout: 'FLEX',
+            },
+            dataRegionType: 'INHERIT',
+            caption: '容器',
+            itemStyle: 'DEFAULT',
+            itemType: 'CONTAINER',
+            layoutPos: {
+              shrink: 0,
+              layout: 'FLEX',
+            },
+            id: 'view_tabexppanel_right',
+          },
+        ],
+        layout: {
+          dir: 'row',
+          layout: 'FLEX',
+        },
+        dataRegionType: 'INHERIT',
+        caption: '容器',
+        itemStyle: 'DEFAULT',
+        itemType: 'CONTAINER',
+        layoutPos: {
+          grow: 1,
+          shrink: 1,
+          layout: 'FLEX',
+        },
+        id: 'container',
+      },
+    ],
+    layoutPanel: true,
+    appViewEngines: [
+      {
+        engineCat: 'VIEW',
+        engineType: 'TabExpView',
+        id: 'engine',
+      },
+    ],
+    controls: [
+      {
+        tabExpPageIds: ['in_progress', 'deleted'],
+        tabLayout: 'TOP',
+        uniqueTag: 'insight_view_management_tab_exp_view__tabexppanel',
+        appViewRefs: [
+          {
+            realTitle: '效能度量表格视图（进行中）',
+            refAppViewId: 'plmweb.insight_view_in_progress_grid_view',
+            name: 'EXPITEM:in_progress',
+            id: 'expitem:in_progress',
+          },
+          {
+            realTitle: '效能度量表格视图（进行中）',
+            refAppViewId: 'plmweb.insight_view_deleted_grid_view',
+            name: 'EXPITEM:deleted',
+            id: 'expitem:deleted',
+          },
+        ],
+        controls: [
+          {
+            caption: '进行中',
+            embeddedAppDEViewId: 'plmweb.insight_view_in_progress_grid_view',
+            codeName: 'management_tab_exp_view_in_progress',
+            controlType: 'TABVIEWPANEL',
+            appDataEntityId: 'plmweb.insight_view',
+            controlParam: {
+              id: 'in_progress',
+            },
+            modelId: '84877359fe87423de6087e1cb1b3f90c_in_progress',
+            modelType: 'PSVIEWPANEL',
+            name: 'in_progress',
+            id: 'management_tab_exp_view_in_progress',
+          },
+          {
+            caption: '已删除',
+            embeddedAppDEViewId: 'plmweb.insight_view_deleted_grid_view',
+            codeName: 'management_tab_exp_view_deleted',
+            controlType: 'TABVIEWPANEL',
+            appDataEntityId: 'plmweb.insight_view',
+            controlParam: {
+              id: 'deleted',
+            },
+            modelId: '84877359fe87423de6087e1cb1b3f90c_deleted',
+            modelType: 'PSVIEWPANEL',
+            name: 'deleted',
+            id: 'management_tab_exp_view_deleted',
+          },
+        ],
+        codeName: 'management_tab_exp_view_tabexppanel',
+        controlType: 'TABEXPPANEL',
+        appDataEntityId: 'plmweb.insight_view',
+        controlParam: {},
+        modelId: '84877359fe87423de6087e1cb1b3f90c_tabexppanel',
+        modelType: 'PSTABEXPPANEL',
+        name: 'tabexppanel',
+        id: 'management_tab_exp_view_tabexppanel',
+      },
+      {
+        capLanguageRes: {
+          lanResTag: 'DE.LNAME.INSIGHT_VIEW',
+        },
+        caption: '效能度量',
+        codeName: 'management_tab_exp_view_captionbar',
+        controlType: 'CAPTIONBAR',
+        appDataEntityId: 'plmweb.insight_view',
+        controlParam: {},
+        name: 'captionbar',
+        id: 'management_tab_exp_view_captionbar',
+      },
+    ],
+    codeName: 'usr0416853624',
+    controlType: 'VIEWLAYOUTPANEL',
+    logicName: 'management_tab_exp_view分页导航视图布局面板',
+    appDataEntityId: 'plmweb.insight_view',
+    controlParam: {},
+    modelId: '07b862287eac0817bd5377a037368a24',
+    modelType: 'PSSYSVIEWLAYOUTPANEL',
+    name: 'layoutpanel',
+    id: 'usr0416853624',
+  },
+  title: '效能度量导航视图',
+  viewStyle: 'DEFAULT',
+  viewType: 'DETABEXPVIEW',
+  enableDP: true,
+  showCaptionBar: false,
+  modelId: '84877359fe87423de6087e1cb1b3f90c',
+  modelType: 'PSAPPDEVIEW',
+  name: 'insight_viewmanagement_tab_exp_view',
+  id: 'plmweb.insight_view_management_tab_exp_view',
+};

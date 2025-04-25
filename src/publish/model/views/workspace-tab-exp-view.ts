@@ -1,0 +1,107 @@
+export default {
+  tabLayout: 'TOP',
+  loadDefault: true,
+  showDataInfoBar: true,
+  deviewCodeName: 'tab_exp_view',
+  deviewId: 'f483b75a1b8e04e4daf8f9f486d9ca91',
+  accUserMode: 2,
+  capLanguageRes: {
+    lanResTag: 'DE.LNAME.WORKSPACE',
+  },
+  caption: '工作台',
+  codeName: 'workspace_tab_exp_view',
+  appDataEntityId: 'plmweb.workspace',
+  appViewEngines: [
+    {
+      engineCat: 'VIEW',
+      engineType: 'TabExpView',
+      id: 'engine',
+    },
+  ],
+  controls: [
+    {
+      dedrtabPages: [
+        {
+          caption: '首页',
+          appViewId: 'plmweb.recent_tree_exp_view',
+          id: 'overview',
+        },
+        {
+          caption: '仪表盘',
+          appViewId: 'plmweb.recent_custom_dashboard_view',
+          id: 'dashboard',
+        },
+        {
+          caption: '工时',
+          appViewId: 'plmweb.workload_tab_exp_view',
+          id: 'workload',
+        },
+      ],
+      dataRelationTag: 'tab_exp_view_DR',
+      editItemCapLanguageRes: {
+        lanResTag: 'DE.LNAME.WORKSPACE',
+      },
+      editItemCaption: '工作台',
+      uniqueTag: 'workspace_tab_exp_view__tabexppanel',
+      hideEditItem: true,
+      autoLoad: true,
+      showBusyIndicator: true,
+      codeName: 'tab_exp_view_dr',
+      controlType: 'DRTAB',
+      appDataEntityId: 'plmweb.workspace',
+      controlParam: {
+        ctrlParams: {
+          SRFCACHEPOS: 'TRUE',
+        },
+        id: 'tabexppanel',
+      },
+      modelId: 'c4650426f87b23da0a41163119dd53b1',
+      modelType: 'PSDEDRTAB',
+      name: 'tabexppanel',
+      id: 'tab_exp_view_dr',
+    },
+    {
+      capLanguageRes: {
+        lanResTag: 'DE.LNAME.WORKSPACE',
+      },
+      caption: '工作台',
+      sysImage: {
+        cssClass: 'fa fa-home',
+        glyph: 'xf015@FontAwesome',
+      },
+      codeName: 'tab_exp_view_captionbar',
+      controlType: 'CAPTIONBAR',
+      appDataEntityId: 'plmweb.workspace',
+      controlParam: {},
+      name: 'captionbar',
+      id: 'tab_exp_view_captionbar',
+    },
+  ],
+  sysCss: {
+    cssName: 'recenttab-head',
+  },
+  sysImage: {
+    cssClass: 'fa fa-home',
+    glyph: 'xf015@FontAwesome',
+  },
+  viewLayoutPanel: {
+    layoutBodyOnly: true,
+    useDefaultLayout: true,
+    layoutPanel: true,
+    codeName: 'layoutpanel',
+    controlStyle: 'APPDETABEXPVIEW',
+    controlType: 'VIEWLAYOUTPANEL',
+    appDataEntityId: 'plmweb.workspace',
+    controlParam: {},
+    id: 'layoutpanel',
+  },
+  title: '工作台',
+  viewStyle: 'DEFAULT',
+  viewType: 'DETABEXPVIEW',
+  enableDP: true,
+  showCaptionBar: true,
+  modelId: '95386ed7ee3fb6964d4b5ebfdca0bedd',
+  modelType: 'PSAPPDEVIEW',
+  name: 'workspacetab_exp_view',
+  id: 'plmweb.workspace_tab_exp_view',
+};
