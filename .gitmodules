@@ -1,0 +1,3 @@
+[submodule "plugins"]
+	path = plugins
+	url = https://gitee.com/ibizplm-open/plm-web-plugins
