@@ -1,0 +1,40 @@
+export default {
+  codeListTag: 'TestMgmt__review_result',
+  codeListType: 'STATIC',
+  codeName: 'TestMgmt__review_result',
+  emptyText: '未定义',
+  appDataEntityId: 'plmweb.test_case',
+  codeItems: [
+    {
+      codeName: 'item_1',
+      color: '#C6CACD',
+      text: '未评审',
+      value: '1',
+      id: 'item_1',
+    },
+    {
+      codeName: 'item_2',
+      text: '评审中',
+      value: '2',
+      id: 'item_2',
+    },
+    {
+      codeName: 'item_3',
+      color: '#3BB346',
+      text: '通过',
+      value: '3',
+      id: 'item_3',
+    },
+    {
+      codeName: 'item_4',
+      color: '#F9391F',
+      text: '拒绝',
+      value: '4',
+      id: 'item_4',
+    },
+  ],
+  codeItemValueNumber: true,
+  enableCache: true,
+  name: '评审结果',
+  id: 'plmweb.testmgmt__review_result',
+};

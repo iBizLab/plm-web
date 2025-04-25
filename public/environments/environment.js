@@ -1,0 +1,23 @@
+window.Environment = {
+  appVersion: '0.7.40-alpha.9',
+  AppLabel: 'iBiz开放平台',
+  cookieDomain: 'open.ibizlab.cn',
+  customParams: '{"file_preview_address":"http://172.16.121.242:28012","ENABLEMULTILOGIN":true}',
+  AppTitle: 'iBiz开放平台',
+  pluginBaseUrl: 'https://npmjs.ibizlab.cn',
+  baseUrl: 'ibizplm__plmweb',
+  logLevel: 'DEBUG',
+  mockDcSystemId: 'ibizplm',
+  appId: 'ibizplm__plmweb',
+  dev: false,
+  hub: true,
+  enableMqtt: false,
+  mqttUrl: '/portal/mqtt/mqtt',
+  enableAnonymous: false,
+  anonymousUser: '',
+  anonymousPwd: '',
+  marketAddress: '',
+  BaseUrl: '/api',
+  favicon: './favicon.ico',
+  environmentTag: 'development'
+};
