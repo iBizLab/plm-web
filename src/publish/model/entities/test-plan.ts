@@ -18,6 +18,7 @@ export default {
       ],
       pagingSize: 50,
       defaultMode: true,
+      appDataEntityId: 'plmweb.test_plan',
       textAppDEFieldId: 'name',
       valueAppDEFieldId: 'id',
       name: 'DEFAULT',
@@ -28,6 +29,7 @@ export default {
     {
       codeName: 'status',
       logicName: '状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'STATUS',
@@ -36,6 +38,7 @@ export default {
     {
       codeName: 'type',
       logicName: '测试分类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'TYPE',
@@ -44,6 +47,7 @@ export default {
     {
       codeName: 'start_at',
       logicName: '计划开始',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'START_AT',
@@ -52,6 +56,7 @@ export default {
     {
       codeName: 'end_at',
       logicName: '计划结束',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'END_AT',
@@ -60,6 +65,7 @@ export default {
     {
       codeName: 'summary',
       logicName: '测试报告概要',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'SUMMARY',
@@ -68,6 +74,7 @@ export default {
     {
       codeName: 'categories',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES',
@@ -76,6 +83,7 @@ export default {
     {
       codeName: 'categories_name',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES_NAME',
@@ -84,6 +92,7 @@ export default {
     {
       codeName: 'work_item_relations',
       logicName: '关联缺陷',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'WORK_ITEM_RELATIONS',
@@ -92,6 +101,7 @@ export default {
     {
       codeName: 'assignee_name',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_NAME',
@@ -100,6 +110,7 @@ export default {
     {
       codeName: 'assignee_id',
       logicName: '负责人标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_ID',
@@ -108,6 +119,7 @@ export default {
     {
       codeName: 'project_type',
       logicName: '项目类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'PROJECT_TYPE',
@@ -116,6 +128,7 @@ export default {
     {
       codeName: 'library_identifier',
       logicName: '测试库名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 15,
       name: 'LIBRARY_IDENTIFIER',
@@ -124,6 +137,7 @@ export default {
     {
       codeName: 'library_is_deleted',
       logicName: '测试库是否删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'LIBRARY_IS_DELETED',
       id: 'library_is_deleted',
@@ -134,6 +148,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -145,6 +160,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '计划名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -157,6 +173,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -168,6 +185,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -179,6 +197,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -190,6 +209,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -198,6 +218,7 @@ export default {
     {
       codeName: 'library_id',
       logicName: '测试库标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'LIBRARY_ID',
@@ -206,6 +227,7 @@ export default {
     {
       codeName: 'project_id',
       logicName: '关联项目',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PROJECT_ID',
@@ -214,6 +236,7 @@ export default {
     {
       codeName: 'sprint_id',
       logicName: '关联迭代',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SPRINT_ID',
@@ -222,6 +245,7 @@ export default {
     {
       codeName: 'project_name',
       logicName: '关联项目',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PROJECT_NAME',
@@ -230,6 +254,7 @@ export default {
     {
       codeName: 'sprint_name',
       logicName: '关联迭代',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'SPRINT_NAME',
@@ -238,6 +263,7 @@ export default {
     {
       codeName: 'library_name',
       logicName: '所属测试库',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'LIBRARY_NAME',
@@ -246,6 +272,7 @@ export default {
     {
       codeName: 'release_id',
       logicName: '项目发布标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RELEASE_ID',
@@ -254,6 +281,7 @@ export default {
     {
       codeName: 'release_name',
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'RELEASE_NAME',
@@ -1575,6 +1603,28 @@ export default {
       dataSetTag: 'query_no_shift_in',
       dataSetType: 'REMOTE',
       id: 'fetch_query_no_shift_in',
+    },
+    {
+      codeName: 'fetch_test_plan',
+      methodType: 'FETCH',
+      appDEMethodInput: {
+        appDEMethodDTOId: 'test_plan_filter_dto',
+        type: 'DTO',
+        id: '输入对象',
+      },
+      appDEMethodReturn: {
+        appDEMethodDTOId: 'test_plan_dto',
+        type: 'PAGE',
+        id: '返回对象',
+      },
+      requestMethod: 'POST',
+      requestParamType: 'ENTITY',
+      requestPath: '/fetch_test_plan',
+      actionType: 'REMOTE',
+      dataSetName: 'test_plan',
+      dataSetTag: 'test_plan',
+      dataSetType: 'REMOTE',
+      id: 'fetch_test_plan',
     },
     {
       codeName: 'fetch_un_join_plan',

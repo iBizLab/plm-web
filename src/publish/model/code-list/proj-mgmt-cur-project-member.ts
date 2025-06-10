@@ -7,7 +7,6 @@ export default {
   appDataEntityId: 'plmweb.project_member',
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'user_id',
-  enableCache: true,
   name: '当前项目成员',
   id: 'plmweb.projmgmt__cur_project_member',
 };

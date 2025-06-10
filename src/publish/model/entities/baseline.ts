@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'description',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'DESCRIPTION',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'status',
       logicName: '状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'STATUS',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'owner_id',
       logicName: '所属数据标识',
+      predefinedType: 'PARENTID',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_ID',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'owner_type',
       logicName: '所属数据对象',
+      predefinedType: 'PARENTTYPE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_TYPE',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'owner_subtype',
       logicName: '所属对象子类型',
+      predefinedType: 'PARENTSUBTYPE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_SUBTYPE',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'type',
       logicName: '基线类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'TYPE',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'categories',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES',
@@ -59,6 +66,7 @@ export default {
     {
       codeName: 'categories_name',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES_NAME',
@@ -67,6 +75,7 @@ export default {
     {
       codeName: 'assignee_name',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_NAME',
@@ -75,6 +84,7 @@ export default {
     {
       codeName: 'assignee_id',
       logicName: '负责人标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_ID',
@@ -86,6 +96,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -97,6 +108,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -109,6 +121,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -120,6 +133,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -131,6 +145,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -142,6 +157,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -176,6 +192,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',

@@ -869,7 +869,7 @@ export default {
           },
           {
             clconvertMode: 'FRONT',
-            dataItemName: 'priority',
+            dataItemName: 'priority_text',
             excelCaption: '优先级',
             appCodeListId: 'plmweb.projmgmt__work_item_priority',
             appDEFieldId: 'priority',
@@ -1247,6 +1247,12 @@ export default {
             appDEFieldId: 'priority',
             valueType: 'SIMPLE',
             dataType: 25,
+            id: 'priority_text',
+          },
+          {
+            appDEFieldId: 'priority',
+            valueType: 'SIMPLE',
+            dataType: 25,
             id: 'priority',
           },
           {
@@ -1598,9 +1604,33 @@ export default {
             editor: {
               singleSelect: true,
               appCodeListId: 'plmweb.projmgmt__work_item_priority',
+              editorParams: {
+                'SRFNAVPARAM.project_type': 'waterfall',
+              },
               editorType: 'DROPDOWNLIST',
+              editorItems: [
+                {
+                  navigateParams: [
+                    {
+                      key: 'project_type',
+                      value: 'waterfall',
+                      rawValue: true,
+                      id: 'project_type',
+                    },
+                  ],
+                  id: 'priority',
+                },
+              ],
               valueType: 'SIMPLE',
               editable: true,
+              navigateParams: [
+                {
+                  key: 'project_type',
+                  value: 'waterfall',
+                  rawValue: true,
+                  id: 'project_type',
+                },
+              ],
               id: 'priority',
             },
             allowEmpty: true,

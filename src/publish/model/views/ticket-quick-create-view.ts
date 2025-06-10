@@ -12,6 +12,7 @@ export default {
   },
   caption: '新建工单',
   codeName: 'ticket_quick_create_view',
+  dynaSysMode: 1,
   height: 90,
   appDataEntityId: 'plmweb.ticket',
   appViewEngines: [
@@ -19,6 +20,19 @@ export default {
       engineCat: 'VIEW',
       engineType: 'OptionView',
       id: 'engine',
+    },
+  ],
+  appViewLogics: [
+    {
+      eventNames: 'onCreated',
+      logicTrigger: 'CTRLEVENT',
+      logicType: 'SCRIPT',
+      ctrlName: 'form',
+      scriptCode:
+        "ctrl.evt.on('onFormDataChange', evt => {\r\n    const { name, value } = evt;\r\n    if (name === 'product_id') {\r\n        view.redrawView({\r\n            context: { product: value, dynamicnew: true },\r\n            params: {},\r\n            isReloadModel: true,\r\n        });\r\n    }\r\n});",
+      builtinLogic: true,
+      name: 'LOGIC',
+      id: 'logic',
     },
   ],
   controls: [
@@ -440,7 +454,7 @@ export default {
                     },
                   ],
                   caption: '附件',
-                  codeName: 'grouppanel2',
+                  codeName: 'attachment',
                   detailStyle: 'DEFAULT',
                   detailType: 'GROUPPANEL',
                   layoutPos: {
@@ -448,11 +462,11 @@ export default {
                     layout: 'TABLE_24COL',
                   },
                   showCaption: true,
-                  id: 'grouppanel2',
+                  id: 'attachment',
                 },
               ],
               caption: '工单基本信息',
-              codeName: 'group1',
+              codeName: 'left_group',
               detailStyle: 'DEFAULT',
               detailType: 'GROUPPANEL',
               layoutPos: {
@@ -460,7 +474,7 @@ export default {
                 colMD: 16,
                 layout: 'TABLE_24COL',
               },
-              id: 'group1',
+              id: 'left_group',
             },
             {
               layout: {
@@ -508,13 +522,24 @@ export default {
                   defdgroupLogics: [
                     {
                       logicCat: 'ITEMENABLE',
-                      relatedDetailNames: ['checkid'],
+                      relatedDetailNames: ['checkid', 'dynamic_new'],
                       groupOP: 'AND',
                       defdlogics: [
                         {
-                          condOP: 'ISNULL',
-                          defdname: 'checkid',
-                          logicType: 'SINGLE',
+                          groupOP: 'OR',
+                          defdlogics: [
+                            {
+                              condOP: 'ISNULL',
+                              defdname: 'checkid',
+                              logicType: 'SINGLE',
+                            },
+                            {
+                              condOP: 'ISNOTNULL',
+                              defdname: 'dynamic_new',
+                              logicType: 'SINGLE',
+                            },
+                          ],
+                          logicType: 'GROUP',
                         },
                       ],
                       logicType: 'GROUP',
@@ -551,6 +576,30 @@ export default {
                     layout: 'TABLE_24COL',
                   },
                   id: 'checkid',
+                },
+                {
+                  createDV: 'dynamicnew',
+                  createDVT: 'APPDATA',
+                  dataType: 25,
+                  enableCond: 3,
+                  labelPos: 'NONE',
+                  noPrivDisplayMode: 1,
+                  editor: {
+                    editorType: 'HIDDEN',
+                    valueType: 'SIMPLE',
+                    editable: true,
+                    id: 'dynamic_new',
+                  },
+                  allowEmpty: true,
+                  hidden: true,
+                  codeName: 'dynamic_new',
+                  detailStyle: 'DEFAULT',
+                  detailType: 'FORMITEM',
+                  layoutPos: {
+                    colMD: 24,
+                    layout: 'TABLE_24COL',
+                  },
+                  id: 'dynamic_new',
                 },
                 {
                   dataType: 25,
@@ -910,7 +959,7 @@ export default {
                   id: 'grouppanel3',
                 },
               ],
-              codeName: 'grouppanel1',
+              codeName: 'right_group',
               detailStyle: 'DEFAULT',
               detailType: 'GROUPPANEL',
               layoutPos: {
@@ -918,7 +967,7 @@ export default {
                 colMD: 8,
                 layout: 'TABLE_24COL',
               },
-              id: 'grouppanel1',
+              id: 'right_group',
             },
             {
               dataType: 25,
@@ -976,10 +1025,10 @@ export default {
             },
           ],
           caption: '基本信息',
-          codeName: 'formpage1',
+          codeName: 'formpage',
           detailStyle: 'DEFAULT',
           detailType: 'FORMPAGE',
-          id: 'formpage1',
+          id: 'formpage',
         },
       ],
       layout: {
@@ -992,6 +1041,7 @@ export default {
       showBusyIndicator: true,
       codeName: 'quick_create',
       controlType: 'FORM',
+      dynaSysMode: 1,
       logicName: '工单快速建立视图_表单',
       appDataEntityId: 'plmweb.ticket',
       controlParam: {
@@ -1025,6 +1075,9 @@ export default {
       id: 'quick_create_view_captionbar',
     },
   ],
+  sysCss: {
+    cssName: 'new_create_style',
+  },
   viewLayoutPanel: {
     layoutBodyOnly: true,
     useDefaultLayout: true,

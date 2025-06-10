@@ -770,6 +770,41 @@ export default {
         id: 'plmweb.user.main_grid',
       },
       {
+        searchButtonStyle: 'DEFAULT',
+        deformPages: [
+          {
+            layout: {
+              columnCount: 24,
+              layout: 'TABLE_24COL',
+            },
+            caption: '常规条件',
+            codeName: 'formpage1',
+            detailStyle: 'DEFAULT',
+            detailType: 'FORMPAGE',
+            id: 'formpage1',
+          },
+        ],
+        layout: {
+          columnCount: 24,
+          layout: 'TABLE_24COL',
+        },
+        tabHeaderPos: 'TOP',
+        noTabHeader: true,
+        autoLoad: true,
+        showBusyIndicator: true,
+        codeName: 'grid_view_search_form',
+        controlType: 'SEARCHFORM',
+        logicName: '企业用户管理表格视图_搜索表单',
+        appDataEntityId: 'plmweb.user',
+        controlParam: {
+          id: 'searchform',
+        },
+        modelId: '7fab083700b8d91067ca5e1f004fdc5e',
+        modelType: 'PSDEFORM_SEARCHFORM',
+        name: 'searchform',
+        id: 'plmweb.user.grid_view_search_form',
+      },
+      {
         groupMode: 'SINGLE',
         quickSearchMode: 1,
         enableQuickSearch: true,

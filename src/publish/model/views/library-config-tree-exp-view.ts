@@ -190,6 +190,14 @@ export default {
               text: '评审配置',
               navAppViewId: 'plmweb.guideline_all_grid_view',
               nodeType: 'node_5',
+              navigateParams: [
+                {
+                  key: 'n_object_type_eq',
+                  value: 'LIBRARY',
+                  rawValue: true,
+                  id: 'n_object_type_eq',
+                },
+              ],
               treeNodeType: 'STATIC',
               name: '评审配置',
               id: 'node_5',

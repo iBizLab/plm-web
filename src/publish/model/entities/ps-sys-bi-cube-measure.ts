@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'DynaModelFlag',
       logicName: '扩展模型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'DYNAMODELFLAG',
       id: 'dynamodelflag',
@@ -10,6 +11,7 @@ export default {
     {
       codeName: 'PSSysBICubeMeasureId',
       logicName: '智能报表指标标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEMEASUREID',
@@ -18,6 +20,7 @@ export default {
     {
       codeName: 'PSSysBICubeMeasureName',
       logicName: '立方体指标名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'CodeName',
       logicName: '代码名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       userTag: 'MODELV2TAG',
@@ -36,6 +40,7 @@ export default {
     {
       codeName: 'ValidFlag',
       logicName: '启用',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'VALIDFLAG',
       id: 'validflag',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'OrderValue',
       logicName: '排序值',
+      predefinedType: 'ORDERVALUE',
       stdDataType: 9,
       name: 'ORDERVALUE',
       id: 'ordervalue',
@@ -50,6 +56,7 @@ export default {
     {
       codeName: 'MeasureFormula',
       logicName: '指标公式',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'MEASUREFORMULA',
@@ -58,6 +65,7 @@ export default {
     {
       codeName: 'BIMeasureType',
       logicName: '指标类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       name: 'BIMEASURETYPE',
@@ -66,6 +74,7 @@ export default {
     {
       codeName: 'PSSysBICubeName',
       logicName: '智能报表立方体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBENAME',
@@ -74,6 +83,7 @@ export default {
     {
       codeName: 'PSSysBISchemeId',
       logicName: 'PSSYSBISCHEMEID',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBISCHEMEID',
@@ -82,6 +92,7 @@ export default {
     {
       codeName: 'PSSysBICubeId',
       logicName: '智能报表立方体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEID',
@@ -90,6 +101,7 @@ export default {
     {
       codeName: 'Memo',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'MEMO',
@@ -124,6 +136,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',

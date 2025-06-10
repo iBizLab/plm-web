@@ -148,6 +148,7 @@ export default {
                 {
                   dataType: 25,
                   enableCond: 3,
+                  fieldName: 'estimated_workload',
                   labelPos: 'TOP',
                   labelWidth: 130,
                   noPrivDisplayMode: 1,
@@ -174,6 +175,7 @@ export default {
                 {
                   dataType: 25,
                   enableCond: 3,
+                  fieldName: 'actual_workload',
                   labelPos: 'TOP',
                   labelWidth: 130,
                   noPrivDisplayMode: 1,
@@ -262,6 +264,7 @@ export default {
                 },
                 {
                   dataType: 25,
+                  fieldName: 'remaining_workload',
                   labelPos: 'TOP',
                   labelWidth: 130,
                   noPrivDisplayMode: 1,
@@ -428,6 +431,33 @@ export default {
                 layout: 'TABLE_24COL',
               },
               id: 'principal_id',
+            },
+            {
+              createDV: 'ACTUAL_WORKLOAD',
+              dataType: 25,
+              enableCond: 3,
+              labelPos: 'TOP',
+              labelWidth: 130,
+              noPrivDisplayMode: 1,
+              appDEFieldId: 'category',
+              editor: {
+                editorType: 'HIDDEN',
+                valueType: 'SIMPLE',
+                editable: true,
+                id: 'category',
+              },
+              updateDV: 'ACTUAL_WORKLOAD',
+              allowEmpty: true,
+              hidden: true,
+              caption: '工时类别',
+              codeName: 'category',
+              detailStyle: 'DEFAULT',
+              detailType: 'FORMITEM',
+              layoutPos: {
+                colMD: 24,
+                layout: 'TABLE_24COL',
+              },
+              id: 'category',
             },
             {
               dataType: 25,

@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'Num',
       logicName: '业务单号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'NUM',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'TodoId',
       logicName: '待办标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'TODOID',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'Title',
       logicName: '标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -28,6 +31,7 @@ export default {
     {
       codeName: 'CreateMan',
       logicName: '创建人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATEMAN',
@@ -36,6 +40,7 @@ export default {
     {
       codeName: 'CreateManName',
       logicName: '上一环节处理人',
+      predefinedType: 'CREATEMANNAME',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATEMANNAME',
@@ -44,6 +49,7 @@ export default {
     {
       codeName: 'CreateDate',
       logicName: '创建时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATEDATE',
@@ -52,6 +58,7 @@ export default {
     {
       codeName: 'UpdateMan',
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATEMAN',
@@ -60,6 +67,7 @@ export default {
     {
       codeName: 'UpdateManName',
       logicName: '更新人',
+      predefinedType: 'UPDATEMANNAME',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATEMANNAME',
@@ -68,6 +76,7 @@ export default {
     {
       codeName: 'UpdateDate',
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATEDATE',
@@ -76,6 +85,7 @@ export default {
     {
       codeName: 'ClobParam01',
       logicName: '长文本参数01',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'CLOBPARAM01',
@@ -84,6 +94,7 @@ export default {
     {
       codeName: 'Param04',
       logicName: '参数04',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM04',
@@ -92,6 +103,7 @@ export default {
     {
       codeName: 'BizType',
       logicName: '业务对象',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BIZTYPE',
@@ -100,6 +112,7 @@ export default {
     {
       codeName: 'ProcessDate',
       logicName: '处理时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'PROCESSDATE',
@@ -108,6 +121,7 @@ export default {
     {
       codeName: 'Param07',
       logicName: '参数07',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM07',
@@ -116,6 +130,7 @@ export default {
     {
       codeName: 'Param09',
       logicName: '参数09',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PARAM09',
@@ -124,6 +139,7 @@ export default {
     {
       codeName: 'DCSystemId',
       logicName: '租户系统标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DCSYSTEMID',
@@ -132,6 +148,7 @@ export default {
     {
       codeName: 'Param08',
       logicName: '参数08',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM08',
@@ -140,6 +157,7 @@ export default {
     {
       codeName: 'BizKey',
       logicName: '业务数据标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BIZKEY',
@@ -148,6 +166,7 @@ export default {
     {
       codeName: 'DCSystemName',
       logicName: '租户系统名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DCSYSTEMNAME',
@@ -156,6 +175,7 @@ export default {
     {
       codeName: 'Param06',
       logicName: '参数06',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM06',
@@ -164,6 +184,7 @@ export default {
     {
       codeName: 'ClobParam02',
       logicName: '长文本参数02',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'CLOBPARAM02',
@@ -172,6 +193,7 @@ export default {
     {
       codeName: 'Param02',
       logicName: '参数02',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM02',
@@ -180,6 +202,7 @@ export default {
     {
       codeName: 'LinkUrl',
       logicName: '连接地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 300,
       name: 'LINKURL',
@@ -188,6 +211,7 @@ export default {
     {
       codeName: 'DueDate',
       logicName: '过期时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'DUEDATE',
@@ -196,6 +220,7 @@ export default {
     {
       codeName: 'TodoSubType',
       logicName: '待办子类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TODOSUBTYPE',
@@ -204,6 +229,7 @@ export default {
     {
       codeName: 'Param01',
       logicName: '参数01',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM01',
@@ -212,6 +238,7 @@ export default {
     {
       codeName: 'UserId',
       logicName: '待办用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USERID',
@@ -220,6 +247,7 @@ export default {
     {
       codeName: 'Param05',
       logicName: '参数05',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM05',
@@ -228,6 +256,7 @@ export default {
     {
       codeName: 'OrgId',
       logicName: '组织机构标识',
+      predefinedType: 'ORGID',
       stdDataType: 25,
       stringLength: 60,
       name: 'ORGID',
@@ -236,6 +265,7 @@ export default {
     {
       codeName: 'TodoType',
       logicName: '待办类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TODOTYPE',
@@ -244,6 +274,7 @@ export default {
     {
       codeName: 'Param03',
       logicName: '参数03',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM03',
@@ -252,6 +283,7 @@ export default {
     {
       codeName: 'Content',
       logicName: '内容',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'CONTENT',
@@ -260,6 +292,7 @@ export default {
     {
       codeName: 'TodoUrlType',
       logicName: '待办地址类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'TODOURLTYPE',
@@ -268,6 +301,7 @@ export default {
     {
       codeName: 'TodoState',
       logicName: '待办状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TODOSTATE',
@@ -276,6 +310,7 @@ export default {
     {
       codeName: 'IsRead',
       logicName: '是否已读',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'ISREAD',
       id: 'isread',

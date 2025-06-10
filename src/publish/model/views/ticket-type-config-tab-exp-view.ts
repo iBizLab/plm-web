@@ -307,18 +307,9 @@ export default {
             id: 'field_manage',
           },
           {
-            caption: '状态管理',
-            appViewId: 'plmweb.dictionary_data_ticket_state_grid_view',
-            navigateContexts: [
-              {
-                key: 'CATALOG',
-                value: 'ticket_state',
-                rawValue: true,
-                name: 'CATALOG',
-                id: 'catalog',
-              },
-            ],
-            id: 'state_manage',
+            caption: '数据字典',
+            appViewId: 'plmweb.dictionary_data_ticket_dictionary_grid_view',
+            id: 'dictionary',
           },
         ],
         dataRelationTag: 'config_tab_exp_view_DR',

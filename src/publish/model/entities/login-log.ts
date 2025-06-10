@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'auth_time',
       logicName: '登录时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'AUTHTIME',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'county',
       logicName: '区/县',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'COUNTY',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'country',
       logicName: '国家',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'COUNTRY',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'city',
       logicName: '城市',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CITY',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'ip',
       logicName: 'IP地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'IP',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'login_method',
       logicName: '登录方式',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'LOGIN_METHOD',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'province',
       logicName: '省',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PROVINCE',
@@ -59,6 +66,7 @@ export default {
     {
       codeName: 'user_agent',
       logicName: '客户端',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'USER_AGENT',
@@ -67,6 +75,7 @@ export default {
     {
       codeName: 'user_id',
       logicName: '用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USER_ID',
@@ -75,6 +84,7 @@ export default {
     {
       codeName: 'user_name',
       logicName: '用户名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USER_NAME',
@@ -83,6 +93,7 @@ export default {
     {
       codeName: 'isp',
       logicName: '网络提供商',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ISP',
@@ -91,6 +102,7 @@ export default {
     {
       codeName: 'auth_code',
       logicName: '认证结果',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'AUTHCODE',
@@ -99,6 +111,7 @@ export default {
     {
       codeName: 'active_members',
       logicName: '活跃成员数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'ACTIVE_MEMBERS',
@@ -107,6 +120,7 @@ export default {
     {
       codeName: 'active_rate',
       logicName: '活跃率',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'ACTIVE_RATE',
@@ -118,6 +132,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -129,6 +144,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -141,6 +157,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -152,6 +169,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -163,6 +181,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -174,6 +193,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',

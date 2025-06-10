@@ -1,4 +1,5 @@
 export default {
+  getDataAppDEActionId: 'get_redirect_data',
   redirectAppViewRefs: [
     {
       realTitle: '工时编辑视图',
@@ -19,6 +20,8 @@ export default {
       id: 'editview',
     },
   ],
+  typeAppDEFieldId: 'category',
+  enableCustomGetDataAction: true,
   enableWorkflow: true,
   funcViewMode: 'REDIRECTVIEW',
   deviewCodeName: 'RedirectView',
@@ -30,6 +33,22 @@ export default {
   caption: '工时',
   codeName: 'workload_redirect_view',
   appDataEntityId: 'plmweb.workload',
+  appViewRefs: [
+    {
+      realOpenMode: 'POPUPMODAL',
+      realTitle: '修改实际工时视图',
+      refAppViewId: 'plmweb.workload_update_view',
+      name: 'ACTUAL_WORKLOAD',
+      id: 'actual_workload',
+    },
+    {
+      realOpenMode: 'POPUPMODAL',
+      realTitle: '预估工时快速修改视图',
+      refAppViewId: 'plmweb.workload_forecast_quick_update_view',
+      name: 'ESTIMATED_WORKLOAD',
+      id: 'estimated_workload',
+    },
+  ],
   controls: [
     {
       capLanguageRes: {

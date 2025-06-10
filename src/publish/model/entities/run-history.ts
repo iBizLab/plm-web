@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'case_id',
       logicName: '测试用例',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CASE_ID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'remark',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'REMARK',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'executed_at',
       logicName: '执行时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'EXECUTED_AT',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'status',
       logicName: '执行结果',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'STATUS',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'steps',
       logicName: '步骤',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'STEPS',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'executor_id',
       logicName: '执行人标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'EXECUTOR_ID',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'executor_name',
       logicName: '执行人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'EXECUTOR_NAME',
@@ -62,6 +69,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -73,6 +81,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -85,6 +94,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -96,6 +106,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -107,6 +118,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -118,6 +130,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -126,6 +139,7 @@ export default {
     {
       codeName: 'run_id',
       logicName: '执行用例标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RUN_ID',
@@ -134,6 +148,7 @@ export default {
     {
       codeName: 'run_title',
       logicName: '标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'RUN_TITLE',

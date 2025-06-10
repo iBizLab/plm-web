@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'ProjMgmt__risk',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'ProjMgmt__risk',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.work_item',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_work_item_risk',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'item_10',
@@ -24,6 +30,8 @@ export default {
       id: 'item_30',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '风险',
   id: 'plmweb.projmgmt__risk',

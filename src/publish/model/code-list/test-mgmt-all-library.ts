@@ -7,7 +7,6 @@ export default {
   appDataEntityId: 'plmweb.library',
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'id',
-  enableCache: true,
   name: '全部测试库',
   id: 'plmweb.testmgmt__all_library',
 };

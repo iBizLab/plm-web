@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'TestMgmt__test_case_level',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'TestMgmt__test_case_level',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.test_case',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_test_case_importance_level',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'p0',
@@ -36,6 +42,8 @@ export default {
       id: 'p4',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '用例重要程度',
   id: 'plmweb.testmgmt__test_case_level',

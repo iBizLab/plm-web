@@ -34,6 +34,17 @@ export default {
       name: 'CLEAN_ATTENTIONS',
       id: 'clean_attentions',
     },
+    {
+      eventNames: 'onCreated',
+      logicTrigger: 'CTRLEVENT',
+      logicType: 'SCRIPT',
+      ctrlName: 'form',
+      scriptCode:
+        "ctrl.evt.on('onFormDataChange', evt => {\r\n    const { name, value } = evt;\r\n    if (name === 'test_library_id') {\r\n        view.redrawView({\r\n            context: { library: value, dynamicnew: true },\r\n            params: {},\r\n            isReloadModel: true,\r\n        });\r\n    }\r\n});",
+      builtinLogic: true,
+      name: 'LOGIC',
+      id: 'logic',
+    },
   ],
   appViewNavParams: [
     {
@@ -123,71 +134,56 @@ export default {
                   id: 'title',
                 },
                 {
-                  layout: {
-                    columnCount: 24,
-                    layout: 'TABLE_24COL',
-                  },
-                  deformDetails: [
-                    {
-                      dataType: 21,
-                      enableCond: 3,
-                      labelPos: 'NONE',
-                      noPrivDisplayMode: 1,
-                      appDEFieldId: 'precondition',
-                      editor: {
-                        editorParams: {
-                          USERINSCRIPT:
-                            'value.replaceAll(/\\@\\{\\"(user)?id\\":\\"(.+?)\\",\\"name\\":\\"(.+?)\\"\\}/g,(x, user, id, name) => {return controller.getNodeInfo({ id, name })}).replaceAll(/\\@\\{userid=(.+?),name=(.+?)\\}/g,(x, id, name) => {return controller.getNodeInfo({ id, name })})',
-                          LINKVIEWID: 'plmweb.recent_custom_redirect_view',
-                          MAXHEIGHT: '450',
-                          QUOTECODELISTMAP:
-                            '{"type":"plmweb.base__recent_visite"}',
-                          QUOTEFIELDMAP:
-                            '{"identifier":"show_identifier","name":"name","id":"id","owner_subtype":"owner_subtype","owner_id":"owner_id","owner_type":"owner_type","recent_parent":"recent_parent"}',
-                          QUOTEPARAMS: '{"sort":"update_time,desc"}',
-                          MODE: 'default',
-                          QUOTEINSCRIPT:
-                            'value.replaceAll(/\\#\\{(\\".+?\\":\\".+?\\")(,\\"icon\\":\\"((.|[\\t\\r\\f\\n\\s])+?)\\")*\\}/g,(x, value, icon) => { const item = JSON.parse("{" + value + "}"); if (icon) { icon = icon.slice(8).slice(1, -1); } return controller.getNodeInfo({ icon, ...item })})',
-                          USERSCRIPT:
-                            '`@{"id":"${data.id}","name":"${data.name}"}`',
-                          QUOTESCRIPT:
-                            '`#{"id":"${data.id}","name":"${data.name}","identifier":"${data.identifier}","owner_id":"${data.owner_id}","owner_type":"${data.owner_type}","owner_subtype":"${data.owner_subtype}","recent_parent":"${data.recent_parent}"}`',
-                          USERURL:
-                            "`${context.library ? `libraries/${context.library}/library_members/fetch_default` : context.product ? `products/${context.product}/product_members/fetch_default` : context.project ? `projects/${context.project}/project_members/fetch_default` : context.discuss_topic? `discuss_topics/${context.discuss_topic}/discuss_members/fetch_default` : ''}`",
-                          USERFIELDMAP: '{"id":"user_id","name":"name"}',
-                          INSERTKEYS:
-                            '[{"index":66,"keys":["marker"]},{"index":5,"keys":["paintformat"]}]',
-                          QUOTEURL: '`recents/fetch_recent_access`',
-                        },
-                        editorStyle: 'COLLAPSE',
-                        editorType: 'HTMLEDITOR',
-                        sysPFPluginId: 'comment',
-                        valueType: 'SIMPLE',
-                        editable: true,
-                        id: 'precondition',
-                      },
-                      allowEmpty: true,
-                      caption: '前置条件',
-                      codeName: 'precondition',
-                      detailStyle: 'DEFAULT',
-                      detailType: 'FORMITEM',
-                      layoutPos: {
-                        colMD: 24,
-                        layout: 'TABLE_24COL',
-                      },
-                      id: 'precondition',
+                  dataType: 21,
+                  enableCond: 3,
+                  itemHeight: 470,
+                  labelPos: 'TOP',
+                  labelWidth: 130,
+                  noPrivDisplayMode: 1,
+                  appDEFieldId: 'precondition',
+                  editor: {
+                    editorHeight: 450,
+                    editorParams: {
+                      USERINSCRIPT:
+                        'value.replaceAll(/\\@\\{\\"(user)?id\\":\\"(.+?)\\",\\"name\\":\\"(.+?)\\"\\}/g,(x, user, id, name) => {return controller.getNodeInfo({ id, name })}).replaceAll(/\\@\\{userid=(.+?),name=(.+?)\\}/g,(x, id, name) => {return controller.getNodeInfo({ id, name })})',
+                      LINKVIEWID: 'plmweb.recent_custom_redirect_view',
+                      MAXHEIGHT: '450',
+                      QUOTECODELISTMAP: '{"type":"plmweb.base__recent_visite"}',
+                      QUOTEFIELDMAP:
+                        '{"identifier":"show_identifier","name":"name","id":"id","owner_subtype":"owner_subtype","owner_id":"owner_id","owner_type":"owner_type","recent_parent":"recent_parent"}',
+                      QUOTEPARAMS: '{"sort":"update_time,desc"}',
+                      MODE: 'default',
+                      QUOTEINSCRIPT:
+                        'value.replaceAll(/\\#\\{(\\".+?\\":\\".+?\\")(,\\"icon\\":\\"((.|[\\t\\r\\f\\n\\s])+?)\\")*\\}/g,(x, value, icon) => { const item = JSON.parse("{" + value + "}"); if (icon) { icon = icon.slice(8).slice(1, -1); } return controller.getNodeInfo({ icon, ...item })})',
+                      USERSCRIPT:
+                        '`@{"id":"${data.id}","name":"${data.name}"}`',
+                      QUOTESCRIPT:
+                        '`#{"id":"${data.id}","name":"${data.name}","identifier":"${data.identifier}","owner_id":"${data.owner_id}","owner_type":"${data.owner_type}","owner_subtype":"${data.owner_subtype}","recent_parent":"${data.recent_parent}"}`',
+                      USERURL:
+                        "`${context.library ? `libraries/${context.library}/library_members/fetch_default` : context.product ? `products/${context.product}/product_members/fetch_default` : context.project ? `projects/${context.project}/project_members/fetch_default` : context.discuss_topic? `discuss_topics/${context.discuss_topic}/discuss_members/fetch_default` : ''}`",
+                      USERFIELDMAP: '{"id":"user_id","name":"name"}',
+                      INSERTKEYS:
+                        '[{"index":66,"keys":["marker"]},{"index":5,"keys":["paintformat"]}]',
+                      QUOTEURL: '`recents/fetch_recent_access`',
                     },
-                  ],
+                    editorStyle: 'COLLAPSE',
+                    editorType: 'HTMLEDITOR',
+                    sysPFPluginId: 'comment',
+                    valueType: 'SIMPLE',
+                    editable: true,
+                    id: 'precondition',
+                  },
+                  allowEmpty: true,
                   caption: '前置条件',
-                  codeName: 'grouppanel3',
+                  codeName: 'precondition',
                   detailStyle: 'DEFAULT',
-                  detailType: 'GROUPPANEL',
+                  detailType: 'FORMITEM',
                   layoutPos: {
                     colMD: 24,
                     layout: 'TABLE_24COL',
                   },
                   showCaption: true,
-                  id: 'grouppanel3',
+                  id: 'precondition',
                 },
                 {
                   layout: {
@@ -422,7 +418,7 @@ export default {
                     },
                   ],
                   caption: '用例步骤',
-                  codeName: 'grouppanel5',
+                  codeName: 'step_group',
                   detailStyle: 'DEFAULT',
                   detailType: 'GROUPPANEL',
                   layoutPos: {
@@ -430,74 +426,59 @@ export default {
                     layout: 'TABLE_24COL',
                   },
                   showCaption: true,
-                  id: 'grouppanel5',
+                  id: 'step_group',
                 },
                 {
-                  layout: {
-                    columnCount: 24,
-                    layout: 'TABLE_24COL',
-                  },
-                  deformDetails: [
-                    {
-                      dataType: 21,
-                      enableCond: 3,
-                      labelPos: 'NONE',
-                      noPrivDisplayMode: 1,
-                      appDEFieldId: 'description',
-                      editor: {
-                        editorParams: {
-                          USERINSCRIPT:
-                            'value.replaceAll(/\\@\\{\\"(user)?id\\":\\"(.+?)\\",\\"name\\":\\"(.+?)\\"\\}/g,(x, user, id, name) => {return controller.getNodeInfo({ id, name })}).replaceAll(/\\@\\{userid=(.+?),name=(.+?)\\}/g,(x, id, name) => {return controller.getNodeInfo({ id, name })})',
-                          LINKVIEWID: 'plmweb.recent_custom_redirect_view',
-                          MAXHEIGHT: '450',
-                          QUOTECODELISTMAP:
-                            '{"type":"plmweb.base__recent_visite"}',
-                          QUOTEFIELDMAP:
-                            '{"identifier":"show_identifier","name":"name","id":"id","owner_subtype":"owner_subtype","owner_id":"owner_id","owner_type":"owner_type","recent_parent":"recent_parent"}',
-                          QUOTEPARAMS: '{"sort":"update_time,desc"}',
-                          MODE: 'default',
-                          QUOTEINSCRIPT:
-                            'value.replaceAll(/\\#\\{(\\".+?\\":\\".+?\\")(,\\"icon\\":\\"((.|[\\t\\r\\f\\n\\s])+?)\\")*\\}/g,(x, value, icon) => { const item = JSON.parse("{" + value + "}"); if (icon) { icon = icon.slice(8).slice(1, -1); } return controller.getNodeInfo({ icon, ...item })})',
-                          USERSCRIPT:
-                            '`@{"id":"${data.id}","name":"${data.name}"}`',
-                          QUOTESCRIPT:
-                            '`#{"id":"${data.id}","name":"${data.name}","identifier":"${data.identifier}","owner_id":"${data.owner_id}","owner_type":"${data.owner_type}","owner_subtype":"${data.owner_subtype}","recent_parent":"${data.recent_parent}"}`',
-                          USERURL:
-                            "`${context.library ? `libraries/${context.library}/library_members/fetch_default` : context.product ? `products/${context.product}/product_members/fetch_default` : context.project ? `projects/${context.project}/project_members/fetch_default` : context.discuss_topic? `discuss_topics/${context.discuss_topic}/discuss_members/fetch_default` : ''}`",
-                          USERFIELDMAP: '{"id":"user_id","name":"name"}',
-                          INSERTKEYS:
-                            '[{"index":66,"keys":["marker"]},{"index":5,"keys":["paintformat"]}]',
-                          QUOTEURL: '`recents/fetch_recent_access`',
-                        },
-                        editorStyle: 'COLLAPSE',
-                        editorType: 'HTMLEDITOR',
-                        sysPFPluginId: 'comment',
-                        valueType: 'SIMPLE',
-                        editable: true,
-                        id: 'case_description',
-                      },
-                      allowEmpty: true,
-                      caption: '描述',
-                      codeName: 'case_description',
-                      detailStyle: 'DEFAULT',
-                      detailType: 'FORMITEM',
-                      layoutPos: {
-                        colMD: 24,
-                        layout: 'TABLE_24COL',
-                      },
-                      id: 'case_description',
+                  dataType: 21,
+                  enableCond: 3,
+                  itemHeight: 470,
+                  labelPos: 'TOP',
+                  labelWidth: 130,
+                  noPrivDisplayMode: 1,
+                  appDEFieldId: 'description',
+                  editor: {
+                    editorHeight: 450,
+                    editorParams: {
+                      USERINSCRIPT:
+                        'value.replaceAll(/\\@\\{\\"(user)?id\\":\\"(.+?)\\",\\"name\\":\\"(.+?)\\"\\}/g,(x, user, id, name) => {return controller.getNodeInfo({ id, name })}).replaceAll(/\\@\\{userid=(.+?),name=(.+?)\\}/g,(x, id, name) => {return controller.getNodeInfo({ id, name })})',
+                      LINKVIEWID: 'plmweb.recent_custom_redirect_view',
+                      MAXHEIGHT: '450',
+                      QUOTECODELISTMAP: '{"type":"plmweb.base__recent_visite"}',
+                      QUOTEFIELDMAP:
+                        '{"identifier":"show_identifier","name":"name","id":"id","owner_subtype":"owner_subtype","owner_id":"owner_id","owner_type":"owner_type","recent_parent":"recent_parent"}',
+                      QUOTEPARAMS: '{"sort":"update_time,desc"}',
+                      MODE: 'default',
+                      QUOTEINSCRIPT:
+                        'value.replaceAll(/\\#\\{(\\".+?\\":\\".+?\\")(,\\"icon\\":\\"((.|[\\t\\r\\f\\n\\s])+?)\\")*\\}/g,(x, value, icon) => { const item = JSON.parse("{" + value + "}"); if (icon) { icon = icon.slice(8).slice(1, -1); } return controller.getNodeInfo({ icon, ...item })})',
+                      USERSCRIPT:
+                        '`@{"id":"${data.id}","name":"${data.name}"}`',
+                      QUOTESCRIPT:
+                        '`#{"id":"${data.id}","name":"${data.name}","identifier":"${data.identifier}","owner_id":"${data.owner_id}","owner_type":"${data.owner_type}","owner_subtype":"${data.owner_subtype}","recent_parent":"${data.recent_parent}"}`',
+                      USERURL:
+                        "`${context.library ? `libraries/${context.library}/library_members/fetch_default` : context.product ? `products/${context.product}/product_members/fetch_default` : context.project ? `projects/${context.project}/project_members/fetch_default` : context.discuss_topic? `discuss_topics/${context.discuss_topic}/discuss_members/fetch_default` : ''}`",
+                      USERFIELDMAP: '{"id":"user_id","name":"name"}',
+                      INSERTKEYS:
+                        '[{"index":66,"keys":["marker"]},{"index":5,"keys":["paintformat"]}]',
+                      QUOTEURL: '`recents/fetch_recent_access`',
                     },
-                  ],
+                    editorStyle: 'COLLAPSE',
+                    editorType: 'HTMLEDITOR',
+                    sysPFPluginId: 'comment',
+                    valueType: 'SIMPLE',
+                    editable: true,
+                    id: 'case_description',
+                  },
+                  allowEmpty: true,
                   caption: '描述',
-                  codeName: 'grouppanel4',
+                  codeName: 'case_description',
                   detailStyle: 'DEFAULT',
-                  detailType: 'GROUPPANEL',
+                  detailType: 'FORMITEM',
                   layoutPos: {
                     colMD: 24,
                     layout: 'TABLE_24COL',
                   },
                   showCaption: true,
-                  id: 'grouppanel4',
+                  id: 'case_description',
                 },
                 {
                   actionGroupExtractMode: 'ITEM',
@@ -790,7 +771,7 @@ export default {
                     },
                   ],
                   caption: '附件',
-                  codeName: 'grouppanel6',
+                  codeName: 'attachment',
                   detailStyle: 'DEFAULT',
                   detailType: 'GROUPPANEL',
                   layoutPos: {
@@ -798,11 +779,11 @@ export default {
                     layout: 'TABLE_24COL',
                   },
                   showCaption: true,
-                  id: 'grouppanel6',
+                  id: 'attachment',
                 },
               ],
               caption: '用例基本信息',
-              codeName: 'group1',
+              codeName: 'left_group',
               detailStyle: 'DEFAULT',
               detailType: 'GROUPPANEL',
               layoutPos: {
@@ -810,7 +791,7 @@ export default {
                 colMD: 16,
                 layout: 'TABLE_24COL',
               },
-              id: 'group1',
+              id: 'left_group',
             },
             {
               layout: {
@@ -860,13 +841,24 @@ export default {
                   defdgroupLogics: [
                     {
                       logicCat: 'ITEMENABLE',
-                      relatedDetailNames: ['checkid'],
+                      relatedDetailNames: ['checkid', 'dynamic_new'],
                       groupOP: 'AND',
                       defdlogics: [
                         {
-                          condOP: 'ISNULL',
-                          defdname: 'checkid',
-                          logicType: 'SINGLE',
+                          groupOP: 'OR',
+                          defdlogics: [
+                            {
+                              condOP: 'ISNULL',
+                              defdname: 'checkid',
+                              logicType: 'SINGLE',
+                            },
+                            {
+                              condOP: 'ISNOTNULL',
+                              defdname: 'dynamic_new',
+                              logicType: 'SINGLE',
+                            },
+                          ],
+                          logicType: 'GROUP',
                         },
                       ],
                       logicType: 'GROUP',
@@ -878,6 +870,30 @@ export default {
                   },
                   showCaption: true,
                   id: 'test_library_name',
+                },
+                {
+                  createDV: 'dynamicnew',
+                  createDVT: 'APPDATA',
+                  dataType: 25,
+                  enableCond: 3,
+                  labelPos: 'NONE',
+                  noPrivDisplayMode: 1,
+                  editor: {
+                    editorType: 'HIDDEN',
+                    valueType: 'SIMPLE',
+                    editable: true,
+                    id: 'dynamic_new',
+                  },
+                  allowEmpty: true,
+                  hidden: true,
+                  codeName: 'dynamic_new',
+                  detailStyle: 'DEFAULT',
+                  detailType: 'FORMITEM',
+                  layoutPos: {
+                    colMD: 24,
+                    layout: 'TABLE_24COL',
+                  },
+                  id: 'dynamic_new',
                 },
                 {
                   createDV: 'library',
@@ -1336,7 +1352,7 @@ export default {
                   id: 'attentions',
                 },
               ],
-              codeName: 'grouppanel1',
+              codeName: 'right_group',
               detailStyle: 'DEFAULT',
               detailType: 'GROUPPANEL',
               layoutPos: {
@@ -1344,7 +1360,7 @@ export default {
                 colMD: 8,
                 layout: 'TABLE_24COL',
               },
-              id: 'grouppanel1',
+              id: 'right_group',
             },
             {
               dataType: 25,
@@ -1376,10 +1392,10 @@ export default {
             },
           ],
           caption: '基本信息',
-          codeName: 'formpage1',
+          codeName: 'formpage',
           detailStyle: 'DEFAULT',
           detailType: 'FORMPAGE',
-          id: 'formpage1',
+          id: 'formpage',
         },
       ],
       layout: {
@@ -1390,7 +1406,7 @@ export default {
       noTabHeader: true,
       autoLoad: true,
       showBusyIndicator: true,
-      codeName: 'quick_create_view_form',
+      codeName: 'quick_create_view',
       controlType: 'FORM',
       dynaSysMode: 1,
       logicName: '用例快速建立视图_表单',
@@ -1401,7 +1417,7 @@ export default {
       modelId: 'aa1d723e673a23a3fd479ef945a9213b',
       modelType: 'PSDEFORM_EDITFORM',
       name: 'form',
-      id: 'plmweb.test_case.quick_create_view_form',
+      id: 'plmweb.test_case.quick_create_view',
     },
     {
       detoolbarItems: [
@@ -1461,7 +1477,7 @@ export default {
     },
   ],
   sysCss: {
-    cssName: 'quick_case_style',
+    cssName: 'new_create_style',
   },
   viewLayoutPanel: {
     layoutBodyOnly: true,

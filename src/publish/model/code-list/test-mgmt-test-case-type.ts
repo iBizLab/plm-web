@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'TestMgmt__test_case_type',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'TestMgmt__test_case_type',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.test_case',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_test_case_type',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'item_10',
@@ -60,6 +66,8 @@ export default {
       id: 'item_90',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '用例类型',
   id: 'plmweb.testmgmt__test_case_type',

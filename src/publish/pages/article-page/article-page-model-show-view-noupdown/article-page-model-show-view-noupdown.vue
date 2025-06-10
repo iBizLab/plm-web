@@ -10,9 +10,9 @@
 <script setup lang="ts">
 import { IModal } from '@ibiz-template/runtime';
 import { defineProps, withDefaults } from 'vue';
-import model from '@/publish/model/views/article-page-model-show-view-noupdown';
 
 interface Props {
+  model: IModel;
   context?: IContext;
   params?: IParams;
   modal?: IModal;

@@ -495,7 +495,7 @@ export default {
                     cssClass: 'fa fa-edit',
                     glyph: 'xf044@FontAwesome',
                   },
-                  id: 'u454386e',
+                  id: 'u04965f2',
                 },
                 {
                   actionLevel: 100,
@@ -511,7 +511,7 @@ export default {
                     cssClass: 'fa fa-refresh',
                     glyph: 'xf021@FontAwesome',
                   },
-                  id: 'u09bb19e',
+                  id: 'u36db86b',
                 },
                 {
                   actionLevel: 100,
@@ -528,7 +528,7 @@ export default {
                     cssClass: 'fa fa-exchange',
                     glyph: 'xf0ec@FontAwesome',
                   },
-                  id: 'ucef3d72',
+                  id: 'u8fdb993',
                 },
               ],
               appDataEntityId: 'plmweb.version',

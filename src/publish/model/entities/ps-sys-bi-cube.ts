@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'PSSysBICubeId',
       logicName: '智能报表立方体标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'PSSysBICubeName',
       logicName: '立方体名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -20,6 +22,7 @@ export default {
     {
       codeName: 'ValidFlag',
       logicName: '启用',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'VALIDFLAG',
       id: 'validflag',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'CodeName',
       logicName: '代码名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       userTag: 'MODELV2TAG',
@@ -36,6 +40,7 @@ export default {
     {
       codeName: 'Memo',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'MEMO',
@@ -44,6 +49,7 @@ export default {
     {
       codeName: 'PSDEName',
       logicName: '立方体实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDENAME',
@@ -52,6 +58,7 @@ export default {
     {
       codeName: 'PSDEId',
       logicName: '立方体实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEID',
@@ -60,6 +67,7 @@ export default {
     {
       codeName: 'PSSysBISchemeId',
       logicName: '智能报表体系',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBISCHEMEID',
@@ -68,6 +76,7 @@ export default {
     {
       codeName: 'PSSysBISchemeName',
       logicName: '智能报表体系',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBISCHEMENAME',
@@ -76,6 +85,7 @@ export default {
     {
       codeName: 'BICubeTag2',
       logicName: '立方体标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BICUBETAG2',
@@ -84,6 +94,7 @@ export default {
     {
       codeName: 'BICubeTag',
       logicName: '立方体标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BICUBETAG',

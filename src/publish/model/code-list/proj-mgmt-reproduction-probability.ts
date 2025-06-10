@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'ProjMgmt__reproduction_probability',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'ProjMgmt__reproduction_probability',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.work_item',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_work_item_probability',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'item_10',
@@ -30,6 +36,8 @@ export default {
       id: 'item_40',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '复现概率',
   id: 'plmweb.projmgmt__reproduction_probability',

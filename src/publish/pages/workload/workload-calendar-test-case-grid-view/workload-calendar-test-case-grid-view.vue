@@ -10,9 +10,9 @@
 <script setup lang="ts">
 import { IModal } from '@ibiz-template/runtime';
 import { defineProps, withDefaults } from 'vue';
-import model from '@/publish/model/views/workload-calendar-test-case-grid-view';
 
 interface Props {
+  model: IModel;
   context?: IContext;
   params?: IParams;
   modal?: IModal;

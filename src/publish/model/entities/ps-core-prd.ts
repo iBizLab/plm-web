@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'deploy_system_code',
       logicName: '部署应用名',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DEPLOY_SYSTEM_CODE',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'settings',
       logicName: '设置',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'SETTINGS',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'deploy_service_hub_id',
       logicName: '部署节点',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DEPLOY_SERVICE_HUB_ID',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'vers',
       logicName: '可用版本',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'VERS',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'deploy_data_source_id',
       logicName: '部署数据源',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DEPLOY_DATA_SOURCE_ID',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'deploy_prdver_id',
       logicName: '部署版本',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DEPLOY_PRDVER_ID',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'info',
       logicName: '详细信息',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'INFO',
@@ -59,6 +66,7 @@ export default {
     {
       codeName: 'category',
       logicName: '产品标签',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORY',
@@ -67,6 +75,7 @@ export default {
     {
       codeName: 'changelog',
       logicName: '变更日志',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'CHANGELOG',
@@ -75,6 +84,7 @@ export default {
     {
       codeName: 'PSCorePrdId',
       logicName: '核心产品标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSCOREPRDID',
@@ -83,6 +93,7 @@ export default {
     {
       codeName: 'PSCorePrdName',
       logicName: '产品名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -92,6 +103,7 @@ export default {
     {
       codeName: 'CreateMan',
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'CREATEMAN',
@@ -100,6 +112,7 @@ export default {
     {
       codeName: 'CreateDate',
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATEDATE',
@@ -108,6 +121,7 @@ export default {
     {
       codeName: 'UpdateMan',
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'UPDATEMAN',
@@ -116,6 +130,7 @@ export default {
     {
       codeName: 'UpdateDate',
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATEDATE',
@@ -124,6 +139,7 @@ export default {
     {
       codeName: 'PkgFolder',
       logicName: '安装包路径',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 250,
       name: 'PKGFOLDER',
@@ -132,6 +148,7 @@ export default {
     {
       codeName: 'PrdTag2',
       logicName: '产品标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PRDTAG2',
@@ -140,6 +157,7 @@ export default {
     {
       codeName: 'PrdSN',
       logicName: '产品编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRDSN',
@@ -148,6 +166,7 @@ export default {
     {
       codeName: 'PrdTag',
       logicName: '产品标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PRDTAG',
@@ -156,6 +175,7 @@ export default {
     {
       codeName: 'PSCorePrdCatId',
       logicName: '产品分类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSCOREPRDCATID',
@@ -164,6 +184,7 @@ export default {
     {
       codeName: 'PSCorePrdCatName',
       logicName: '产品分类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSCOREPRDCATNAME',
@@ -172,6 +193,7 @@ export default {
     {
       codeName: 'PSCorePrdCatPath',
       logicName: '产品分类路径',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSCOREPRDCATPATH',
@@ -180,6 +202,7 @@ export default {
     {
       codeName: 'HttpUrlToRepo',
       logicName: 'Http仓库地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'HTTPURLTOREPO',
@@ -188,6 +211,7 @@ export default {
     {
       codeName: 'Memo',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 4000,
       name: 'MEMO',
@@ -196,6 +220,7 @@ export default {
     {
       codeName: 'FullPath',
       logicName: '完全路径',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'FULLPATH',
@@ -204,6 +229,7 @@ export default {
     {
       codeName: 'CurrentVersion',
       logicName: '当前版本',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CURRENTVERSION',
@@ -212,6 +238,7 @@ export default {
     {
       codeName: 'Path',
       logicName: '路径',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PATH',
@@ -220,6 +247,7 @@ export default {
     {
       codeName: 'AvatarUrl',
       logicName: '图标路径',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'AVATARURL',
@@ -228,6 +256,7 @@ export default {
     {
       codeName: 'FullName',
       logicName: '完全名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'FULLNAME',
@@ -236,6 +265,7 @@ export default {
     {
       codeName: 'SettingUrl',
       logicName: '设置地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'SETTINGURL',

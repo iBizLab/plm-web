@@ -127,7 +127,7 @@ export default {
                         id: 'name',
                       },
                       {
-                        dataType: 1,
+                        dataType: 9,
                         enableCond: 3,
                         labelPos: 'TOP',
                         labelWidth: 130,

@@ -341,7 +341,7 @@ export default {
         },
         {
           clconvertMode: 'FRONT',
-          dataItemName: 'state',
+          dataItemName: 'state_text',
           excelCaption: '状态',
           appCodeListId: 'plmweb.testmgmt__case_state',
           appDEFieldId: 'state',
@@ -381,7 +381,7 @@ export default {
         },
         {
           clconvertMode: 'FRONT',
-          dataItemName: 'level',
+          dataItemName: 'level_text',
           excelCaption: '重要程度',
           appCodeListId: 'plmweb.testmgmt__test_case_level',
           appDEFieldId: 'level',
@@ -400,7 +400,7 @@ export default {
         },
         {
           clconvertMode: 'FRONT',
-          dataItemName: 'type',
+          dataItemName: 'type_text',
           excelCaption: '用例类型',
           appCodeListId: 'plmweb.testmgmt__test_case_type',
           appDEFieldId: 'type',
@@ -435,6 +435,26 @@ export default {
           widthUnit: 'PX',
           enableSort: true,
           id: 'suite_id',
+        },
+        {
+          clconvertMode: 'FRONT',
+          dataItemName: 'review_result_state',
+          excelCaption: '评审结果',
+          appCodeListId: 'plmweb.testmgmt__review_result',
+          appDEFieldId: 'review_result_state',
+          valueType: 'SIMPLE',
+          aggMode: 'NONE',
+          align: 'LEFT',
+          caption: '评审结果',
+          codeName: 'review_result_state',
+          columnType: 'DEFGRIDCOLUMN',
+          hideMode: 1,
+          noPrivDisplayMode: 1,
+          width: 250,
+          widthUnit: 'PX',
+          enableSort: true,
+          hideDefault: true,
+          id: 'review_result_state',
         },
         {
           clconvertMode: 'FRONT',
@@ -544,6 +564,12 @@ export default {
           appDEFieldId: 'state',
           valueType: 'SIMPLE',
           dataType: 25,
+          id: 'state_text',
+        },
+        {
+          appDEFieldId: 'state',
+          valueType: 'SIMPLE',
+          dataType: 25,
           id: 'state',
         },
         {
@@ -556,7 +582,19 @@ export default {
           appDEFieldId: 'level',
           valueType: 'SIMPLE',
           dataType: 25,
+          id: 'level_text',
+        },
+        {
+          appDEFieldId: 'level',
+          valueType: 'SIMPLE',
+          dataType: 25,
           id: 'level',
+        },
+        {
+          appDEFieldId: 'type',
+          valueType: 'SIMPLE',
+          dataType: 25,
+          id: 'type_text',
         },
         {
           appDEFieldId: 'type',
@@ -575,6 +613,12 @@ export default {
           valueType: 'SIMPLE',
           dataType: 25,
           id: 'suite_id',
+        },
+        {
+          appDEFieldId: 'review_result_state',
+          valueType: 'SIMPLE',
+          dataType: 25,
+          id: 'review_result_state',
         },
         {
           appDEFieldId: 'update_man',
@@ -664,6 +708,11 @@ export default {
             singleSelect: true,
             appCodeListId: 'plmweb.testmgmt__case_state',
             editorType: 'DROPDOWNLIST',
+            editorItems: [
+              {
+                id: 'state',
+              },
+            ],
             valueType: 'SIMPLE',
             editable: true,
             id: 'state',
@@ -774,6 +823,11 @@ export default {
             singleSelect: true,
             appCodeListId: 'plmweb.testmgmt__test_case_level',
             editorType: 'DROPDOWNLIST',
+            editorItems: [
+              {
+                id: 'level',
+              },
+            ],
             valueType: 'SIMPLE',
             editable: true,
             id: 'level',
@@ -791,6 +845,11 @@ export default {
             singleSelect: true,
             appCodeListId: 'plmweb.testmgmt__test_case_type',
             editorType: 'DROPDOWNLIST',
+            editorItems: [
+              {
+                id: 'type',
+              },
+            ],
             valueType: 'SIMPLE',
             editable: true,
             id: 'type',
@@ -947,7 +1006,7 @@ export default {
               uiactionId: 'set_state@test_case',
               uiactionTarget: 'MULTIKEY',
               valid: true,
-              caption: '设置评审状态',
+              caption: '设置状态',
               itemType: 'DEUIACTION',
               controlLogics: [
                 {
@@ -963,7 +1022,7 @@ export default {
                 cssClass: 'fa fa-edit',
                 glyph: 'xf044@FontAwesome',
               },
-              tooltip: '设置评审状态',
+              tooltip: '设置状态',
               showCaption: true,
               showIcon: true,
               id: 'deuiaction2',

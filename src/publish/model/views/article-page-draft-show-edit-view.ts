@@ -698,7 +698,7 @@ export default {
                                 id: 'usr0229502203',
                               },
                               aggMode: 'NONE',
-                              align: 'RIGHT',
+                              align: 'CENTER',
                               caption: '操作',
                               codeName: 'uagridcolumn1',
                               columnType: 'UAGRIDCOLUMN',

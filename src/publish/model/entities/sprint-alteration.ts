@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'is_deleted',
       logicName: '是否删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_DELETED',
       id: 'is_deleted',
@@ -10,6 +11,7 @@ export default {
     {
       codeName: 'type',
       logicName: '类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TYPE',
@@ -18,6 +20,7 @@ export default {
     {
       codeName: 'sprint_status',
       logicName: '迭代状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'SPRINT_STATUS',
@@ -26,6 +29,7 @@ export default {
     {
       codeName: 'rep_date',
       logicName: '燃尽统计日期',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'REP_DATE',
@@ -34,6 +38,7 @@ export default {
     {
       codeName: 'rep_value1',
       logicName: '燃尽统计数值1',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'REP_VALUE1',
       id: 'rep_value1',
@@ -41,6 +46,7 @@ export default {
     {
       codeName: 'rep_value2',
       logicName: '燃尽统计数值2',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'REP_VALUE2',
       id: 'rep_value2',
@@ -48,6 +54,7 @@ export default {
     {
       codeName: 'work_item_completed_at',
       logicName: '工作项完成时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'WORK_ITEM_COMPLETED_AT',
@@ -56,6 +63,7 @@ export default {
     {
       codeName: 'work_item_priority',
       logicName: '工作项优先级',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'WORK_ITEM_PRIORITY',
@@ -67,6 +75,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -78,6 +87,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -90,6 +100,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -101,6 +112,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -112,6 +124,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -123,6 +136,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -131,6 +145,7 @@ export default {
     {
       codeName: 'sprint_id',
       logicName: '迭代标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SPRINT_ID',
@@ -139,6 +154,7 @@ export default {
     {
       codeName: 'work_item_id',
       logicName: '工作项标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'WORK_ITEM_ID',
@@ -147,6 +163,7 @@ export default {
     {
       codeName: 'work_item_title',
       logicName: '标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'WORK_ITEM_TITLE',
@@ -155,6 +172,7 @@ export default {
     {
       codeName: 'sprint_name',
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'SPRINT_NAME',

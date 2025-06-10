@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'PSDENotifyTargets',
       logicName: '通知目标',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'PSDENOTIFYTARGETS',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'PSDENotifyId',
       logicName: '实体通知标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDENOTIFYID',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'PSDENotifyName',
       logicName: '实体通知名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -31,6 +34,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -42,6 +46,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -53,6 +58,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -64,6 +70,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -72,6 +79,7 @@ export default {
     {
       codeName: 'EndPSDEFName',
       logicName: '结束时间属性',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ENDPSDEFNAME',
@@ -80,6 +88,7 @@ export default {
     {
       codeName: 'BeginPSDEFId',
       logicName: '开始时间属性',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BEGINPSDEFID',
@@ -88,6 +97,7 @@ export default {
     {
       codeName: 'BeginPSDEFName',
       logicName: '开始时间属性',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BEGINPSDEFNAME',
@@ -96,6 +106,7 @@ export default {
     {
       codeName: 'PSDEName',
       logicName: '实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDENAME',
@@ -104,6 +115,7 @@ export default {
     {
       codeName: 'EndPSDEFId',
       logicName: '结束时间属性',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ENDPSDEFID',
@@ -112,6 +124,7 @@ export default {
     {
       codeName: 'TaskMode',
       logicName: '附加任务模式',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'TASKMODE',
       id: 'taskmode',
@@ -119,6 +132,7 @@ export default {
     {
       codeName: 'PSDEDSId',
       logicName: '实体数据集',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEDSID',
@@ -127,6 +141,7 @@ export default {
     {
       codeName: 'PSDEDSName',
       logicName: '实体数据集',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEDSNAME',
@@ -135,6 +150,7 @@ export default {
     {
       codeName: 'PSDEId',
       logicName: '实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEID',
@@ -143,6 +159,7 @@ export default {
     {
       codeName: 'UserTag2',
       logicName: '用户标识2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USERTAG2',
@@ -151,6 +168,7 @@ export default {
     {
       codeName: 'UserTag',
       logicName: '用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USERTAG',
@@ -159,6 +177,7 @@ export default {
     {
       codeName: 'MsgType',
       logicName: '通知消息类型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'MSGTYPE',
       id: 'msgtype',
@@ -166,6 +185,7 @@ export default {
     {
       codeName: 'UserTag3',
       logicName: '用户标识3',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 50,
       name: 'USERTAG3',
@@ -174,6 +194,7 @@ export default {
     {
       codeName: 'NotifyTag2',
       logicName: '通知标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'NOTIFYTAG2',
@@ -182,6 +203,7 @@ export default {
     {
       codeName: 'NotifyTag',
       logicName: '通知标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'NOTIFYTAG',
@@ -190,6 +212,7 @@ export default {
     {
       codeName: 'CodeName',
       logicName: '代码名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 50,
       name: 'CODENAME',
@@ -198,6 +221,7 @@ export default {
     {
       codeName: 'ValidFlag',
       logicName: '启用',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'VALIDFLAG',
       id: 'validflag',
@@ -205,6 +229,7 @@ export default {
     {
       codeName: 'TimerMode',
       logicName: '定时触发模式',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'TIMERMODE',
       id: 'timermode',
@@ -212,6 +237,7 @@ export default {
     {
       codeName: 'CustomCond',
       logicName: '自定义条件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CUSTOMCOND',
@@ -222,6 +248,7 @@ export default {
       logicName: '检查间隔',
       maxValueString: '1440',
       minValueString: '0',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'CHECKTIMER',
       id: 'checktimer',
@@ -229,6 +256,7 @@ export default {
     {
       codeName: 'UserTag4',
       logicName: '用户标识4',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 50,
       name: 'USERTAG4',
@@ -239,6 +267,7 @@ export default {
       logicName: '延后通知间隔',
       maxValueString: '1440',
       minValueString: '-1440',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'NOTIFYEND',
       id: 'notifyend',
@@ -248,6 +277,7 @@ export default {
       logicName: '提前通知间隔',
       maxValueString: '1440',
       minValueString: '-1440',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'NOTIFYSTART',
       id: 'notifystart',
@@ -255,6 +285,7 @@ export default {
     {
       codeName: 'NotifySubType',
       logicName: '通知子类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       name: 'NOTIFYSUBTYPE',
@@ -263,6 +294,7 @@ export default {
     {
       codeName: 'PSSysMsgTemplId',
       logicName: '系统消息模板',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSMSGTEMPLID',
@@ -271,6 +303,7 @@ export default {
     {
       codeName: 'PSSysMsgTemplName',
       logicName: '系统消息模板',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSMSGTEMPLNAME',
@@ -279,6 +312,7 @@ export default {
     {
       codeName: 'PSSysMsgQueueId',
       logicName: '系统消息队列',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSMSGQUEUEID',
@@ -287,6 +321,7 @@ export default {
     {
       codeName: 'PSSysMsgQueueName',
       logicName: '系统消息队列',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSMSGQUEUENAME',
@@ -295,6 +330,7 @@ export default {
     {
       codeName: 'Events',
       logicName: '监控事件集',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'EVENTS',
@@ -303,6 +339,7 @@ export default {
     {
       codeName: 'Fields',
       logicName: '监控变化属性集',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'FIELDS',
@@ -311,6 +348,7 @@ export default {
     {
       codeName: 'PSSysSFPluginName',
       logicName: '后端模板插件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSSFPLUGINNAME',
@@ -319,6 +357,7 @@ export default {
     {
       codeName: 'PSSysSFPluginId',
       logicName: '后端模板插件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSSFPLUGINID',

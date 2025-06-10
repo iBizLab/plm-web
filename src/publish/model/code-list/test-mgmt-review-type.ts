@@ -18,6 +18,12 @@ export default {
       value: 'BASELINE',
       id: 'baseline',
     },
+    {
+      codeName: 'idea',
+      text: '需求评审',
+      value: 'IDEA',
+      id: 'idea',
+    },
   ],
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'id',

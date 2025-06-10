@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'principal_id',
       logicName: '关联主体标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRINCIPAL_ID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'owner_type',
       logicName: '所属数据对象',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_TYPE',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'principal_type',
       logicName: '关联主体类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRINCIPAL_TYPE',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'target_type',
       logicName: '关联目标类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TARGET_TYPE',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'target_id',
       logicName: '关联目标标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TARGET_ID',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'target_version_id',
       logicName: '目标对象版本标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TARGET_VERSION_ID',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'type',
       logicName: '页面类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'TYPE',
@@ -59,6 +66,7 @@ export default {
     {
       codeName: 'target_version',
       logicName: '关联目标版本',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'TARGET_VERSION',
@@ -67,6 +75,7 @@ export default {
     {
       codeName: 'baseline',
       logicName: '基线',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'BASELINE',
@@ -75,6 +84,7 @@ export default {
     {
       codeName: 'space_id',
       logicName: '空间标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SPACE_ID',
@@ -83,6 +93,7 @@ export default {
     {
       codeName: 'cur_version_id',
       logicName: '当前版本标识',
+      predefinedType: 'VERSIONID',
       stdDataType: 25,
       stringLength: 100,
       name: 'CUR_VERSION_ID',
@@ -94,6 +105,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -105,6 +117,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -117,6 +130,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -128,6 +142,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -139,6 +154,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -150,6 +166,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -781,6 +798,55 @@ export default {
       appDataEntityId: 'plmweb.baseline_page',
       name: '基线规划页面',
       id: 'baseline_page@baseline_page',
+    },
+    {
+      actionLevel: 100,
+      actionTarget: 'SINGLEDATA',
+      buttonStyle: 'DEFAULT',
+      caption: '版本对比',
+      codeName: 'page_version_comparison',
+      frontAppViewId: 'plmweb.article_page_version_comparison_view',
+      frontProcessType: 'WIZARD',
+      fullCodeName: 'baseline_page_page_version_comparison',
+      navigateContexts: [
+        {
+          key: 'SPACE',
+          value: 'space_id',
+          name: 'SPACE',
+          id: 'space',
+        },
+        {
+          key: 'ARTICLE_PAGE',
+          value: 'target_id',
+          name: 'ARTICLE_PAGE',
+          id: 'article_page',
+        },
+      ],
+      navigateParams: [
+        {
+          key: 'base_version',
+          value: 'base_target_version_id',
+          id: 'base_version',
+        },
+        {
+          key: 'compare_version',
+          value: 'compare_target_version_id',
+          id: 'compare_version',
+        },
+      ],
+      sysImage: {
+        cssClass: 'fa fa-exchange',
+        glyph: 'xf0ec@FontAwesome',
+      },
+      tooltip: '版本对比',
+      uiactionMode: 'FRONT',
+      uiactionTag: 'page_version_comparison',
+      uiactionType: 'DEUIACTION',
+      showBusyIndicator: true,
+      noPrivDisplayMode: 2,
+      appDataEntityId: 'plmweb.baseline_page',
+      name: '页面版本对比',
+      id: 'page_version_comparison@baseline_page',
     },
     {
       actionLevel: 100,

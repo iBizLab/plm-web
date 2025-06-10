@@ -50,6 +50,14 @@ export default {
       id: 'srfparentkey',
     },
   ],
+  appViewParams: [
+    {
+      key: 'SRFRENEWSESSION',
+      value: 'true',
+      name: 'SRFRENEWSESSION',
+      id: 'srfrenewsession',
+    },
+  ],
   sysCss: {
     cssName: 'main-info-common-view',
   },
@@ -2696,6 +2704,75 @@ export default {
                             id: 'grouppanel7',
                           },
                           {
+                            dataType: 25,
+                            enableCond: 3,
+                            ignoreInput: 3,
+                            labelPos: 'LEFT',
+                            labelWidth: 130,
+                            noPrivDisplayMode: 1,
+                            appDEFieldId: 'review_result_state',
+                            editor: {
+                              halign: 'LEFT',
+                              valign: 'MIDDLE',
+                              wrapMode: 'NOWRAP',
+                              appCodeListId: 'plmweb.testmgmt__review_result',
+                              editorType: 'SPAN',
+                              valueType: 'SIMPLE',
+                              editable: true,
+                              id: 'review_result_state',
+                            },
+                            allowEmpty: true,
+                            convertToCodeItemText: true,
+                            caption: '评审结果',
+                            codeName: 'review_result_state',
+                            detailStyle: 'DEFAULT',
+                            detailType: 'FORMITEM',
+                            layoutPos: {
+                              colLG: 21,
+                              colMD: 21,
+                              layout: 'TABLE_24COL',
+                            },
+                            showCaption: true,
+                            id: 'review_result_state',
+                          },
+                          {
+                            layout: {
+                              columnCount: 24,
+                              layout: 'TABLE_24COL',
+                            },
+                            deformDetails: [
+                              {
+                                actionType: 'UIACTION',
+                                buttonStyle: 'STYLE2',
+                                uiactionId: 'check_review_history@idea',
+                                tooltip: '评审历史',
+                                uiactionTarget: 'NONE',
+                                caption: '评审历史',
+                                codeName: 'button5',
+                                detailStyle: 'STYLE2',
+                                detailType: 'BUTTON',
+                                layoutPos: {
+                                  colMD: 24,
+                                  layout: 'TABLE_24COL',
+                                },
+                                sysImage: {
+                                  cssClass: 'fa fa-arrow-circle-o-right',
+                                  glyph: 'xf18e@FontAwesome',
+                                },
+                                id: 'button5',
+                              },
+                            ],
+                            codeName: 'grouppanel14',
+                            detailStyle: 'DEFAULT',
+                            detailType: 'GROUPPANEL',
+                            layoutPos: {
+                              colLG: 3,
+                              colMD: 3,
+                              layout: 'TABLE_24COL',
+                            },
+                            id: 'grouppanel14',
+                          },
+                          {
                             createDV: 'srfreadonly',
                             createDVT: 'APPDATA',
                             dataType: 25,
@@ -2796,7 +2873,6 @@ export default {
                         deformDetails: [
                           {
                             dataType: 6,
-                            enableCond: 3,
                             labelPos: 'LEFT',
                             labelWidth: 130,
                             noPrivDisplayMode: 1,
@@ -2822,11 +2898,103 @@ export default {
                             detailStyle: 'DEFAULT',
                             detailType: 'FORMITEM',
                             layoutPos: {
-                              colMD: 24,
+                              colLG: 21,
+                              colMD: 21,
                               layout: 'TABLE_24COL',
                             },
                             showCaption: true,
                             id: 'estimated_workload',
+                          },
+                          {
+                            layout: {
+                              columnCount: 24,
+                              layout: 'TABLE_24COL',
+                            },
+                            deformDetails: [
+                              {
+                                actionType: 'UIACTION',
+                                buttonStyle: 'STYLE2',
+                                uiactionId:
+                                  'check_estimated_workload_detail@idea',
+                                tooltip: '查看工时明细',
+                                uiactionTarget: 'NONE',
+                                caption: '查看工时明细',
+                                codeName: 'button7',
+                                detailStyle: 'STYLE2',
+                                detailType: 'BUTTON',
+                                layoutPos: {
+                                  colLG: 12,
+                                  colMD: 12,
+                                  layout: 'TABLE_24COL',
+                                },
+                                sysImage: {
+                                  cssClass: 'fa fa-arrow-circle-o-right',
+                                  glyph: 'xf18e@FontAwesome',
+                                },
+                                id: 'button7',
+                              },
+                              {
+                                actionType: 'UIACTION',
+                                buttonStyle: 'STYLE2',
+                                uiactionId: 'add_estimated_workload@idea',
+                                tooltip: '登记工时',
+                                uiactionTarget: 'NONE',
+                                caption: '登记工时',
+                                codeName: 'button6',
+                                detailStyle: 'STYLE2',
+                                detailType: 'BUTTON',
+                                defdgroupLogics: [
+                                  {
+                                    logicCat: 'PANELVISIBLE',
+                                    relatedDetailNames: [
+                                      'is_deleted',
+                                      'is_readonly',
+                                    ],
+                                    groupOP: 'AND',
+                                    defdlogics: [
+                                      {
+                                        groupOP: 'OR',
+                                        defdlogics: [
+                                          {
+                                            condOP: 'EQ',
+                                            defdname: 'is_deleted',
+                                            value: '0',
+                                            logicType: 'SINGLE',
+                                          },
+                                          {
+                                            condOP: 'NOTEQ',
+                                            defdname: 'is_readonly',
+                                            value: 'true',
+                                            logicType: 'SINGLE',
+                                          },
+                                        ],
+                                        logicType: 'GROUP',
+                                      },
+                                    ],
+                                    logicType: 'GROUP',
+                                  },
+                                ],
+                                layoutPos: {
+                                  colLG: 12,
+                                  colMD: 12,
+                                  layout: 'TABLE_24COL',
+                                },
+                                sysImage: {
+                                  cssClass: 'fa fa-plus',
+                                  glyph: 'xf067@FontAwesome',
+                                },
+                                id: 'button6',
+                              },
+                            ],
+                            codeName: 'grouppanel16',
+                            detailStyle: 'DEFAULT',
+                            detailType: 'GROUPPANEL',
+                            layoutPos: {
+                              colLG: 3,
+                              colMD: 3,
+                              layout: 'TABLE_24COL',
+                            },
+                            id: 'grouppanel16',
                           },
                           {
                             dataType: 6,
@@ -3397,6 +3565,14 @@ export default {
                     deformDetails: [
                       {
                         appViewId: 'plmweb.workload_list_view',
+                        navigateParams: [
+                          {
+                            key: 'n_category_eq',
+                            value: 'ACTUAL_WORKLOAD',
+                            rawValue: true,
+                            id: 'n_category_eq',
+                          },
+                        ],
                         parentDataJO: {
                           srfparentdename: 'IDEA',
                           SRFPARENTTYPE: 'CUSTOM',
@@ -3441,6 +3617,63 @@ export default {
                       layout: 'TABLE_24COL',
                     },
                     id: 'grouppanel9',
+                  },
+                  {
+                    layout: {
+                      columnCount: 24,
+                      layout: 'TABLE_24COL',
+                    },
+                    deformDetails: [
+                      {
+                        appViewId: 'plmweb.workload_list_view',
+                        navigateParams: [
+                          {
+                            key: 'n_category_eq',
+                            value: 'ESTIMATED_WORKLOAD',
+                            rawValue: true,
+                            id: 'n_category_eq',
+                          },
+                        ],
+                        parentDataJO: {
+                          srfparentdename: 'IDEA',
+                          SRFPARENTTYPE: 'CUSTOM',
+                        },
+                        codeName: 'druipart9',
+                        detailStyle: 'DEFAULT',
+                        detailType: 'DRUIPART',
+                        layoutPos: {
+                          colMD: 24,
+                          layout: 'TABLE_24COL',
+                        },
+                        showCaption: true,
+                        id: 'druipart9',
+                      },
+                    ],
+                    caption: '预估工时',
+                    codeName: 'grouppanel17',
+                    detailStyle: 'DEFAULT',
+                    detailType: 'GROUPPANEL',
+                    defdgroupLogics: [
+                      {
+                        logicCat: 'PANELVISIBLE',
+                        relatedDetailNames: ['workload_schedule'],
+                        groupOP: 'AND',
+                        defdlogics: [
+                          {
+                            condOP: 'EQ',
+                            defdname: 'workload_schedule',
+                            value: '-1',
+                            logicType: 'SINGLE',
+                          },
+                        ],
+                        logicType: 'GROUP',
+                      },
+                    ],
+                    layoutPos: {
+                      colMD: 24,
+                      layout: 'TABLE_24COL',
+                    },
+                    id: 'grouppanel17',
                   },
                   {
                     layout: {
@@ -3596,6 +3829,61 @@ export default {
                       layout: 'TABLE_24COL',
                     },
                     id: 'grouppanel12',
+                  },
+                  {
+                    layout: {
+                      columnCount: 24,
+                      layout: 'TABLE_24COL',
+                    },
+                    deformDetails: [
+                      {
+                        appViewId: 'plmweb.review_content_list_view',
+                        navigateParams: [
+                          {
+                            key: 'n_target_id_eq',
+                            value: 'idea',
+                            id: 'n_target_id_eq',
+                          },
+                        ],
+                        parentDataJO: {
+                          srfparentdename: 'IDEA',
+                          SRFPARENTTYPE: 'CUSTOM',
+                        },
+                        codeName: 'druipart8',
+                        detailStyle: 'DEFAULT',
+                        detailType: 'DRUIPART',
+                        layoutPos: {
+                          colMD: 24,
+                          layout: 'TABLE_24COL',
+                        },
+                        showCaption: true,
+                        id: 'druipart8',
+                      },
+                    ],
+                    caption: '评审历史',
+                    codeName: 'grouppanel15',
+                    detailStyle: 'DEFAULT',
+                    detailType: 'GROUPPANEL',
+                    defdgroupLogics: [
+                      {
+                        logicCat: 'PANELVISIBLE',
+                        relatedDetailNames: ['id'],
+                        groupOP: 'AND',
+                        defdlogics: [
+                          {
+                            condOP: 'ISNULL',
+                            defdname: 'id',
+                            logicType: 'SINGLE',
+                          },
+                        ],
+                        logicType: 'GROUP',
+                      },
+                    ],
+                    layoutPos: {
+                      colMD: 24,
+                      layout: 'TABLE_24COL',
+                    },
+                    id: 'grouppanel15',
                   },
                 ],
                 codeName: 'right_grouppanel',

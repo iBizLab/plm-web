@@ -200,6 +200,7 @@ export default {
                       ruleInfo: '请填写大写字母和数字',
                       ruleType: 'REGEX',
                       uniqueTag: 'UsrValueRule0312488358',
+                      enableFront: true,
                       name: '大写字母和数字',
                       id: 'plmweb.usrvaluerule0312488358',
                     },

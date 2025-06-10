@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'DynaModelFlag',
       logicName: '扩展模型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'DYNAMODELFLAG',
       id: 'dynamodelflag',
@@ -10,6 +11,7 @@ export default {
     {
       codeName: 'PSAppPortletId',
       logicName: '应用门户部件标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSAPPPORTLETID',
@@ -18,6 +20,7 @@ export default {
     {
       codeName: 'PSAppPortletName',
       logicName: '应用门户部件名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'CodeName',
       logicName: '代码名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 50,
       name: 'CODENAME',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'Memo',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'MEMO',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'ValidFlag',
       logicName: '是否启用',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'VALIDFLAG',
       id: 'validflag',
@@ -50,6 +56,7 @@ export default {
     {
       codeName: 'PortletType',
       logicName: '看板部件类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 40,
       name: 'PORTLETTYPE',
@@ -58,6 +65,7 @@ export default {
     {
       codeName: 'PSDEName',
       logicName: '实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDENAME',
@@ -66,6 +74,7 @@ export default {
     {
       codeName: 'PSDEReportId',
       logicName: '实体报表',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEREPORTID',
@@ -74,6 +83,7 @@ export default {
     {
       codeName: 'PSDEReportName',
       logicName: '实体报表',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEREPORTNAME',
@@ -82,6 +92,7 @@ export default {
     {
       codeName: 'PSDEId',
       logicName: '实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEID',
@@ -90,6 +101,7 @@ export default {
     {
       codeName: 'PSDEListId',
       logicName: '实体列表',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDELISTID',
@@ -98,6 +110,7 @@ export default {
     {
       codeName: 'PSDEListName',
       logicName: '实体列表',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDELISTNAME',
@@ -106,6 +119,7 @@ export default {
     {
       codeName: 'PSDEToolbarName',
       logicName: '工具栏',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDETOOLBARNAME',
@@ -114,6 +128,7 @@ export default {
     {
       codeName: 'PSDEUAGroupId',
       logicName: '界面行为组',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEUAGROUPID',
@@ -122,6 +137,7 @@ export default {
     {
       codeName: 'PSDEToolbarId',
       logicName: '工具栏',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDETOOLBARID',
@@ -130,6 +146,7 @@ export default {
     {
       codeName: 'PSDEUAGroupName',
       logicName: '界面行为组',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEUAGROUPNAME',
@@ -138,6 +155,7 @@ export default {
     {
       codeName: 'PSSysCalendarName',
       logicName: '日历部件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSCALENDARNAME',
@@ -146,6 +164,7 @@ export default {
     {
       codeName: 'PSSysCalendarId',
       logicName: '日历部件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSCALENDARID',
@@ -154,6 +173,7 @@ export default {
     {
       codeName: 'ShowTitleBar',
       logicName: '显示标题栏',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'SHOWTITLEBAR',
       id: 'showtitlebar',
@@ -161,6 +181,7 @@ export default {
     {
       codeName: 'PSSysMapViewId',
       logicName: '地图部件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSMAPVIEWID',
@@ -169,6 +190,7 @@ export default {
     {
       codeName: 'PSSysMapViewName',
       logicName: '地图部件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSMAPVIEWNAME',
@@ -177,6 +199,7 @@ export default {
     {
       codeName: 'PSDEChartId',
       logicName: '实体图表',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDECHARTID',
@@ -185,6 +208,7 @@ export default {
     {
       codeName: 'PSDEDataViewId',
       logicName: '实体数据视图',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEDATAVIEWID',
@@ -193,6 +217,7 @@ export default {
     {
       codeName: 'PSDEChartName',
       logicName: '实体图表',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDECHARTNAME',
@@ -201,6 +226,7 @@ export default {
     {
       codeName: 'PSDEDataViewName',
       logicName: '实体数据视图',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEDATAVIEWNAME',
@@ -209,6 +235,7 @@ export default {
     {
       codeName: 'PSDEFormId',
       logicName: '实体表单',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag: 'RESERVEMODELV2',
@@ -218,6 +245,7 @@ export default {
     {
       codeName: 'PSDEViewId',
       logicName: '系统视图',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEVIEWID',
@@ -226,6 +254,7 @@ export default {
     {
       codeName: 'PSDEFormName',
       logicName: '实体表单',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag: 'RESERVEMODELV2',
@@ -235,6 +264,7 @@ export default {
     {
       codeName: 'PSDEViewName',
       logicName: '系统视图',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEVIEWNAME',
@@ -243,6 +273,7 @@ export default {
     {
       codeName: 'PSSysPortletCatName',
       logicName: '部件分类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSPORTLETCATNAME',
@@ -251,6 +282,7 @@ export default {
     {
       codeName: 'PSSysPortletCatId',
       logicName: '部件分类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSPORTLETCATID',
@@ -259,6 +291,7 @@ export default {
     {
       codeName: 'PSSysAppName',
       logicName: '系统应用',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSAPPNAME',
@@ -267,6 +300,7 @@ export default {
     {
       codeName: 'PSSysAppId',
       logicName: '系统应用',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSAPPID',

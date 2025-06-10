@@ -45,12 +45,14 @@ export default {
       logicType: 'APPUILOGIC',
       builtinAppUILogic: {
         openDataAppView: {
-          refAppViewId: 'plmweb.user_redirect_view',
+          openMode: 'POPUPMODAL',
+          refAppViewId: 'plmweb.user_main_view',
         },
         editMode: true,
         appUILogicRefViews: [
           {
-            refAppViewId: 'plmweb.user_redirect_view',
+            openMode: 'POPUPMODAL',
+            refAppViewId: 'plmweb.user_main_view',
           },
         ],
         builtinLogic: true,
@@ -72,11 +74,9 @@ export default {
   ],
   appViewRefs: [
     {
-      realTitle: '企业用户数据重定向视图',
-      realTitleLanguageRes: {
-        lanResTag: 'PAGE.TITLE.USER.REDIRECTVIEW',
-      },
-      refAppViewId: 'plmweb.user_redirect_view',
+      realOpenMode: 'POPUPMODAL',
+      realTitle: '设置成员信息',
+      refAppViewId: 'plmweb.user_main_view',
       name: 'EDITDATA',
       id: 'editdata',
     },

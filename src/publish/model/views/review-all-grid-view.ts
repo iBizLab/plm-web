@@ -48,13 +48,13 @@ export default {
       builtinAppUILogic: {
         openDataAppView: {
           openMode: 'INDEXVIEWTAB_POPUPMODAL',
-          refAppViewId: 'plmweb.review_main_view',
+          refAppViewId: 'plmweb.review_redirect_view',
         },
         editMode: true,
         appUILogicRefViews: [
           {
             openMode: 'INDEXVIEWTAB_POPUPMODAL',
-            refAppViewId: 'plmweb.review_main_view',
+            refAppViewId: 'plmweb.review_redirect_view',
           },
         ],
         builtinLogic: true,
@@ -79,17 +79,6 @@ export default {
     {
       openMode: 'INDEXVIEWTAB_POPUPMODAL',
       realOpenMode: 'INDEXVIEWTAB_POPUPMODAL',
-      realTitle: '评审主视图',
-      realTitleLanguageRes: {
-        lanResTag: 'PAGE.TITLE.REVIEW.MAIN_VIEW',
-      },
-      refAppViewId: 'plmweb.review_main_view',
-      name: 'EDITDATA',
-      id: 'editdata',
-    },
-    {
-      openMode: 'INDEXVIEWTAB_POPUPMODAL',
-      realOpenMode: 'INDEXVIEWTAB_POPUPMODAL',
       realTitle: '评审新建向导',
       realTitleLanguageRes: {
         lanResTag: 'PAGE.TITLE.REVIEW.CREATE_WIZARD_VIEW',
@@ -97,6 +86,17 @@ export default {
       refAppViewId: 'plmweb.review_wizard_create_wizard_view',
       name: 'NEWDATA',
       id: 'newdata',
+    },
+    {
+      openMode: 'INDEXVIEWTAB_POPUPMODAL',
+      realOpenMode: 'INDEXVIEWTAB_POPUPMODAL',
+      realTitle: '评审数据重定向视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.REVIEW.REDIRECTVIEW',
+      },
+      refAppViewId: 'plmweb.review_redirect_view',
+      name: 'EDITDATA',
+      id: 'editdata',
     },
   ],
   controls: [
@@ -117,7 +117,8 @@ export default {
               itemName: 'deuiaction1',
               logicTag: 'toolbar',
               logicType: 'SCRIPT',
-              scriptCode: 'context.srfreadonly != true',
+              scriptCode:
+                '(context.srfreadonly != true)&&((context.library != null) || (context.library != undefined))',
               triggerType: 'ITEMVISIBLE',
               id: 'deuiaction1',
             },
@@ -133,6 +134,34 @@ export default {
           showCaption: true,
           showIcon: true,
           id: 'deuiaction1',
+        },
+        {
+          actionLevel: 100,
+          noPrivDisplayMode: 2,
+          uiactionId: 'new_idea_review@review',
+          uiactionTarget: 'NONE',
+          valid: true,
+          caption: '新建评审',
+          itemType: 'DEUIACTION',
+          controlLogics: [
+            {
+              itemName: 'deuiaction2',
+              logicTag: 'toolbar',
+              logicType: 'SCRIPT',
+              scriptCode:
+                '(context.srfreadonly != true)&&((context.product != null) || (context.product != undefined))',
+              triggerType: 'ITEMVISIBLE',
+              id: 'idea',
+            },
+          ],
+          sysImage: {
+            cssClass: 'fa fa-plus',
+            glyph: 'xf067@FontAwesome',
+          },
+          tooltip: '新建评审',
+          showCaption: true,
+          showIcon: true,
+          id: 'deuiaction2',
         },
       ],
       xdataControlName: 'grid',
@@ -245,6 +274,22 @@ export default {
                   glyph: 'xf044@FontAwesome',
                 },
                 id: 'u41b27be',
+              },
+              {
+                actionLevel: 100,
+                afterItemType: 'NONE',
+                beforeItemType: 'NONE',
+                buttonStyle: 'DEFAULT',
+                caption: '设置类别',
+                detailType: 'DEUIACTION',
+                uiactionId: 'set_idea_category@review',
+                showCaption: true,
+                showIcon: true,
+                sysImage: {
+                  cssClass: 'fa fa-edit',
+                  glyph: 'xf044@FontAwesome',
+                },
+                id: 'u3479786',
               },
             ],
             appDataEntityId: 'plmweb.review',

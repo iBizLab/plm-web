@@ -472,7 +472,7 @@ export default {
         },
         {
           clconvertMode: 'FRONT',
-          dataItemName: 'priority',
+          dataItemName: 'priority_text',
           excelCaption: '优先级',
           appCodeListId: 'plmweb.projmgmt__work_item_priority',
           appDEFieldId: 'priority',
@@ -508,7 +508,7 @@ export default {
         },
         {
           clconvertMode: 'FRONT',
-          dataItemName: 'severity',
+          dataItemName: 'severity_text',
           excelCaption: '严重程度',
           appCodeListId: 'plmweb.projmgmt__severity',
           appDEFieldId: 'severity',
@@ -527,7 +527,7 @@ export default {
         },
         {
           clconvertMode: 'FRONT',
-          dataItemName: 'reappear_probability',
+          dataItemName: 'reappear_probability_text',
           excelCaption: '复现概率',
           appCodeListId: 'plmweb.projmgmt__reproduction_probability',
           appDEFieldId: 'reappear_probability',
@@ -603,6 +603,12 @@ export default {
           appDEFieldId: 'priority',
           valueType: 'SIMPLE',
           dataType: 25,
+          id: 'priority_text',
+        },
+        {
+          appDEFieldId: 'priority',
+          valueType: 'SIMPLE',
+          dataType: 25,
           id: 'priority',
         },
         {
@@ -615,7 +621,19 @@ export default {
           appDEFieldId: 'severity',
           valueType: 'SIMPLE',
           dataType: 25,
+          id: 'severity_text',
+        },
+        {
+          appDEFieldId: 'severity',
+          valueType: 'SIMPLE',
+          dataType: 25,
           id: 'severity',
+        },
+        {
+          appDEFieldId: 'reappear_probability',
+          valueType: 'SIMPLE',
+          dataType: 25,
+          id: 'reappear_probability_text',
         },
         {
           appDEFieldId: 'reappear_probability',
@@ -915,6 +933,11 @@ export default {
             singleSelect: true,
             appCodeListId: 'plmweb.projmgmt__work_item_priority',
             editorType: 'DROPDOWNLIST',
+            editorItems: [
+              {
+                id: 'priority',
+              },
+            ],
             valueType: 'SIMPLE',
             editable: true,
             id: 'priority',
@@ -932,6 +955,11 @@ export default {
             singleSelect: true,
             appCodeListId: 'plmweb.projmgmt__severity',
             editorType: 'DROPDOWNLIST',
+            editorItems: [
+              {
+                id: 'severity',
+              },
+            ],
             valueType: 'SIMPLE',
             editable: true,
             id: 'severity',
@@ -949,6 +977,11 @@ export default {
             singleSelect: true,
             appCodeListId: 'plmweb.projmgmt__reproduction_probability',
             editorType: 'DROPDOWNLIST',
+            editorItems: [
+              {
+                id: 'reappear_probability',
+              },
+            ],
             valueType: 'SIMPLE',
             editable: true,
             id: 'reappear_probability',

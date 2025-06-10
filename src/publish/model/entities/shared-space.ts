@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'is_shared',
       logicName: '是否开启共享',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'IS_SHARED',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'shared_pages',
       logicName: '共享页面标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 4000,
       name: 'SHARED_PAGES',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'expiration_date',
       logicName: '共享有效期',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'EXPIRATION_DATE',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'access_password',
       logicName: '访问密码',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ACCESS_PASSWORD',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'show_title',
       logicName: '共享展示标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SHOW_TITLE',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'show_logo',
       logicName: '共享展示图标',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SHOW_LOGO',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'scope_type',
       logicName: '所属',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'SCOPE_TYPE',
@@ -59,6 +66,7 @@ export default {
     {
       codeName: 'shared_by',
       logicName: '共享人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SHARED_BY',
@@ -67,6 +75,7 @@ export default {
     {
       codeName: 'shared_time',
       logicName: '共享时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'SHARED_TIME',
@@ -78,6 +87,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -89,6 +99,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '空间名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -255,6 +266,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '获取共享空间标题',
       id: 'get_shared_title',

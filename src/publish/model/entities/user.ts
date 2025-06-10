@@ -18,6 +18,7 @@ export default {
       ],
       pagingSize: 50,
       defaultMode: true,
+      appDataEntityId: 'plmweb.user',
       textAppDEFieldId: 'display_name',
       valueAppDEFieldId: 'id',
       name: 'DEFAULT',
@@ -28,6 +29,7 @@ export default {
     {
       codeName: 'display_name',
       logicName: '姓名',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -37,6 +39,7 @@ export default {
     {
       codeName: 'email',
       logicName: '邮箱',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'EMAIL',
@@ -45,6 +48,7 @@ export default {
     {
       codeName: 'mobile',
       logicName: '手机号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'MOBILE',
@@ -53,6 +57,7 @@ export default {
     {
       codeName: 'password',
       logicName: '密码',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PASSWORD',
@@ -61,6 +66,7 @@ export default {
     {
       codeName: 'employee_number',
       logicName: '工号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'EMPLOYEE_NUMBER',
@@ -69,6 +75,7 @@ export default {
     {
       codeName: 'avatar',
       logicName: '头像',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'AVATAR',
@@ -77,6 +84,7 @@ export default {
     {
       codeName: 'status',
       logicName: '状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'STATUS',
@@ -85,6 +93,7 @@ export default {
     {
       codeName: 'report_flag',
       logicName: '统计',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'REPORT_FLAG',
       id: 'report_flag',
@@ -92,6 +101,7 @@ export default {
     {
       codeName: 'user_id',
       logicName: '用户ID',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USER_ID',
@@ -100,6 +110,7 @@ export default {
     {
       codeName: 'title',
       logicName: '职位',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TITLE',
@@ -111,6 +122,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -122,6 +134,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '登录名',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -134,6 +147,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -145,6 +159,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -156,6 +171,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -167,6 +183,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -175,6 +192,7 @@ export default {
     {
       codeName: 'department_id',
       logicName: '部门标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DEPARTMENT_ID',
@@ -183,6 +201,7 @@ export default {
     {
       codeName: 'job_id',
       logicName: '岗位标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'JOB_ID',
@@ -191,6 +210,7 @@ export default {
     {
       codeName: 'job_name',
       logicName: '职位名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'JOB_NAME',
@@ -199,6 +219,7 @@ export default {
     {
       codeName: 'department_name',
       logicName: '部门',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'DEPARTMENT_NAME',
@@ -207,6 +228,7 @@ export default {
     {
       codeName: 'organization_id',
       logicName: '组织标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ORGANIZATION_ID',
@@ -215,6 +237,7 @@ export default {
     {
       codeName: 'organization_name',
       logicName: '组织名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'ORGANIZATION_NAME',

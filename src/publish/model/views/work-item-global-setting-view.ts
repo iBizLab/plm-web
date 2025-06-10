@@ -301,6 +301,11 @@ export default {
             appViewId: 'plmweb.work_item_state_grid_view',
             id: 'dritem2',
           },
+          {
+            caption: '数据字典',
+            appViewId: 'plmweb.dictionary_data_work_item_dictionary_grid_view',
+            id: 'dictionary',
+          },
         ],
         dataRelationTag: 'global_setting_view_DR',
         editItemCapLanguageRes: {

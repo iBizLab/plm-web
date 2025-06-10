@@ -212,6 +212,12 @@ export default {
             panelItems: [
               {
                 rawItem: {
+                  rawItemParams: [
+                    {
+                      key: 'routeattributekeys',
+                      value: 'category',
+                    },
+                  ],
                   predefinedType: 'NAV_POS',
                   id: 'nav_pos',
                 },

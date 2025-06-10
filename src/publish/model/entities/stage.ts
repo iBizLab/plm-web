@@ -18,6 +18,7 @@ export default {
       ],
       pagingSize: 50,
       defaultMode: true,
+      appDataEntityId: 'plmweb.stage',
       textAppDEFieldId: 'name',
       valueAppDEFieldId: 'id',
       name: 'DEFAULT',
@@ -28,6 +29,7 @@ export default {
     {
       codeName: 'color',
       logicName: '颜色',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'COLOR',
@@ -36,6 +38,7 @@ export default {
     {
       codeName: 'style',
       logicName: '背景样式',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'STYLE',
@@ -44,6 +47,7 @@ export default {
     {
       codeName: 'is_current',
       logicName: '是否发布当前阶段',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_CURRENT',
       id: 'is_current',
@@ -51,6 +55,7 @@ export default {
     {
       codeName: 'operated_time',
       logicName: '操作时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'OPERATED_TIME',
@@ -59,6 +64,7 @@ export default {
     {
       codeName: 'type',
       logicName: '阶段类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TYPE',
@@ -67,6 +73,7 @@ export default {
     {
       codeName: 'p_color',
       logicName: '父颜色',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'P_COLOR',
@@ -75,6 +82,7 @@ export default {
     {
       codeName: 'p_type',
       logicName: '父阶段类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'P_TYPE',
@@ -83,6 +91,7 @@ export default {
     {
       codeName: 'p_sequence',
       logicName: '父阶段排序',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'P_SEQUENCE',
       id: 'p_sequence',
@@ -90,6 +99,7 @@ export default {
     {
       codeName: 'sequence',
       logicName: '排序',
+      predefinedType: 'ORDERVALUE',
       stdDataType: 6,
       name: 'SEQUENCE',
       id: 'sequence',
@@ -100,6 +110,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -111,6 +122,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -123,6 +135,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -134,6 +147,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -145,6 +159,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -156,6 +171,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -164,6 +180,7 @@ export default {
     {
       codeName: 'release_id',
       logicName: '项目发布标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RELEASE_ID',
@@ -172,6 +189,7 @@ export default {
     {
       codeName: 'pid',
       logicName: '父标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PID',
@@ -180,6 +198,7 @@ export default {
     {
       codeName: 'pname',
       logicName: '父名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PNAME',
@@ -214,6 +233,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',

@@ -22,6 +22,19 @@ export default {
       id: 'engine',
     },
   ],
+  appViewLogics: [
+    {
+      eventNames: 'onCreated',
+      logicTrigger: 'CTRLEVENT',
+      logicType: 'SCRIPT',
+      ctrlName: 'form',
+      scriptCode:
+        "ctrl.evt.on('onFormDataChange', evt => {\r\n    const { name, value } = evt;\r\n    if (name === 'product_id') {\r\n        view.redrawView({\r\n            context: { product: value, dynamicnew: true },\r\n            params: {},\r\n            isReloadModel: true,\r\n        });\r\n    }\r\n});",
+      builtinLogic: true,
+      name: 'LOGIC_REDRAW_VIEW',
+      id: 'logic_redraw_view',
+    },
+  ],
   appViewNavContexts: [
     {
       key: 'PRODUCT',
@@ -116,82 +129,61 @@ export default {
                   id: 'title',
                 },
                 {
-                  layout: {
-                    columnCount: 24,
-                    layout: 'TABLE_24COL',
-                  },
-                  deformDetails: [
-                    {
-                      dataType: 21,
-                      enableCond: 3,
-                      itemHeight: 450,
-                      labelPos: 'NONE',
-                      noPrivDisplayMode: 1,
-                      appDEFieldId: 'description',
-                      editor: {
-                        editorHeight: 450,
-                        editorParams: {
-                          USERINSCRIPT:
-                            'value.replaceAll(/\\@\\{\\"(user)?id\\":\\"(.+?)\\",\\"name\\":\\"(.+?)\\"\\}/g,(x, user, id, name) => {return controller.getNodeInfo({ id, name })}).replaceAll(/\\@\\{userid=(.+?),name=(.+?)\\}/g,(x, id, name) => {return controller.getNodeInfo({ id, name })})',
-                          LINKVIEWID: 'plmweb.recent_custom_redirect_view',
-                          MAXHEIGHT: '450',
-                          QUOTECODELISTMAP:
-                            '{"type":"plmweb.base__recent_visite"}',
-                          QUOTEFIELDMAP:
-                            '{"identifier":"show_identifier","name":"name","id":"id","owner_subtype":"owner_subtype","owner_id":"owner_id","owner_type":"owner_type","recent_parent":"recent_parent"}',
-                          QUOTEPARAMS: '{"sort":"update_time,desc"}',
-                          MODE: 'default',
-                          QUOTEINSCRIPT:
-                            'value.replaceAll(/\\#\\{(\\".+?\\":\\".+?\\")(,\\"icon\\":\\"((.|[\\t\\r\\f\\n\\s])+?)\\")*\\}/g,(x, value, icon) => { const item = JSON.parse("{" + value + "}"); if (icon) { icon = icon.slice(8).slice(1, -1); } return controller.getNodeInfo({ icon, ...item })})',
-                          USERSCRIPT:
-                            '`@{"id":"${data.id}","name":"${data.name}"}`',
-                          QUOTESCRIPT:
-                            '`#{"id":"${data.id}","name":"${data.name}","identifier":"${data.identifier}","owner_id":"${data.owner_id}","owner_type":"${data.owner_type}","owner_subtype":"${data.owner_subtype}","recent_parent":"${data.recent_parent}"}`',
-                          USERURL:
-                            "`${context.library ? `libraries/${context.library}/library_members/fetch_default` : context.product ? `products/${context.product}/product_members/fetch_default` : context.project ? `projects/${context.project}/project_members/fetch_default` : context.discuss_topic? `discuss_topics/${context.discuss_topic}/discuss_members/fetch_default` : ''}`",
-                          USERFIELDMAP: '{"id":"user_id","name":"name"}',
-                          INSERTKEYS:
-                            '[{"index":66,"keys":["marker"]},{"index":5,"keys":["paintformat"]}]',
-                          QUOTEURL: '`recents/fetch_recent_access`',
-                        },
-                        editorStyle: 'COLLAPSE',
-                        editorType: 'HTMLEDITOR',
-                        sysPFPluginId: 'comment',
-                        placeHolder: '输入描述',
-                        valueType: 'SIMPLE',
-                        editable: true,
-                        id: 'description',
-                      },
-                      allowEmpty: true,
-                      capLanguageRes: {
-                        lanResTag:
-                          'CONTROL.DEFORM.IDEA.QUICK_CREATE.FORMITEM.DESCRIPTION',
-                      },
-                      caption: '描述',
-                      codeName: 'description',
-                      detailStyle: 'DEFAULT',
-                      detailType: 'FORMITEM',
-                      layoutPos: {
-                        colMD: 24,
-                        layout: 'TABLE_24COL',
-                      },
-                      id: 'description',
+                  dataType: 21,
+                  enableCond: 3,
+                  itemHeight: 470,
+                  labelPos: 'TOP',
+                  labelWidth: 130,
+                  noPrivDisplayMode: 1,
+                  appDEFieldId: 'description',
+                  editor: {
+                    editorHeight: 450,
+                    editorParams: {
+                      USERINSCRIPT:
+                        'value.replaceAll(/\\@\\{\\"(user)?id\\":\\"(.+?)\\",\\"name\\":\\"(.+?)\\"\\}/g,(x, user, id, name) => {return controller.getNodeInfo({ id, name })}).replaceAll(/\\@\\{userid=(.+?),name=(.+?)\\}/g,(x, id, name) => {return controller.getNodeInfo({ id, name })})',
+                      LINKVIEWID: 'plmweb.recent_custom_redirect_view',
+                      MAXHEIGHT: '450',
+                      QUOTECODELISTMAP: '{"type":"plmweb.base__recent_visite"}',
+                      QUOTEFIELDMAP:
+                        '{"identifier":"show_identifier","name":"name","id":"id","owner_subtype":"owner_subtype","owner_id":"owner_id","owner_type":"owner_type","recent_parent":"recent_parent"}',
+                      QUOTEPARAMS: '{"sort":"update_time,desc"}',
+                      MODE: 'default',
+                      QUOTEINSCRIPT:
+                        'value.replaceAll(/\\#\\{(\\".+?\\":\\".+?\\")(,\\"icon\\":\\"((.|[\\t\\r\\f\\n\\s])+?)\\")*\\}/g,(x, value, icon) => { const item = JSON.parse("{" + value + "}"); if (icon) { icon = icon.slice(8).slice(1, -1); } return controller.getNodeInfo({ icon, ...item })})',
+                      USERSCRIPT:
+                        '`@{"id":"${data.id}","name":"${data.name}"}`',
+                      QUOTESCRIPT:
+                        '`#{"id":"${data.id}","name":"${data.name}","identifier":"${data.identifier}","owner_id":"${data.owner_id}","owner_type":"${data.owner_type}","owner_subtype":"${data.owner_subtype}","recent_parent":"${data.recent_parent}"}`',
+                      USERURL:
+                        "`${context.library ? `libraries/${context.library}/library_members/fetch_default` : context.product ? `products/${context.product}/product_members/fetch_default` : context.project ? `projects/${context.project}/project_members/fetch_default` : context.discuss_topic? `discuss_topics/${context.discuss_topic}/discuss_members/fetch_default` : ''}`",
+                      USERFIELDMAP: '{"id":"user_id","name":"name"}',
+                      INSERTKEYS:
+                        '[{"index":66,"keys":["marker"]},{"index":5,"keys":["paintformat"]}]',
+                      QUOTEURL: '`recents/fetch_recent_access`',
                     },
-                  ],
+                    editorStyle: 'COLLAPSE',
+                    editorType: 'HTMLEDITOR',
+                    sysPFPluginId: 'comment',
+                    placeHolder: '输入描述',
+                    valueType: 'SIMPLE',
+                    editable: true,
+                    id: 'description',
+                  },
+                  allowEmpty: true,
                   capLanguageRes: {
                     lanResTag:
-                      'CONTROL.DEFORM.IDEA.QUICK_CREATE.GROUPPANEL.GROUPPANEL3',
+                      'CONTROL.DEFORM.IDEA.QUICK_CREATE.FORMITEM.DESCRIPTION',
                   },
                   caption: '描述',
-                  codeName: 'grouppanel3',
+                  codeName: 'description',
                   detailStyle: 'DEFAULT',
-                  detailType: 'GROUPPANEL',
+                  detailType: 'FORMITEM',
                   layoutPos: {
                     colMD: 24,
                     layout: 'TABLE_24COL',
                   },
                   showCaption: true,
-                  id: 'grouppanel3',
+                  id: 'description',
                 },
                 {
                   actionGroupExtractMode: 'ITEM',
@@ -488,7 +480,7 @@ export default {
                       'CONTROL.DEFORM.IDEA.QUICK_CREATE.GROUPPANEL.GROUPPANEL2',
                   },
                   caption: '附件',
-                  codeName: 'grouppanel2',
+                  codeName: 'attachment',
                   detailStyle: 'DEFAULT',
                   detailType: 'GROUPPANEL',
                   layoutPos: {
@@ -496,10 +488,10 @@ export default {
                     layout: 'TABLE_24COL',
                   },
                   showCaption: true,
-                  id: 'grouppanel2',
+                  id: 'attachment',
                 },
               ],
-              codeName: 'grouppanel1',
+              codeName: 'left_group',
               detailStyle: 'DEFAULT',
               detailType: 'GROUPPANEL',
               layoutPos: {
@@ -509,7 +501,10 @@ export default {
                 colXS: 16,
                 layout: 'TABLE_24COL',
               },
-              id: 'grouppanel1',
+              sysCss: {
+                cssName: 'new_create_style',
+              },
+              id: 'left_group',
             },
             {
               layout: {
@@ -560,13 +555,26 @@ export default {
                   defdgroupLogics: [
                     {
                       logicCat: 'ITEMENABLE',
-                      relatedDetailNames: ['checkid'],
+                      relatedDetailNames: ['checkid', 'dynamic_new'],
                       groupOP: 'AND',
                       defdlogics: [
                         {
-                          condOP: 'ISNULL',
-                          defdname: 'checkid',
-                          logicType: 'SINGLE',
+                          groupOP: 'OR',
+                          defdlogics: [
+                            {
+                              condOP: 'ISNULL',
+                              defdname: 'checkid',
+                              logicType: 'SINGLE',
+                              name: 'checkid值为空(Nil)',
+                              id: 'checkid值为空(nil)',
+                            },
+                            {
+                              condOP: 'ISNOTNULL',
+                              defdname: 'dynamic_new',
+                              logicType: 'SINGLE',
+                            },
+                          ],
+                          logicType: 'GROUP',
                         },
                       ],
                       logicType: 'GROUP',
@@ -607,6 +615,31 @@ export default {
                     layout: 'TABLE_24COL',
                   },
                   id: 'checkid',
+                },
+                {
+                  createDV: 'dynamicnew',
+                  createDVT: 'APPDATA',
+                  dataType: 25,
+                  enableCond: 3,
+                  labelPos: 'NONE',
+                  noPrivDisplayMode: 1,
+                  editor: {
+                    editorType: 'HIDDEN',
+                    valueType: 'SIMPLE',
+                    editable: true,
+                    id: 'dynamic_new',
+                  },
+                  allowEmpty: true,
+                  hidden: true,
+                  caption: '动态新建',
+                  codeName: 'dynamic_new',
+                  detailStyle: 'DEFAULT',
+                  detailType: 'FORMITEM',
+                  layoutPos: {
+                    colMD: 24,
+                    layout: 'TABLE_24COL',
+                  },
+                  id: 'dynamic_new',
                 },
                 {
                   dataType: 25,
@@ -673,6 +706,8 @@ export default {
                           condOP: 'ISNOTNULL',
                           defdname: 'product_name',
                           logicType: 'SINGLE',
+                          name: 'product_name值不为空(NotNil)',
+                          id: 'product_name值不为空(notnil)',
                         },
                       ],
                       logicType: 'GROUP',
@@ -801,6 +836,8 @@ export default {
                           condOP: 'ISNOTNULL',
                           defdname: 'product_name',
                           logicType: 'SINGLE',
+                          name: 'product_name值不为空(NotNil)',
+                          id: 'product_name值不为空(notnil)',
                         },
                       ],
                       logicType: 'GROUP',
@@ -821,12 +858,22 @@ export default {
                   labelWidth: 130,
                   noPrivDisplayMode: 1,
                   editor: {
-                    appCodeListId: 'plmweb.prodmgmt__product_customer',
+                    dropDownView: true,
+                    enablePickupView: true,
+                    singleSelect: true,
+                    pickupAppViewId:
+                      'plmweb.customer_pc_customer_pickup_tree_view',
+                    forceSelection: true,
+                    showTrigger: true,
+                    valueItemName: 'customer_id',
                     editorParams: {
                       multiple: 'true',
-                      'SRFNAVPARAM.n_product_id_eq': '%product%',
+                      DROPDOWNVIEW: 'TRUE',
+                      AC: 'FALSE',
+                      TRIGGER: 'TRUE',
+                      PICKUPVIEW: 'TRUE',
                     },
-                    editorType: 'MDROPDOWNLIST',
+                    editorType: 'PICKEREX_DROPDOWNVIEW',
                     editorItems: [
                       {
                         id: 'customer_id',
@@ -835,17 +882,10 @@ export default {
                     placeHolder: '选择客户',
                     valueType: 'SIMPLE',
                     editable: true,
-                    navigateParams: [
-                      {
-                        key: 'n_product_id_eq',
-                        value: 'product',
-                        id: 'n_product_id_eq',
-                      },
-                    ],
                     id: 'customer',
                   },
+                  resetItemNames: ['product_name'],
                   allowEmpty: true,
-                  needCodeListConfig: true,
                   caption: '客户',
                   codeName: 'customer',
                   detailStyle: 'DEFAULT',
@@ -860,6 +900,8 @@ export default {
                           condOP: 'ISNOTNULL',
                           defdname: 'product_name',
                           logicType: 'SINGLE',
+                          name: 'product_name值不为空(NotNil)',
+                          id: 'product_name值不为空(notnil)',
                         },
                       ],
                       logicType: 'GROUP',
@@ -1103,7 +1145,7 @@ export default {
                 lanResTag: 'CONTROL.DEFORM.IDEA.QUICK_CREATE.GROUPPANEL.GROUP1',
               },
               caption: '需求基本信息',
-              codeName: 'group1',
+              codeName: 'right_group',
               detailStyle: 'DEFAULT',
               detailType: 'GROUPPANEL',
               layoutPos: {
@@ -1113,7 +1155,7 @@ export default {
                 colXS: 8,
                 layout: 'TABLE_24COL',
               },
-              id: 'group1',
+              id: 'right_group',
             },
             {
               dataType: 25,
@@ -1148,10 +1190,10 @@ export default {
             lanResTag: 'CONTROL.DEFORM.IDEA.QUICK_CREATE.FORMPAGE.FORMPAGE1',
           },
           caption: '基本信息',
-          codeName: 'formpage1',
+          codeName: 'formpage',
           detailStyle: 'DEFAULT',
           detailType: 'FORMPAGE',
-          id: 'formpage1',
+          id: 'formpage',
         },
       ],
       layout: {
@@ -1167,6 +1209,18 @@ export default {
       dynaSysMode: 1,
       logicName: '需求快速建立视图_表单',
       appDataEntityId: 'plmweb.idea',
+      controlLogics: [
+        {
+          eventNames: 'onChange',
+          itemName: 'product_name',
+          logicTag: 'form',
+          logicType: 'APPDEUILOGIC',
+          appDEUILogicId: 'reset_product_id',
+          appDataEntityId: 'plmweb.idea',
+          triggerType: 'CTRLEVENT',
+          id: 'reset_ctx',
+        },
+      ],
       controlParam: {
         id: 'form',
       },
@@ -1250,6 +1304,9 @@ export default {
       id: 'quick_create_view_captionbar',
     },
   ],
+  sysCss: {
+    cssName: 'new_create_style',
+  },
   viewLayoutPanel: {
     layoutBodyOnly: true,
     useDefaultLayout: true,

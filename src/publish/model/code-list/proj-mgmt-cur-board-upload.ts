@@ -7,7 +7,6 @@ export default {
   appDataEntityId: 'plmweb.board',
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'id',
-  enableCache: true,
   name: '看板（导入）',
   id: 'plmweb.projmgmt__cur_board_upload',
 };

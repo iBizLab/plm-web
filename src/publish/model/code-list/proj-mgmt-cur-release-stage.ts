@@ -1,14 +1,18 @@
 export default {
+  cacheTimeout: 1000,
   clsAppDEFieldId: 'style',
   codeListTag: 'ProjMgmt__cur_release_stage',
   codeListType: 'DYNAMIC',
   codeName: 'ProjMgmt__cur_release_stage',
   colorAppDEFieldId: 'color',
   emptyText: '未定义',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
   appDEDataSetId: 'fetch_owner',
   appDataEntityId: 'plmweb.stage',
   textAppDEFieldId: 'pname',
   valueAppDEFieldId: 'id',
+  enableCache: true,
   name: '发布所属阶段',
   id: 'plmweb.projmgmt__cur_release_stage',
 };

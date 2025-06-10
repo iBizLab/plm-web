@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'ProjMgmt__task_category',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'ProjMgmt__task_category',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.work_item',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_work_item_category',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'item_10',
@@ -54,6 +60,8 @@ export default {
       id: 'item_80',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '任务类别',
   id: 'plmweb.projmgmt__task_category',

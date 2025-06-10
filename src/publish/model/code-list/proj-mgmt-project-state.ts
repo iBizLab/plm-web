@@ -1,4 +1,5 @@
 export default {
+  cacheTimeout: 1000,
   clsAppDEFieldId: 'style',
   codeListTag: 'ProjMgmt__project_state',
   codeListType: 'DYNAMIC',

@@ -8,7 +8,6 @@ export default {
   pvalueAppDEFieldId: 'pid',
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'id',
-  enableCache: true,
   name: '当前产品需求模块',
   id: 'plmweb.prodmgmt__cur_product_idea_category',
 };

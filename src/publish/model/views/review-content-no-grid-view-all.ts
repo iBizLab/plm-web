@@ -360,8 +360,8 @@ export default {
           batchAddAppViews: [
             {
               openMode: 'POPUPMODAL',
-              refMode: 'TEST_CASE',
-              refAppViewId: 'plmweb.test_case_mpick_up_view2_review',
+              refMode: 'IDEA',
+              refAppViewId: 'plmweb.idea_review_re_idea_view',
             },
           ],
           newDataAppView: {
@@ -375,8 +375,8 @@ export default {
             },
             {
               openMode: 'POPUPMODAL',
-              refMode: 'TEST_CASE',
-              refAppViewId: 'plmweb.test_case_mpick_up_view2_review',
+              refMode: 'IDEA',
+              refAppViewId: 'plmweb.idea_review_re_idea_view',
             },
           ],
           builtinLogic: true,
@@ -454,15 +454,18 @@ export default {
         id: 'newdata',
       },
       {
-        name: 'MPICKUPVIEW:REVIEW_WIZARD',
-        id: 'mpickupview:review_wizard',
+        realOpenMode: 'POPUPMODAL',
+        realTitle: '计划关联需求多项数据选择视图',
+        realTitleLanguageRes: {
+          lanResTag: 'PAGE.TITLE.IDEA.OTHERS_RELATION_IDEA_VIEW',
+        },
+        refAppViewId: 'plmweb.idea_review_re_idea_view',
+        name: 'MPICKUPVIEW:IDEA',
+        id: 'mpickupview:idea',
       },
       {
-        realOpenMode: 'POPUPMODAL',
-        realTitle: '用例实体数据多项选择',
-        refAppViewId: 'plmweb.test_case_mpick_up_view2_review',
-        name: 'MPICKUPVIEW:TEST_CASE',
-        id: 'mpickupview:test_case',
+        name: 'MPICKUPVIEW:REVIEW_WIZARD',
+        id: 'mpickupview:review_wizard',
       },
     ],
     controls: [
@@ -735,12 +738,6 @@ export default {
             valueType: 'OBJECTS',
             dataType: 21,
             id: 'stage_results',
-          },
-          {
-            appDEFieldId: 'target_id',
-            valueType: 'SIMPLE',
-            dataType: 25,
-            id: 'target_id',
           },
           {
             appDEFieldId: 'target_parent_id',

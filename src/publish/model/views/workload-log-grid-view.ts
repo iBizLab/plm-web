@@ -241,6 +241,13 @@ export default {
     ],
     appViewRefs: [
       {
+        realOpenMode: 'POPUPMODAL',
+        realTitle: '修改实际工时视图',
+        refAppViewId: 'plmweb.workload_update_view',
+        name: 'EDITDATA',
+        id: 'editdata',
+      },
+      {
         realTitle: '工时编辑视图',
         realTitleLanguageRes: {
           lanResTag: 'PAGE.TITLE.WORKLOAD.EDITVIEW',
@@ -248,13 +255,6 @@ export default {
         refAppViewId: 'plmweb.workload_edit_view',
         name: 'NEWDATA',
         id: 'newdata',
-      },
-      {
-        realOpenMode: 'POPUPMODAL',
-        realTitle: '修改实际工时视图',
-        refAppViewId: 'plmweb.workload_update_view',
-        name: 'EDITDATA',
-        id: 'editdata',
       },
     ],
     controls: [
@@ -526,6 +526,13 @@ export default {
           appDataEntityId: 'plmweb.workload',
           id: 'fetch',
         },
+        controlNavParams: [
+          {
+            key: 'n_category_eq',
+            value: 'CATEGORY',
+            id: 'n_category_eq',
+          },
+        ],
         removeControlAction: {
           appDEMethodId: 'remove',
           appDataEntityId: 'plmweb.workload',
@@ -538,6 +545,9 @@ export default {
         logicName: '工时日志表格',
         appDataEntityId: 'plmweb.workload',
         controlParam: {
+          ctrlParams: {
+            'SRFNAVPARAM.N_CATEGORY_EQ': '%CATEGORY%',
+          },
           id: 'grid',
         },
         modelId: '9c8feaea1c8f82f29217251a16c21542',

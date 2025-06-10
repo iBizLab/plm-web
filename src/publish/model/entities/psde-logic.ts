@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'applyflag',
       logicName: '扩展状态',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'APPLYFLAG',
       id: 'applyflag',
@@ -10,6 +11,7 @@ export default {
     {
       codeName: 'AttachToPSDEActionName',
       logicName: '附加到指定行为',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ATTACHTOPSDEACTIONNAME',
@@ -18,6 +20,7 @@ export default {
     {
       codeName: 'AttachToPSDEActionId',
       logicName: '附加到指定行为',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ATTACHTOPSDEACTIONID',
@@ -26,6 +29,7 @@ export default {
     {
       codeName: 'DynaModelFlag',
       logicName: '扩展模型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'DYNAMODELFLAG',
       id: 'dynamodelflag',
@@ -33,6 +37,7 @@ export default {
     {
       codeName: 'AttachToPSDEDataSetId',
       logicName: '附加到指定数据集',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ATTACHTOPSDEDATASETID',
@@ -41,6 +46,7 @@ export default {
     {
       codeName: 'AttachToPSDEDataSetName',
       logicName: '附加到指定数据集',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ATTACHTOPSDEDATASETNAME',
@@ -49,6 +55,7 @@ export default {
     {
       codeName: 'TimerPolicy',
       logicName: '定时触发策略',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TIMERPOLICY',
@@ -57,6 +64,7 @@ export default {
     {
       codeName: 'last_state',
       logicName: '最后运行状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'LAST_STATE',
@@ -65,6 +73,7 @@ export default {
     {
       codeName: 'Events',
       logicName: '监控事件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'EVENTS',
@@ -73,6 +82,7 @@ export default {
     {
       codeName: 'EventModel',
       logicName: '事件模型',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'EVENTMODEL',
@@ -81,6 +91,7 @@ export default {
     {
       codeName: 'IgnoreException',
       logicName: '忽略异常',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IGNOREEXCEPTION',
       id: 'ignoreexception',
@@ -88,6 +99,7 @@ export default {
     {
       codeName: 'ThreadMode',
       logicName: '线程模式',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'THREADMODE',
@@ -96,6 +108,7 @@ export default {
     {
       codeName: 'last_start_at',
       logicName: '最后运行时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'LAST_START_AT',
@@ -104,6 +117,7 @@ export default {
     {
       codeName: 'PSDELOGICPARAMS',
       logicName: '逻辑参数',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'PSDELOGICPARAMS',
@@ -112,6 +126,7 @@ export default {
     {
       codeName: 'PSDELogicNodes',
       logicName: '逻辑节点',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'PSDELOGICNODES',
@@ -120,6 +135,7 @@ export default {
     {
       codeName: 'PSDELogicLinks',
       logicName: '逻辑连接',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'PSDELOGICLINKS',
@@ -129,6 +145,7 @@ export default {
       codeName: 'WebHookUrl',
       computeAppDEFLogicId: 'webhook',
       logicName: 'WebHook地址',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'WEBHOOKURL',
@@ -137,6 +154,7 @@ export default {
     {
       codeName: 'success_rate',
       logicName: '成功率',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'SUCCESS_RATE',
       id: 'success_rate',
@@ -144,6 +162,7 @@ export default {
     {
       codeName: 'success_per',
       logicName: '成功率',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'SUCCESS_PER',
       id: 'success_per',
@@ -151,6 +170,7 @@ export default {
     {
       codeName: 'failure_rate',
       logicName: '失败率',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'FAILURE_RATE',
       id: 'failure_rate',
@@ -159,6 +179,7 @@ export default {
       codeName: 'failure_per',
       computeAppDEFLogicId: 'failure_per',
       logicName: '失败率',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'FAILURE_PER',
       id: 'failure_per',
@@ -166,6 +187,7 @@ export default {
     {
       codeName: 'PSDELogicId',
       logicName: '实体处理逻辑标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDELOGICID',
@@ -174,6 +196,7 @@ export default {
     {
       codeName: 'PSDELogicName',
       logicName: '规则名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -186,6 +209,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATEMAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'CREATEMAN',
@@ -197,6 +221,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATEDATE',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATEDATE',
@@ -208,6 +233,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATEMAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'UPDATEMAN',
@@ -219,6 +245,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATEDATE',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATEDATE',
@@ -227,6 +254,7 @@ export default {
     {
       codeName: 'PSDEId',
       logicName: '实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEID',
@@ -235,6 +263,7 @@ export default {
     {
       codeName: 'PSDEName',
       logicName: '实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDENAME',
@@ -243,6 +272,7 @@ export default {
     {
       codeName: 'CodeName',
       logicName: '代码标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       name: 'CODENAME',
@@ -251,6 +281,7 @@ export default {
     {
       codeName: 'LogicSubType',
       logicName: '逻辑子类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       name: 'LOGICSUBTYPE',
@@ -259,6 +290,7 @@ export default {
     {
       codeName: 'ValidFlag',
       logicName: '启用',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'VALIDFLAG',
       id: 'validflag',
@@ -266,6 +298,7 @@ export default {
     {
       codeName: 'LogicType',
       logicName: '逻辑类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 50,
       name: 'LOGICTYPE',
@@ -274,6 +307,7 @@ export default {
     {
       codeName: 'Memo',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'MEMO',
@@ -282,6 +316,7 @@ export default {
     {
       codeName: 'UserTag4',
       logicName: '用户标记4',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 50,
       name: 'USERTAG4',
@@ -290,6 +325,7 @@ export default {
     {
       codeName: 'LogicTag',
       logicName: '逻辑标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'LOGICTAG',
@@ -298,6 +334,7 @@ export default {
     {
       codeName: 'UserTag2',
       logicName: '用户标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'USERTAG2',
@@ -306,6 +343,7 @@ export default {
     {
       codeName: 'LogicTag2',
       logicName: '逻辑标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'LOGICTAG2',
@@ -314,6 +352,7 @@ export default {
     {
       codeName: 'LogicTag3',
       logicName: '逻辑标记3',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'LOGICTAG3',
@@ -322,6 +361,7 @@ export default {
     {
       codeName: 'LogicTag4',
       logicName: '逻辑标记4',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'LOGICTAG4',
@@ -330,6 +370,7 @@ export default {
     {
       codeName: 'UserTag3',
       logicName: '用户标记3',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 50,
       name: 'USERTAG3',
@@ -338,6 +379,7 @@ export default {
     {
       codeName: 'UserTag',
       logicName: '用户标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'USERTAG',
@@ -346,6 +388,7 @@ export default {
     {
       codeName: 'OrderValue',
       logicName: '附加次序',
+      predefinedType: 'ORDERVALUE',
       stdDataType: 9,
       name: 'ORDERVALUE',
       id: 'ordervalue',
@@ -353,6 +396,7 @@ export default {
     {
       codeName: 'extension_tag',
       logicName: '扩展标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'EXTENSION_TAG',
@@ -361,6 +405,7 @@ export default {
     {
       codeName: 'extension_tag2',
       logicName: '扩展标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'EXTENSION_TAG2',
@@ -369,6 +414,7 @@ export default {
     {
       codeName: 'extension_tag3',
       logicName: '扩展标记3',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'EXTENSION_TAG3',
@@ -377,6 +423,7 @@ export default {
     {
       codeName: 'extension_tag4',
       logicName: '扩展标记4',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'EXTENSION_TAG4',
@@ -394,6 +441,7 @@ export default {
       scriptCode:
         'var urlObject = new URL(window.location.href);  \nvar webhookurl = urlObject.origin+ibiz.env.baseUrl+"/"+ibiz.env.appId+"/webhooks/"+data.psdynainstid;\ndata.webhookurl =  webhookurl;\nreturn data;',
       customCode: true,
+      enableFront: true,
       valid: true,
       name: 'WebHook地址',
       id: 'webhook',
@@ -499,6 +547,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '从模板建立规则',
       id: 'create_by_template',
@@ -513,6 +562,7 @@ export default {
       scriptCode:
         'if(data.success_per > 0){\n      data.failure_per = 100.0 - data.success_per;\n}\nreturn data;',
       customCode: true,
+      enableFront: true,
       valid: true,
       name: '失败率计算',
       id: 'failure_per',

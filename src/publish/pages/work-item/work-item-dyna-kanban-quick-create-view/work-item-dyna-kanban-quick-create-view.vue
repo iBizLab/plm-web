@@ -31,9 +31,9 @@
 <script setup lang="ts">
 import { IModal } from '@ibiz-template/runtime';
 import { defineProps, withDefaults } from 'vue';
-import model from '@/publish/model/views/work-item-dyna-kanban-quick-create-view';
 
 interface Props {
+  model: IModel;
   context?: IContext;
   params?: IParams;
   modal?: IModal;

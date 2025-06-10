@@ -1717,7 +1717,7 @@ export default {
                                 id: 'usr0229502203',
                               },
                               aggMode: 'NONE',
-                              align: 'RIGHT',
+                              align: 'CENTER',
                               caption: '操作',
                               codeName: 'uagridcolumn1',
                               columnType: 'UAGRIDCOLUMN',
@@ -2405,6 +2405,7 @@ export default {
                           LINKVIEWID: 'plmweb.recent_custom_redirect_view',
                           SCRIPTCODE:
                             'data.content?.replace(/@{[^,]*,"name":"(.*?)"}/g,"<span class=\'comment-tag\'>@$1</span>").replace(/@{[^,]*,name=(.*?)}/g,"<span class=\'comment-tag\'>@$1</span>").replaceAll(/\\#\\{(\\".+?\\":\\".+?\\")(,\\"icon\\":\\"((.|[\\t\\r\\f\\n\\s])+?)\\")*\\}/g, (x, value, icon) => {const item = JSON.parse("{" + value + "}"); if (icon) { icon = icon.slice(8).slice(1, -1).trim(); } return controller.parseCommentTag({icon, ...item});}).replaceAll(/\\{\\"\\emoji\\":\\"(.+?)\\"\\}/g,(x, emoji) => {const tempVal = decodeURIComponent(atob(emoji)); return `<span class="emoji-tag">${tempVal}</span>`})',
+                          TRANSLATEOBJ: '{"&reg":"&amp;reg"}',
                         },
                         editorStyle: 'COMMENT_ITEM',
                         editorType: 'RAW',

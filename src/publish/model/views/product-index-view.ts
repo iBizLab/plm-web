@@ -6,6 +6,14 @@ export default {
   caption: '产品',
   codeName: 'product_index_view',
   appDataEntityId: 'plmweb.product',
+  appViewNavContexts: [
+    {
+      key: 'IDENTIFIER',
+      value: 'identifier',
+      name: 'IDENTIFIER',
+      id: 'identifier',
+    },
+  ],
   appViewNavParams: [
     {
       key: 'product',
@@ -358,6 +366,11 @@ export default {
             id: 'usrdrgroup0423482168',
           },
           {
+            caption: '评审',
+            name: '评审',
+            id: 'usrdrgroup0425581290',
+          },
+          {
             caption: '项目',
             name: '项目',
             id: 'usrdrgroup1203616060',
@@ -441,6 +454,12 @@ export default {
               },
             ],
             id: 'baseline',
+          },
+          {
+            dedrbarGroupId: 'usrdrgroup0425581290',
+            caption: '评审',
+            appViewId: 'plmweb.review_idea_tree_exp_view',
+            id: 'review',
           },
           {
             dedrbarGroupId: 'usrdrgroup1203616060',

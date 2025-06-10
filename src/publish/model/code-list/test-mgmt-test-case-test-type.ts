@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'TestMgmt__test_case_test_type',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'TestMgmt__test_case_test_type',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.test_case',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_test_case_test_type',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'automation',
@@ -18,6 +24,8 @@ export default {
       id: 'manual',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '测试类型',
   id: 'plmweb.testmgmt__test_case_test_type',

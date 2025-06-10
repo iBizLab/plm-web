@@ -467,6 +467,9 @@ export default {
                                 editor: {
                                   maxLength: 2000,
                                   showMaxLength: true,
+                                  editorParams: {
+                                    triggerMode: 'input',
+                                  },
                                   editorType: 'TEXTAREA',
                                   placeHolder: '请输入评审意见',
                                   valueType: 'SIMPLE',
@@ -617,6 +620,9 @@ export default {
                             layoutPos: {
                               colMD: 24,
                               layout: 'TABLE_24COL',
+                            },
+                            sysCss: {
+                              cssName: 'review_btn_style',
                             },
                             id: 'detail',
                           },

@@ -710,11 +710,19 @@ export default {
               appCodeListId: 'plmweb.prodmgmt__category',
               editorParams: {
                 readonly: 'true',
+                'SRFNAVPARAM.product': '%product%',
               },
               editorType: 'MDROPDOWNLIST',
               valueType: 'SIMPLE',
               editable: true,
               readOnly: true,
+              navigateParams: [
+                {
+                  key: 'product',
+                  value: 'product',
+                  id: 'product',
+                },
+              ],
               id: 'categorys',
             },
             allowEmpty: true,

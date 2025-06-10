@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'PSDENotifyTargetId',
       logicName: '实体通知目标标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDENOTIFYTARGETID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'PSDENotifyTargetName',
       logicName: '实体通知目标名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -23,6 +25,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -34,6 +37,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -45,6 +49,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -56,6 +61,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -64,6 +70,7 @@ export default {
     {
       codeName: 'Data',
       logicName: '目标数据',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'DATA',
@@ -72,6 +79,7 @@ export default {
     {
       codeName: 'TargetType',
       logicName: '目标类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 20,
       name: 'TARGETTYPE',
@@ -80,6 +88,7 @@ export default {
     {
       codeName: 'Filter',
       logicName: '过滤项',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 50,
       name: 'FILTER',
@@ -88,6 +97,7 @@ export default {
     {
       codeName: 'PSDENotifyId',
       logicName: '实体通知',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDENOTIFYID',
@@ -96,6 +106,7 @@ export default {
     {
       codeName: 'PSDENotifyName',
       logicName: '实体通知',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PSDENOTIFYNAME',

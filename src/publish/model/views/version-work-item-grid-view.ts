@@ -329,17 +329,12 @@ export default {
             ],
             navigateParams: [
               {
-                key: 'srfcustomtag',
-                value: 'id',
-                id: 'srfcustomtag',
-              },
-              {
                 key: 'srfversionid',
                 value: 'id',
                 id: 'srfversionid',
               },
             ],
-            refAppViewId: 'plmweb.work_item_main_view',
+            refAppViewId: 'plmweb.work_item_dyna_main_view',
           },
           editMode: true,
           appUILogicRefViews: [
@@ -356,17 +351,12 @@ export default {
               ],
               navigateParams: [
                 {
-                  key: 'srfcustomtag',
-                  value: 'id',
-                  id: 'srfcustomtag',
-                },
-                {
                   key: 'srfversionid',
                   value: 'id',
                   id: 'srfversionid',
                 },
               ],
-              refAppViewId: 'plmweb.work_item_main_view',
+              refAppViewId: 'plmweb.work_item_dyna_main_view',
             },
           ],
           builtinLogic: true,
@@ -392,19 +382,14 @@ export default {
         ],
         navigateParams: [
           {
-            key: 'srfcustomtag',
-            value: 'id',
-            id: 'srfcustomtag',
-          },
-          {
             key: 'srfversionid',
             value: 'id',
             id: 'srfversionid',
           },
         ],
         realOpenMode: 'POPUPMODAL',
-        realTitle: '工作项',
-        refAppViewId: 'plmweb.work_item_main_view',
+        realTitle: '工作项（动态）',
+        refAppViewId: 'plmweb.work_item_dyna_main_view',
         name: 'EDITDATA',
         id: 'editdata',
       },

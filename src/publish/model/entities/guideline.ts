@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'scope_id',
       logicName: '所属主体标识',
+      predefinedType: 'PARENTID',
       stdDataType: 25,
       stringLength: 100,
       name: 'SCOPE_ID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'object_type',
       logicName: '对象类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OBJECT_TYPE',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'subject_type',
       logicName: '主题类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SUBJECT_TYPE',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'review_stage',
       logicName: '评审阶段',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'REVIEW_STAGE',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'review_rule',
       logicName: '评审规则',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'REVIEW_RULE',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'review_action_rule',
       logicName: '评审后置动作',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'REVIEW_ACTION_RULE',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'is_enabled',
       logicName: '是否启用',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_ENABLED',
       id: 'is_enabled',
@@ -61,6 +68,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -72,6 +80,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -84,6 +93,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -95,6 +105,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -106,6 +117,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -117,6 +129,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -826,6 +839,13 @@ export default {
   deopprivs: [
     {
       logicName: '建立',
+      mapDEName: 'PRODUCT',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'CREATE',
+      id: 'product__create',
+    },
+    {
+      logicName: '建立',
       mapDEName: 'LIBRARY',
       mapDEOPPrivName: 'SUBDATA',
       name: 'CREATE',
@@ -845,6 +865,13 @@ export default {
     },
     {
       logicName: '删除',
+      mapDEName: 'PRODUCT',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'DELETE',
+      id: 'product__delete',
+    },
+    {
+      logicName: '删除',
       name: 'DELETE',
       id: 'delete',
     },
@@ -861,11 +888,25 @@ export default {
       id: 'library__read',
     },
     {
+      logicName: '读取',
+      mapDEName: 'PRODUCT',
+      mapDEOPPrivName: 'READ',
+      name: 'READ',
+      id: 'product__read',
+    },
+    {
       logicName: '更新',
       mapDEName: 'LIBRARY',
       mapDEOPPrivName: 'SUBDATA',
       name: 'UPDATE',
       id: 'library__update',
+    },
+    {
+      logicName: '更新',
+      mapDEName: 'PRODUCT',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'UPDATE',
+      id: 'product__update',
     },
     {
       logicName: '更新',
@@ -896,6 +937,15 @@ export default {
       name: 'DERCUSTOM_GUIDELINE_LIBRARY_LIBRARY_ID',
       id: 'guidelines',
     },
+    {
+      actionRSMode: 1,
+      codeName: 'guidelines',
+      majorAppDataEntityId: 'plmweb.product',
+      parentAppDEFieldId: 'scope_id',
+      rsmode: 2,
+      name: 'DERCUSTOM_GUIDELINE_PRODUCT_PRODUCT_ID',
+      id: 'guidelines',
+    },
   ],
   quickSearchAppDEFieldIds: ['name'],
   sysAPITag: 'ServiceAPI',
@@ -905,5 +955,8 @@ export default {
   name: 'GUIDELINE',
   id: 'plmweb.guideline',
   codeName2: 'guidelines',
-  requestPaths: ['libraries/${library}/guidelines/${guideline}'],
+  requestPaths: [
+    'libraries/${library}/guidelines/${guideline}',
+    'products/${product}/guidelines/${guideline}',
+  ],
 };

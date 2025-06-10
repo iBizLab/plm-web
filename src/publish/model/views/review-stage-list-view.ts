@@ -181,6 +181,17 @@ export default {
         id: 'onselectionchange',
       },
       {
+        eventNames: 'onLoadSuccess',
+        logicTrigger: 'CTRLEVENT',
+        logicType: 'APPDEUILOGIC',
+        appDEUILogicId: 'default_choose',
+        appDataEntityId: 'plmweb.review_stage',
+        ctrlName: 'list',
+        builtinLogic: true,
+        name: 'DEFAULT_SELECTED',
+        id: 'default_selected',
+      },
+      {
         logicTrigger: 'CUSTOM',
         logicType: 'APPUILOGIC',
         builtinAppUILogic: {
@@ -679,6 +690,7 @@ export default {
           },
           {
             appDEFieldId: 'reviewer',
+            frontCodeListId: 'plmweb.sysoperator',
             dataType: 25,
             id: 'reviewer',
           },

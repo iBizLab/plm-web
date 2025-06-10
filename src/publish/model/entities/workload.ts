@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'IDENTIFIER',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'principal_id',
       logicName: '工时主体标识',
+      predefinedType: 'PARENTID',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRINCIPAL_ID',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'principal_type',
       logicName: '工时主体类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRINCIPAL_TYPE',
@@ -27,15 +30,26 @@ export default {
     {
       codeName: 'owner_type',
       logicName: '所属数据对象',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_TYPE',
       id: 'owner_type',
     },
     {
+      codeName: 'category',
+      logicName: '工时类别',
+      predefinedType: 'NONE',
+      stdDataType: 25,
+      stringLength: 100,
+      name: 'CATEGORY',
+      id: 'category',
+    },
+    {
       codeName: 'duration',
       logicName: '时长',
       precision: 1,
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'DURATION',
       id: 'duration',
@@ -43,6 +57,7 @@ export default {
     {
       codeName: 'description',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'DESCRIPTION',
@@ -51,6 +66,7 @@ export default {
     {
       codeName: 'register_date',
       logicName: '工作日期',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'REGISTER_DATE',
@@ -59,6 +75,7 @@ export default {
     {
       codeName: 'recent_parent_name',
       logicName: '访问父类名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RECENT_PARENT_NAME',
@@ -67,6 +84,7 @@ export default {
     {
       codeName: 'recent_parent',
       logicName: '访问父类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RECENT_PARENT',
@@ -75,6 +93,7 @@ export default {
     {
       codeName: 'show_identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -84,6 +103,7 @@ export default {
     {
       codeName: 'recent_parent_identifier',
       logicName: '访问父类编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RECENT_PARENT_IDENTIFIER',
@@ -92,6 +112,7 @@ export default {
     {
       codeName: 'work_item',
       logicName: '工作项',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'WORK_ITEM',
@@ -100,6 +121,7 @@ export default {
     {
       codeName: 'idea',
       logicName: '需求',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'IDEA',
@@ -108,6 +130,7 @@ export default {
     {
       codeName: 'test_case',
       logicName: '用例',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'TEST_CASE',
@@ -119,6 +142,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -130,6 +154,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '事项',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       enableQuickSearch: true,
@@ -142,6 +167,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -153,6 +179,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -164,6 +191,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -175,6 +203,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -183,6 +212,7 @@ export default {
     {
       codeName: 'type_id',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TYPE_ID',
@@ -191,6 +221,7 @@ export default {
     {
       codeName: 'type_name',
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'TYPE_NAME',
@@ -206,6 +237,7 @@ export default {
       scriptCode:
         'if(!data){\n    data = {};\n}\nObject.keys(viewParam).forEach((key) =>{\n    data[key] = viewParam[key];\n})\nreturn data;',
       customCode: true,
+      enableFront: true,
       valid: true,
       name: '填充BI报表默认值',
       id: 'fill_bi_form_default',
@@ -432,6 +464,16 @@ export default {
           id: 'principal_id',
         },
         {
+          codeName: 'category',
+          logicName: '工时类别',
+          appDEFieldId: 'category',
+          sourceType: 'DEFIELD',
+          stdDataType: 25,
+          type: 'SIMPLE',
+          allowEmpty: true,
+          id: 'category',
+        },
+        {
           codeName: 'owner_type',
           logicName: '所属数据对象',
           appDEFieldId: 'owner_type',
@@ -637,6 +679,16 @@ export default {
     {
       codeName: 'workload_filter_dto',
       appDEMethodDTOFields: [
+        {
+          codeName: 'n_category_eq',
+          logicName: '工时类别',
+          appDEFieldId: 'category',
+          sourceType: 'DEFSEARCHMODE',
+          stdDataType: 25,
+          type: 'SIMPLE',
+          allowEmpty: true,
+          id: 'n_category_eq',
+        },
         {
           codeName: 'n_create_man_eq',
           logicName: '建立人',
@@ -1294,6 +1346,29 @@ export default {
       dataSetType: 'REMOTE',
       name: 'GetDraft',
       id: 'get_draft',
+    },
+    {
+      codeName: 'get_redirect_data',
+      methodType: 'DEACTION',
+      appDEMethodInput: {
+        keyAppDEFieldId: 'id',
+        type: 'KEYFIELD',
+        id: '输入对象',
+      },
+      appDEMethodReturn: {
+        appDEMethodDTOId: 'workload_dto',
+        type: 'DTO',
+        id: '返回对象',
+      },
+      requestField: 'ID',
+      requestMethod: 'GET',
+      requestParamType: 'FIELD',
+      requestPath: '/get_redirect_data',
+      needResourceKey: true,
+      actionMode: 'READ',
+      actionType: 'REMOTE',
+      dataSetType: 'REMOTE',
+      id: 'get_redirect_data',
     },
     {
       codeName: 'get_register_workload',
@@ -2959,6 +3034,11 @@ export default {
           value: 'n_register_date_ltandeq',
           id: 'n_register_date_ltandeq',
         },
+        {
+          key: 'n_category_eq',
+          value: 'n_category_eq',
+          id: 'n_category_eq',
+        },
       ],
       uiactionMode: 'FRONT',
       uiactionTag: 'open_member_workload_detail',
@@ -3785,7 +3865,7 @@ export default {
           id: 'begin',
         },
         {
-          code: 'var n_register_date_gtandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_gtandeq;\r\nvar n_register_date_ltandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_ltandeq;\r\nuiLogic.default.n_register_date_gtandeq=n_register_date_gtandeq;\r\nuiLogic.default.n_register_date_ltandeq=n_register_date_ltandeq;',
+          code: 'var n_register_date_gtandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_gtandeq;\r\nvar n_register_date_ltandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_ltandeq;\r\nvar n_category_eq = view.layoutPanel.panelItems.searchform.control.data.n_category_eq;\r\nuiLogic.default.n_register_date_gtandeq=n_register_date_gtandeq;\r\nuiLogic.default.n_register_date_ltandeq=n_register_date_ltandeq;\r\nuiLogic.default.n_category_eq=n_category_eq;',
           codeName: 'RAWJSCODE1',
           leftPos: 160,
           logicNodeType: 'RAWJSCODE',
@@ -4247,7 +4327,7 @@ export default {
           id: 'deuiaction1',
         },
         {
-          code: 'var n_register_date_gtandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_gtandeq;\r\nvar n_register_date_ltandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_ltandeq;\r\nuiLogic.default.n_register_date_gtandeq=n_register_date_gtandeq;\r\nuiLogic.default.n_register_date_ltandeq=n_register_date_ltandeq;',
+          code: 'var n_register_date_gtandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_gtandeq;\r\nvar n_register_date_ltandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_ltandeq;\r\nvar n_category_eq = view.layoutPanel.panelItems.searchform.control.data.n_category_eq;\r\nuiLogic.default.n_register_date_gtandeq=n_register_date_gtandeq;\r\nuiLogic.default.n_register_date_ltandeq=n_register_date_ltandeq;\r\nuiLogic.default.n_category_eq=n_category_eq;',
           codeName: 'RAWJSCODE1',
           leftPos: 170,
           logicNodeType: 'RAWJSCODE',
@@ -4514,18 +4594,7 @@ export default {
           id: 'begin',
         },
         {
-          dstAppDEUIActionId: 'open_type_workload_detail@workload',
-          dstAppDataEntityId: 'plmweb.workload',
-          codeName: 'DEUIACTION1',
-          dstDEUILogicParamId: 'default',
-          leftPos: 160,
-          logicNodeType: 'DEUIACTION',
-          topPos: 403,
-          name: '打开工作类别工时记录列表视图',
-          id: 'deuiaction1',
-        },
-        {
-          code: 'var n_register_date_gtandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_gtandeq;\r\nvar n_register_date_ltandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_ltandeq;\r\nuiLogic.default.n_register_date_gtandeq=n_register_date_gtandeq;\r\nuiLogic.default.n_register_date_ltandeq=n_register_date_ltandeq;',
+          code: 'var n_register_date_gtandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_gtandeq;\r\nvar n_register_date_ltandeq = view.layoutPanel.panelItems.searchform.control.data.n_register_date_ltandeq;\r\nvar n_category_eq = view.layoutPanel.panelItems.searchform.control.data.n_category_eq;\r\nuiLogic.default.n_register_date_gtandeq=n_register_date_gtandeq;\r\nuiLogic.default.n_register_date_ltandeq=n_register_date_ltandeq;\r\nuiLogic.default.n_category_eq=n_category_eq;',
           codeName: 'RAWJSCODE1',
           leftPos: 160,
           logicNodeType: 'RAWJSCODE',
@@ -4539,6 +4608,17 @@ export default {
           topPos: 301,
           name: '获取搜索表单的日期范围条件',
           id: 'rawjscode1',
+        },
+        {
+          dstAppDEUIActionId: 'open_type_workload_detail@workload',
+          dstAppDataEntityId: 'plmweb.workload',
+          codeName: 'DEUIACTION1',
+          dstDEUILogicParamId: 'default',
+          leftPos: 160,
+          logicNodeType: 'DEUIACTION',
+          topPos: 403,
+          name: '打开工作类别工时记录列表视图',
+          id: 'deuiaction1',
         },
       ],
       deuilogicParams: [
@@ -4604,6 +4684,70 @@ export default {
       startDEUILogicNodeId: 'begin',
       name: '门户刷新',
       id: 'portlet_refresh',
+    },
+    {
+      codeName: 'reset_workload_category',
+      defaultParamName: 'Default',
+      logicName: '重置上下文工时类型',
+      deuilogicNodes: [
+        {
+          codeName: 'Begin',
+          leftPos: 200,
+          logicNodeType: 'BEGIN',
+          deuilogicLinks: [
+            {
+              dstDEUILogicNodeId: 'rawjscode1',
+              srcDEUILogicNodeId: 'begin',
+              id: '连接名称',
+            },
+          ],
+          topPos: 200,
+          parallelOutput: true,
+          name: '开始',
+          id: 'begin',
+        },
+        {
+          code: 'console.log(view);\r\nconsole.log(uiLogic.default);\r\nview.context.category = uiLogic.default.n_category_eq;',
+          codeName: 'RAWJSCODE1',
+          leftPos: 325,
+          logicNodeType: 'RAWJSCODE',
+          deuilogicLinks: [
+            {
+              dstDEUILogicNodeId: 'end1',
+              srcDEUILogicNodeId: 'rawjscode1',
+              id: '连接名称',
+            },
+          ],
+          topPos: 208,
+          name: '注入脚本代码',
+          id: 'rawjscode1',
+        },
+        {
+          codeName: 'END1',
+          leftPos: 757,
+          logicNodeType: 'END',
+          topPos: 200,
+          name: '结束',
+          id: 'end1',
+        },
+      ],
+      deuilogicParams: [
+        {
+          codeName: 'Default',
+          default: true,
+          entityParam: true,
+          name: '传入变量',
+          id: 'default',
+        },
+        {
+          codeName: 'ctx',
+          navContextParam: true,
+          id: 'ctx',
+        },
+      ],
+      startDEUILogicNodeId: 'begin',
+      name: '重置上下文工时类型',
+      id: 'reset_workload_category',
     },
   ],
   deopprivs: [

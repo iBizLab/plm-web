@@ -18,6 +18,7 @@ export default {
       ],
       pagingSize: 50,
       defaultMode: true,
+      appDataEntityId: 'plmweb.category',
       textAppDEFieldId: 'name',
       valueAppDEFieldId: 'id',
       name: 'DEFAULT',
@@ -28,6 +29,7 @@ export default {
     {
       codeName: 'owner_id',
       logicName: '所属数据标识',
+      predefinedType: 'PARENTID',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_ID',
@@ -36,6 +38,7 @@ export default {
     {
       codeName: 'sequence',
       logicName: '序号',
+      predefinedType: 'ORDERVALUE',
       stdDataType: 6,
       name: 'SEQUENCE',
       id: 'sequence',
@@ -43,6 +46,7 @@ export default {
     {
       codeName: 'owner_type',
       logicName: '所属数据对象',
+      predefinedType: 'PARENTTYPE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_TYPE',
@@ -51,6 +55,7 @@ export default {
     {
       codeName: 'owner_subtype',
       logicName: '所属对象子类型',
+      predefinedType: 'PARENTSUBTYPE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_SUBTYPE',
@@ -59,6 +64,7 @@ export default {
     {
       codeName: 'is_leaf',
       logicName: '是否叶子节点',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_LEAF',
       id: 'is_leaf',
@@ -66,6 +72,7 @@ export default {
     {
       codeName: 'is_leaf2',
       logicName: '是否叶子节点2',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_LEAF2',
       id: 'is_leaf2',
@@ -73,6 +80,7 @@ export default {
     {
       codeName: 'categories',
       logicName: '类别路径',
+      predefinedType: 'PARENTIDPATH',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES',
@@ -81,6 +89,7 @@ export default {
     {
       codeName: 'leaf_flag',
       logicName: '叶子节点标识',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'LEAF_FLAG',
       id: 'leaf_flag',
@@ -88,6 +97,7 @@ export default {
     {
       codeName: 'is_leaf3',
       logicName: '是否叶子节点3',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_LEAF3',
       id: 'is_leaf3',
@@ -98,6 +108,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -109,6 +120,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -121,6 +133,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -132,6 +145,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -143,6 +157,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -154,6 +169,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -162,6 +178,7 @@ export default {
     {
       codeName: 'section_id',
       logicName: '分组标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SECTION_ID',
@@ -170,6 +187,7 @@ export default {
     {
       codeName: 'section_name',
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'SECTION_NAME',
@@ -178,6 +196,7 @@ export default {
     {
       codeName: 'pid',
       logicName: '父标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PID',
@@ -186,6 +205,7 @@ export default {
     {
       codeName: 'user_tag',
       logicName: '用户标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'USER_TAG',
@@ -194,6 +214,7 @@ export default {
     {
       codeName: 'user_tag2',
       logicName: '用户标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'USER_TAG2',

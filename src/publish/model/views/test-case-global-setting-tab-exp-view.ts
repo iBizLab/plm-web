@@ -301,6 +301,11 @@ export default {
             ],
             id: 'field_manage',
           },
+          {
+            caption: '数据字典',
+            appViewId: 'plmweb.dictionary_data_test_case_dictionary_grid_view',
+            id: 'dictionary',
+          },
         ],
         dataRelationTag: 'global_setting_tab_exp_dr',
         editItemCapLanguageRes: {

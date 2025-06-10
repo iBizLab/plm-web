@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'ProdMgmt__idea_priority',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'ProdMgmt__idea_priority',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.idea',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_idea_priority',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'p0',
@@ -61,6 +67,8 @@ export default {
       id: 'p4',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '需求优先级',
   id: 'plmweb.prodmgmt__idea_priority',

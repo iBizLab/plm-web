@@ -70,10 +70,11 @@ export default {
   ],
   appViewRefs: [
     {
-      realTitle: '产品主视图',
-      refAppViewId: 'plmweb.product_main_view',
-      name: 'OPENDATA',
-      id: 'opendata',
+      realOpenMode: 'POPUPMODAL',
+      realTitle: '新建产品',
+      refAppViewId: 'plmweb.product_create_wizard_view',
+      name: 'NEWDATA',
+      id: 'newdata',
     },
     {
       realTitle: '产品',
@@ -82,11 +83,10 @@ export default {
       id: 'editdata',
     },
     {
-      realOpenMode: 'POPUPMODAL',
-      realTitle: '新建产品',
-      refAppViewId: 'plmweb.product_create_wizard_view',
-      name: 'NEWDATA',
-      id: 'newdata',
+      realTitle: '产品主视图',
+      refAppViewId: 'plmweb.product_main_view',
+      name: 'OPENDATA',
+      id: 'opendata',
     },
   ],
   controls: [

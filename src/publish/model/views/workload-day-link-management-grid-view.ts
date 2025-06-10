@@ -46,14 +46,12 @@ export default {
       logicType: 'APPUILOGIC',
       builtinAppUILogic: {
         openDataAppView: {
-          openMode: 'POPUPMODAL',
-          refAppViewId: 'plmweb.workload_update_view',
+          refAppViewId: 'plmweb.workload_redirect_view',
         },
         editMode: true,
         appUILogicRefViews: [
           {
-            openMode: 'POPUPMODAL',
-            refAppViewId: 'plmweb.workload_update_view',
+            refAppViewId: 'plmweb.workload_redirect_view',
           },
         ],
         builtinLogic: true,
@@ -63,6 +61,13 @@ export default {
       },
       builtinLogic: true,
       id: 'opendata',
+    },
+  ],
+  appViewNavParams: [
+    {
+      key: 'n_category_eq',
+      value: 'category',
+      id: 'n_category_eq',
     },
   ],
   appViewRefs: [
@@ -76,9 +81,11 @@ export default {
       id: 'newdata',
     },
     {
-      realOpenMode: 'POPUPMODAL',
-      realTitle: '修改实际工时视图',
-      refAppViewId: 'plmweb.workload_update_view',
+      realTitle: '工时数据重定向视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.WORKLOAD.REDIRECTVIEW',
+      },
+      refAppViewId: 'plmweb.workload_redirect_view',
       name: 'EDITDATA',
       id: 'editdata',
     },

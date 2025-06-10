@@ -187,7 +187,7 @@ export default {
         showBusyIndicator: true,
         codeName: 'pickup_tree',
         controlType: 'TREEVIEW',
-        logicName: '客户选择树',
+        logicName: '客户类别选择树',
         appDataEntityId: 'plmweb.customer',
         controlParam: {
           id: 'tree',

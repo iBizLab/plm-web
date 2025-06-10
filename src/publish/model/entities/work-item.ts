@@ -17,6 +17,8 @@ export default {
         },
       ],
       pagingSize: 50,
+      enableBackend: true,
+      appDataEntityId: 'plmweb.work_item',
       textAppDEFieldId: 'title',
       valueAppDEFieldId: 'id',
       name: 'AIChat',
@@ -131,6 +133,7 @@ export default {
         name: 'panel',
         id: 'plmweb.work_item.data_picker_item',
       },
+      appDataEntityId: 'plmweb.work_item',
       textAppDEFieldId: 'title',
       valueAppDEFieldId: 'id',
       name: 'DEFAULT',
@@ -262,6 +265,8 @@ export default {
         },
       ],
       updateDataAccessAction: 'UPDATE',
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -380,6 +385,8 @@ export default {
         },
       ],
       updateDataAccessAction: 'UPDATE',
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -502,6 +509,8 @@ export default {
         },
       ],
       updateDataAccessAction: 'UPDATE',
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -626,6 +635,8 @@ export default {
         },
       ],
       updateDataAccessAction: 'UPDATE',
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -769,6 +780,8 @@ export default {
         },
       ],
       updateDataAccessAction: 'UPDATE',
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -891,6 +904,8 @@ export default {
         },
       ],
       updateDataAccessAction: 'UPDATE',
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -1020,6 +1035,8 @@ export default {
       ],
       updateDataAccessAction: 'UPDATE',
       defaultMode: true,
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -1031,6 +1048,7 @@ export default {
     {
       codeName: 'show_identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       userTag4: 'INTENAL',
@@ -1040,6 +1058,7 @@ export default {
     {
       codeName: 'identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       enableQuickSearch: true,
@@ -1049,6 +1068,7 @@ export default {
     {
       codeName: 'is_archived',
       logicName: '是否已归档',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'IS_ARCHIVED',
@@ -1057,6 +1077,7 @@ export default {
     {
       codeName: 'title',
       logicName: '标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       enableQuickSearch: true,
@@ -1066,6 +1087,7 @@ export default {
     {
       codeName: 'is_deleted',
       logicName: '是否已删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'IS_DELETED',
@@ -1074,6 +1096,7 @@ export default {
     {
       codeName: 'start_at',
       logicName: '开始时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'START_AT',
@@ -1082,6 +1105,7 @@ export default {
     {
       codeName: 'end_at',
       logicName: '截止时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'END_AT',
@@ -1090,6 +1114,7 @@ export default {
     {
       codeName: 'state',
       logicName: '状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'STATE',
@@ -1098,6 +1123,7 @@ export default {
     {
       codeName: 'priority',
       logicName: '优先级',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRIORITY',
@@ -1106,6 +1132,7 @@ export default {
     {
       codeName: 'is_leaf',
       logicName: '是否叶子节点',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'IS_LEAF',
@@ -1114,6 +1141,7 @@ export default {
     {
       codeName: 'backlog_type',
       logicName: '需求类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'BACKLOG_TYPE',
@@ -1122,6 +1150,7 @@ export default {
     {
       codeName: 'backlog_from',
       logicName: '需求来源',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'BACKLOG_FROM',
@@ -1130,6 +1159,7 @@ export default {
     {
       codeName: 'description',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'DESCRIPTION',
@@ -1138,6 +1168,7 @@ export default {
     {
       codeName: 'assignee_name',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_NAME',
@@ -1146,6 +1177,7 @@ export default {
     {
       codeName: 'reappear_probability',
       logicName: '复现概率',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'REAPPEAR_PROBABILITY',
@@ -1154,6 +1186,7 @@ export default {
     {
       codeName: 'assignee_id',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1163,6 +1196,7 @@ export default {
     {
       codeName: 'cur_version_id',
       logicName: '当前版本标识',
+      predefinedType: 'VERSIONID',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1172,6 +1206,7 @@ export default {
     {
       codeName: 'severity',
       logicName: '严重程度',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'SEVERITY',
@@ -1180,6 +1215,7 @@ export default {
     {
       codeName: 'risk',
       logicName: '风险',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'RISK',
@@ -1188,6 +1224,7 @@ export default {
     {
       codeName: 'project_type',
       logicName: '项目类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'PROJECT_TYPE',
@@ -1196,6 +1233,7 @@ export default {
     {
       codeName: 'work_item_type_group',
       logicName: '工作项类型分组',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       userTag4: 'INTENAL',
@@ -1205,6 +1243,7 @@ export default {
     {
       codeName: 'tags',
       logicName: '标签',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'TAGS',
@@ -1213,6 +1252,7 @@ export default {
     {
       codeName: 'entry_status',
       logicName: '看板栏状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1222,6 +1262,7 @@ export default {
     {
       codeName: 'entry_position',
       logicName: '所在看板栏位置',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'ENTRY_POSITION',
@@ -1230,6 +1271,7 @@ export default {
     {
       codeName: 'rep_num',
       logicName: '统计数',
+      predefinedType: 'NONE',
       stdDataType: 6,
       userTag4: 'INTENAL',
       name: 'REP_NUM',
@@ -1238,6 +1280,7 @@ export default {
     {
       codeName: 'solution_way',
       logicName: '解决办法',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'SOLUTION_WAY',
@@ -1246,6 +1289,7 @@ export default {
     {
       codeName: 'work_item_type_sequence',
       logicName: '工作项类型序号',
+      predefinedType: 'NONE',
       stdDataType: 6,
       userTag4: 'INTENAL',
       name: 'WORK_ITEM_TYPE_SEQUENCE',
@@ -1254,6 +1298,7 @@ export default {
     {
       codeName: 'completed_at',
       logicName: '完成时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'COMPLETED_AT',
@@ -1263,6 +1308,7 @@ export default {
       codeName: 'workload_schedule',
       logicName: '工时进度',
       precision: 1,
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'WORKLOAD_SCHEDULE',
       id: 'workload_schedule',
@@ -1271,6 +1317,7 @@ export default {
       codeName: 'estimated_workload',
       logicName: '预估工时',
       precision: 1,
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'ESTIMATED_WORKLOAD',
       id: 'estimated_workload',
@@ -1278,6 +1325,7 @@ export default {
     {
       codeName: 'job_type',
       logicName: '任务类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'JOB_TYPE',
@@ -1286,6 +1334,7 @@ export default {
     {
       codeName: 'test_plan_id',
       logicName: '测试计划ID',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1296,6 +1345,7 @@ export default {
       codeName: 'remaining_workload',
       logicName: '剩余工时',
       precision: 1,
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'REMAINING_WORKLOAD',
       id: 'remaining_workload',
@@ -1303,6 +1353,7 @@ export default {
     {
       codeName: 'attachments',
       logicName: '附件',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'ATTACHMENTS',
@@ -1312,6 +1363,7 @@ export default {
       codeName: 'actual_workload',
       logicName: '实际工时',
       precision: 1,
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'ACTUAL_WORKLOAD',
       id: 'actual_workload',
@@ -1319,6 +1371,7 @@ export default {
     {
       codeName: 'deliverable',
       logicName: '交付物',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       userTag4: 'INTENAL',
@@ -1328,6 +1381,7 @@ export default {
     {
       codeName: 'p_work_item_type_id',
       logicName: '父工作项类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'P_WORK_ITEM_TYPE_ID',
@@ -1336,6 +1390,7 @@ export default {
     {
       codeName: 'attention_count',
       logicName: '关注数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'ATTENTION_COUNT',
@@ -1344,6 +1399,7 @@ export default {
     {
       codeName: 'project_identifier',
       logicName: '项目标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 15,
       userTag4: 'INTENAL',
@@ -1353,6 +1409,7 @@ export default {
     {
       codeName: 'comment_count',
       logicName: '评论数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'COMMENT_COUNT',
@@ -1361,6 +1418,7 @@ export default {
     {
       codeName: 'attentions',
       logicName: '关注',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       userTag4: 'INTENAL',
@@ -1370,6 +1428,7 @@ export default {
     {
       codeName: 'rep_group_value',
       logicName: '报表分组属性',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1379,6 +1438,7 @@ export default {
     {
       codeName: 'rep_percent_value',
       logicName: '报表百分值',
+      predefinedType: 'NONE',
       stdDataType: 7,
       userTag4: 'INTENAL',
       name: 'REP_PERCENT_VALUE',
@@ -1387,6 +1447,7 @@ export default {
     {
       codeName: 'rep_value1',
       logicName: '报表值1',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'REP_VALUE_1',
@@ -1395,6 +1456,7 @@ export default {
     {
       codeName: 'rep_value3',
       logicName: '报表值3',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'REP_VALUE_3',
@@ -1403,6 +1465,7 @@ export default {
     {
       codeName: 'rep_value2',
       logicName: '报表值2',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'REP_VALUE_2',
@@ -1411,6 +1474,7 @@ export default {
     {
       codeName: 'state_type',
       logicName: '工作项状态类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       userTag4: 'INTENAL',
@@ -1420,6 +1484,7 @@ export default {
     {
       codeName: 'cur_version_name',
       logicName: '当前版本名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1429,6 +1494,7 @@ export default {
     {
       codeName: 'choose_version_id',
       logicName: '选择版本标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1438,6 +1504,7 @@ export default {
     {
       codeName: 'choose_version_name',
       logicName: '选择版本名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1447,6 +1514,7 @@ export default {
     {
       codeName: 'attentions_imp',
       logicName: '关注人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1456,6 +1524,7 @@ export default {
     {
       codeName: 'sprint_status',
       logicName: '迭代状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'SPRINT_STATUS',
@@ -1464,6 +1533,7 @@ export default {
     {
       codeName: 'release_status',
       logicName: '发布阶段',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'RELEASE_STATUS',
@@ -1472,6 +1542,7 @@ export default {
     {
       codeName: 'work_item_sub_type',
       logicName: '工作项下级类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       userTag4: 'INTENAL',
@@ -1481,6 +1552,7 @@ export default {
     {
       codeName: 'rep_date',
       logicName: '统计日期字段',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'REP_DATE',
@@ -1489,6 +1561,7 @@ export default {
     {
       codeName: 'recent_create_days',
       logicName: '最近创建日期',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'RECENT_CREATE_DAYS',
@@ -1497,6 +1570,7 @@ export default {
     {
       codeName: 'sequence',
       logicName: '序号',
+      predefinedType: 'ORDERVALUE',
       stdDataType: 6,
       name: 'SEQUENCE',
       id: 'sequence',
@@ -1504,6 +1578,7 @@ export default {
     {
       codeName: 'relation_total_idea',
       logicName: '关联产品需求数',
+      predefinedType: 'NONE',
       stdDataType: 6,
       userTag4: 'INTENAL',
       name: 'RELATION_TOTAL_IDEA',
@@ -1512,6 +1587,7 @@ export default {
     {
       codeName: 'relation_total_test_case',
       logicName: '关联测试用例数',
+      predefinedType: 'NONE',
       stdDataType: 6,
       userTag4: 'INTENAL',
       name: 'RELATION_TOTAL_TEST_CASE',
@@ -1520,6 +1596,7 @@ export default {
     {
       codeName: 'relation_total_ticket',
       logicName: '关联工单数',
+      predefinedType: 'NONE',
       stdDataType: 6,
       userTag4: 'INTENAL',
       name: 'RELATION_TOTAL_TICKET',
@@ -1528,6 +1605,7 @@ export default {
     {
       codeName: 'relation_total_work_item',
       logicName: '关联工作项数',
+      predefinedType: 'NONE',
       stdDataType: 6,
       userTag4: 'INTENAL',
       name: 'RELATION_TOTAL_WORK_ITEM',
@@ -1536,6 +1614,7 @@ export default {
     {
       codeName: 'work_item_origin_state',
       logicName: '原始状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'WORK_ITEM_ORIGIN_STATE',
@@ -1544,6 +1623,7 @@ export default {
     {
       codeName: 'is_overtime',
       logicName: '是否超时',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_OVERTIME',
       id: 'is_overtime',
@@ -1551,6 +1631,7 @@ export default {
     {
       codeName: 'executors',
       logicName: '执行人',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'EXECUTORS',
@@ -1559,6 +1640,7 @@ export default {
     {
       codeName: 'multiple_people',
       logicName: '多人任务',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'MULTIPLE_PEOPLE',
       id: 'multiple_people',
@@ -1566,6 +1648,7 @@ export default {
     {
       codeName: 'actual_start_at',
       logicName: '实际开始时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'ACTUAL_START_AT',
@@ -1574,6 +1657,7 @@ export default {
     {
       codeName: 'actual_end_at',
       logicName: '实际结束时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'ACTUAL_END_AT',
@@ -1582,6 +1666,7 @@ export default {
     {
       codeName: 'finisher',
       logicName: '完成人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'FINISHER',
@@ -1590,6 +1675,7 @@ export default {
     {
       codeName: 'overdue_time',
       logicName: '逾期天数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'OVERDUE_TIME',
@@ -1598,6 +1684,7 @@ export default {
     {
       codeName: 'deliverable_imp',
       logicName: '交付物',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DELIVERABLE_IMP',
@@ -1606,6 +1693,7 @@ export default {
     {
       codeName: 'project_is_deleted',
       logicName: '项目是否删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PROJECT_IS_DELETED',
       id: 'project_is_deleted',
@@ -1613,6 +1701,7 @@ export default {
     {
       codeName: 'project_is_archived',
       logicName: '项目是否归档',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PROJECT_IS_ARCHIVED',
       id: 'project_is_archived',
@@ -1623,6 +1712,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1635,6 +1725,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -1646,6 +1737,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -1657,6 +1749,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -1668,6 +1761,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -1676,6 +1770,7 @@ export default {
     {
       codeName: 'project_id',
       logicName: '项目',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1685,6 +1780,7 @@ export default {
     {
       codeName: 'work_item_type_id',
       logicName: '工作项类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1694,6 +1790,7 @@ export default {
     {
       codeName: 'project_name',
       logicName: '所属项目',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PROJECT_NAME',
@@ -1702,6 +1799,7 @@ export default {
     {
       codeName: 'work_item_type_name',
       logicName: '工作项类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'WORK_ITEM_TYPE_NAME',
@@ -1710,6 +1808,7 @@ export default {
     {
       codeName: 'pid',
       logicName: '父标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1719,6 +1818,7 @@ export default {
     {
       codeName: 'ptitle',
       logicName: '父工作项',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'PTITLE',
@@ -1727,6 +1827,7 @@ export default {
     {
       codeName: 'sprint_id',
       logicName: '迭代标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1736,6 +1837,7 @@ export default {
     {
       codeName: 'board_id',
       logicName: '看板标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1745,6 +1847,7 @@ export default {
     {
       codeName: 'entry_id',
       logicName: '看板栏标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1754,6 +1857,7 @@ export default {
     {
       codeName: 'swimlane_id',
       logicName: '泳道标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1763,6 +1867,7 @@ export default {
     {
       codeName: 'entry_name',
       logicName: '看板栏名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'ENTRY_NAME',
@@ -1771,6 +1876,7 @@ export default {
     {
       codeName: 'board_name',
       logicName: '看板名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BOARD_NAME',
@@ -1779,6 +1885,7 @@ export default {
     {
       codeName: 'top_id',
       logicName: '顶级工作项标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1788,6 +1895,7 @@ export default {
     {
       codeName: 'top_title',
       logicName: '顶级工作项标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       userTag4: 'INTENAL',
@@ -1797,6 +1905,7 @@ export default {
     {
       codeName: 'sprint_name',
       logicName: '迭代名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'SPRINT_NAME',
@@ -1805,6 +1914,7 @@ export default {
     {
       codeName: 'release_id',
       logicName: '项目发布标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       userTag4: 'INTENAL',
@@ -1814,6 +1924,7 @@ export default {
     {
       codeName: 'release_name',
       logicName: '项目发布名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'RELEASE_NAME',
@@ -1829,6 +1940,7 @@ export default {
       scriptCode:
         'if(!data){\n    data = {};\n}\nObject.keys(viewParam).forEach((key) =>{\n    data[key] = viewParam[key];\n})\nreturn data;',
       customCode: true,
+      enableFront: true,
       valid: true,
       name: '填充BI报表默认值',
       id: 'fill_bi_form_default',
@@ -1876,6 +1988,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',
@@ -11498,6 +11611,64 @@ export default {
     },
     {
       actionLevel: 100,
+      actionTarget: 'NONE',
+      buttonStyle: 'DEFAULT',
+      caption: '添加预估工时',
+      codeName: 'add_estimated_workload',
+      frontAppViewId: 'plmweb.workload_forecast_quick_create_view',
+      frontProcessType: 'WIZARD',
+      fullCodeName: 'work_item_add_estimated_workload',
+      navigateParams: [
+        {
+          key: 'estimated_workload',
+          value: 'estimated_workload',
+          id: 'estimated_workload',
+        },
+        {
+          key: 'remaining_workload',
+          value: 'remaining_workload',
+          id: 'remaining_workload',
+        },
+        {
+          key: 'name',
+          value: 'title',
+          id: 'name',
+        },
+        {
+          key: 'principal_id',
+          value: 'principal_id',
+          id: 'principal_id',
+        },
+        {
+          key: 'actual_workload',
+          value: 'actual_workload',
+          id: 'actual_workload',
+        },
+        {
+          key: 'workload_kind',
+          value: '工作项',
+          rawValue: true,
+          id: 'workload_kind',
+        },
+      ],
+      sysImage: {
+        cssClass: 'fa fa-plus',
+        glyph: 'xf067@FontAwesome',
+      },
+      refreshMode: 1,
+      tooltip: '添加预估工时',
+      uiactionMode: 'FRONT',
+      uiactionTag: 'add_estimated_workload',
+      uiactionType: 'DEUIACTION',
+      reloadData: true,
+      showBusyIndicator: true,
+      noPrivDisplayMode: 2,
+      appDataEntityId: 'plmweb.work_item',
+      name: '添加预估工时',
+      id: 'add_estimated_workload@work_item',
+    },
+    {
+      actionLevel: 100,
       actionTarget: 'SINGLEKEY',
       buttonStyle: 'DEFAULT',
       caption: '新建缺陷执行后（测试计划关联)',
@@ -12191,6 +12362,26 @@ export default {
       },
       name: '更改工作项状态',
       id: 'change_work_item_state@work_item',
+    },
+    {
+      actionLevel: 100,
+      actionTarget: 'NONE',
+      buttonStyle: 'DEFAULT',
+      caption: '查看预估工时明细',
+      codeName: 'check_estimated_workload_detail',
+      frontProcessType: 'OTHER',
+      fullCodeName: 'work_item_check_estimated_workload_detail',
+      tooltip: '查看预估工时明细',
+      uiactionMode: 'FRONT',
+      uiactionTag: 'check_estimated_workload_detail',
+      uiactionType: 'DEUIACTION',
+      uilogicAttachMode: 'REPLACE',
+      showBusyIndicator: true,
+      noPrivDisplayMode: 2,
+      appDEUILogicId: 'check_estimated_workload_detail',
+      appDataEntityId: 'plmweb.work_item',
+      name: '查看预估工时明细',
+      id: 'check_estimated_workload_detail@work_item',
     },
     {
       actionLevel: 100,
@@ -13028,6 +13219,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'work_item_kanban_work_item_import_data',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'project_id',
+          value: 'project',
+          id: 'project_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'kanban_work_item_import_data',
       uiactionType: 'DEUIACTION',
@@ -14956,7 +15154,7 @@ export default {
       buttonStyle: 'DEFAULT',
       caption: '新建缺陷',
       codeName: 'new_test_plan_bug',
-      frontAppViewId: 'plmweb.work_item_quick_create_view',
+      frontAppViewId: 'plmweb.work_item_dyna_quick_create_bug_view',
       frontProcessType: 'WIZARD',
       fullCodeName: 'work_item_new_test_plan_bug',
       nextId: 'after_new_test_plan_bug@work_item',
@@ -17847,7 +18045,7 @@ export default {
       codeName: 'remove_waterfall_plan',
       confirmMsg: '删除工作项会一起删除子工作项，确认删除工作项吗？',
       fullCodeName: 'work_item_remove_waterfall_plan',
-      appDEMethodId: 'remove',
+      appDEMethodId: 'delete',
       sysImage: {
         cssClass: 'fa fa-trash-o',
         glyph: 'xf014@FontAwesome',
@@ -17935,6 +18133,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'work_item_scrum_backlog_import_data',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'project_id',
+          value: 'project',
+          id: 'project_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'scrum_backlog_import_data',
       uiactionType: 'DEUIACTION',
@@ -17956,6 +18161,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'work_item_scrum_bug_import_data',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'project_id',
+          value: 'project',
+          id: 'project_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'scrum_bug_import_data',
       uiactionType: 'DEUIACTION',
@@ -17977,6 +18189,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'work_item_scrum_upload',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'project_id',
+          value: 'project',
+          id: 'project_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'scrum_upload',
       uiactionType: 'DEUIACTION',
@@ -18663,6 +18882,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'work_item_waterfall_upload_back',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'project_id',
+          value: 'project',
+          id: 'project_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'waterfall_upload_back',
       uiactionType: 'DEUIACTION',
@@ -18684,6 +18910,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'work_item_waterfall_upload_bug',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'project_id',
+          value: 'project',
+          id: 'project_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'waterfall_upload_bug',
       uiactionType: 'DEUIACTION',
@@ -18705,6 +18938,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'work_item_waterfall_work_item_import_data',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'project_id',
+          value: 'project',
+          id: 'project_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'waterfall_work_item_import_data',
       uiactionType: 'DEUIACTION',
@@ -19912,7 +20152,7 @@ export default {
       deuilogicNodes: [
         {
           codeName: 'Begin',
-          leftPos: -160,
+          leftPos: -130,
           logicNodeType: 'BEGIN',
           deuilogicLinks: [
             {
@@ -19929,7 +20169,7 @@ export default {
         {
           code: 'const selectedData = uiLogic.selecteddata;\r\nlet needDisable = true;\r\nif (selectedData && selectedData.length > 0) {\r\n    const firstData = selectedData[0];\r\n    for (let i = 0; i < selectedData.length; i++) {\r\n        const curData = selectedData[i];\r\n        const dataType = curData.work_item_type_id;\r\n        if (firstData.work_item_type_id !== dataType) {\r\n            needDisable = true;\r\n            break; \r\n        } else {\r\n            needDisable = false;\r\n        }\r\n    }\r\n    if(needDisable === true){\r\n        const cur_grid = uiLogic.cur_grid;\r\n        let detoolbar = uiLogic.detoolbar;\r\n        detoolbar = cur_grid.ctx.controllersMap.get("treegrid").batchToolbarController.state;\r\n        const detoolbarbutton = detoolbar.buttonsState.children;\r\n        for(let j = 0; j <detoolbarbutton.length;j++){\r\n            const toolitem = detoolbarbutton[j];\r\n            if (toolitem.uiActionId == "change_state@work_item"){\r\n                toolitem.disabled = true;\r\n            }\r\n        }\r\n    }\r\n}',
           codeName: 'RAWJSCODE1',
-          leftPos: 384,
+          leftPos: 214,
           logicNodeType: 'RAWJSCODE',
           deuilogicLinks: [
             {
@@ -19938,7 +20178,7 @@ export default {
               id: '连接名称',
             },
           ],
-          topPos: 208,
+          topPos: 200,
           name: '判断类型是否匹配',
           id: 'rawjscode1',
         },
@@ -19962,15 +20202,16 @@ export default {
               id: 'treegrid ==> selecteddata',
             },
           ],
-          topPos: 208,
+          topPos: 198,
           name: '获取选中数据',
           id: 'preparejsparam1',
         },
         {
           codeName: 'END1',
-          leftPos: 916,
+          leftPos: 446,
           logicNodeType: 'END',
           topPos: 200,
+          parallelOutput: true,
           name: '结束',
           id: 'end1',
         },
@@ -21189,6 +21430,55 @@ export default {
       startDEUILogicNodeId: 'begin',
       name: '图表显示总数',
       id: 'chart_show_count',
+    },
+    {
+      codeName: 'check_estimated_workload_detail',
+      defaultParamName: 'Default',
+      logicName: '查看预估工时明细',
+      deuilogicNodes: [
+        {
+          codeName: 'Begin',
+          leftPos: 200,
+          logicNodeType: 'BEGIN',
+          deuilogicLinks: [
+            {
+              dstDEUILogicNodeId: 'rawjscode1',
+              srcDEUILogicNodeId: 'begin',
+              id: '连接名称',
+            },
+          ],
+          topPos: 200,
+          name: '开始',
+          id: 'begin',
+        },
+        {
+          code: 'uiLogic.view.ctx.controllersMap.get("form").details.grouppanel8.state.visible=false;\r\nuiLogic.view.ctx.controllersMap.get("form").details.grouppanel17.state.visible=true;',
+          codeName: 'RAWJSCODE1',
+          leftPos: 160,
+          logicNodeType: 'RAWJSCODE',
+          topPos: 350,
+          name: '切换显示组件',
+          id: 'rawjscode1',
+        },
+      ],
+      deuilogicParams: [
+        {
+          codeName: 'Default',
+          default: true,
+          entityParam: true,
+          name: '传入变量',
+          id: 'default',
+        },
+        {
+          codeName: 'view',
+          activeViewParam: true,
+          name: '当前视图对象',
+          id: 'view',
+        },
+      ],
+      startDEUILogicNodeId: 'begin',
+      name: '查看预估工时明细',
+      id: 'check_estimated_workload_detail',
     },
     {
       codeName: 'check_workload_detail',

@@ -18,6 +18,7 @@ export default {
       ],
       pagingSize: 50,
       defaultMode: true,
+      appDataEntityId: 'plmweb.product',
       textAppDEFieldId: 'name',
       valueAppDEFieldId: 'id',
       name: 'DEFAULT',
@@ -28,6 +29,7 @@ export default {
     {
       codeName: 'identifier',
       logicName: '产品标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 15,
       enableQuickSearch: true,
@@ -37,6 +39,7 @@ export default {
     {
       codeName: 'visibility',
       logicName: '可见范围',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'VISIBILITY',
@@ -45,6 +48,7 @@ export default {
     {
       codeName: 'color',
       logicName: '主题色',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'COLOR',
@@ -53,6 +57,7 @@ export default {
     {
       codeName: 'description',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'DESCRIPTION',
@@ -61,6 +66,7 @@ export default {
     {
       codeName: 'is_archived',
       logicName: '是否已归档',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_ARCHIVED',
       id: 'is_archived',
@@ -68,6 +74,7 @@ export default {
     {
       codeName: 'is_deleted',
       logicName: '是否已删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_DELETED',
       id: 'is_deleted',
@@ -75,6 +82,7 @@ export default {
     {
       codeName: 'is_favorite',
       logicName: '是否星标',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'IS_FAVORITE',
@@ -83,6 +91,7 @@ export default {
     {
       codeName: 'members',
       logicName: '产品成员',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'MEMBERS',
@@ -91,6 +100,7 @@ export default {
     {
       codeName: 'scope_type',
       logicName: '所属',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'SCOPE_TYPE',
@@ -99,6 +109,7 @@ export default {
     {
       codeName: 'scope_id',
       logicName: '所属对象',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SCOPE_ID',
@@ -110,6 +121,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -121,6 +133,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '产品名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -133,6 +146,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -144,6 +158,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -155,6 +170,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -166,6 +182,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -174,6 +191,7 @@ export default {
     {
       codeName: 'user_tag',
       logicName: '用户标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'USER_TAG',
@@ -182,6 +200,7 @@ export default {
     {
       codeName: 'user_tag2',
       logicName: '用户标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'USER_TAG2',
@@ -216,6 +235,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',

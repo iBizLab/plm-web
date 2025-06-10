@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'desc',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'DESC',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'is_system',
       logicName: '是否系统类型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_SYSTEM',
       id: 'is_system',
@@ -18,6 +20,7 @@ export default {
     {
       codeName: 'chart_type',
       logicName: '图表类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'CHART_TYPE',
@@ -26,6 +29,7 @@ export default {
     {
       codeName: 'group',
       logicName: '组别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'GROUP',
@@ -34,6 +38,7 @@ export default {
     {
       codeName: 'categories',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES',
@@ -42,6 +47,7 @@ export default {
     {
       codeName: 'categories_name',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 2000,
       name: 'CATEGORIES_NAME',
@@ -50,6 +56,7 @@ export default {
     {
       codeName: 'template_model',
       logicName: '模板模型',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'TEMPLATE_MODEL',
@@ -58,6 +65,7 @@ export default {
     {
       codeName: 'group_data',
       logicName: '分组数据',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'GROUP_DATA',
@@ -66,6 +74,7 @@ export default {
     {
       codeName: 'ctrl_id',
       logicName: '报表部件标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CTRL_ID',
@@ -77,6 +86,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -88,6 +98,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -100,6 +111,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -111,6 +123,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -122,6 +135,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -133,6 +147,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -141,6 +156,7 @@ export default {
     {
       codeName: 'view_id',
       logicName: '视图标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'VIEW_ID',
@@ -149,6 +165,7 @@ export default {
     {
       codeName: 'view_name',
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'VIEW_NAME',
@@ -183,6 +200,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',

@@ -82,6 +82,12 @@ export default {
           name: 'EXPITEM:node_8',
           id: 'expitem:node_8',
         },
+        {
+          realTitle: '流程准则全部表格视图',
+          refAppViewId: 'plmweb.guideline_all_grid_view',
+          name: 'EXPITEM:node_9',
+          id: 'expitem:node_9',
+        },
       ],
       controls: [
         {
@@ -141,6 +147,13 @@ export default {
               parentValueLevel: 1,
               searchMode: 3,
               id: '配置 - 需求模板',
+            },
+            {
+              childDETreeNodeId: 'node_9',
+              parentDETreeNodeId: 'node_6',
+              parentValueLevel: 1,
+              searchMode: 3,
+              id: '配置 - 评审配置',
             },
           ],
           detreeNodes: [
@@ -242,6 +255,22 @@ export default {
               treeNodeType: 'STATIC',
               name: '需求模板',
               id: 'node_8',
+            },
+            {
+              text: '评审配置',
+              navAppViewId: 'plmweb.guideline_all_grid_view',
+              nodeType: 'node_9',
+              navigateParams: [
+                {
+                  key: 'n_object_type_eq',
+                  value: 'PRODUCT',
+                  rawValue: true,
+                  id: 'n_object_type_eq',
+                },
+              ],
+              treeNodeType: 'STATIC',
+              name: '评审配置',
+              id: 'node_9',
             },
           ],
           outputIconDefault: true,

@@ -61,6 +61,8 @@ export default {
                 ruleInfo: '请填写大写字母和数字',
                 ruleType: 'REGEX',
                 uniqueTag: 'UsrValueRule0312488358',
+                enableBackend: true,
+                enableFront: true,
                 name: '大写字母和数字',
                 id: 'usrvaluerule0312488358',
               },

@@ -6,6 +6,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -17,6 +18,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -29,6 +31,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -40,6 +43,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -51,6 +55,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -62,6 +67,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -70,6 +76,7 @@ export default {
     {
       codeName: 'audit_info',
       logicName: '审计信息',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'AUDITINFO',
@@ -78,6 +85,7 @@ export default {
     {
       codeName: 'op_person_id',
       logicName: '操作人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OPPERSONID',
@@ -86,6 +94,7 @@ export default {
     {
       codeName: 'op_person_name',
       logicName: '操作人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OPPERSONNAME',
@@ -94,6 +103,7 @@ export default {
     {
       codeName: 'ip_address',
       logicName: '访问地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'IPADDRESS',
@@ -102,6 +112,7 @@ export default {
     {
       codeName: 'object_id',
       logicName: '对象标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OBJECTID',
@@ -110,6 +121,7 @@ export default {
     {
       codeName: 'audit_type',
       logicName: '审计类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'AUDITTYPE',
@@ -118,6 +130,7 @@ export default {
     {
       codeName: 'object_type',
       logicName: '对象类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OBJECTTYPE',

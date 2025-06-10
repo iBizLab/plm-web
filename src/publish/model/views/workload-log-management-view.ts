@@ -12,6 +12,14 @@ export default {
   caption: '工时',
   codeName: 'workload_log_management_view',
   appDataEntityId: 'plmweb.workload',
+  appViewNavParams: [
+    {
+      rawValue: true,
+      key: 'n_category_eq',
+      value: 'ACTUAL_WORKLOAD',
+      id: 'n_category_eq',
+    },
+  ],
   sysCss: {
     cssName: 'workload_log_head',
   },

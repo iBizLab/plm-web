@@ -27,8 +27,8 @@ export default {
         batchAddAppViews: [
           {
             openMode: 'POPUPMODAL',
-            refMode: 'TEST_CASE',
-            refAppViewId: 'plmweb.test_case_mpick_up_view2_review',
+            refMode: 'IDEA',
+            refAppViewId: 'plmweb.idea_review_re_idea_view',
           },
         ],
         newDataAppView: {
@@ -44,8 +44,8 @@ export default {
           },
           {
             openMode: 'POPUPMODAL',
-            refMode: 'TEST_CASE',
-            refAppViewId: 'plmweb.test_case_mpick_up_view2_review',
+            refMode: 'IDEA',
+            refAppViewId: 'plmweb.idea_review_re_idea_view',
           },
         ],
         builtinLogic: true,
@@ -109,15 +109,18 @@ export default {
       id: 'editdata',
     },
     {
-      name: 'MPICKUPVIEW:REVIEW_WIZARD',
-      id: 'mpickupview:review_wizard',
+      realOpenMode: 'POPUPMODAL',
+      realTitle: '计划关联需求多项数据选择视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.IDEA.OTHERS_RELATION_IDEA_VIEW',
+      },
+      refAppViewId: 'plmweb.idea_review_re_idea_view',
+      name: 'MPICKUPVIEW:IDEA',
+      id: 'mpickupview:idea',
     },
     {
-      realOpenMode: 'POPUPMODAL',
-      realTitle: '用例实体数据多项选择',
-      refAppViewId: 'plmweb.test_case_mpick_up_view2_review',
-      name: 'MPICKUPVIEW:TEST_CASE',
-      id: 'mpickupview:test_case',
+      name: 'MPICKUPVIEW:REVIEW_WIZARD',
+      id: 'mpickupview:review_wizard',
     },
   ],
   controls: [
@@ -126,21 +129,53 @@ export default {
         {
           actionLevel: 100,
           noPrivDisplayMode: 2,
-          uiactionId: 'gridview_newaction',
+          uiactionId: 'program_review_test_case@review_content',
+          uiactionTarget: 'NONE',
           valid: true,
-          capLanguageRes: {
-            lanResTag: 'TBB.TEXT.*.NEW',
-          },
           caption: '规划用例',
           itemType: 'DEUIACTION',
+          controlLogics: [
+            {
+              itemName: 'deuiaction2',
+              logicTag: 'toolbar',
+              logicType: 'SCRIPT',
+              scriptCode: "context.principal_type == 'test_case'",
+              triggerType: 'ITEMVISIBLE',
+              id: 'test_case',
+            },
+          ],
           sysImage: {
             cssClass: 'fa fa-plus',
             glyph: 'xf067@FontAwesome',
           },
           tooltip: '规划用例',
-          tooltipLanguageRes: {
-            lanResTag: 'TBB.TOOLTIP.*.NEW',
+          showCaption: true,
+          showIcon: true,
+          id: 'deuiaction2',
+        },
+        {
+          actionLevel: 100,
+          noPrivDisplayMode: 2,
+          uiactionId: 'program_review_idea@review_content',
+          uiactionTarget: 'NONE',
+          valid: true,
+          caption: '规划需求',
+          itemType: 'DEUIACTION',
+          controlLogics: [
+            {
+              itemName: 'deuiaction1',
+              logicTag: 'toolbar',
+              logicType: 'SCRIPT',
+              scriptCode: "context.principal_type == 'idea'",
+              triggerType: 'ITEMVISIBLE',
+              id: 'idea',
+            },
+          ],
+          sysImage: {
+            cssClass: 'fa fa-plus',
+            glyph: 'xf067@FontAwesome',
           },
+          tooltip: '规划需求',
           showCaption: true,
           showIcon: true,
           id: 'deuiaction1',
@@ -305,12 +340,6 @@ export default {
           valueType: 'OBJECTS',
           dataType: 21,
           id: 'change_version',
-        },
-        {
-          appDEFieldId: 'target_id',
-          valueType: 'SIMPLE',
-          dataType: 25,
-          id: 'target_id',
         },
         {
           appDEFieldId: 'target_parent_id',

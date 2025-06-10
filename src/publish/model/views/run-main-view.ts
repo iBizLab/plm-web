@@ -767,7 +767,7 @@ export default {
                     },
                     allowEmpty: true,
                     convertToCodeItemText: true,
-                    caption: '评审状态',
+                    caption: '用例状态',
                     codeName: 'state',
                     detailStyle: 'DEFAULT',
                     detailType: 'FORMITEM',
@@ -1106,7 +1106,7 @@ export default {
                                       id: 'actual_value',
                                     },
                                     allowEmpty: true,
-                                    caption: '实际',
+                                    caption: '实际结果',
                                     codeName: 'actual_value',
                                     detailStyle: 'DEFAULT',
                                     detailType: 'FORMITEM',
@@ -1283,6 +1283,14 @@ export default {
                                   {
                                     appViewId:
                                       'plmweb.test_case_only_attchment_view',
+                                    navigateContexts: [
+                                      {
+                                        key: 'TEST_CASE',
+                                        value: 'case_id',
+                                        name: 'TEST_CASE',
+                                        id: 'test_case',
+                                      },
+                                    ],
                                     parentDataJO: {
                                       srfparentdename: 'RUN',
                                       SRFPARENTTYPE: 'CUSTOM',
@@ -2027,7 +2035,8 @@ export default {
                                 noPrivDisplayMode: 1,
                                 appDEFieldId: 'status',
                                 editor: {
-                                  appCodeListId: 'plmweb.testmgmt__run_status',
+                                  appCodeListId:
+                                    'plmweb.testmgmt__run_status_color',
                                   editorParams: {
                                     MODE: 'horizontal',
                                     RENDERMODE: 'BUTTON',
@@ -2049,6 +2058,9 @@ export default {
                                 layoutPos: {
                                   colMD: 24,
                                   layout: 'TABLE_24COL',
+                                },
+                                sysCss: {
+                                  cssName: 'run_case_label_style',
                                 },
                                 id: 'status2',
                               },
@@ -2213,23 +2225,6 @@ export default {
                             },
                             showCaption: true,
                             id: 'grouppanel5',
-                          },
-                          {
-                            titleBarCloseMode: 1,
-                            layout: {
-                              columnCount: 24,
-                              layout: 'TABLE_24COL',
-                            },
-                            caption: '变更',
-                            codeName: 'grouppanel6',
-                            detailStyle: 'DEFAULT',
-                            detailType: 'GROUPPANEL',
-                            layoutPos: {
-                              colMD: 24,
-                              layout: 'TABLE_24COL',
-                            },
-                            showCaption: true,
-                            id: 'grouppanel6',
                           },
                           {
                             titleBarCloseMode: 1,
@@ -2743,6 +2738,54 @@ export default {
                     },
                     id: 'tabpanel2',
                   },
+                  {
+                    layout: {
+                      columnCount: 24,
+                      layout: 'TABLE_24COL',
+                    },
+                    deformDetails: [
+                      {
+                        appViewId: 'plmweb.workload_run_list_view',
+                        parentDataJO: {
+                          srfparentdename: 'RUN',
+                          SRFPARENTTYPE: 'CUSTOM',
+                        },
+                        codeName: 'druipart3',
+                        detailStyle: 'DEFAULT',
+                        detailType: 'DRUIPART',
+                        layoutPos: {
+                          colMD: 24,
+                          layout: 'TABLE_24COL',
+                        },
+                        showCaption: true,
+                        id: 'druipart3',
+                      },
+                    ],
+                    codeName: 'grouppanel1',
+                    detailStyle: 'DEFAULT',
+                    detailType: 'GROUPPANEL',
+                    defdgroupLogics: [
+                      {
+                        logicCat: 'PANELVISIBLE',
+                        relatedDetailNames: ['workload_schedule'],
+                        groupOP: 'AND',
+                        defdlogics: [
+                          {
+                            condOP: 'EQ',
+                            defdname: 'workload_schedule',
+                            value: '-1',
+                            logicType: 'SINGLE',
+                          },
+                        ],
+                        logicType: 'GROUP',
+                      },
+                    ],
+                    layoutPos: {
+                      colMD: 24,
+                      layout: 'TABLE_24COL',
+                    },
+                    id: 'grouppanel1',
+                  },
                 ],
                 codeName: 'right_grouppanel',
                 detailStyle: 'DEFAULT',
@@ -2806,54 +2849,6 @@ export default {
                   layout: 'TABLE_24COL',
                 },
                 id: 'is_readonly',
-              },
-              {
-                layout: {
-                  columnCount: 24,
-                  layout: 'TABLE_24COL',
-                },
-                deformDetails: [
-                  {
-                    appViewId: 'plmweb.workload_run_list_view',
-                    parentDataJO: {
-                      srfparentdename: 'RUN',
-                      SRFPARENTTYPE: 'CUSTOM',
-                    },
-                    codeName: 'druipart3',
-                    detailStyle: 'DEFAULT',
-                    detailType: 'DRUIPART',
-                    layoutPos: {
-                      colMD: 24,
-                      layout: 'TABLE_24COL',
-                    },
-                    showCaption: true,
-                    id: 'druipart3',
-                  },
-                ],
-                codeName: 'grouppanel1',
-                detailStyle: 'DEFAULT',
-                detailType: 'GROUPPANEL',
-                defdgroupLogics: [
-                  {
-                    logicCat: 'PANELVISIBLE',
-                    relatedDetailNames: ['workload_schedule'],
-                    groupOP: 'AND',
-                    defdlogics: [
-                      {
-                        condOP: 'EQ',
-                        defdname: 'workload_schedule',
-                        value: '-1',
-                        logicType: 'SINGLE',
-                      },
-                    ],
-                    logicType: 'GROUP',
-                  },
-                ],
-                layoutPos: {
-                  colMD: 24,
-                  layout: 'TABLE_24COL',
-                },
-                id: 'grouppanel1',
               },
               {
                 dataType: 25,

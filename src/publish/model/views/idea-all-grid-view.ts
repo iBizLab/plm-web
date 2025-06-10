@@ -506,7 +506,7 @@ export default {
           },
           {
             clconvertMode: 'FRONT',
-            dataItemName: 'priority',
+            dataItemName: 'priority_text',
             excelCaption: '优先级',
             appCodeListId: 'plmweb.prodmgmt__idea_priority',
             appDEFieldId: 'priority',
@@ -590,6 +590,26 @@ export default {
             widthUnit: 'PX',
             enableSort: true,
             id: 'plan_at',
+          },
+          {
+            clconvertMode: 'FRONT',
+            dataItemName: 'review_result_state',
+            excelCaption: '评审结果',
+            appCodeListId: 'plmweb.testmgmt__review_result',
+            appDEFieldId: 'review_result_state',
+            valueType: 'SIMPLE',
+            aggMode: 'NONE',
+            align: 'LEFT',
+            caption: '评审结果',
+            codeName: 'review_result_state',
+            columnType: 'DEFGRIDCOLUMN',
+            hideMode: 1,
+            noPrivDisplayMode: 1,
+            width: 250,
+            widthUnit: 'PX',
+            enableSort: true,
+            hideDefault: true,
+            id: 'review_result_state',
           },
           {
             clconvertMode: 'FRONT',
@@ -713,6 +733,12 @@ export default {
             appDEFieldId: 'priority',
             valueType: 'SIMPLE',
             dataType: 25,
+            id: 'priority_text',
+          },
+          {
+            appDEFieldId: 'priority',
+            valueType: 'SIMPLE',
+            dataType: 25,
             id: 'priority',
           },
           {
@@ -732,6 +758,12 @@ export default {
             valueType: 'SIMPLE',
             dataType: 25,
             id: 'plan_at',
+          },
+          {
+            appDEFieldId: 'review_result_state',
+            valueType: 'SIMPLE',
+            dataType: 25,
+            id: 'review_result_state',
           },
           {
             appDEFieldId: 'update_man',
@@ -834,14 +866,31 @@ export default {
             editor: {
               singleSelect: true,
               appCodeListId: 'plmweb.prodmgmt__idea_state',
+              editorParams: {
+                'SRFNAVPARAM.product': '%product%',
+              },
               editorType: 'DROPDOWNLIST',
               editorItems: [
                 {
+                  navigateParams: [
+                    {
+                      key: 'product',
+                      value: 'product',
+                      id: 'product',
+                    },
+                  ],
                   id: 'state',
                 },
               ],
               valueType: 'SIMPLE',
               editable: true,
+              navigateParams: [
+                {
+                  key: 'product',
+                  value: 'product',
+                  id: 'product',
+                },
+              ],
               id: 'state',
             },
             allowEmpty: true,
@@ -856,9 +905,31 @@ export default {
             editor: {
               singleSelect: true,
               appCodeListId: 'plmweb.prodmgmt__idea_priority',
+              editorParams: {
+                'SRFNAVPARAM.product': '%product%',
+              },
               editorType: 'DROPDOWNLIST',
+              editorItems: [
+                {
+                  navigateParams: [
+                    {
+                      key: 'product',
+                      value: 'product',
+                      id: 'product',
+                    },
+                  ],
+                  id: 'priority',
+                },
+              ],
               valueType: 'SIMPLE',
               editable: true,
+              navigateParams: [
+                {
+                  key: 'product',
+                  value: 'product',
+                  id: 'product',
+                },
+              ],
               id: 'priority',
             },
             allowEmpty: true,
@@ -1898,6 +1969,31 @@ export default {
             itemType: 'FILTER',
             appDEFieldId: 'update_time',
             id: 'update_time_ltand',
+          },
+          {
+            dataType: 25,
+            labelPos: 'NONE',
+            defsearchMode: {
+              codeName: 'N_REVIEW_RESULT_STATE_EQ',
+              stdDataType: 25,
+              valueOP: 'EQ',
+              name: 'N_REVIEW_RESULT_STATE_EQ',
+              id: 'n_review_result_state_eq',
+            },
+            editor: {
+              singleSelect: true,
+              appCodeListId: 'plmweb.testmgmt__review_result',
+              editorType: 'DROPDOWNLIST',
+              valueType: 'SIMPLE',
+              editable: true,
+              id: 'review_result_eq',
+            },
+            allowEmpty: true,
+            needCodeListConfig: true,
+            caption: '评审结果',
+            itemType: 'FILTER',
+            appDEFieldId: 'review_result_state',
+            id: 'review_result_eq',
           },
         ],
         searchBarGroups: [

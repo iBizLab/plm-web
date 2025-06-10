@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'msg_type',
       logicName: '消息类型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'MSG_TYPE',
       id: 'msg_type',
@@ -10,6 +11,7 @@ export default {
     {
       codeName: 'group',
       logicName: '事件分类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'GROUP',
@@ -18,6 +20,7 @@ export default {
     {
       codeName: 'id',
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -26,6 +29,7 @@ export default {
     {
       codeName: 'name',
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,

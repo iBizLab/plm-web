@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'ProdMgmt__solutions',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'ProdMgmt__solutions',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.ticket',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_ticket_solution',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'item_10',
@@ -48,6 +54,8 @@ export default {
       id: 'item_70',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '工单解决方案',
   id: 'plmweb.prodmgmt__solutions',

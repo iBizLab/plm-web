@@ -590,7 +590,7 @@ export default {
         },
         {
           clconvertMode: 'FRONT',
-          dataItemName: 'priority',
+          dataItemName: 'priority_text',
           excelCaption: '优先级',
           appCodeListId: 'plmweb.projmgmt__work_item_priority',
           appDEFieldId: 'priority',
@@ -724,6 +724,12 @@ export default {
           valueType: 'SIMPLE',
           dataType: 25,
           id: 'assignee_name',
+        },
+        {
+          appDEFieldId: 'priority',
+          valueType: 'SIMPLE',
+          dataType: 25,
+          id: 'priority_text',
         },
         {
           appDEFieldId: 'priority',
@@ -973,6 +979,11 @@ export default {
             singleSelect: true,
             appCodeListId: 'plmweb.projmgmt__work_item_priority',
             editorType: 'DROPDOWNLIST',
+            editorItems: [
+              {
+                id: 'priority',
+              },
+            ],
             valueType: 'SIMPLE',
             editable: true,
             id: 'priority',

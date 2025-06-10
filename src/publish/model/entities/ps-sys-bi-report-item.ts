@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'PSSysBIReportItemId',
       logicName: '智能报表项标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBIREPORTITEMID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'PSSysBIReportItemName',
       logicName: '智能报表项名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -20,6 +22,7 @@ export default {
     {
       codeName: 'ValidFlag',
       logicName: '启用',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'VALIDFLAG',
       id: 'validflag',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'ValueFormat',
       logicName: '值格式化',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'VALUEFORMAT',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'PSSysBICubeDimensionId',
       logicName: '智能报表立方体维度',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEDIMENSIONID',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'PSSysBICubeId',
       logicName: '智能报表立方体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEID',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'PSSysBICubeMeasureId',
       logicName: '智能报表指标',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEMEASUREID',
@@ -59,6 +66,7 @@ export default {
     {
       codeName: 'PSSysBICubeDimensionName',
       logicName: '立方体维度',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEDIMENSIONNAME',
@@ -67,6 +75,7 @@ export default {
     {
       codeName: 'PSSysBICubeMeasureName',
       logicName: '立方体指标',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEMEASURENAME',
@@ -75,6 +84,7 @@ export default {
     {
       codeName: 'PSSysBICubeName',
       logicName: '智能报表立方体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBENAME',
@@ -83,6 +93,7 @@ export default {
     {
       codeName: 'PSSysBIReportId',
       logicName: '智能报表报表',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBIREPORTID',
@@ -91,6 +102,7 @@ export default {
     {
       codeName: 'PSSysBIReportName',
       logicName: '智能报表报表',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PSSYSBIREPORTNAME',
@@ -99,6 +111,7 @@ export default {
     {
       codeName: 'PSSysBISchemeId',
       logicName: 'PSSYSBISCHEMEID',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBISCHEMEID',
@@ -107,6 +120,7 @@ export default {
     {
       codeName: 'BIRepItemType',
       logicName: '报表项类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       name: 'BIREPITEMTYPE',
@@ -115,6 +129,7 @@ export default {
     {
       codeName: 'PlaceType',
       logicName: '放置类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       name: 'PLACETYPE',
@@ -123,6 +138,7 @@ export default {
     {
       codeName: 'Placement',
       logicName: '放置位置',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       name: 'PLACEMENT',
@@ -131,6 +147,7 @@ export default {
     {
       codeName: 'Data',
       logicName: '项数据',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'DATA',
@@ -139,6 +156,7 @@ export default {
     {
       codeName: 'BIRepItemParams',
       logicName: '项参数',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'BIREPITEMPARAMS',
@@ -147,6 +165,7 @@ export default {
     {
       codeName: 'BIRepItemTag2',
       logicName: '报表列标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BIREPITEMTAG2',
@@ -155,6 +174,7 @@ export default {
     {
       codeName: 'BIRepItemTag',
       logicName: '报表列标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BIREPITEMTAG',
@@ -163,6 +183,7 @@ export default {
     {
       codeName: 'RefType',
       logicName: '指标引用类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       name: 'REFTYPE',
@@ -171,6 +192,7 @@ export default {
     {
       codeName: 'AggType',
       logicName: '聚合类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 20,
       name: 'AGGTYPE',
@@ -179,6 +201,7 @@ export default {
     {
       codeName: 'StdDataType',
       logicName: '标准数据类型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'STDDATATYPE',
       id: 'stddatatype',

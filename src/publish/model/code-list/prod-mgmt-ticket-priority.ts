@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'ProdMgmt__ticket_priority',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'ProdMgmt__ticket_priority',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.ticket',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_ticket_priority',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'p0',
@@ -61,6 +67,8 @@ export default {
       id: 'p4',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '工单优先级',
   id: 'plmweb.prodmgmt__ticket_priority',

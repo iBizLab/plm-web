@@ -17,6 +17,8 @@ export default {
         },
       ],
       pagingSize: 50,
+      enableBackend: true,
+      appDataEntityId: 'plmweb.ticket',
       textAppDEFieldId: 'title',
       valueAppDEFieldId: 'id',
       name: 'AIChat',
@@ -146,6 +148,8 @@ export default {
           id: 'create_time',
         },
       ],
+      enableBackend: true,
+      enableFront: true,
       name: '数据导出',
       id: 'dataexport',
     },
@@ -218,6 +222,8 @@ export default {
       ],
       updateDataAccessAction: 'UPDATE',
       defaultMode: true,
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -229,6 +235,7 @@ export default {
     {
       codeName: 'identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       enableQuickSearch: true,
@@ -238,6 +245,7 @@ export default {
     {
       codeName: 'title',
       logicName: '标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       enableQuickSearch: true,
@@ -247,6 +255,7 @@ export default {
     {
       codeName: 'state',
       logicName: '状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'STATE',
@@ -255,6 +264,7 @@ export default {
     {
       codeName: 'type',
       logicName: '类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TYPE',
@@ -263,6 +273,7 @@ export default {
     {
       codeName: 'solution',
       logicName: '解决方案',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'SOLUTION',
@@ -271,6 +282,7 @@ export default {
     {
       codeName: 'priority',
       logicName: '优先级',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'PRIORITY',
@@ -279,6 +291,7 @@ export default {
     {
       codeName: 'channel',
       logicName: '渠道',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CHANNEL',
@@ -287,6 +300,7 @@ export default {
     {
       codeName: 'description',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'DESCRIPTION',
@@ -295,6 +309,7 @@ export default {
     {
       codeName: 'submitted_at',
       logicName: '提交时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'SUBMITTED_AT',
@@ -303,6 +318,7 @@ export default {
     {
       codeName: 'is_archived',
       logicName: '是否已归档',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_ARCHIVED',
       id: 'is_archived',
@@ -310,6 +326,7 @@ export default {
     {
       codeName: 'is_deleted',
       logicName: '是否已删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_DELETED',
       id: 'is_deleted',
@@ -317,6 +334,7 @@ export default {
     {
       codeName: 'estimated_at',
       logicName: '预计时间',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ESTIMATED_AT',
@@ -325,6 +343,7 @@ export default {
     {
       codeName: 'tags',
       logicName: '标签',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'TAGS',
@@ -333,6 +352,7 @@ export default {
     {
       codeName: 'assignee_name',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_NAME',
@@ -341,6 +361,7 @@ export default {
     {
       codeName: 'assignee_id',
       logicName: '负责人标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_ID',
@@ -349,6 +370,7 @@ export default {
     {
       codeName: 'submitter_id',
       logicName: '提交人标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SUBMITTER_ID',
@@ -357,6 +379,7 @@ export default {
     {
       codeName: 'submitter_name',
       logicName: '提交人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SUBMITTER_NAME',
@@ -365,6 +388,7 @@ export default {
     {
       codeName: 'attachments',
       logicName: '附件',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'ATTACHMENTS',
@@ -373,6 +397,7 @@ export default {
     {
       codeName: 'show_identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'SHOW_IDENTIFIER',
@@ -381,6 +406,7 @@ export default {
     {
       codeName: 'product_identifier',
       logicName: '产品标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 15,
       name: 'PRODUCT_IDENTIFIER',
@@ -389,6 +415,7 @@ export default {
     {
       codeName: 'attentions',
       logicName: '关注',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'ATTENTIONS',
@@ -397,6 +424,7 @@ export default {
     {
       codeName: 'rep_num',
       logicName: '工单数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'REP_NUM',
@@ -405,6 +433,7 @@ export default {
     {
       codeName: 'solution_way',
       logicName: '解决办法',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'SOLUTION_WAY',
@@ -413,6 +442,7 @@ export default {
     {
       codeName: 'attention_count',
       logicName: '关注数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'ATTENTION_COUNT',
@@ -421,6 +451,7 @@ export default {
     {
       codeName: 'comment_count',
       logicName: '评论数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'COMMENT_COUNT',
@@ -429,6 +460,7 @@ export default {
     {
       codeName: 'product_is_deleted',
       logicName: '产品是否删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PRODUCT_IS_DELETED',
       id: 'product_is_deleted',
@@ -436,6 +468,7 @@ export default {
     {
       codeName: 'product_is_archived',
       logicName: '产品是否归档',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PRODUCT_IS_ARCHIVED',
       id: 'product_is_archived',
@@ -443,6 +476,7 @@ export default {
     {
       codeName: 'attentions_imp',
       logicName: '关注人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ATTENTIONS_IMP',
@@ -451,6 +485,7 @@ export default {
     {
       codeName: 'recent_create_days',
       logicName: '最近创建日期',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'RECENT_CREATE_DAYS',
@@ -462,6 +497,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -473,6 +509,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -484,6 +521,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -495,6 +533,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -506,6 +545,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -517,6 +557,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'NAME',
@@ -525,6 +566,7 @@ export default {
     {
       codeName: 'product_id',
       logicName: '产品标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRODUCT_ID',
@@ -533,6 +575,7 @@ export default {
     {
       codeName: 'customer_id',
       logicName: '客户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CUSTOMER_ID',
@@ -541,6 +584,7 @@ export default {
     {
       codeName: 'customer_name',
       logicName: '客户',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'CUSTOMER_NAME',
@@ -549,6 +593,7 @@ export default {
     {
       codeName: 'product_name',
       logicName: '所属产品',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PRODUCT_NAME',
@@ -564,6 +609,7 @@ export default {
       scriptCode:
         'if(!data){\n    data = {};\n}\nObject.keys(viewParam).forEach((key) =>{\n    data[key] = viewParam[key];\n})\nreturn data;',
       customCode: true,
+      enableFront: true,
       valid: true,
       name: '填充BI报表默认值',
       id: 'fill_bi_form_default',
@@ -595,6 +641,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',
@@ -3902,6 +3949,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'ticket_ticket_custom_import_data',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'product_id',
+          value: 'product',
+          id: 'product_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'ticket_custom_import_data',
       uiactionType: 'DEUIACTION',

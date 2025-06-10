@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'principal_id',
       logicName: '关联主体标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRINCIPAL_ID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'owner_type',
       logicName: '所属数据对象',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'OWNER_TYPE',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'principal_type',
       logicName: '关联主体类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRINCIPAL_TYPE',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'target_type',
       logicName: '关联目标类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TARGET_TYPE',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'target_id',
       logicName: '关联目标标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TARGET_ID',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'target_version_id',
       logicName: '目标对象版本标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TARGET_VERSION_ID',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'project_id',
       logicName: '项目',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PROJECT_ID',
@@ -59,6 +66,7 @@ export default {
     {
       codeName: 'show_identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SHOW_IDENTIFIER',
@@ -67,6 +75,7 @@ export default {
     {
       codeName: 'ptitle',
       logicName: '父工作项',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PTITLE',
@@ -75,6 +84,7 @@ export default {
     {
       codeName: 'title',
       logicName: '标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TITLE',
@@ -83,6 +93,7 @@ export default {
     {
       codeName: 'state',
       logicName: '状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'STATE',
@@ -91,6 +102,7 @@ export default {
     {
       codeName: 'assignee_id',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_ID',
@@ -99,6 +111,7 @@ export default {
     {
       codeName: 'assignee_name',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_NAME',
@@ -107,6 +120,7 @@ export default {
     {
       codeName: 'cur_version_id',
       logicName: '当前版本标识',
+      predefinedType: 'VERSIONID',
       stdDataType: 25,
       stringLength: 100,
       name: 'CUR_VERSION_ID',
@@ -115,6 +129,7 @@ export default {
     {
       codeName: 'priority',
       logicName: '优先级',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRIORITY',
@@ -123,6 +138,7 @@ export default {
     {
       codeName: 'target_version',
       logicName: '关联目标版本',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'TARGET_VERSION',
@@ -132,6 +148,7 @@ export default {
       codeName: 'estimated_workload',
       logicName: '预估工时',
       precision: 1,
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'ESTIMATED_WORKLOAD',
       id: 'estimated_workload',
@@ -140,6 +157,7 @@ export default {
       codeName: 'remaining_workload',
       logicName: '剩余工时',
       precision: 1,
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'REMAINING_WORKLOAD',
       id: 'remaining_workload',
@@ -148,6 +166,7 @@ export default {
       codeName: 'actual_workload',
       logicName: '实际工时',
       precision: 1,
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'ACTUAL_WORKLOAD',
       id: 'actual_workload',
@@ -155,6 +174,7 @@ export default {
     {
       codeName: 'release_id',
       logicName: '项目发布标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RELEASE_ID',
@@ -163,6 +183,7 @@ export default {
     {
       codeName: 'release_name',
       logicName: '项目发布名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RELEASE_NAME',
@@ -171,6 +192,7 @@ export default {
     {
       codeName: 'sprint_name',
       logicName: '迭代名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SPRINT_NAME',
@@ -179,6 +201,7 @@ export default {
     {
       codeName: 'sprint_id',
       logicName: '迭代标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SPRINT_ID',
@@ -187,6 +210,7 @@ export default {
     {
       codeName: 'board_name',
       logicName: '看板名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BOARD_NAME',
@@ -195,6 +219,7 @@ export default {
     {
       codeName: 'board_id',
       logicName: '看板标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BOARD_ID',
@@ -203,6 +228,7 @@ export default {
     {
       codeName: 'entry_name',
       logicName: '看板栏名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ENTRY_NAME',
@@ -211,6 +237,7 @@ export default {
     {
       codeName: 'entry_id',
       logicName: '看板栏标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ENTRY_ID',
@@ -219,6 +246,7 @@ export default {
     {
       codeName: 'pid',
       logicName: '父标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PID',
@@ -227,6 +255,7 @@ export default {
     {
       codeName: 'is_deleted',
       logicName: '是否已删除',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'IS_DELETED',
@@ -235,6 +264,7 @@ export default {
     {
       codeName: 'is_archived',
       logicName: '是否已归档',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'IS_ARCHIVED',
@@ -243,6 +273,7 @@ export default {
     {
       codeName: 'identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'IDENTIFIER',
@@ -251,6 +282,7 @@ export default {
     {
       codeName: 'completed_at',
       logicName: '完成时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'COMPLETED_AT',
@@ -259,6 +291,7 @@ export default {
     {
       codeName: 'risk',
       logicName: '风险',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'RISK',
@@ -267,6 +300,7 @@ export default {
     {
       codeName: 'backlog_from',
       logicName: '需求来源',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BACKLOG_FROM',
@@ -275,6 +309,7 @@ export default {
     {
       codeName: 'backlog_type',
       logicName: '需求类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BACKLOG_TYPE',
@@ -283,6 +318,7 @@ export default {
     {
       codeName: 'description',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DESCRIPTION',
@@ -291,6 +327,7 @@ export default {
     {
       codeName: 'baseline',
       logicName: '基线',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'BASELINE',
@@ -299,6 +336,7 @@ export default {
     {
       codeName: 'start_at',
       logicName: '开始时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'START_AT',
@@ -307,6 +345,7 @@ export default {
     {
       codeName: 'end_at',
       logicName: '结束时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'END_AT',
@@ -315,6 +354,7 @@ export default {
     {
       codeName: 'is_leaf',
       logicName: '是否叶子节点',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_LEAF',
       id: 'is_leaf',
@@ -322,6 +362,7 @@ export default {
     {
       codeName: 'work_item_type_id',
       logicName: '工作项类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'WORK_ITEM_TYPE_ID',
@@ -333,6 +374,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -344,6 +386,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -356,6 +399,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -367,6 +411,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -378,6 +423,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -389,6 +435,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',

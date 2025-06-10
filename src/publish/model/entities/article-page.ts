@@ -78,6 +78,8 @@ export default {
         },
       ],
       updateDataAccessAction: 'UPDATE',
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -92,6 +94,7 @@ export default {
         lanResTag: 'DEF.LNAME.IDEA.IDENTIFIER',
       },
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       enableQuickSearch: true,
@@ -101,6 +104,7 @@ export default {
     {
       codeName: 'is_shared',
       logicName: '是否开启共享',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'IS_SHARED',
@@ -109,6 +113,7 @@ export default {
     {
       codeName: 'expiration_date',
       logicName: '共享有效期',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'EXPIRATION_DATE',
@@ -117,6 +122,7 @@ export default {
     {
       codeName: 'access_password',
       logicName: '访问密码',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ACCESS_PASSWORD',
@@ -125,6 +131,7 @@ export default {
     {
       codeName: 'format_type',
       logicName: '正文格式',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'FORMAT_TYPE',
@@ -133,6 +140,7 @@ export default {
     {
       codeName: 'sequence',
       logicName: '序号',
+      predefinedType: 'ORDERVALUE',
       stdDataType: 6,
       name: 'SEQUENCE',
       id: 'sequence',
@@ -140,6 +148,7 @@ export default {
     {
       codeName: 'content',
       logicName: '正文',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 16777215,
       name: 'CONTENT',
@@ -148,6 +157,7 @@ export default {
     {
       codeName: 'type',
       logicName: '类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'TYPE',
@@ -159,6 +169,7 @@ export default {
         lanResTag: 'DEF.LNAME.IS_FAVORITE',
       },
       logicName: '是否星标',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'IS_FAVORITE',
@@ -167,6 +178,7 @@ export default {
     {
       codeName: 'is_leaf',
       logicName: '是否叶子节点',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_LEAF',
       id: 'is_leaf',
@@ -174,6 +186,7 @@ export default {
     {
       codeName: 'space_identifier',
       logicName: '空间编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 15,
       name: 'SPACE_IDENTIFIER',
@@ -182,6 +195,7 @@ export default {
     {
       codeName: 'categories',
       logicName: '类别路径',
+      predefinedType: 'PARENTIDPATH',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES',
@@ -190,6 +204,7 @@ export default {
     {
       codeName: 'attachments',
       logicName: '附件',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'ATTACHMENTS',
@@ -201,6 +216,7 @@ export default {
         lanResTag: 'DEF.LNAME.IS_ARCHIVED',
       },
       logicName: '是否已归档',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_ARCHIVED',
       id: 'is_archived',
@@ -211,6 +227,7 @@ export default {
         lanResTag: 'DEF.LNAME.IS_DELETED',
       },
       logicName: '是否已删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_DELETED',
       id: 'is_deleted',
@@ -218,6 +235,7 @@ export default {
     {
       codeName: 'attentions',
       logicName: '关注',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'ATTENTIONS',
@@ -226,6 +244,7 @@ export default {
     {
       codeName: 'cur_version_id',
       logicName: '当前版本标识',
+      predefinedType: 'VERSIONID',
       stdDataType: 25,
       stringLength: 100,
       name: 'CUR_VERSION_ID',
@@ -234,6 +253,7 @@ export default {
     {
       codeName: 'cur_version_name',
       logicName: '当前版本名称',
+      predefinedType: 'VERSION',
       stdDataType: 25,
       stringLength: 100,
       name: 'CUR_VERSION_NAME',
@@ -242,6 +262,7 @@ export default {
     {
       codeName: 'publish_time',
       logicName: '发布时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'PUBLISH_TIME',
@@ -250,6 +271,7 @@ export default {
     {
       codeName: 'is_published',
       logicName: '是否发布',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_PUBLISHED',
       id: 'is_published',
@@ -257,6 +279,7 @@ export default {
     {
       codeName: 'publish_man',
       logicName: '发布人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PUBLISH_MAN',
@@ -265,6 +288,7 @@ export default {
     {
       codeName: 'publish_content',
       logicName: '发布正文',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 16777215,
       name: 'PUBLISH_CONTENT',
@@ -273,6 +297,7 @@ export default {
     {
       codeName: 'show_identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'SHOW_IDENTIFIER',
@@ -281,6 +306,7 @@ export default {
     {
       codeName: 'publish_name',
       logicName: '发布主题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PUBLISH_NAME',
@@ -289,6 +315,7 @@ export default {
     {
       codeName: 'published',
       logicName: '发布状态',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PUBLISHED',
       id: 'published',
@@ -296,6 +323,7 @@ export default {
     {
       codeName: 'is_lock',
       logicName: '是否锁定',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_LOCK',
       id: 'is_lock',
@@ -303,6 +331,7 @@ export default {
     {
       codeName: 'icon',
       logicName: '图标',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'ICON',
@@ -311,6 +340,7 @@ export default {
     {
       codeName: 'is_shared_subset',
       logicName: '是否同时共享子页面',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'IS_SHARED_SUBSET',
@@ -319,6 +349,7 @@ export default {
     {
       codeName: 'read_shared',
       logicName: '共享只读能力',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'READ_SHARED',
@@ -327,6 +358,7 @@ export default {
     {
       codeName: 'shared_by',
       logicName: '共享人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SHARED_BY',
@@ -335,6 +367,7 @@ export default {
     {
       codeName: 'shared_time',
       logicName: '共享时间',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'SHARED_TIME',
@@ -343,6 +376,7 @@ export default {
     {
       codeName: 'attention_count',
       logicName: '关注数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'ATTENTION_COUNT',
@@ -351,6 +385,7 @@ export default {
     {
       codeName: 'comment_count',
       logicName: '评论数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'COMMENT_COUNT',
@@ -359,6 +394,7 @@ export default {
     {
       codeName: 'choose_version_id',
       logicName: '选择版本标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CHOOSE_VERSION_ID',
@@ -367,6 +403,7 @@ export default {
     {
       codeName: 'choose_version_name',
       logicName: '选择版本名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CHOOSE_VERSION_NAME',
@@ -375,6 +412,7 @@ export default {
     {
       codeName: 'recent_create_days',
       logicName: '最近创建日期',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'RECENT_CREATE_DAYS',
@@ -386,6 +424,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -397,6 +436,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '主题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -409,6 +449,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -420,6 +461,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -431,6 +473,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -442,6 +485,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -450,6 +494,7 @@ export default {
     {
       codeName: 'space_id',
       logicName: '空间标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'SPACE_ID',
@@ -458,6 +503,7 @@ export default {
     {
       codeName: 'parent_id',
       logicName: '父页面标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARENT_ID',
@@ -466,6 +512,7 @@ export default {
     {
       codeName: 'space_name',
       logicName: '空间名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'SPACE_NAME',
@@ -474,6 +521,7 @@ export default {
     {
       codeName: 'user_tag',
       logicName: '用户标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'USER_TAG',
@@ -482,6 +530,7 @@ export default {
     {
       codeName: 'user_tag2',
       logicName: '用户标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'USER_TAG2',
@@ -587,6 +636,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '获取共享页面标题',
       id: 'get_shared_title',
@@ -618,6 +668,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',
@@ -5030,7 +5081,7 @@ export default {
       deuilogicNodes: [
         {
           codeName: 'Begin',
-          leftPos: 220,
+          leftPos: 67,
           logicNodeType: 'BEGIN',
           deuilogicLinks: [
             {
@@ -5039,14 +5090,30 @@ export default {
               id: '连接名称',
             },
           ],
-          topPos: 212,
+          topPos: 82,
           parallelOutput: true,
           name: '开始',
           id: 'begin',
         },
         {
+          code: "ibiz.mc.command.create.send({ srfdecodename: 'article_page'})",
+          codeName: 'RAWJSCODE2',
+          leftPos: 1117,
+          logicNodeType: 'RAWJSCODE',
+          deuilogicLinks: [
+            {
+              dstDEUILogicNodeId: 'end1',
+              srcDEUILogicNodeId: 'rawjscode2',
+              id: '连接名称',
+            },
+          ],
+          topPos: 90,
+          name: '通知刷新',
+          id: 'rawjscode2',
+        },
+        {
           codeName: 'PREPAREJSPARAM1',
-          leftPos: 557,
+          leftPos: 377,
           logicNodeType: 'PREPAREJSPARAM',
           deuilogicLinks: [
             {
@@ -5084,17 +5151,33 @@ export default {
               id: 'toolbar[state.buttonsstate.deuiaction2] ==> button2_state_obj',
             },
           ],
-          topPos: 208,
-          name: '准备逻辑参数',
+          topPos: 90,
+          name: '准备界面元素',
           id: 'preparejsparam1',
         },
         {
+          code: 'const operator = context.loginname;\r\n\r\nlocalStorage.removeItem(operator);',
+          codeName: 'RAWJSCODE1',
+          leftPos: 830,
+          logicNodeType: 'RAWJSCODE',
+          deuilogicLinks: [
+            {
+              dstDEUILogicNodeId: 'rawjscode2',
+              srcDEUILogicNodeId: 'rawjscode1',
+              id: '连接名称',
+            },
+          ],
+          topPos: 90,
+          name: '记录评论状态',
+          id: 'rawjscode1',
+        },
+        {
           codeName: 'PREPAREJSPARAM3',
-          leftPos: 557,
+          leftPos: 600,
           logicNodeType: 'PREPAREJSPARAM',
           deuilogicLinks: [
             {
-              dstDEUILogicNodeId: 'preparejsparam4',
+              dstDEUILogicNodeId: 'rawjscode1',
               srcDEUILogicNodeId: 'preparejsparam3',
               id: '连接名称',
             },
@@ -5125,40 +5208,15 @@ export default {
               id: '直接值[true] ==> button2_state_obj[visible]',
             },
           ],
-          topPos: 318,
+          topPos: 90,
           name: '设置工具栏项、评论列表显隐',
           id: 'preparejsparam3',
-        },
-        {
-          code: "ibiz.mc.command.create.send({ srfdecodename: 'article_page'})",
-          codeName: 'RAWJSCODE2',
-          leftPos: 557,
-          logicNodeType: 'RAWJSCODE',
-          deuilogicLinks: [
-            {
-              dstDEUILogicNodeId: 'end1',
-              srcDEUILogicNodeId: 'rawjscode2',
-              id: '连接名称',
-            },
-          ],
-          topPos: 608,
-          name: '通知刷新',
-          id: 'rawjscode2',
-        },
-        {
-          codeName: 'END1',
-          leftPos: 330,
-          logicNodeType: 'END',
-          topPos: 612,
-          parallelOutput: true,
-          name: '结束',
-          id: 'end1',
         },
         {
           dstAppDEUIActionId: 'clear_comment_wiki@comment',
           dstAppDataEntityId: 'plmweb.comment',
           codeName: 'DEUIACTION1',
-          leftPos: 351,
+          leftPos: 177,
           logicNodeType: 'DEUIACTION',
           deuilogicLinks: [
             {
@@ -5167,21 +5225,23 @@ export default {
               id: '连接名称',
             },
           ],
-          topPos: 210,
+          topPos: 90,
           name: '清空评论',
           id: 'deuiaction1',
         },
         {
+          codeName: 'END1',
+          leftPos: 1287,
+          logicNodeType: 'END',
+          topPos: 92,
+          parallelOutput: true,
+          name: '结束',
+          id: 'end1',
+        },
+        {
           codeName: 'PREPAREJSPARAM4',
-          leftPos: 557,
+          leftPos: 830,
           logicNodeType: 'PREPAREJSPARAM',
-          deuilogicLinks: [
-            {
-              dstDEUILogicNodeId: 'rawjscode1',
-              srcDEUILogicNodeId: 'preparejsparam4',
-              id: '连接名称',
-            },
-          ],
           deuilogicNodeParams: [
             {
               dstFieldName: 'common_list_isshow',
@@ -5192,25 +5252,9 @@ export default {
               id: '直接值[false] ==> view[common_list_isshow]',
             },
           ],
-          topPos: 418,
-          name: '设置视图评论显隐变量',
+          topPos: -120,
+          name: '设置视图评论显隐',
           id: 'preparejsparam4',
-        },
-        {
-          code: 'const operator = context.loginname;\r\n\r\nlocalStorage.removeItem(operator);',
-          codeName: 'RAWJSCODE1',
-          leftPos: 557,
-          logicNodeType: 'RAWJSCODE',
-          deuilogicLinks: [
-            {
-              dstDEUILogicNodeId: 'rawjscode2',
-              srcDEUILogicNodeId: 'rawjscode1',
-              id: '连接名称',
-            },
-          ],
-          topPos: 518,
-          name: '记录评论状态',
-          id: 'rawjscode1',
         },
       ],
       deuilogicParams: [
@@ -5222,15 +5266,20 @@ export default {
           id: 'default',
         },
         {
+          codeName: 'right_grouppanel_state',
+          entityParam: true,
+          name: '容器状态',
+          id: 'right_grouppanel_state',
+        },
+        {
+          codeName: 'form',
+          ctrlParam: true,
+          id: 'form',
+        },
+        {
           codeName: 'view',
           activeViewParam: true,
           id: 'view',
-        },
-        {
-          codeName: 'button3_state_obj',
-          entityParam: true,
-          name: '关闭按钮状态',
-          id: 'button3_state_obj',
         },
         {
           codeName: 'toolbar',
@@ -5239,21 +5288,16 @@ export default {
           id: 'toolbar',
         },
         {
-          codeName: 'right_grouppanel_state',
-          entityParam: true,
-          name: '容器状态',
-          id: 'right_grouppanel_state',
-        },
-        {
           codeName: 'button2_state_obj',
           entityParam: true,
           name: '评论按钮状态',
           id: 'button2_state_obj',
         },
         {
-          codeName: 'form',
-          ctrlParam: true,
-          id: 'form',
+          codeName: 'button3_state_obj',
+          entityParam: true,
+          name: '关闭按钮状态',
+          id: 'button3_state_obj',
         },
       ],
       startDEUILogicNodeId: 'begin',
@@ -6349,7 +6393,7 @@ export default {
       deuilogicNodes: [
         {
           codeName: 'Begin',
-          leftPos: 50,
+          leftPos: -80,
           logicNodeType: 'BEGIN',
           deuilogicLinks: [
             {
@@ -6358,7 +6402,7 @@ export default {
               id: '连接名称',
             },
           ],
-          topPos: 200,
+          topPos: 202,
           parallelOutput: true,
           name: '开始',
           id: 'begin',
@@ -6366,7 +6410,7 @@ export default {
         {
           code: "const operator = context.loginname;\r\n\r\nlocalStorage.setItem(operator, 'true');",
           codeName: 'RAWJSCODE1',
-          leftPos: 976,
+          leftPos: 580,
           logicNodeType: 'RAWJSCODE',
           deuilogicLinks: [
             {
@@ -6375,13 +6419,73 @@ export default {
               id: '连接名称',
             },
           ],
-          topPos: 208,
+          topPos: 210,
           name: '记录评论状态',
           id: 'rawjscode1',
         },
         {
+          codeName: 'PREPAREJSPARAM3',
+          leftPos: 350,
+          logicNodeType: 'PREPAREJSPARAM',
+          deuilogicNodeParams: [
+            {
+              dstFieldName: 'common_list_isshow',
+              dstDEUILogicParamId: 'view',
+              paramAction: 'SETPARAMVALUE',
+              srcValue: 'true',
+              srcValueType: 'SRCVALUE',
+              id: '直接值[true] ==> view[common_list_isshow]',
+            },
+          ],
+          topPos: -10,
+          name: '设置视图评论显隐',
+          id: 'preparejsparam3',
+        },
+        {
+          codeName: 'PREPAREJSPARAM2',
+          leftPos: 280,
+          logicNodeType: 'PREPAREJSPARAM',
+          deuilogicLinks: [
+            {
+              dstDEUILogicNodeId: 'rawjscode1',
+              srcDEUILogicNodeId: 'preparejsparam2',
+              id: '连接名称',
+            },
+          ],
+          deuilogicNodeParams: [
+            {
+              dstFieldName: 'visible',
+              dstDEUILogicParamId: 'right_grouppanel_state',
+              paramAction: 'SETPARAMVALUE',
+              srcValue: 'true',
+              srcValueType: 'SRCVALUE',
+              id: '直接值[true] ==> right_grouppanel_state[visible]',
+            },
+            {
+              dstFieldName: 'visible',
+              dstDEUILogicParamId: 'button3_state_obj',
+              paramAction: 'SETPARAMVALUE',
+              srcValue: 'true',
+              srcValueType: 'SRCVALUE',
+              id: '直接值[true] ==> button3_state_obj[visible]',
+            },
+            {
+              dstFieldName: 'visible',
+              dstDEUILogicParamId: 'button2_state_obj',
+              paramAction: 'SETPARAMVALUE',
+              srcValue: 'false',
+              srcValueType: 'SRCVALUE',
+              id: '直接值[false] ==> button2_state_obj[visible]',
+            },
+          ],
+          topPos: 210,
+          parallelOutput: true,
+          name: '设置工具栏项、评论列表显隐',
+          id: 'preparejsparam2',
+        },
+        {
           codeName: 'PREPAREJSPARAM1',
-          leftPos: 217,
+          leftPos: 27,
           logicNodeType: 'PREPAREJSPARAM',
           deuilogicLinks: [
             {
@@ -6419,83 +6523,19 @@ export default {
               id: 'toolbar[state.buttonsstate.deuiaction2] ==> button2_state_obj',
             },
           ],
-          topPos: 208,
-          name: '准备参数',
+          topPos: 210,
+          parallelOutput: true,
+          name: '准备界面元素',
           id: 'preparejsparam1',
         },
         {
           codeName: 'END1',
-          leftPos: 1270,
+          leftPos: 920,
           logicNodeType: 'END',
-          topPos: 200,
+          topPos: 202,
+          parallelOutput: true,
           name: '结束',
           id: 'end1',
-        },
-        {
-          codeName: 'PREPAREJSPARAM3',
-          leftPos: 696,
-          logicNodeType: 'PREPAREJSPARAM',
-          deuilogicLinks: [
-            {
-              dstDEUILogicNodeId: 'rawjscode1',
-              srcDEUILogicNodeId: 'preparejsparam3',
-              id: '连接名称',
-            },
-          ],
-          deuilogicNodeParams: [
-            {
-              dstFieldName: 'common_list_isshow',
-              dstDEUILogicParamId: 'view',
-              paramAction: 'SETPARAMVALUE',
-              srcValue: 'true',
-              srcValueType: 'SRCVALUE',
-              id: '直接值[true] ==> view[common_list_isshow]',
-            },
-          ],
-          topPos: 208,
-          name: '设置视图参数',
-          id: 'preparejsparam3',
-        },
-        {
-          codeName: 'PREPAREJSPARAM2',
-          leftPos: 450,
-          logicNodeType: 'PREPAREJSPARAM',
-          deuilogicLinks: [
-            {
-              dstDEUILogicNodeId: 'preparejsparam3',
-              srcDEUILogicNodeId: 'preparejsparam2',
-              id: '连接名称',
-            },
-          ],
-          deuilogicNodeParams: [
-            {
-              dstFieldName: 'visible',
-              dstDEUILogicParamId: 'right_grouppanel_state',
-              paramAction: 'SETPARAMVALUE',
-              srcValue: 'true',
-              srcValueType: 'SRCVALUE',
-              id: '直接值[true] ==> right_grouppanel_state[visible]',
-            },
-            {
-              dstFieldName: 'visible',
-              dstDEUILogicParamId: 'button3_state_obj',
-              paramAction: 'SETPARAMVALUE',
-              srcValue: 'true',
-              srcValueType: 'SRCVALUE',
-              id: '直接值[true] ==> button3_state_obj[visible]',
-            },
-            {
-              dstFieldName: 'visible',
-              dstDEUILogicParamId: 'button2_state_obj',
-              paramAction: 'SETPARAMVALUE',
-              srcValue: 'false',
-              srcValueType: 'SRCVALUE',
-              id: '直接值[false] ==> button2_state_obj[visible]',
-            },
-          ],
-          topPos: 208,
-          name: '准备参数',
-          id: 'preparejsparam2',
         },
       ],
       deuilogicParams: [
@@ -6506,16 +6546,16 @@ export default {
           id: 'toolbar',
         },
         {
+          codeName: 'button2_state_obj',
+          entityParam: true,
+          name: '评论按钮状态',
+          id: 'button2_state_obj',
+        },
+        {
           codeName: 'right_grouppanel_state',
           entityParam: true,
           name: '容器状态',
           id: 'right_grouppanel_state',
-        },
-        {
-          codeName: 'button3_state_obj',
-          entityParam: true,
-          name: '关闭按钮状态',
-          id: 'button3_state_obj',
         },
         {
           codeName: 'Default',
@@ -6525,26 +6565,26 @@ export default {
           id: 'default',
         },
         {
+          codeName: 'button3_state_obj',
+          entityParam: true,
+          name: '关闭按钮状态',
+          id: 'button3_state_obj',
+        },
+        {
+          codeName: 'form',
+          ctrlParam: true,
+          id: 'form',
+        },
+        {
           codeName: 'view',
           activeViewParam: true,
           id: 'view',
-        },
-        {
-          codeName: 'button2_state_obj',
-          entityParam: true,
-          name: '评论按钮状态',
-          id: 'button2_state_obj',
         },
         {
           codeName: 'container_scroll1',
           ctrlParam: true,
           name: '滚动条容器1',
           id: 'container_scroll1',
-        },
-        {
-          codeName: 'form',
-          ctrlParam: true,
-          id: 'form',
         },
       ],
       startDEUILogicNodeId: 'begin',

@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'identifier',
       logicName: '编号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'IDENTIFIER',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'type',
       logicName: '类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TYPE',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'belong_to',
       logicName: '所属',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BELONG_TO',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'assignee_name',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_NAME',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'description',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'DESCRIPTION',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'tags',
       logicName: '标签',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'TAGS',
@@ -54,6 +60,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -65,6 +72,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'TITLE',

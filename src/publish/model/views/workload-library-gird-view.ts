@@ -393,6 +393,11 @@ export default {
         },
         controlNavParams: [
           {
+            key: 'n_category_eq',
+            value: 'CATEGORY',
+            id: 'n_category_eq',
+          },
+          {
             key: 'n_register_date_eq',
             value: 'date',
             id: 'n_register_date_eq',
@@ -417,6 +422,7 @@ export default {
         appDataEntityId: 'plmweb.workload',
         controlParam: {
           ctrlParams: {
+            'SRFNAVPARAM.N_CATEGORY_EQ': '%CATEGORY%',
             DATERANGE: 'date_range',
             'SRFNAVPARAM.N_REGISTER_DATE_EQ': '%date%',
             OPENVIEW: 'workload_day_link_grid_view',
@@ -441,57 +447,102 @@ export default {
             },
             deformDetails: [
               {
-                dataType: 25,
-                enableCond: 3,
-                labelPos: 'NONE',
-                noPrivDisplayMode: 1,
-                editor: {
-                  editorParams: {
-                    TIMEFMT: 'YYYY-MM-DD',
-                  },
-                  editorType: 'DATERANGE_NOTIME',
-                  editorItems: [
-                    {
-                      id: 'n_register_date_gtandeq',
-                    },
-                    {
-                      id: 'n_register_date_ltandeq',
-                    },
-                  ],
-                  valueType: 'SIMPLE',
-                  editable: true,
-                  id: 'date_range',
+                layout: {
+                  columnCount: 24,
+                  layout: 'TABLE_24COL',
                 },
-                allowEmpty: true,
-                caption: '工作日期',
-                codeName: 'date_range',
-                detailStyle: 'DEFAULT',
-                detailType: 'FORMITEM',
-                controlAttributes: [
+                deformDetails: [
                   {
-                    attrName: 'disabledDate',
-                    attrValue:
-                      "(time) => {\r\n    const searchForm = view.ctx.controllersMap.get('searchform');\r\n    if (!searchForm) {\r\n        return false;\r\n    }\r\n\r\n    const formItem = searchForm.formItems.find((item) => item.model.codeName === 'date_range');\r\n    if(!formItem) {\r\n        return false;\r\n    }\r\n\r\n    // 获取日期弹框内选择日期的选中值t\r\n    const dateRange = formItem.editor.dateRange;\r\n    if (!dateRange || dateRange && dateRange.length === 0) {\r\n        return false;\r\n    }\r\n\r\n    const currentTime = dateRange[0];\r\n    currentTime.setHours(0, 0, 0, 0);\r\n    time.setHours(0, 0, 0, 0);\r\n\r\n    const beforeDays = new Date(\r\n        currentTime.getTime() - 31 * 24 * 60 * 60 * 1000,\r\n    );\r\n    const afterDays = new Date(\r\n        currentTime.getTime() + 31 * 24 * 60 * 60 * 1000,\r\n    );\r\n\r\n    return (\r\n        beforeDays.getTime() >= time.getTime() ||\r\n        afterDays.getTime() <= time.getTime()\r\n    );\r\n}",
-                    name: 'logic_disabledDate',
-                    id: 'logic_disableddate',
+                    createDV: 'ACTUAL_WORKLOAD',
+                    dataType: 25,
+                    enableCond: 3,
+                    labelPos: 'NONE',
+                    noPrivDisplayMode: 1,
+                    appDEFieldId: 'category',
+                    editor: {
+                      singleSelect: true,
+                      appCodeListId: 'plmweb.base__workload_category',
+                      editorType: 'DROPDOWNLIST',
+                      valueType: 'SIMPLE',
+                      editable: true,
+                      id: 'n_category_eq',
+                    },
+                    allowEmpty: true,
+                    needCodeListConfig: true,
+                    caption: '工时类别',
+                    codeName: 'n_category_eq',
+                    detailStyle: 'DEFAULT',
+                    detailType: 'FORMITEM',
+                    layoutPos: {
+                      colLG: 8,
+                      colMD: 8,
+                      layout: 'TABLE_24COL',
+                    },
+                    id: 'n_category_eq',
                   },
                   {
-                    attrName: 'clearable',
-                    attrValue: 'false',
-                    id: 'logic_clearable',
-                  },
-                  {
-                    attrName: 'shortcuts',
-                    attrValue:
-                      "[\r\n    {\r\n    text: '最近7天',\r\n    value: () => {\r\n        const end_at = new Date();\r\n        const start_at = new Date();\r\n        start_at.setDate(end_at.getDate() - 6);\r\n        return [start_at, end_at];\r\n    },\r\n    },\r\n    {\r\n    text: '最近30天',\r\n    value: () => {\r\n        const end_at = new Date();\r\n        const start_at = new Date();\r\n        start_at.setDate(end_at.getDate() - 29);\r\n        return [start_at, end_at];\r\n    },\r\n    },\r\n    {\r\n    text: '本周',\r\n    value: () => {\r\n        const end_at = new Date();\r\n        const currentDay = end_at.getDay();\r\n        const start_at = new Date(end_at);\r\n\r\n        // 计算本周的开始日期 (周一)\r\n        start_at.setDate(\r\n        end_at.getDate() - currentDay + (currentDay === 0 ? -6 : 1),\r\n        );\r\n        return [start_at, end_at];\r\n    },\r\n    },\r\n    {\r\n    text: '本月',\r\n    value: () => {\r\n        const end_at = new Date();\r\n        const start_at = new Date(end_at);\r\n\r\n        // 将日期设置为本月第一天\r\n        start_at.setDate(1);\r\n        return [start_at, end_at];\r\n    },\r\n    },\r\n]",
-                    id: 'date_range_shortcuts',
+                    dataType: 25,
+                    enableCond: 3,
+                    labelPos: 'NONE',
+                    noPrivDisplayMode: 1,
+                    editor: {
+                      editorParams: {
+                        TIMEFMT: 'YYYY-MM-DD',
+                      },
+                      editorType: 'DATERANGE_NOTIME',
+                      editorItems: [
+                        {
+                          id: 'n_register_date_gtandeq',
+                        },
+                        {
+                          id: 'n_register_date_ltandeq',
+                        },
+                      ],
+                      valueType: 'SIMPLE',
+                      editable: true,
+                      id: 'date_range',
+                    },
+                    allowEmpty: true,
+                    caption: '工作日期',
+                    codeName: 'date_range',
+                    detailStyle: 'DEFAULT',
+                    detailType: 'FORMITEM',
+                    controlAttributes: [
+                      {
+                        attrName: 'disabledDate',
+                        attrValue:
+                          "(time) => {\r\n    const searchForm = view.ctx.controllersMap.get('searchform');\r\n    if (!searchForm) {\r\n        return false;\r\n    }\r\n\r\n    const formItem = searchForm.formItems.find((item) => item.model.codeName === 'date_range');\r\n    if(!formItem) {\r\n        return false;\r\n    }\r\n\r\n    // 获取日期弹框内选择日期的选中值t\r\n    const dateRange = formItem.editor.dateRange;\r\n    if (!dateRange || dateRange && dateRange.length === 0) {\r\n        return false;\r\n    }\r\n\r\n    const currentTime = dateRange[0];\r\n    currentTime.setHours(0, 0, 0, 0);\r\n    time.setHours(0, 0, 0, 0);\r\n\r\n    const beforeDays = new Date(\r\n        currentTime.getTime() - 31 * 24 * 60 * 60 * 1000,\r\n    );\r\n    const afterDays = new Date(\r\n        currentTime.getTime() + 31 * 24 * 60 * 60 * 1000,\r\n    );\r\n\r\n    return (\r\n        beforeDays.getTime() >= time.getTime() ||\r\n        afterDays.getTime() <= time.getTime()\r\n    );\r\n}",
+                        name: 'logic_disabledDate',
+                        id: 'logic_disableddate',
+                      },
+                      {
+                        attrName: 'clearable',
+                        attrValue: 'false',
+                        id: 'logic_clearable',
+                      },
+                      {
+                        attrName: 'shortcuts',
+                        attrValue:
+                          "[\r\n    {\r\n    text: '最近7天',\r\n    value: () => {\r\n        const end_at = new Date();\r\n        const start_at = new Date();\r\n        start_at.setDate(end_at.getDate() - 6);\r\n        return [start_at, end_at];\r\n    },\r\n    },\r\n    {\r\n    text: '最近30天',\r\n    value: () => {\r\n        const end_at = new Date();\r\n        const start_at = new Date();\r\n        start_at.setDate(end_at.getDate() - 29);\r\n        return [start_at, end_at];\r\n    },\r\n    },\r\n    {\r\n    text: '本周',\r\n    value: () => {\r\n        const end_at = new Date();\r\n        const currentDay = end_at.getDay();\r\n        const start_at = new Date(end_at);\r\n\r\n        // 计算本周的开始日期 (周一)\r\n        start_at.setDate(\r\n        end_at.getDate() - currentDay + (currentDay === 0 ? -6 : 1),\r\n        );\r\n        return [start_at, end_at];\r\n    },\r\n    },\r\n    {\r\n    text: '本月',\r\n    value: () => {\r\n        const end_at = new Date();\r\n        const start_at = new Date(end_at);\r\n\r\n        // 将日期设置为本月第一天\r\n        start_at.setDate(1);\r\n        return [start_at, end_at];\r\n    },\r\n    },\r\n]",
+                        id: 'date_range_shortcuts',
+                      },
+                    ],
+                    layoutPos: {
+                      colLG: 16,
+                      colMD: 16,
+                      layout: 'TABLE_24COL',
+                    },
+                    id: 'date_range',
                   },
                 ],
+                codeName: 'grouppanel1',
+                detailStyle: 'DEFAULT',
+                detailType: 'GROUPPANEL',
                 layoutPos: {
                   colMD: 24,
                   layout: 'TABLE_24COL',
                 },
-                id: 'date_range',
+                id: 'grouppanel1',
               },
               {
                 dataType: 5,
@@ -568,6 +619,18 @@ export default {
         controlType: 'SEARCHFORM',
         logicName: '登记日期_搜索表单',
         appDataEntityId: 'plmweb.workload',
+        controlLogics: [
+          {
+            eventNames: 'onChange',
+            itemName: 'n_category_eq',
+            logicTag: 'searchform',
+            logicType: 'APPDEUILOGIC',
+            appDEUILogicId: 'reset_workload_category',
+            appDataEntityId: 'plmweb.workload',
+            triggerType: 'CTRLEVENT',
+            id: 'logic',
+          },
+        ],
         controlParam: {
           id: 'searchform',
         },

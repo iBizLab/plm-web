@@ -1,8 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'TestMgmt__case_state',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'TestMgmt__case_state',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_test_case_status',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'item_10',
@@ -35,6 +42,8 @@ export default {
       id: 'item_30',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '用例状态',
   id: 'plmweb.testmgmt__case_state',

@@ -18,6 +18,7 @@ export default {
       ],
       pagingSize: 50,
       defaultMode: true,
+      appDataEntityId: 'plmweb.customer',
       textAppDEFieldId: 'name',
       valueAppDEFieldId: 'id',
       name: 'DEFAULT',
@@ -80,6 +81,8 @@ export default {
       ],
       updateDataAccessAction: 'UPDATE',
       defaultMode: true,
+      enableBackend: true,
+      enableFront: true,
       valid: true,
       createAppDEActionId: 'create',
       updateAppDEActionId: 'update',
@@ -91,6 +94,7 @@ export default {
     {
       codeName: 'scale',
       logicName: '规模',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'SCALE',
       id: 'scale',
@@ -98,6 +102,7 @@ export default {
     {
       codeName: 'description',
       logicName: '描述',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'DESCRIPTION',
@@ -106,6 +111,7 @@ export default {
     {
       codeName: 'is_archived',
       logicName: '是否已归档',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_ARCHIVED',
       id: 'is_archived',
@@ -113,6 +119,7 @@ export default {
     {
       codeName: 'is_deleted',
       logicName: '是否已删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_DELETED',
       id: 'is_deleted',
@@ -120,6 +127,7 @@ export default {
     {
       codeName: 'logo',
       logicName: '品牌标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'LOGO',
@@ -128,6 +136,7 @@ export default {
     {
       codeName: 'grade_id',
       logicName: '等级',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'GRADE_ID',
@@ -136,6 +145,7 @@ export default {
     {
       codeName: 'industry_id',
       logicName: '行业',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'INDUSTRY_ID',
@@ -144,6 +154,7 @@ export default {
     {
       codeName: 'categories',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES',
@@ -152,6 +163,7 @@ export default {
     {
       codeName: 'categories_name',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES_NAME',
@@ -160,6 +172,7 @@ export default {
     {
       codeName: 'product_name',
       logicName: '产品名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PRODUCT_NAME',
@@ -168,6 +181,7 @@ export default {
     {
       codeName: 'assignee_name',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_NAME',
@@ -176,6 +190,7 @@ export default {
     {
       codeName: 'assignee_id',
       logicName: '负责人标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_ID',
@@ -184,6 +199,7 @@ export default {
     {
       codeName: 'attentions',
       logicName: '关注',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'ATTENTIONS',
@@ -192,6 +208,7 @@ export default {
     {
       codeName: 'product_is_archived',
       logicName: '产品是否归档',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PRODUCT_IS_ARCHIVED',
       id: 'product_is_archived',
@@ -199,6 +216,7 @@ export default {
     {
       codeName: 'ticket_total',
       logicName: '工单总数',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'TICKET_TOTAL',
       id: 'ticket_total',
@@ -206,6 +224,7 @@ export default {
     {
       codeName: 'ticket_finish',
       logicName: '已完成工单数',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'TICKET_FINISH',
       id: 'ticket_finish',
@@ -213,6 +232,7 @@ export default {
     {
       codeName: 'attentions_imp',
       logicName: '关注人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ATTENTIONS_IMP',
@@ -224,6 +244,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -235,6 +256,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '客户名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       enableQuickSearch: true,
@@ -247,6 +269,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -258,6 +281,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -269,6 +293,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -280,6 +305,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -288,6 +314,7 @@ export default {
     {
       codeName: 'product_id',
       logicName: '产品标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRODUCT_ID',
@@ -322,6 +349,7 @@ export default {
         },
       ],
       startDELogicNodeId: 'begin',
+      enableFront: true,
       valid: true,
       name: '无操作',
       id: 'nothing',
@@ -1264,6 +1292,28 @@ export default {
       id: 'fetch_comment_notify_assignee',
     },
     {
+      codeName: 'fetch_cur_product_customer',
+      methodType: 'FETCH',
+      appDEMethodInput: {
+        appDEMethodDTOId: 'customer_filter_dto',
+        type: 'DTO',
+        id: '输入对象',
+      },
+      appDEMethodReturn: {
+        appDEMethodDTOId: 'customer_dto',
+        type: 'PAGE',
+        id: '返回对象',
+      },
+      requestMethod: 'POST',
+      requestParamType: 'ENTITY',
+      requestPath: '/fetch_cur_product_customer',
+      actionType: 'REMOTE',
+      dataSetName: 'cur_product_customer',
+      dataSetTag: 'cur_product_customer',
+      dataSetType: 'REMOTE',
+      id: 'fetch_cur_product_customer',
+    },
+    {
       codeName: 'fetch_default',
       methodType: 'FETCH',
       appDEMethodInput: {
@@ -1498,6 +1548,13 @@ export default {
       frontProcessType: 'DATAIMP',
       fullCodeName: 'customer_customer_import_data',
       deopprivId: 'subdata',
+      navigateParams: [
+        {
+          key: 'product_id',
+          value: 'product',
+          id: 'product_id',
+        },
+      ],
       uiactionMode: 'FRONT',
       uiactionTag: 'customer_import_data',
       uiactionType: 'DEUIACTION',

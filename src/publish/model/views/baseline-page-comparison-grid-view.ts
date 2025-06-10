@@ -235,6 +235,40 @@ export default {
           widthUnit: 'PX',
           id: 'target_version_name',
         },
+        {
+          deuiactionGroup: {
+            uiactionGroupDetails: [
+              {
+                actionLevel: 100,
+                afterItemType: 'NONE',
+                beforeItemType: 'NONE',
+                buttonStyle: 'DEFAULT',
+                detailType: 'DEUIACTION',
+                uiactionId: 'page_version_comparison@baseline_page',
+                tooltip: '版本对比',
+                showIcon: true,
+                sysImage: {
+                  cssClass: 'fa fa-exchange',
+                  glyph: 'xf0ec@FontAwesome',
+                },
+                id: 'ue0b520e',
+              },
+            ],
+            appDataEntityId: 'plmweb.baseline_page',
+            uniqueTag: 'baseline_page__Usr0428368797',
+            name: '基线对比操作列',
+            id: 'usr0428368797',
+          },
+          aggMode: 'NONE',
+          align: 'CENTER',
+          caption: '操作',
+          codeName: 'uagridcolumn1',
+          columnType: 'UAGRIDCOLUMN',
+          noPrivDisplayMode: 1,
+          width: 100,
+          widthUnit: 'PX',
+          id: 'uagridcolumn1',
+        },
       ],
       degridDataItems: [
         {

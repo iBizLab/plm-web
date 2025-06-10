@@ -18,6 +18,7 @@ export default {
       ],
       pagingSize: 50,
       defaultMode: true,
+      appDataEntityId: 'plmweb.product_plan',
       textAppDEFieldId: 'name',
       valueAppDEFieldId: 'id',
       name: 'DEFAULT',
@@ -28,6 +29,7 @@ export default {
     {
       codeName: 'type',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'TYPE',
@@ -36,6 +38,7 @@ export default {
     {
       codeName: 'start_at',
       logicName: '计划开始',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'START_AT',
@@ -44,6 +47,7 @@ export default {
     {
       codeName: 'end_at',
       logicName: '计划结束',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'END_AT',
@@ -52,6 +56,7 @@ export default {
     {
       codeName: 'is_leaf',
       logicName: '是否叶子节点',
+      predefinedType: 'NONE',
       stdDataType: 9,
       userTag4: 'INTENAL',
       name: 'IS_LEAF',
@@ -60,6 +65,7 @@ export default {
     {
       codeName: 'categories',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES',
@@ -68,6 +74,7 @@ export default {
     {
       codeName: 'categories_name',
       logicName: '类别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'CATEGORIES_NAME',
@@ -79,6 +86,7 @@ export default {
         lanResTag: 'DEF.LNAME.IS_DELETED',
       },
       logicName: '是否已删除',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'IS_DELETED',
       id: 'is_deleted',
@@ -86,6 +94,7 @@ export default {
     {
       codeName: 'assignee_name',
       logicName: '负责人',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_NAME',
@@ -94,6 +103,7 @@ export default {
     {
       codeName: 'assignee_id',
       logicName: '负责人标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ASSIGNEE_ID',
@@ -102,6 +112,7 @@ export default {
     {
       codeName: 'sequence',
       logicName: '序号',
+      predefinedType: 'ORDERVALUE',
       stdDataType: 6,
       name: 'SEQUENCE',
       id: 'sequence',
@@ -112,6 +123,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -123,6 +135,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '计划名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -135,6 +148,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -146,6 +160,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -157,6 +172,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -168,6 +184,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -176,6 +193,7 @@ export default {
     {
       codeName: 'product_id',
       logicName: '产品标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PRODUCT_ID',

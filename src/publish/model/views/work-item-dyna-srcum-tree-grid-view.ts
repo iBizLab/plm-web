@@ -18,13 +18,6 @@ export default {
       id: 'project_type',
     },
   ],
-  appViewNavParams: [
-    {
-      key: 'srfcurtime',
-      value: 'srfcurtime',
-      id: 'srfcurtime',
-    },
-  ],
   viewLayoutPanel: {
     viewProxyMode: true,
     layoutMode: 'FLEX',
@@ -348,6 +341,15 @@ export default {
     ],
     appViewRefs: [
       {
+        realTitle: '工作项编辑视图',
+        realTitleLanguageRes: {
+          lanResTag: 'PAGE.TITLE.WORK_ITEM.EDITVIEW',
+        },
+        refAppViewId: 'plmweb.work_item_edit_view',
+        name: 'NEWDATA',
+        id: 'newdata',
+      },
+      {
         openMode: 'INDEXVIEWTAB_POPUPMODAL',
         navigateContexts: [
           {
@@ -375,15 +377,6 @@ export default {
         refAppViewId: 'plmweb.work_item_dyna_main_view',
         name: 'EDITDATA',
         id: 'editdata',
-      },
-      {
-        realTitle: '工作项编辑视图',
-        realTitleLanguageRes: {
-          lanResTag: 'PAGE.TITLE.WORK_ITEM.EDITVIEW',
-        },
-        refAppViewId: 'plmweb.work_item_edit_view',
-        name: 'NEWDATA',
-        id: 'newdata',
       },
       {
         realOpenMode: 'POPUPMODAL',
@@ -900,7 +893,7 @@ export default {
           },
           {
             clconvertMode: 'FRONT',
-            dataItemName: 'priority',
+            dataItemName: 'priority_text',
             excelCaption: '优先级',
             appCodeListId: 'plmweb.projmgmt__work_item_priority',
             appDEFieldId: 'priority',
@@ -1289,6 +1282,12 @@ export default {
             appDEFieldId: 'priority',
             valueType: 'SIMPLE',
             dataType: 25,
+            id: 'priority_text',
+          },
+          {
+            appDEFieldId: 'priority',
+            valueType: 'SIMPLE',
+            dataType: 25,
             id: 'priority',
           },
           {
@@ -1504,6 +1503,7 @@ export default {
                 'srfnavparam.work_item_type_id': '%work_item_type_id%',
                 type: 'round',
                 alwaysLoad: 'true',
+                'SRFNAVPARAM.project': '%project%',
               },
               editorType: 'DROPDOWNLIST',
               editorItems: [
@@ -1527,6 +1527,11 @@ export default {
                       value: 'work_item_type_id',
                       id: 'work_item_type_id',
                     },
+                    {
+                      key: 'project',
+                      value: 'project',
+                      id: 'project',
+                    },
                   ],
                   id: 'state',
                 },
@@ -1548,6 +1553,11 @@ export default {
                   key: 'work_item_type_id',
                   value: 'work_item_type_id',
                   id: 'work_item_type_id',
+                },
+                {
+                  key: 'project',
+                  value: 'project',
+                  id: 'project',
                 },
               ],
               id: 'state',
@@ -1640,9 +1650,33 @@ export default {
             editor: {
               singleSelect: true,
               appCodeListId: 'plmweb.projmgmt__work_item_priority',
+              editorParams: {
+                'SRFNAVPARAM.project_type': 'scrum',
+              },
               editorType: 'DROPDOWNLIST',
+              editorItems: [
+                {
+                  navigateParams: [
+                    {
+                      key: 'project_type',
+                      value: 'scrum',
+                      rawValue: true,
+                      id: 'project_type',
+                    },
+                  ],
+                  id: 'priority',
+                },
+              ],
               valueType: 'SIMPLE',
               editable: true,
+              navigateParams: [
+                {
+                  key: 'project_type',
+                  value: 'scrum',
+                  rawValue: true,
+                  id: 'project_type',
+                },
+              ],
               id: 'priority',
             },
             allowEmpty: true,

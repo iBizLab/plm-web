@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'ProjMgmt__work_item_priority',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'ProjMgmt__work_item_priority',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.work_item',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_work_item_priority',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'item_40',
@@ -50,6 +56,8 @@ export default {
       id: 'item_10',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
   name: '优先级',
   id: 'plmweb.projmgmt__work_item_priority',

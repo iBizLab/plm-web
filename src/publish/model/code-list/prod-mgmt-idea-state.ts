@@ -1,9 +1,12 @@
 export default {
+  cacheTimeout: 1000,
   codeListTag: 'ProdMgmt__idea_state',
   codeListType: 'DYNAMIC',
   codeName: 'ProdMgmt__idea_state',
   colorAppDEFieldId: 'color',
   emptyText: '未定义',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
   appDEDataSetId: 'fetch_idea_state',
   appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [

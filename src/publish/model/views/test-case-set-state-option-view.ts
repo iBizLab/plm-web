@@ -79,7 +79,7 @@ export default {
                   noPrivDisplayMode: 1,
                   appDEFieldId: 'state',
                   editor: {
-                    appCodeListId: 'plmweb.testmgmt__test_case_state',
+                    appCodeListId: 'plmweb.testmgmt__case_state',
                     editorParams: {
                       MODE: 'vertical',
                       RENDERMODE: 'BUTTON',

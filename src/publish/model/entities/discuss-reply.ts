@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'comments',
       logicName: '评论',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'COMMENTS',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'reply_comment_num',
       logicName: '回复评论数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'COMMENT_NUM',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'discuss_name',
       logicName: '讨论名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'DISCUSS_NAME',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'comment_count',
       logicName: '回复评论数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'COMMENT_COUNT',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'topic_id',
       logicName: '话题标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TOPIC_ID',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'content',
       logicName: '回复内容',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'CONTENT',
@@ -54,6 +60,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -65,6 +72,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -77,6 +85,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_MAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'CREATE_MAN',
@@ -88,6 +97,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATE_TIME',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATE_TIME',
@@ -99,6 +109,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_MAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 100,
       name: 'UPDATE_MAN',
@@ -110,6 +121,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATE_TIME',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATE_TIME',
@@ -118,6 +130,7 @@ export default {
     {
       codeName: 'post_id',
       logicName: '讨论标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'POST_ID',

@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'LogId',
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'LOGID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'UserName',
       logicName: '用户全局名',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       enableQuickSearch: true,
@@ -20,6 +22,7 @@ export default {
     {
       codeName: 'UserId',
       logicName: '用户全局标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USERID',
@@ -28,6 +31,7 @@ export default {
     {
       codeName: 'PersonName',
       logicName: '用户名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PERSONNAME',
@@ -36,6 +40,7 @@ export default {
     {
       codeName: 'Domain',
       logicName: '域',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DOMAINS',
@@ -44,6 +49,7 @@ export default {
     {
       codeName: 'AuthTime',
       logicName: '认证时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'AUTHTIME',
@@ -52,6 +58,7 @@ export default {
     {
       codeName: 'IPAddr',
       logicName: 'IP地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'IPADDR',
@@ -60,6 +67,7 @@ export default {
     {
       codeName: 'MacAddr',
       logicName: 'MAC地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'MACADDR',
@@ -68,14 +76,16 @@ export default {
     {
       codeName: 'UserAgent',
       logicName: '客户端',
+      predefinedType: 'NONE',
       stdDataType: 25,
-      stringLength: 100,
+      stringLength: 500,
       name: 'USERAGENT',
       id: 'useragent',
     },
     {
       codeName: 'AuthCode',
       logicName: '认证结果',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 15,
       name: 'AUTHCODE',
@@ -84,6 +94,7 @@ export default {
     {
       codeName: 'AuthAgent',
       logicName: '认证方式',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'AUTHAGENT',
@@ -92,6 +103,7 @@ export default {
     {
       codeName: 'active_members',
       logicName: '活跃成员数',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'ACTIVE_MEMBERS',

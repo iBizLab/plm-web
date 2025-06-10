@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'PSSysBIReportItems',
       logicName: '智能报表项',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'PSSYSBIREPORTITEMS',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'PSSysBIReportId',
       logicName: '智能报表标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBIREPORTID',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'PSSysBIReportName',
       logicName: '智能报表名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -28,6 +31,7 @@ export default {
     {
       codeName: 'CodeName',
       logicName: '代码名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'CODENAME',
@@ -36,6 +40,7 @@ export default {
     {
       codeName: 'ValidFlag',
       logicName: '启用',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'VALIDFLAG',
       id: 'validflag',
@@ -43,6 +48,7 @@ export default {
     {
       codeName: 'BIReportUIModel',
       logicName: '报表界面模型',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'BIREPORTUIMODEL',
@@ -51,6 +57,7 @@ export default {
     {
       codeName: 'BIReportModel',
       logicName: '报表模型',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'BIREPORTMODEL',
@@ -59,6 +66,7 @@ export default {
     {
       codeName: 'BIReportTag',
       logicName: '报表标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BIREPORTTAG',
@@ -67,6 +75,7 @@ export default {
     {
       codeName: 'Memo',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 2000,
       name: 'MEMO',
@@ -75,6 +84,7 @@ export default {
     {
       codeName: 'BIReportTag2',
       logicName: '报表标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'BIREPORTTAG2',
@@ -83,6 +93,7 @@ export default {
     {
       codeName: 'PSSysBISchemeId',
       logicName: '智能报表体系',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBISCHEMEID',
@@ -91,6 +102,7 @@ export default {
     {
       codeName: 'PSSysBICubeId',
       logicName: '智能报表立方体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBEID',
@@ -99,6 +111,7 @@ export default {
     {
       codeName: 'PSSysBICubeName',
       logicName: '智能报表立方体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBICUBENAME',
@@ -107,6 +120,7 @@ export default {
     {
       codeName: 'PSSysBISchemeName',
       logicName: '智能报表体系',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSSYSBISCHEMENAME',

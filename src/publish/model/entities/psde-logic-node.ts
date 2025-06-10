@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'work_item_type_id',
       logicName: '工作项类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'WORK_ITEM_TYPE_ID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'work_item_type_name',
       logicName: '工作项类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'WORK_ITEM_TYPE_NAME',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'title',
       logicName: '标题',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'TITLE',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'content',
       logicName: '内容',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CONTENT',
@@ -35,6 +39,7 @@ export default {
     {
       codeName: 'OrderValue',
       logicName: '排序属性',
+      predefinedType: 'ORDERVALUE',
       stdDataType: 9,
       name: 'ORDERVALUE',
       id: 'ordervalue',
@@ -45,6 +50,7 @@ export default {
         lanResTag: 'DEF.LNAME.PSDELOGICNODEID',
       },
       logicName: '实体处理逻辑节点标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDELOGICNODEID',
@@ -56,6 +62,7 @@ export default {
         lanResTag: 'DEF.LNAME.PSDELOGICNODENAME',
       },
       logicName: '逻辑处理名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -68,6 +75,7 @@ export default {
         lanResTag: 'DEF.LNAME.PSDELOGICID',
       },
       logicName: '实体处理逻辑',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDELOGICID',
@@ -79,6 +87,7 @@ export default {
         lanResTag: 'DEF.LNAME.PSDELOGICNAME',
       },
       logicName: '实体处理逻辑',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PSDELOGICNAME',
@@ -87,6 +96,7 @@ export default {
     {
       codeName: 'project_id',
       logicName: '项目标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PROJECT_ID',
@@ -95,6 +105,7 @@ export default {
     {
       codeName: 'project_name',
       logicName: '项目名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PROJECT_NAME',
@@ -103,6 +114,7 @@ export default {
     {
       codeName: 'LogicNodeType',
       logicName: '逻辑节点类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 40,
       name: 'LOGICNODETYPE',
@@ -111,6 +123,7 @@ export default {
     {
       codeName: 'ParallelOutput',
       logicName: '循环后续处理',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PARALLELOUTPUT',
       id: 'paralleloutput',
@@ -118,6 +131,7 @@ export default {
     {
       codeName: 'CodeName',
       logicName: '代码名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 60,
       name: 'CODENAME',
@@ -126,6 +140,7 @@ export default {
     {
       codeName: 'Param8',
       logicName: '参数8',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PARAM8',
       id: 'param8',
@@ -133,6 +148,7 @@ export default {
     {
       codeName: 'Param7',
       logicName: '参数7',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PARAM7',
       id: 'param7',
@@ -140,6 +156,7 @@ export default {
     {
       codeName: 'Param9',
       logicName: '参数9',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PARAM9',
       id: 'param9',
@@ -147,6 +164,7 @@ export default {
     {
       codeName: 'Param10',
       logicName: '参数10',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'PARAM10',
       id: 'param10',
@@ -154,6 +172,7 @@ export default {
     {
       codeName: 'Param1',
       logicName: '参数1',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM1',
@@ -162,6 +181,7 @@ export default {
     {
       codeName: 'Param12',
       logicName: '参数12',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM12',
@@ -170,6 +190,7 @@ export default {
     {
       codeName: 'Param11',
       logicName: '参数11',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM11',
@@ -178,6 +199,7 @@ export default {
     {
       codeName: 'Param13',
       logicName: '参数13',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PARAM13',

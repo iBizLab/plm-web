@@ -216,6 +216,12 @@ export default {
           appViewId: 'plmweb.product_advanced_setting_edit_view',
           id: 'adv',
         },
+        {
+          dedrbarGroupId: 'usrdrgroup0314174756',
+          caption: '评审配置',
+          appViewId: 'plmweb.guideline_product_all_grid_view',
+          id: 'guideline',
+        },
       ],
       uniqueTag: 'product_setting_view__drbar',
       hideEditItem: true,

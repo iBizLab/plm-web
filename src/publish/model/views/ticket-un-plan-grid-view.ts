@@ -618,14 +618,31 @@ export default {
           editor: {
             singleSelect: true,
             appCodeListId: 'plmweb.prodmgmt__ticket_state',
+            editorParams: {
+              'SRFNAVPARAM.product': '%product%',
+            },
             editorType: 'DROPDOWNLIST',
             editorItems: [
               {
+                navigateParams: [
+                  {
+                    key: 'product',
+                    value: 'product',
+                    id: 'product',
+                  },
+                ],
                 id: 'state',
               },
             ],
             valueType: 'SIMPLE',
             editable: true,
+            navigateParams: [
+              {
+                key: 'product',
+                value: 'product',
+                id: 'product',
+              },
+            ],
             id: 'state',
           },
           allowEmpty: true,

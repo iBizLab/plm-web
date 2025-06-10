@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'estimated_workload',
       logicName: '预估工时',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'ESTIMATED_WORKLOAD',
       id: 'estimated_workload',
@@ -10,6 +11,7 @@ export default {
     {
       codeName: 'remaining_workload',
       logicName: '剩余工时',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'REMAINING_WORKLOAD',
       id: 'remaining_workload',
@@ -17,6 +19,7 @@ export default {
     {
       codeName: 'story_points',
       logicName: '故事点',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'STORY_POINTS',
       id: 'story_points',
@@ -24,6 +27,7 @@ export default {
     {
       codeName: 'work_item_count',
       logicName: '工作项数量',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'WORK_ITEM_COUNT',
       id: 'work_item_count',
@@ -34,6 +38,7 @@ export default {
         lanResTag: 'DEF.LNAME.ID',
       },
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'ID',
@@ -45,6 +50,7 @@ export default {
         lanResTag: 'DEF.LNAME.NAME',
       },
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,

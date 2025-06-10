@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'DynaModelFlag',
       logicName: '扩展模型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'DYNAMODELFLAG',
       id: 'dynamodelflag',
@@ -10,6 +11,7 @@ export default {
     {
       codeName: 'PSDEFormId',
       logicName: '实体表单标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEFORMID',
@@ -18,6 +20,7 @@ export default {
     {
       codeName: 'PSDEFormName',
       logicName: '实体表单名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -30,6 +33,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATEMAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'CREATEMAN',
@@ -41,6 +45,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATEDATE',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATEDATE',
@@ -52,6 +57,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATEMAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'UPDATEMAN',
@@ -63,6 +69,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATEDATE',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATEDATE',
@@ -71,6 +78,7 @@ export default {
     {
       codeName: 'CodeName',
       logicName: '代码标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 30,
       enableQuickSearch: true,
@@ -80,6 +88,7 @@ export default {
     {
       codeName: 'FormType',
       logicName: '表单类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 20,
       name: 'FORMTYPE',
@@ -88,6 +97,7 @@ export default {
     {
       codeName: 'PSDEId',
       logicName: '实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDEID',
@@ -96,6 +106,7 @@ export default {
     {
       codeName: 'PSDEName',
       logicName: '实体',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSDENAME',
@@ -104,6 +115,7 @@ export default {
     {
       codeName: 'extension_tag',
       logicName: '扩展标记',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'EXTENSION_TAG',
@@ -112,6 +124,7 @@ export default {
     {
       codeName: 'extension_tag2',
       logicName: '扩展标记2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'EXTENSION_TAG2',
@@ -120,6 +133,7 @@ export default {
     {
       codeName: 'extension_tag3',
       logicName: '扩展标记3',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'EXTENSION_TAG3',
@@ -128,6 +142,7 @@ export default {
     {
       codeName: 'extension_tag4',
       logicName: '扩展标记4',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'EXTENSION_TAG4',

@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'id',
       logicName: '标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'ID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'name',
       logicName: '名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -20,6 +22,7 @@ export default {
     {
       codeName: 'type',
       logicName: '索引类型',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'TYPE',

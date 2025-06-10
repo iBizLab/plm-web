@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'color',
       logicName: '颜色',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'COLOR',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'BKColor',
       logicName: '背景颜色',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BKCOLOR',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'MSValueProxyId',
       logicName: '主状态值代理标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'MSVALUEPROXYID',
@@ -27,6 +30,7 @@ export default {
     {
       codeName: 'MSValueProxyName',
       logicName: '主状态值代理名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -39,6 +43,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATEMAN',
       },
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'CREATEMAN',
@@ -50,6 +55,7 @@ export default {
         lanResTag: 'DEF.LNAME.CREATEDATE',
       },
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATEDATE',
@@ -61,6 +67,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATEMAN',
       },
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'UPDATEMAN',
@@ -72,6 +79,7 @@ export default {
         lanResTag: 'DEF.LNAME.UPDATEDATE',
       },
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATEDATE',

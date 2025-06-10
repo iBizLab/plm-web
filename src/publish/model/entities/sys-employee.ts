@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'UserId',
       logicName: '用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USERID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'UserName',
       logicName: '用户全局名',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USERNAME',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'PersonName',
       logicName: '姓名',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       enableQuickSearch: true,
@@ -28,6 +31,7 @@ export default {
     {
       codeName: 'UserCode',
       logicName: '用户工号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'USERCODE',
@@ -36,6 +40,7 @@ export default {
     {
       codeName: 'LoginName',
       logicName: '登录名',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'LOGINNAME',
@@ -44,6 +49,7 @@ export default {
     {
       codeName: 'Password',
       logicName: '密码',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PASSWORD',
@@ -52,6 +58,7 @@ export default {
     {
       codeName: 'Domains',
       logicName: '区属',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DOMAINS',
@@ -60,6 +67,7 @@ export default {
     {
       codeName: 'MDeptId',
       logicName: '主部门',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'MDEPTID',
@@ -68,6 +76,7 @@ export default {
     {
       codeName: 'MDeptName',
       logicName: '主部门名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'MDEPTNAME',
@@ -76,6 +85,7 @@ export default {
     {
       codeName: 'BCode',
       logicName: '业务编码',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'BCODE',
@@ -84,6 +94,7 @@ export default {
     {
       codeName: 'PostId',
       logicName: '岗位标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'POSTID',
@@ -92,6 +103,7 @@ export default {
     {
       codeName: 'PostName',
       logicName: '岗位名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'POSTNAME',
@@ -100,6 +112,7 @@ export default {
     {
       codeName: 'OrgId',
       logicName: '单位',
+      predefinedType: 'ORGID',
       stdDataType: 25,
       stringLength: 100,
       name: 'ORGID',
@@ -108,6 +121,7 @@ export default {
     {
       codeName: 'OrgName',
       logicName: '单位名称',
+      predefinedType: 'ORGNAME',
       stdDataType: 25,
       stringLength: 100,
       name: 'ORGNAME',
@@ -116,6 +130,7 @@ export default {
     {
       codeName: 'NickName',
       logicName: '昵称别名',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'NICKNAME',
@@ -124,6 +139,7 @@ export default {
     {
       codeName: 'Sex',
       logicName: '性别',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 20,
       name: 'SEX',
@@ -132,6 +148,7 @@ export default {
     {
       codeName: 'CertCode',
       logicName: '证件号码',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'CERTCODE',
@@ -140,6 +157,7 @@ export default {
     {
       codeName: 'Phone',
       logicName: '手机号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PHONE',
@@ -148,6 +166,7 @@ export default {
     {
       codeName: 'Birthday',
       logicName: '出生日期',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD',
       name: 'BIRTHDAY',
@@ -156,6 +175,7 @@ export default {
     {
       codeName: 'Email',
       logicName: '邮件',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'EMAIL',
@@ -164,6 +184,7 @@ export default {
     {
       codeName: 'Avatar',
       logicName: '社交账号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'AVATAR',
@@ -172,6 +193,7 @@ export default {
     {
       codeName: 'Addr',
       logicName: '地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 255,
       name: 'ADDR',
@@ -180,6 +202,7 @@ export default {
     {
       codeName: 'UserIcon',
       logicName: '照片',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 255,
       name: 'USERICON',
@@ -188,6 +211,7 @@ export default {
     {
       codeName: 'IPAddr',
       logicName: 'ip地址',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'IPADDR',
@@ -196,6 +220,7 @@ export default {
     {
       codeName: 'Theme',
       logicName: '样式',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'THEME',
@@ -204,6 +229,7 @@ export default {
     {
       codeName: 'Lang',
       logicName: '语言',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'LANG',
@@ -212,6 +238,7 @@ export default {
     {
       codeName: 'FontSize',
       logicName: '字号',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 10,
       name: 'FONTSIZE',
@@ -220,6 +247,7 @@ export default {
     {
       codeName: 'Memo',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'MEMO',
@@ -228,6 +256,7 @@ export default {
     {
       codeName: 'Reserver18',
       logicName: '保留18',
+      predefinedType: 'NONE',
       stdDataType: 29,
       name: 'RESERVER18',
       id: 'reserver18',
@@ -235,6 +264,7 @@ export default {
     {
       codeName: 'Reserver17',
       logicName: '保留17',
+      predefinedType: 'NONE',
       stdDataType: 29,
       name: 'RESERVER17',
       id: 'reserver17',
@@ -242,6 +272,7 @@ export default {
     {
       codeName: 'Reserver12',
       logicName: '保留12',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'RESERVER12',
       id: 'reserver12',
@@ -249,6 +280,7 @@ export default {
     {
       codeName: 'Reserver15',
       logicName: '保留15',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'RESERVER15',
       id: 'reserver15',
@@ -256,6 +288,7 @@ export default {
     {
       codeName: 'Reserver16',
       logicName: '保留16',
+      predefinedType: 'NONE',
       stdDataType: 6,
       name: 'RESERVER16',
       id: 'reserver16',
@@ -263,6 +296,7 @@ export default {
     {
       codeName: 'Reserver13',
       logicName: '保留13',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'RESERVER13',
       id: 'reserver13',
@@ -270,6 +304,7 @@ export default {
     {
       codeName: 'Reserver11',
       logicName: '保留11',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'RESERVER11',
       id: 'reserver11',
@@ -277,6 +312,7 @@ export default {
     {
       codeName: 'Reserver14',
       logicName: '保留14',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'RESERVER14',
       id: 'reserver14',
@@ -284,6 +320,7 @@ export default {
     {
       codeName: 'Reserver7',
       logicName: '保留7',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'RESERVER7',
@@ -292,6 +329,7 @@ export default {
     {
       codeName: 'Reserver4',
       logicName: '保留4',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RESERVER4',
@@ -300,6 +338,7 @@ export default {
     {
       codeName: 'Reserver2',
       logicName: '保留2',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RESERVER2',
@@ -308,6 +347,7 @@ export default {
     {
       codeName: 'Reserver5',
       logicName: '保留5',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'RESERVER5',
@@ -316,6 +356,7 @@ export default {
     {
       codeName: 'Reserver6',
       logicName: '保留6',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'RESERVER6',
@@ -324,6 +365,7 @@ export default {
     {
       codeName: 'Reserver3',
       logicName: '保留3',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'RESERVER3',
@@ -332,6 +374,7 @@ export default {
     {
       codeName: 'Reserver8',
       logicName: '保留8',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'RESERVER8',
@@ -340,6 +383,7 @@ export default {
     {
       codeName: 'Reserver',
       logicName: '保留',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 255,
       name: 'RESERVER',
@@ -348,6 +392,7 @@ export default {
     {
       codeName: 'Reserver19',
       logicName: '保留19',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'RESERVER19',
@@ -356,6 +401,7 @@ export default {
     {
       codeName: 'Reserver20',
       logicName: '保留20',
+      predefinedType: 'NONE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'RESERVER20',
@@ -364,6 +410,7 @@ export default {
     {
       codeName: 'Reserver10',
       logicName: '保留10',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'RESERVER10',
@@ -372,6 +419,7 @@ export default {
     {
       codeName: 'Reserver9',
       logicName: '保留9',
+      predefinedType: 'NONE',
       stdDataType: 21,
       stringLength: 1048576,
       name: 'RESERVER9',
@@ -380,6 +428,7 @@ export default {
     {
       codeName: 'ShowOrder',
       logicName: '排序',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'SHOWORDER',
       id: 'showorder',
@@ -387,6 +436,7 @@ export default {
     {
       codeName: 'SuperUser',
       logicName: '管理员',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'SUPERUSER',
       id: 'superuser',
@@ -394,6 +444,7 @@ export default {
     {
       codeName: 'Enable',
       logicName: '逻辑有效',
+      predefinedType: 'LOGICVALID',
       stdDataType: 9,
       name: 'ENABLE',
       id: 'enable',
@@ -401,6 +452,7 @@ export default {
     {
       codeName: 'CreateDate',
       logicName: '创建时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATEDATE',
@@ -409,6 +461,7 @@ export default {
     {
       codeName: 'UpdateDate',
       logicName: '最后修改时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATEDATE',
@@ -417,6 +470,7 @@ export default {
     {
       codeName: 'report_flag',
       logicName: '统计',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'REPORT_FLAG',
       id: 'report_flag',
@@ -424,6 +478,7 @@ export default {
     {
       codeName: 'State',
       logicName: '人员状态',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 10,
       name: 'STATE',
@@ -432,6 +487,7 @@ export default {
     {
       codeName: 'MsgType',
       logicName: '消息类型',
+      predefinedType: 'NONE',
       stdDataType: 9,
       name: 'MSGTYPE',
       id: 'msgtype',
@@ -439,6 +495,7 @@ export default {
     {
       codeName: 'DDUnionId',
       logicName: '钉钉用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DDUNIONID',
@@ -447,6 +504,7 @@ export default {
     {
       codeName: 'UAAUserId',
       logicName: 'UAA用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'UAAUSERID',
@@ -455,6 +513,7 @@ export default {
     {
       codeName: 'WXWorkUnionId',
       logicName: '微信用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'WXWORKUNIONID',
@@ -463,6 +522,7 @@ export default {
     {
       codeName: 'WXWorkUserId',
       logicName: '企业微信用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'WXWORKUSERID',
@@ -471,6 +531,7 @@ export default {
     {
       codeName: 'DDUserId',
       logicName: '钉钉用户标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'DDUSERID',

@@ -1091,23 +1091,6 @@ export default {
         enableAutoSave: true,
         deformItemUpdates: [
           {
-            codeName: 'estimated_update',
-            defiupdateDetails: [
-              {
-                id: 'workload_schedule',
-              },
-              {
-                id: 'remaining_workload',
-              },
-            ],
-            scriptCode:
-              'var form_data = view.layoutPanel.panelItems.form.control.data;\r\nvar actual_workload = form_data.actual_workload;\r\nvar estimated_workload = form_data.estimated_workload;  \r\nvar estimated = 0; // 预估工时\r\nif(estimated_workload){\r\n\testimated = Number(estimated_workload);\r\n}\r\nvar actual = 0; // 已登记的实际工时\r\nvar remaining = 0; // 剩余工时\r\nif(actual_workload){\r\n\tactual = Number(actual_workload);\r\n\tif(estimated_workload){\r\n\t\t// 计算剩余工时\r\n\t\tremaining = (estimated - actual) >= 0 ? (estimated - actual) : 0;\r\n\t\tform_data.remaining_workload = remaining;\r\n\t}\r\n} else {\r\n\tremaining = estimated;\r\n\tform_data.remaining_workload = estimated_workload;\r\n}\r\n// 计算工时进度\r\nif((actual + remaining) != 0){\r\n\tvar schedule = ((actual / (actual + remaining)) * 100).toFixed(1);\r\n\tform_data.workload_schedule = schedule;\r\n}',
-            customCode: true,
-            showBusyIndicator: false,
-            name: '预估工时表单项更新',
-            id: 'estimated_update',
-          },
-          {
             codeName: 'remaining_update',
             defiupdateDetails: [
               {
@@ -1120,6 +1103,23 @@ export default {
             showBusyIndicator: false,
             name: '剩余工时表单项更新',
             id: 'remaining_update',
+          },
+          {
+            codeName: 'estimated_update',
+            defiupdateDetails: [
+              {
+                id: 'remaining_workload',
+              },
+              {
+                id: 'workload_schedule',
+              },
+            ],
+            scriptCode:
+              'var form_data = view.layoutPanel.panelItems.form.control.data;\r\nvar actual_workload = form_data.actual_workload;\r\nvar estimated_workload = form_data.estimated_workload;  \r\nvar estimated = 0; // 预估工时\r\nif(estimated_workload){\r\n\testimated = Number(estimated_workload);\r\n}\r\nvar actual = 0; // 已登记的实际工时\r\nvar remaining = 0; // 剩余工时\r\nif(actual_workload){\r\n\tactual = Number(actual_workload);\r\n\tif(estimated_workload){\r\n\t\t// 计算剩余工时\r\n\t\tremaining = (estimated - actual) >= 0 ? (estimated - actual) : 0;\r\n\t\tform_data.remaining_workload = remaining;\r\n\t}\r\n} else {\r\n\tremaining = estimated;\r\n\tform_data.remaining_workload = estimated_workload;\r\n}\r\n// 计算工时进度\r\nif((actual + remaining) != 0){\r\n\tvar schedule = ((actual / (actual + remaining)) * 100).toFixed(1);\r\n\tform_data.workload_schedule = schedule;\r\n}',
+            customCode: true,
+            showBusyIndicator: false,
+            name: '预估工时表单项更新',
+            id: 'estimated_update',
           },
         ],
         deformItemVRs: [
@@ -3559,7 +3559,6 @@ export default {
                         deformDetails: [
                           {
                             dataType: 6,
-                            enableCond: 3,
                             labelPos: 'LEFT',
                             labelWidth: 130,
                             noPrivDisplayMode: 1,
@@ -3583,11 +3582,72 @@ export default {
                             detailStyle: 'DEFAULT',
                             detailType: 'FORMITEM',
                             layoutPos: {
-                              colMD: 24,
+                              colLG: 21,
+                              colMD: 21,
                               layout: 'TABLE_24COL',
                             },
                             showCaption: true,
                             id: 'estimated_workload',
+                          },
+                          {
+                            layout: {
+                              columnCount: 24,
+                              layout: 'TABLE_24COL',
+                            },
+                            deformDetails: [
+                              {
+                                actionType: 'UIACTION',
+                                buttonStyle: 'STYLE2',
+                                uiactionId:
+                                  'check_estimated_workload_detail@work_item',
+                                tooltip: '查看明细',
+                                uiactionTarget: 'NONE',
+                                caption: '查看明细',
+                                codeName: 'button5',
+                                detailStyle: 'STYLE2',
+                                detailType: 'BUTTON',
+                                layoutPos: {
+                                  colLG: 12,
+                                  colMD: 12,
+                                  layout: 'TABLE_24COL',
+                                },
+                                sysImage: {
+                                  cssClass: 'fa fa-arrow-circle-o-right',
+                                  glyph: 'xf18e@FontAwesome',
+                                },
+                                id: 'button5',
+                              },
+                              {
+                                actionType: 'UIACTION',
+                                buttonStyle: 'STYLE2',
+                                uiactionId: 'add_estimated_workload@work_item',
+                                tooltip: '登记工时',
+                                uiactionTarget: 'NONE',
+                                caption: '登记工时',
+                                codeName: 'button4',
+                                detailStyle: 'STYLE2',
+                                detailType: 'BUTTON',
+                                layoutPos: {
+                                  colLG: 12,
+                                  colMD: 12,
+                                  layout: 'TABLE_24COL',
+                                },
+                                sysImage: {
+                                  cssClass: 'fa fa-plus',
+                                  glyph: 'xf067@FontAwesome',
+                                },
+                                id: 'button4',
+                              },
+                            ],
+                            codeName: 'grouppanel16',
+                            detailStyle: 'DEFAULT',
+                            detailType: 'GROUPPANEL',
+                            layoutPos: {
+                              colLG: 3,
+                              colMD: 3,
+                              layout: 'TABLE_24COL',
+                            },
+                            id: 'grouppanel16',
                           },
                           {
                             dataType: 6,
@@ -3982,6 +4042,71 @@ export default {
                     deformDetails: [
                       {
                         appViewId: 'plmweb.workload_list_view',
+                        navigateParams: [
+                          {
+                            key: 'n_category_eq',
+                            value: 'ESTIMATED_WORKLOAD',
+                            rawValue: true,
+                            id: 'n_category_eq',
+                          },
+                        ],
+                        parentDataJO: {
+                          srfparentdename: 'WORK_ITEM',
+                          SRFPARENTTYPE: 'CUSTOM',
+                        },
+                        codeName: 'druipart6',
+                        detailStyle: 'DEFAULT',
+                        detailType: 'DRUIPART',
+                        layoutPos: {
+                          colMD: 24,
+                          layout: 'TABLE_24COL',
+                        },
+                        showCaption: true,
+                        id: 'druipart6',
+                      },
+                    ],
+                    caption: '预估工时明细',
+                    codeName: 'grouppanel17',
+                    detailStyle: 'DEFAULT',
+                    detailType: 'GROUPPANEL',
+                    defdgroupLogics: [
+                      {
+                        logicCat: 'PANELVISIBLE',
+                        relatedDetailNames: ['workload_schedule'],
+                        groupOP: 'AND',
+                        defdlogics: [
+                          {
+                            condOP: 'EQ',
+                            defdname: 'workload_schedule',
+                            value: '-1',
+                            logicType: 'SINGLE',
+                          },
+                        ],
+                        logicType: 'GROUP',
+                      },
+                    ],
+                    layoutPos: {
+                      colMD: 24,
+                      layout: 'TABLE_24COL',
+                    },
+                    id: 'grouppanel17',
+                  },
+                  {
+                    layout: {
+                      columnCount: 24,
+                      layout: 'TABLE_24COL',
+                    },
+                    deformDetails: [
+                      {
+                        appViewId: 'plmweb.workload_list_view',
+                        navigateParams: [
+                          {
+                            key: 'n_category_eq',
+                            value: 'ACTUAL_WORKLOAD',
+                            rawValue: true,
+                            id: 'n_category_eq',
+                          },
+                        ],
                         parentDataJO: {
                           srfparentdename: 'WORK_ITEM',
                           SRFPARENTTYPE: 'CUSTOM',

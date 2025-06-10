@@ -3,6 +3,7 @@ export default {
     {
       codeName: 'PPSCorePrdCatId',
       logicName: '上级分类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PPSCOREPRDCATID',
@@ -11,6 +12,7 @@ export default {
     {
       codeName: 'PSCorePrdCatId',
       logicName: '核心产品分类标识',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PSCOREPRDCATID',
@@ -19,6 +21,7 @@ export default {
     {
       codeName: 'PSCorePrdCatName',
       logicName: '核心产品分类名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       enableQuickSearch: true,
@@ -28,6 +31,7 @@ export default {
     {
       codeName: 'CreateMan',
       logicName: '建立人',
+      predefinedType: 'CREATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'CREATEMAN',
@@ -36,6 +40,7 @@ export default {
     {
       codeName: 'CreateDate',
       logicName: '建立时间',
+      predefinedType: 'CREATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'CREATEDATE',
@@ -44,6 +49,7 @@ export default {
     {
       codeName: 'UpdateMan',
       logicName: '更新人',
+      predefinedType: 'UPDATEMAN',
       stdDataType: 25,
       stringLength: 60,
       name: 'UPDATEMAN',
@@ -52,6 +58,7 @@ export default {
     {
       codeName: 'UpdateDate',
       logicName: '更新时间',
+      predefinedType: 'UPDATEDATE',
       stdDataType: 5,
       valueFormat: 'YYYY-MM-DD HH:mm:ss',
       name: 'UPDATEDATE',
@@ -60,6 +67,7 @@ export default {
     {
       codeName: 'FullPath',
       logicName: '完全路径',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'FULLPATH',
@@ -68,6 +76,7 @@ export default {
     {
       codeName: 'Path',
       logicName: '路径',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 200,
       name: 'PATH',
@@ -76,6 +85,7 @@ export default {
     {
       codeName: 'FullName',
       logicName: '完全名称',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 1000,
       name: 'FULLNAME',
@@ -84,6 +94,7 @@ export default {
     {
       codeName: 'PPSCorePrdCatName',
       logicName: '上级分类',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 100,
       name: 'PPSCOREPRDCATNAME',
@@ -92,6 +103,7 @@ export default {
     {
       codeName: 'Memo',
       logicName: '备注',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 4000,
       name: 'MEMO',
@@ -100,6 +112,7 @@ export default {
     {
       codeName: 'AvatarUrl',
       logicName: '图标路径',
+      predefinedType: 'NONE',
       stdDataType: 25,
       stringLength: 500,
       name: 'AVATARURL',
