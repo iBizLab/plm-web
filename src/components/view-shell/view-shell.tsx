@@ -21,11 +21,12 @@ export const IBizViewShell = defineComponent({
     const errMsg = ref('');
     const provider = ref<IViewProvider>();
     const viewComponent = ref<Component>();
+    const viewModel = ref<IModel>();
     // 初始化方法
     const init = async (): Promise<void> => {
       const viewId = props.modelData ? props.modelData.id! : props.viewId!;
       viewComponent.value = await getAppViewComponent(viewId);
-
+      viewModel.value = await ibiz.hub.getAppView(viewId);
       if (!viewComponent.value) {
         errMsg.value = `未找到${viewId}对应的视图组件`;
       }
@@ -34,7 +35,7 @@ export const IBizViewShell = defineComponent({
 
     init();
 
-    return { ns, isComplete, errMsg, viewComponent, provider };
+    return { ns, isComplete, errMsg, viewComponent, viewModel, provider };
   },
   render() {
     if (this.isComplete && this.viewComponent) {
@@ -43,6 +44,7 @@ export const IBizViewShell = defineComponent({
         {
           context: this.$props.context,
           params: this.$props.params,
+          model: this.viewModel,
           ...this.$attrs,
         },
         this.$slots,

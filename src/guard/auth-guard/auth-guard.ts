@@ -1,36 +1,38 @@
 import { AuthGuard } from '@ibiz-template/vue3-components';
+import { AppHooks } from '@ibiz-template/vue3-util';
 import { ModelLoader } from '@/model/model-loader';
-import { registerCodeList } from '@/publish/model';
 import { initViewConfig } from '@/publish/model/view-config';
 
 export class StaticAuthGuard extends AuthGuard {
   hasModelInit: boolean = false;
 
-  async initModel(_permission: boolean = true): Promise<void> {
-    if (this.hasModelInit) {
-      return;
-    }
-    ibiz.hub.registerModelLoaderProvider(new ModelLoader());
-    await initViewConfig();
-    const app = await ibiz.hub.getAppAsync(ibiz.env.appId);
-    await registerCodeList(app.codeList);
+  noPermissionModel: boolean = false;
 
-    const appModel = app.model;
-    await this.initEnvironment(appModel);
-    ibiz.env.isMob = appModel.mobileApp === true;
-    if (ibiz.env.isEnableMultiLan) {
-      // todo 多语言
-      // const lang = ibiz.i18n.getLang();
-      // const m = await helper.getPSAppLang(lang.replace('-', '_').toUpperCase());
-      // const items = m.languageItems || [];
-      // // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      // const data: any = {};
-      // items.forEach(item => {
-      //   data[item.lanResTag!] = item.content;
-      // });
-      // i18n.global.mergeLocaleMessage(lang, data);
+  /**
+   * @description 初始化模型
+   * @param {IParams} context
+   * @param {boolean} [permission=true]
+   * @returns {*}  {Promise<void>}
+   * @memberof StaticAuthGuard
+   */
+  async initModel(context: IParams, permission: boolean = true): Promise<void> {
+    // 没初始化或者初始化了但是切换模型
+    if (
+      !this.hasModelInit ||
+      (this.hasModelInit && this.noPermissionModel !== permission)
+    ) {
+      // 清空重置基座
+      ibiz.hub.reset();
+      ibiz.hub.registerModelLoaderProvider(new ModelLoader());
+      await initViewConfig();
+      const app = await ibiz.hub.getAppAsync(ibiz.env.appId);
+      await AppHooks.initedApp.call({ context, app });
+      const appModel = app.model;
+      await this.initEnvironment(appModel);
+      ibiz.env.isMob = appModel.mobileApp === true;
+      await this.initTheme(appModel);
     }
-    await this.initTheme(appModel);
+    this.noPermissionModel = permission;
     this.hasModelInit = true;
   }
 }
