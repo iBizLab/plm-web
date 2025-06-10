@@ -12,47 +12,47 @@ dependencies:
     specifier: ^1.5.3
     version: 1.5.3
   '@ibiz-template-plugin/ai-chat':
-    specifier: ^0.0.27
-    version: 0.0.27(cherry-markdown@0.8.26)(interactjs@1.10.26)(react@18.3.1)(vite@4.5.0)
+    specifier: ^0.0.28
+    version: 0.0.28(cherry-markdown@0.8.26)(interactjs@1.10.26)(react@18.3.1)(vite@4.5.0)
   '@ibiz-template-plugin/bi-report':
     specifier: 0.0.26
-    version: 0.0.26(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz/model-core@0.1.71)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0)
+    version: 0.0.26(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz/model-core@0.1.76)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0)
   '@ibiz-template-plugin/data-view':
     specifier: 0.0.4
-    version: 0.0.4(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0)
+    version: 0.0.4(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40)(@ibiz/model-core@0.1.76)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0)
   '@ibiz-template/cli':
     specifier: ^0.3.13
     version: 0.3.14(@types/node@20.8.7)(postcss@8.4.31)(vue@3.3.8)
   '@ibiz-template/core':
-    specifier: 0.7.40-alpha.7
-    version: 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+    specifier: 0.7.40
+    version: 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
   '@ibiz-template/devtool':
-    specifier: 0.0.10
-    version: 0.0.10(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/model-helper@0.7.40-alpha.8)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(@monaco-editor/loader@1.4.0)(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(monaco-editor@0.45.0)(pluralize@8.0.0)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0)
+    specifier: 0.0.11
+    version: 0.0.11(@ibiz-template/core@0.7.40)(@ibiz-template/model-helper@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40)(@ibiz/model-core@0.1.76)(@monaco-editor/loader@1.4.0)(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(monaco-editor@0.45.0)(pluralize@8.0.0)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0)
   '@ibiz-template/model-helper':
-    specifier: 0.7.40-alpha.8
-    version: 0.7.40-alpha.8(@ibiz-template/runtime@0.7.40-alpha.8)(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+    specifier: 0.7.40
+    version: 0.7.40(@ibiz-template/runtime@0.7.40)(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
   '@ibiz-template/runtime':
-    specifier: 0.7.40-alpha.8
-    version: 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+    specifier: 0.7.40
+    version: 0.7.40(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
   '@ibiz-template/theme':
     specifier: 0.7.39
     version: 0.7.39
   '@ibiz-template/vue3-components':
-    specifier: 0.7.40-alpha.9
-    version: 0.7.40-alpha.9(@floating-ui/dom@1.5.3)(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/model-helper@0.7.40-alpha.8)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(@imengyu/vue3-context-menu@1.4.1)(@monaco-editor/loader@1.4.0)(@wangeditor/editor-for-vue@5.1.12)(@wangeditor/editor@5.1.23)(async-validator@4.2.5)(cherry-markdown@0.8.26)(dayjs@1.11.10)(echarts@5.4.3)(element-plus@2.4.4)(handlebars@4.7.8)(lodash-es@4.17.21)(monaco-editor@0.45.0)(mqtt@2.18.9)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(react@18.3.1)(vite@4.5.0)(vue-i18n@9.13.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0)
+    specifier: 0.7.40
+    version: 0.7.40(@floating-ui/dom@1.5.3)(@ibiz-template/core@0.7.40)(@ibiz-template/model-helper@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40)(@ibiz/model-core@0.1.76)(@imengyu/vue3-context-menu@1.4.1)(@monaco-editor/loader@1.4.0)(@wangeditor/editor-for-vue@5.1.12)(@wangeditor/editor@5.1.23)(async-validator@4.2.5)(cherry-markdown@0.8.26)(dayjs@1.11.10)(echarts@5.4.3)(element-plus@2.4.4)(handlebars@4.7.8)(lodash-es@4.17.21)(monaco-editor@0.45.0)(mqtt@2.18.9)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(react@18.3.1)(vite@4.5.0)(vue-i18n@9.13.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0)
   '@ibiz-template/vue3-util':
-    specifier: 0.7.40-alpha.8
-    version: 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)
+    specifier: 0.7.40
+    version: 0.7.40(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz/model-core@0.1.76)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)
   '@ibiz-template/web-theme':
-    specifier: 3.0.0
-    version: 3.0.0(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+    specifier: 3.4.0
+    version: 3.4.0(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
   '@ibiz/model-core':
-    specifier: ^0.1.71
-    version: 0.1.71
+    specifier: ^0.1.76
+    version: 0.1.76
   '@ibiz/rt-model-api':
-    specifier: ^0.2.66
-    version: 0.2.66
+    specifier: ^0.2.73
+    version: 0.2.73
   '@imengyu/vue3-context-menu':
     specifier: ^1.3.5
     version: 1.4.1
@@ -131,8 +131,8 @@ devDependencies:
     specifier: ^17.8.0
     version: 17.8.0
   '@ibizlab/cli':
-    specifier: ^0.2.23
-    version: 0.2.23(@ibizlab/model@0.2.15)
+    specifier: ^0.2.25
+    version: 0.2.25(@ibizlab/model@0.2.15)
   '@types/lodash-es':
     specifier: ^4.17.10
     version: 4.17.10
@@ -262,6 +262,10 @@ packages:
   /@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
+
+  /@amap/amap-jsapi-loader@1.0.1:
+    resolution: {integrity: sha512-nPyLKt7Ow/ThHLkSvn2etQlUzqxmTVgK7bIgwdBRTg2HK5668oN7xVxkaiRe3YZEzGzfV2XgH5Jmu2T73ljejw==}
+    dev: false
 
   /@ampproject/remapping@2.2.0:
     resolution: {integrity: sha512-qRmjj8nj9qmLTQXXmaR1cck3UXSRMPrbsLJAasZpF+t3riI71BXed5ebIOYwQntykeZuhjsdweEc9BxH5Jc26w==}
@@ -3703,8 +3707,8 @@ packages:
     deprecated: Use @eslint/object-schema instead
     dev: false
 
-  /@ibiz-template-plugin/ai-chat@0.0.27(cherry-markdown@0.8.26)(interactjs@1.10.26)(react@18.3.1)(vite@4.5.0):
-    resolution: {integrity: sha512-txW3mJlwHhz21enKiFNdVaLj0KN1FkPLefYL0WDG73UPIcEB/9Rs7teYaaFgBinjaI1tb88fvaZs9IRQdiqXlQ==}
+  /@ibiz-template-plugin/ai-chat@0.0.28(cherry-markdown@0.8.26)(interactjs@1.10.26)(react@18.3.1)(vite@4.5.0):
+    resolution: {integrity: sha512-H21fi/uF0wNz46y4C7QqWtq1aH2aV9UXy5GGZjG0HcOFcywo7G3F7lk3gDYxK0miiZoLWQkvE3voAu+f7o05xw==}
     peerDependencies:
       cherry-markdown: ^0.8.26
       interactjs: ^1.10.19
@@ -3723,7 +3727,7 @@ packages:
       - vite
     dev: false
 
-  /@ibiz-template-plugin/bi-report@0.0.26(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz/model-core@0.1.71)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0):
+  /@ibiz-template-plugin/bi-report@0.0.26(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz/model-core@0.1.76)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0):
     resolution: {integrity: sha512-gDKx7eljqzqhbgDYNa2SiQme51aEJ1Wz3p8AhUyAHOsK0+N4SF94iOPknHRKsh4QUOwHy4/WnQvRNcMwnx0QqQ==}
     peerDependencies:
       '@ibiz-template/core': 0.7.35-alpha.1
@@ -3738,10 +3742,10 @@ packages:
       vue: ^3.3.8
       vuedraggable: ^4.1.0
     dependencies:
-      '@ibiz-template/core': 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz-template/runtime': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/core': 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/runtime': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
       '@ibiz-template/theme': 0.7.39
-      '@ibiz/model-core': 0.1.71
+      '@ibiz/model-core': 0.1.76
       '@wangeditor/editor': 5.1.23
       axios: 1.6.7
       dayjs: 1.11.10
@@ -3755,7 +3759,7 @@ packages:
       vuedraggable: 4.1.0(vue@3.3.8)
     dev: false
 
-  /@ibiz-template-plugin/data-view@0.0.4(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0):
+  /@ibiz-template-plugin/data-view@0.0.4(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40)(@ibiz/model-core@0.1.76)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0):
     resolution: {integrity: sha512-Q4lHo/hLtSRZU/FxvUvmwUTHqq77OKtHguW7pKtOcAL9SNwhur4wbJVOalMrGlS1VajrMfn4Uqo2NE7NepfGmw==}
     peerDependencies:
       '@ibiz-template/core': 0.7.39
@@ -3771,11 +3775,11 @@ packages:
       vue: ^3.3.8
       vuedraggable: ^4.1.0
     dependencies:
-      '@ibiz-template/core': 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz-template/runtime': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/core': 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/runtime': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
       '@ibiz-template/theme': 0.7.39
-      '@ibiz-template/vue3-util': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)
-      '@ibiz/model-core': 0.1.71
+      '@ibiz-template/vue3-util': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz/model-core@0.1.76)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)
+      '@ibiz/model-core': 0.1.76
       axios: 1.6.7
       dayjs: 1.11.10
       echarts: 5.4.3
@@ -3789,8 +3793,8 @@ packages:
       vuedraggable: 4.1.0(vue@3.3.8)
     dev: false
 
-  /@ibiz-template-plugin/gantt@0.1.8-alpha.92(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(nprogress@0.2.0)(vue@3.3.8):
-    resolution: {integrity: sha512-vmVsZt4b6FLgdd4gY+vG431ZS8UgHXGlKYtuF1CWP1atmOOU7J0k1ZjZR2iJ2+1B0cgeAO6NpFt9dzYMbx0mhQ==}
+  /@ibiz-template-plugin/gantt@0.1.8-alpha.198(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(nprogress@0.2.0)(vue@3.3.8):
+    resolution: {integrity: sha512-YI7MJwp22AOmXe2KbjrllGPn2yiWjNGzu+qe7rpbVhG8PHxZN2DJKnIWdCCiU2ee1K4QbJR5Egyy2/6hWlbQMw==}
     peerDependencies:
       dayjs: ^1.11.10
       lodash-es: ^4.17.21
@@ -3915,8 +3919,8 @@ packages:
       - vue
     dev: false
 
-  /@ibiz-template/core@0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
-    resolution: {integrity: sha512-s1VMnnd8pmgYAIRhdQxTVEd1Gd69czQrYRRQ/adTrMDUemLPR/7qVVVP9v7JpDl1klhwrNj0ExT60hPznGUM0Q==}
+  /@ibiz-template/core@0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
+    resolution: {integrity: sha512-uv9sMIAnMm5Njpl3YovAhfuxVDPbGR+HGCLJdTf2/dxVzPDxKAkBQjXL11B8sjVcn2Osdcj94+fzma50qIUmvw==}
     peerDependencies:
       axios: ^1.4.0
       lodash-es: ^4.17.21
@@ -3934,8 +3938,8 @@ packages:
       ramda: 0.29.1
     dev: false
 
-  /@ibiz-template/devtool@0.0.10(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/model-helper@0.7.40-alpha.8)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(@monaco-editor/loader@1.4.0)(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(monaco-editor@0.45.0)(pluralize@8.0.0)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0):
-    resolution: {integrity: sha512-LMEG7dSWFHTBIrvPpo5xpz7arGHVix1eXL7LGyFvqPBVLS5ycR0fZqAnL2VTXRg16YXcp94ZEJdlnj8dRGHQoA==}
+  /@ibiz-template/devtool@0.0.11(@ibiz-template/core@0.7.40)(@ibiz-template/model-helper@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40)(@ibiz/model-core@0.1.76)(@monaco-editor/loader@1.4.0)(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(monaco-editor@0.45.0)(pluralize@8.0.0)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0):
+    resolution: {integrity: sha512-IGS9hL3Tw+iJ7A60xgxBPNMpUK6AwXin3UEWHDKQAR5V4ZSURzTP4AMlDl4d8yVb84fVNl6d2as7OJIFnARfaQ==}
     peerDependencies:
       '@ibiz-template/core': ^0.6.2
       '@ibiz-template/model-helper': ^0.6.2
@@ -3957,12 +3961,12 @@ packages:
       vue-router: ^4.2.5
       vuedraggable: ^4.1.0
     dependencies:
-      '@ibiz-template/core': 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz-template/model-helper': 0.7.40-alpha.8(@ibiz-template/runtime@0.7.40-alpha.8)(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz-template/runtime': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/core': 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/model-helper': 0.7.40(@ibiz-template/runtime@0.7.40)(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/runtime': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
       '@ibiz-template/theme': 0.7.39
-      '@ibiz-template/vue3-util': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)
-      '@ibiz/model-core': 0.1.71
+      '@ibiz-template/vue3-util': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz/model-core@0.1.76)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)
+      '@ibiz/model-core': 0.1.76
       '@imengyu/vue3-context-menu': 1.4.1
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.45.0)
       async-validator: 4.2.5
@@ -3982,16 +3986,16 @@ packages:
       vuedraggable: 4.1.0(vue@3.3.8)
     dev: false
 
-  /@ibiz-template/model-helper@0.7.40-alpha.8(@ibiz-template/runtime@0.7.40-alpha.8)(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
-    resolution: {integrity: sha512-gq0Qd18I6SK2TtJ1MAgr4KGVKzv6IUkihJSdrrzLli3mvTZPnVS9F5mwye3xqsQ+pEYUshbCotifMimGaOUzRw==}
+  /@ibiz-template/model-helper@0.7.40(@ibiz-template/runtime@0.7.40)(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
+    resolution: {integrity: sha512-rWMXuGcpBF1C6umvndhXEP2GKEhexPhbh9sRl606Tjl/iNX5UP2VqV116+0U0/Lae6nj5QrNxgLxcH3AgQR5Zg==}
     peerDependencies:
       '@ibiz-template/runtime': ^0.6.0
       ramda: ^0.29.0
     dependencies:
-      '@ibiz-template/core': 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz-template/runtime': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz/model-core': 0.1.71
-      '@ibiz/rt-model-api': 0.2.66
+      '@ibiz-template/core': 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/runtime': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz/model-core': 0.1.76
+      '@ibiz/rt-model-api': 0.2.72
       pluralize: 8.0.0
       ramda: 0.29.1
     transitivePeerDependencies:
@@ -4001,7 +4005,7 @@ packages:
       - qx-util
     dev: false
 
-  /@ibiz-template/runtime@0.6.18(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
+  /@ibiz-template/runtime@0.6.18(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
     resolution: {integrity: sha512-aL3CxA0kHAoNfS6N+3dYyGzmX2hp97eu5YFH58HU5xmehywp7XlRsCgu/SK64SGhHeywS/fKg5LGFnbJmqu6SQ==}
     peerDependencies:
       '@ibiz-template/core': ^0.6.0
@@ -4017,8 +4021,8 @@ packages:
       qx-util: ^0.4.8
       ramda: ^0.29.0
     dependencies:
-      '@ibiz-template/core': 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz/model-core': 0.1.71
+      '@ibiz-template/core': 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz/model-core': 0.1.76
       animejs: 3.2.2
       async-validator: 4.2.5
       dayjs: 1.11.10
@@ -4032,11 +4036,11 @@ packages:
       ramda: 0.29.1
     dev: false
 
-  /@ibiz-template/runtime@0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
-    resolution: {integrity: sha512-AIMUXPWJLM3cATpEPBG2l2HrNUQ+Eym4UiyNxkiVOSlCvPoHDIydRzIBVTZekfb1fY2weN8JD3Q98XxQPDKTxg==}
+  /@ibiz-template/runtime@0.7.40(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
+    resolution: {integrity: sha512-VLJVcVJW/qQ4qOkWaXA/HcGJnyF5biKeGhxr0LA4XjElqFNae36kVAmTxc9kSZ+FK8SPTrsKjIEqZdJ7qwuORw==}
     peerDependencies:
       '@ibiz-template/core': ^0.6.0
-      '@ibiz/model-core': ^0.1.71
+      '@ibiz/model-core': ^0.1.75
       async-validator: ^4.2.5
       dayjs: ^1.11.7
       echarts: ^5.4.3
@@ -4048,8 +4052,8 @@ packages:
       qx-util: ^0.4.8
       ramda: ^0.29.0
     dependencies:
-      '@ibiz-template/core': 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz/model-core': 0.1.71
+      '@ibiz-template/core': 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz/model-core': 0.1.76
       animejs: 3.2.2
       async-validator: 4.2.5
       dayjs: 1.11.10
@@ -4075,8 +4079,8 @@ packages:
     resolution: {integrity: sha512-jlZUaYJrzLDULbANGaxFXwbf+0uwJsC5bSRDLjM8A6wCqv7gC+V0Z/x8gSy2wsrcy0EwaRSd2gZ2Q5eEhgDqag==}
     dev: false
 
-  /@ibiz-template/vue3-components@0.7.40-alpha.9(@floating-ui/dom@1.5.3)(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/model-helper@0.7.40-alpha.8)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(@imengyu/vue3-context-menu@1.4.1)(@monaco-editor/loader@1.4.0)(@wangeditor/editor-for-vue@5.1.12)(@wangeditor/editor@5.1.23)(async-validator@4.2.5)(cherry-markdown@0.8.26)(dayjs@1.11.10)(echarts@5.4.3)(element-plus@2.4.4)(handlebars@4.7.8)(lodash-es@4.17.21)(monaco-editor@0.45.0)(mqtt@2.18.9)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(react@18.3.1)(vite@4.5.0)(vue-i18n@9.13.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0):
-    resolution: {integrity: sha512-/JQlcN/DqANdFf4htedW24sUl1NyPzSgs6WoSVe1IOuEZrV90ZIUOI/0GV+JwxdK2zKr1AAODF/WRzk7lhrQJQ==}
+  /@ibiz-template/vue3-components@0.7.40(@floating-ui/dom@1.5.3)(@ibiz-template/core@0.7.40)(@ibiz-template/model-helper@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40)(@ibiz/model-core@0.1.76)(@imengyu/vue3-context-menu@1.4.1)(@monaco-editor/loader@1.4.0)(@wangeditor/editor-for-vue@5.1.12)(@wangeditor/editor@5.1.23)(async-validator@4.2.5)(cherry-markdown@0.8.26)(dayjs@1.11.10)(echarts@5.4.3)(element-plus@2.4.4)(handlebars@4.7.8)(lodash-es@4.17.21)(monaco-editor@0.45.0)(mqtt@2.18.9)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(react@18.3.1)(vite@4.5.0)(vue-i18n@9.13.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0):
+    resolution: {integrity: sha512-QHhK9dZEJm8CX434yonNY49YRCiub7NQrUJMFfJjUoKIGzHyjhcOB150oLFs0ksmqd39FabiqJggFlR2Yk2TgA==}
     peerDependencies:
       '@floating-ui/dom': ^1.5.1
       '@ibiz-template/core': ^0.7.0
@@ -4084,7 +4088,7 @@ packages:
       '@ibiz-template/runtime': ^0.7.0
       '@ibiz-template/theme': ^0.7.0
       '@ibiz-template/vue3-util': ^0.7.0
-      '@ibiz/model-core': ^0.1.71
+      '@ibiz/model-core': ^0.1.75
       '@imengyu/vue3-context-menu': ^1.3.3
       '@monaco-editor/loader': ^1.3.3
       '@wangeditor/editor': ^5.1.23
@@ -4105,19 +4109,20 @@ packages:
       vue-router: ^4.2.4
       vuedraggable: ^4.1.0
     dependencies:
+      '@amap/amap-jsapi-loader': 1.0.1
       '@floating-ui/dom': 1.5.3
-      '@ibiz-template-plugin/ai-chat': 0.0.27(cherry-markdown@0.8.26)(interactjs@1.10.26)(react@18.3.1)(vite@4.5.0)
-      '@ibiz-template-plugin/bi-report': 0.0.26(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz/model-core@0.1.71)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0)
-      '@ibiz-template-plugin/data-view': 0.0.4(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0)
-      '@ibiz-template-plugin/gantt': 0.1.8-alpha.92(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(nprogress@0.2.0)(vue@3.3.8)
-      '@ibiz-template/core': 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz-template/devtool': 0.0.10(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/model-helper@0.7.40-alpha.8)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(@monaco-editor/loader@1.4.0)(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(monaco-editor@0.45.0)(pluralize@8.0.0)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0)
-      '@ibiz-template/model-helper': 0.7.40-alpha.8(@ibiz-template/runtime@0.7.40-alpha.8)(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz-template/runtime': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template-plugin/ai-chat': 0.0.28(cherry-markdown@0.8.26)(interactjs@1.10.26)(react@18.3.1)(vite@4.5.0)
+      '@ibiz-template-plugin/bi-report': 0.0.26(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz/model-core@0.1.76)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0)
+      '@ibiz-template-plugin/data-view': 0.0.4(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40)(@ibiz/model-core@0.1.76)(axios@1.6.7)(dayjs@1.11.10)(element-plus@2.4.4)(qx-util@0.4.8)(ramda@0.29.1)(vue@3.3.8)(vuedraggable@4.1.0)
+      '@ibiz-template-plugin/gantt': 0.1.8-alpha.198(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(nprogress@0.2.0)(vue@3.3.8)
+      '@ibiz-template/core': 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/devtool': 0.0.11(@ibiz-template/core@0.7.40)(@ibiz-template/model-helper@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz-template/theme@0.7.39)(@ibiz-template/vue3-util@0.7.40)(@ibiz/model-core@0.1.76)(@monaco-editor/loader@1.4.0)(async-validator@4.2.5)(axios@1.6.7)(dayjs@1.11.10)(lodash-es@4.17.21)(monaco-editor@0.45.0)(pluralize@8.0.0)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)(vuedraggable@4.1.0)
+      '@ibiz-template/model-helper': 0.7.40(@ibiz-template/runtime@0.7.40)(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/runtime': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
       '@ibiz-template/theme': 0.7.39
-      '@ibiz-template/vue3-util': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)
-      '@ibiz-template/web-theme': 3.0.0(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz/model-core': 0.1.71
+      '@ibiz-template/vue3-util': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz/model-core@0.1.76)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8)
+      '@ibiz-template/web-theme': 3.4.0(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz/model-core': 0.1.76
       '@imengyu/vue3-context-menu': 1.4.1
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.45.0)
       '@wangeditor/editor': 5.1.23
@@ -4162,12 +4167,12 @@ packages:
       - vite
     dev: false
 
-  /@ibiz-template/vue3-util@0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz-template/runtime@0.7.40-alpha.8)(@ibiz/model-core@0.1.71)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8):
-    resolution: {integrity: sha512-Z4X4ISJW9OCuL3DyAX/sQ2Py1eF53rmkSp2r/0RwI3fuF1aqc+DIh8395tEa00B0OgvdPQq2Z+nS0fSQ0rKo8w==}
+  /@ibiz-template/vue3-util@0.7.40(@ibiz-template/core@0.7.40)(@ibiz-template/runtime@0.7.40)(@ibiz/model-core@0.1.76)(dayjs@1.11.10)(path-browserify@1.0.1)(pinia@2.1.7)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)(vue-router@4.2.5)(vue@3.3.8):
+    resolution: {integrity: sha512-575xRTZ/cOb+vSRKEe8EA973Eh7M3WOZB7+AvnrdVixtfFBo5luLND6zteE5RjVAnl+ntiUPQ/l4j0SuUEKQRg==}
     peerDependencies:
       '@ibiz-template/core': ^0.6.0
       '@ibiz-template/runtime': ^0.6.0
-      '@ibiz/model-core': ^0.1.71
+      '@ibiz/model-core': ^0.1.75
       dayjs: ^1.11.10
       path-browserify: ^1.0.1
       pinia: ^2.1.7
@@ -4177,9 +4182,9 @@ packages:
       vue: ^3.3.8
       vue-router: ^4.2.4
     dependencies:
-      '@ibiz-template/core': 0.7.40-alpha.7(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz-template/runtime': 0.7.40-alpha.8(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
-      '@ibiz/model-core': 0.1.71
+      '@ibiz-template/core': 0.7.40(axios@1.6.7)(lodash-es@4.17.21)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/runtime': 0.7.40(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz/model-core': 0.1.76
       dayjs: 1.11.10
       path-browserify: 1.0.1
       pinia: 2.1.7(typescript@5.2.2)(vue@3.3.8)
@@ -4190,10 +4195,10 @@ packages:
       vue-router: 4.2.5(vue@3.3.8)
     dev: false
 
-  /@ibiz-template/web-theme@3.0.0(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
-    resolution: {integrity: sha512-LPyiaKu/z+xmhJYKquBIl8c19I3cUBEDF2b50Fob6PPesiDVKXQQATpbl+dcbZ+RRK+QYpRUtXRFBn1tnzXijQ==}
+  /@ibiz-template/web-theme@3.4.0(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1):
+    resolution: {integrity: sha512-Y7XpqzZezyJ/ZRN1VpCu0UOT9YeBN/2BZZ+sEL9viPh1BIm0BdMiKGP4jKRlvPUlQd4tzsHpXYmroff3031vSw==}
     dependencies:
-      '@ibiz-template/runtime': 0.6.18(@ibiz-template/core@0.7.40-alpha.7)(@ibiz/model-core@0.1.71)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
+      '@ibiz-template/runtime': 0.6.18(@ibiz-template/core@0.7.40)(@ibiz/model-core@0.1.76)(async-validator@4.2.5)(dayjs@1.11.10)(echarts@5.4.3)(handlebars@4.7.8)(lodash-es@4.17.21)(mqtt@2.18.9)(path-browserify@1.0.1)(qs@6.11.2)(qx-util@0.4.8)(ramda@0.29.1)
     transitivePeerDependencies:
       - '@ibiz-template/core'
       - '@ibiz/model-core'
@@ -4209,18 +4214,22 @@ packages:
       - ramda
     dev: false
 
-  /@ibiz/model-core@0.1.71:
-    resolution: {integrity: sha512-JkfDU36ixjSVTn/IkL22i2kVToQd4lQ4Vw2q7ba5Yt6qg5n5OnJv/inGERFkoZlNKl6MI6T4DkGo97KCiZsWXg==}
+  /@ibiz/model-core@0.1.76:
+    resolution: {integrity: sha512-N837a/mgDOzPlaipNTqeF4GrP8zHFXJ8vuKrY5UWRo4CgT29K215zy1M1BCwcJjFCuLBM1Uz6stxh7Bo+Luu9w==}
     dev: false
 
-  /@ibiz/rt-model-api@0.2.66:
-    resolution: {integrity: sha512-e0HkkGg7sEa6qzIR3i8JGzEe23lyGGagZ9ptaTLtQei+0LiWuqoEhj9Nj/y+E9iydEochXRzcY610i3CPSM01A==}
+  /@ibiz/rt-model-api@0.2.72:
+    resolution: {integrity: sha512-t4Q7Vbb5skMi949F7kLI8lIh3bxum88z9sVaEwlPv4uyFVm0mdJljpp1OGtqvptnXpr5HXjuHjjN24y/DUJUug==}
+    dev: false
 
-  /@ibizlab/cli@0.2.23(@ibizlab/model@0.2.15):
-    resolution: {integrity: sha512-9VKYIs4+Ju0NsJTeE7TmqXt87MTfMhQozyqye/Uw3K0jlOf+csX0UdFfesl6kIMFZ+0cB2nG00cC+cCnc+n+pg==}
+  /@ibiz/rt-model-api@0.2.73:
+    resolution: {integrity: sha512-lrJzvrwqeXGuGcE+3WML4O4d2oty+cD35cA7XdTtNVX9XrmJdpYmSAGb2s2BKuNxrrIsfiJJhKblKLdwGywMwA==}
+
+  /@ibizlab/cli@0.2.25(@ibizlab/model@0.2.15):
+    resolution: {integrity: sha512-lKLU+i0VRmBJjVU9JmBru3gRAwn5e7uloa3zEfgnwOlc3IldWlALqJ+0SDE27Ou6MPXY3ll14GP2Beh+1OtF8Q==}
     hasBin: true
     dependencies:
-      '@ibizlab/template': 0.2.23(@ibizlab/model@0.2.15)
+      '@ibizlab/template': 0.2.25(@ibizlab/model@0.2.15)
       chalk: 4.1.2
       commander: 11.1.0
       fs-extra: 11.2.0
@@ -4267,12 +4276,12 @@ packages:
       tapable: 2.2.1
     dev: true
 
-  /@ibizlab/template-model@0.2.23(@ibizlab/model@0.2.15):
-    resolution: {integrity: sha512-MFoHFg/WpECuXRtekA/V44Ef3IncFiDOxmZUdUwTaEF+G2cKOyaYE4V/CQWl5dKhe0nfBSHnar1/xlmaWbxx5A==}
+  /@ibizlab/template-model@0.2.25(@ibizlab/model@0.2.15):
+    resolution: {integrity: sha512-nhMfcMN5zAUhQ6zHUYPmq4xNu7n2Ki/gfE512GNWfI+8pwx/RYIGXp3tROZnV38jTybDy3JQWb8spR5J2pxaFQ==}
     peerDependencies:
       '@ibizlab/model': ^0.2.15
     dependencies:
-      '@ibiz/rt-model-api': 0.2.66
+      '@ibiz/rt-model-api': 0.2.73
       '@ibizlab/model': 0.2.15
       '@ibizlab/template-generator': 0.2.4
       fs-extra: 11.2.0
@@ -4281,8 +4290,8 @@ packages:
       qx-util: 0.4.8
     dev: true
 
-  /@ibizlab/template@0.2.23(@ibizlab/model@0.2.15):
-    resolution: {integrity: sha512-FCIa0MAaQRe+JKuTTSAxbjMdJw+rficezZfHQgF1UZrsbom85nMze0aejkmZ9e3ysr05cnVm3s3xgwxTiBFZqg==}
+  /@ibizlab/template@0.2.25(@ibizlab/model@0.2.15):
+    resolution: {integrity: sha512-ooqiCGKxs4WV5LuwFvgle+0r+H/0iHiG8t6e3qsZurvifImxp1PZsR2wqFfrAggArcmtvN4An0UFxyO/VunArQ==}
     peerDependencies:
       '@ibizlab/model': ^0.2.14
     dependencies:
@@ -4290,7 +4299,7 @@ packages:
       '@ibizlab/template-core': 0.2.2
       '@ibizlab/template-generator': 0.2.4
       '@ibizlab/template-handlebars': 0.2.4
-      '@ibizlab/template-model': 0.2.23(@ibizlab/model@0.2.15)
+      '@ibizlab/template-model': 0.2.25(@ibizlab/model@0.2.15)
       chokidar: 3.6.0
       fs-extra: 11.2.0
       qx-util: 0.4.8
