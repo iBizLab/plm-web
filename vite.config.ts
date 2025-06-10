@@ -96,10 +96,39 @@ export default defineConfig({
         '@ibiz-template/model-helper',
         '@ibiz-template/vue3-components',
         '@ibiz-template-plugin/ai-chat',
+        '@ibiz-template-plugin/bi-report',
       ],
+      output: {
+         entryFileNames: 'static/js/[name]-[hash].js',
+        // 代码分割 chunk 路径映射
+        chunkFileNames: (chunkInfo) => {
+          const facadeModuleId = chunkInfo.facadeModuleId;
+          const modelIndex = facadeModuleId.indexOf('/publish/model');
+          if (modelIndex !== -1) {
+            const relativePath = path.relative('src', facadeModuleId).replace(/\.\w+$/, '')
+            const targetPath = relativePath.slice(relativePath.indexOf('/')); // 去除publish目录
+            return `static/js/${targetPath}.js`;
+          }
+          return 'static/js/ui/[name]-[hash].js';
+        },
+
+        // 静态资源路径保持与 src 一致
+        assetFileNames: (assetInfo) => {
+          const extType = path.extname(assetInfo.name).slice(1);
+          if (/\.(css|scss)$/.test(assetInfo.name)) {
+            if(assetInfo.name === 'index.css'){
+              return `static/css/[name].${extType}`;
+            }else{
+               return `static/css/[name]-[hash].${extType}`;
+            }
+          }
+          return `static/[ext]/[name]-[hash].[ext]`;
+        }
+      }
     },
   },
   server: {
+    host: '0.0.0.0',
     proxy: {
       // 子系统代理
       '/api/c85a9cfc76024ede4c6200b3f82eac9d__plmweb__formdesign': {
