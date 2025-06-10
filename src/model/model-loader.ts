@@ -122,10 +122,10 @@ export class ModelLoader implements ModelLoaderProvider {
         for (let i = 0; i < appSourceModel.allPSAppCodeLists.length; i++) {
           const tempCodeList = appSourceModel.allPSAppCodeLists[i];
           // eslint-disable-next-line no-await-in-loop
-          const module = await import(
+          const module = await System.import(
             `${microAppConfig!.entry}/static/js/model/code-list/${kebabCase(
               tempCodeList.id,
-            ).toLowerCase()}.js`
+            ).toLowerCase()}-legacy.js`,
           );
           if (module && module.default) {
             this.deepFillSubAppId(module.default, appId);
@@ -215,7 +215,7 @@ export class ModelLoader implements ModelLoaderProvider {
       const subApp = this.dsl.subAppRef(sourceSubApp);
       subApp.appId = microAppConfig.name;
       subApp.serviceId = microAppConfig?.baseUrl;
-      this.subAppRefs.push(subApp);
+      this.subAppRefs.push(subApp as ISubAppRef);
       // 设置视图到hub中
       const views = sourceSubApp.getAllPSAppViews || [];
       views.forEach((view: IModel) => {
@@ -358,8 +358,8 @@ export class ModelLoader implements ModelLoaderProvider {
       return mergeUIActions(app);
     }
     const microAppConfig = ibiz.hub.microAppConfigCenter.getMicroApp(appId);
-    const module = await import(
-      `${microAppConfig!.entry}/static/js/model/app/app.js`
+    const module = await System.import(
+      `${microAppConfig!.entry}/static/js/model/app/app-legacy.js`,
     );
     this.deepFillSubAppId(module.default, appId);
     return module.default;
@@ -375,15 +375,16 @@ export class ModelLoader implements ModelLoaderProvider {
   async getAppView(appId: string, codeName: string): Promise<IAppView> {
     if (appId === ibiz.env.appId) {
       const dsl = await getAppViewModel(codeName);
+      this.deepFillSubAppId(dsl, appId);
       this.calcAppViewSubAppModel(dsl);
       return dsl;
     }
     const microAppConfig = ibiz.hub.microAppConfigCenter.getMicroApp(appId);
-    const module = await import(
+    const module = await System.import(
       `${microAppConfig!.entry}/static/js/model/views/${codeName.replaceAll(
         '_',
         '-',
-      )}.js`
+      )}-legacy.js`,
     );
     this.deepFillSubAppId(module.default, appId);
     return module.default;
@@ -401,10 +402,10 @@ export class ModelLoader implements ModelLoaderProvider {
       return getAppDataEntityModel(id);
     }
     const microAppConfig = ibiz.hub.microAppConfigCenter.getMicroApp(appId);
-    const module = await import(
+    const module = await System.import(
       `${microAppConfig!.entry}/static/js/model/entities/${id
         .split('.')[1]
-        .replaceAll('_', '-')}.js`
+        .replaceAll('_', '-')}-legacy.js`,
     );
     this.deepFillSubAppId(module.default, appId);
     return module.default;

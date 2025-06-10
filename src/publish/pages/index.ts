@@ -14,7 +14,7 @@ function calcAppViewId(tag: string): string {
 export async function getAppViewComponent(name: string): Promise<Component> {
   const _name = calcAppViewId(name).toLowerCase();
   // 子应用视图
-  if (name.split('.')[0] !== ibiz.env.appId.split('.')[1]) {
+  if (name.split('.')[0] !== ibiz.env.appId.split('__')[1]) {
     return defineAsyncComponent(
       () => import('../../components/sub-app-view/sub-app-view.vue'),
     );

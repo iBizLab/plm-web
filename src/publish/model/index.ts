@@ -5149,7 +5149,7 @@ export async function getAppModel(): Promise<IApplication> {
     app.appUtils?.forEach((util: IData) => {
       util.appId = app.appId;
     });
-    app.appId = undefined;
+    // app.appId = undefined;
     return app as IApplication;
   });
 }
