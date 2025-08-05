@@ -725,6 +725,7 @@ export default {
       codeName: 'run_histories',
       majorAppDataEntityId: 'plmweb.run',
       parentAppDEFieldId: 'run_id',
+      parentTextAppDEFieldId: 'run_title',
       rsmode: 2,
       name: 'DER1N_RUN_HISTORY_RUN_RUN_ID',
       id: 'run_histories',
@@ -738,5 +739,12 @@ export default {
   name: 'RUN_HISTORY',
   id: 'plmweb.run_history',
   codeName2: 'run_histories',
-  requestPaths: ['runs/${run}/run_histories/${run_history}'],
+  requestPaths: [
+    'libraries/${library}/test_cases/${test_case}/runs/${run}/run_histories/${run_history}',
+    'libraries/${library}/test_plans/${test_plan}/runs/${run}/run_histories/${run_history}',
+    'projects/${project}/test_plans/${test_plan}/runs/${run}/run_histories/${run_history}',
+    'test_cases/${test_case}/runs/${run}/run_histories/${run_history}',
+    'test_plans/${test_plan}/runs/${run}/run_histories/${run_history}',
+    'runs/${run}/run_histories/${run_history}',
+  ],
 };

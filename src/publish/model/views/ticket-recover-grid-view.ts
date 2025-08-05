@@ -213,12 +213,6 @@ export default {
           id: 'srfdataaccaction',
         },
         {
-          appDEFieldId: 'assignee_id',
-          valueType: 'SIMPLE',
-          dataType: 25,
-          id: 'assignee_id',
-        },
-        {
           appDEFieldId: 'product_id',
           valueType: 'SIMPLE',
           dataType: 25,
@@ -229,6 +223,12 @@ export default {
           valueType: 'SIMPLE',
           dataType: 25,
           id: 'customer_id',
+        },
+        {
+          appDEFieldId: 'assignee_id',
+          valueType: 'SIMPLE',
+          dataType: 25,
+          id: 'assignee_id',
         },
         {
           appDEFieldId: 'title',

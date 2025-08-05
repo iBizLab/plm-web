@@ -145,6 +145,7 @@ export default {
           codeName: 'comments',
           logicName: '评论',
           appDEFieldId: 'comments',
+          refAppDEDataSetId: 'fetch_default',
           refAppDEMethodDTOId: 'comment_dto',
           refAppDataEntityId: 'plmweb.comment',
           refPickupAppDEFieldId: 'principal_id',
@@ -1350,6 +1351,7 @@ export default {
       codeName: 'discuss_replies',
       majorAppDataEntityId: 'plmweb.discuss_post',
       parentAppDEFieldId: 'post_id',
+      parentTextAppDEFieldId: 'discuss_name',
       rsmode: 2,
       name: 'DER1N_DISCUSS_REPLY_DISCUSS_POST_POST_ID',
       id: 'discuss_replies',
@@ -1364,6 +1366,7 @@ export default {
   id: 'plmweb.discuss_reply',
   codeName2: 'discuss_replies',
   requestPaths: [
+    'discuss_topics/${discuss_topic}/discuss_posts/${discuss_post}/discuss_replies/${discuss_reply}',
     'discuss_posts/${discuss_post}/discuss_replies/${discuss_reply}',
   ],
 };

@@ -605,6 +605,9 @@ export default {
           {
             dedrbarGroupId: 'usrdrgroup1204726501',
             caption: '产品',
+            counterId: 'product',
+            counterMode: 1,
+            enableMode: 'COUNT_GTE_ZERO',
             appViewId: 'plmweb.relation_project_re_product_grid_view',
             id: 'product',
           },

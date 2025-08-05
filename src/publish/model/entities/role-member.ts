@@ -606,6 +606,7 @@ export default {
   id: 'plmweb.role_member',
   codeName2: 'role_members',
   requestPaths: [
+    'departments/${department}/users/${user}/role_members/${role_member}',
     'roles/${role}/role_members/${role_member}',
     'users/${user}/role_members/${role_member}',
   ],

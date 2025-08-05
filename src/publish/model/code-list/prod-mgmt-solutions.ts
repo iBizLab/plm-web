@@ -57,6 +57,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '工单解决方案',
   id: 'plmweb.prodmgmt__solutions',
 };

@@ -1397,5 +1397,11 @@ export default {
   name: 'BASELINE_IDEA',
   id: 'plmweb.baseline_idea',
   codeName2: 'baseline_ideas',
-  requestPaths: ['baselines/${baseline}/baseline_ideas/${baseline_idea}'],
+  requestPaths: [
+    'libraries/${library}/baselines/${baseline}/baseline_ideas/${baseline_idea}',
+    'products/${product}/baselines/${baseline}/baseline_ideas/${baseline_idea}',
+    'projects/${project}/baselines/${baseline}/baseline_ideas/${baseline_idea}',
+    'spaces/${space}/baselines/${baseline}/baseline_ideas/${baseline_idea}',
+    'baselines/${baseline}/baseline_ideas/${baseline_idea}',
+  ],
 };

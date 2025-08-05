@@ -269,6 +269,7 @@ export default {
         groupMode: 'AUTO',
         groupAppDEFieldId: 'type_id',
         groupStyle: 'DEFAULT',
+        groupTextAppDEFieldId: 'type_name',
         degridColumns: [
           {
             clconvertMode: 'NONE',

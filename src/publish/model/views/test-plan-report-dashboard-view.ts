@@ -1,5 +1,6 @@
 export default {
   showDataInfoBar: true,
+  enableSearch: true,
   expandSearchForm: true,
   loadDefault: true,
   deviewCodeName: 'report_dashboard_view',
@@ -2003,6 +2004,15 @@ export default {
       modelType: 'PSSYSDASHBOARD',
       name: 'dashboard',
       id: 'plmweb.test_plan.dashboard',
+    },
+    {
+      groupMode: 'SINGLE',
+      controlType: 'SEARCHBAR',
+      appDataEntityId: 'plmweb.test_plan',
+      controlParam: {
+        id: 'searchbar',
+      },
+      id: 'searchbar',
     },
     {
       capLanguageRes: {

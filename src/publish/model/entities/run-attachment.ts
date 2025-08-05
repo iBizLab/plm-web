@@ -1055,5 +1055,12 @@ export default {
   name: 'RUN_ATTACHMENT',
   id: 'plmweb.run_attachment',
   codeName2: 'run_attachments',
-  requestPaths: ['runs/${run}/run_attachments/${run_attachment}'],
+  requestPaths: [
+    'libraries/${library}/test_cases/${test_case}/runs/${run}/run_attachments/${run_attachment}',
+    'libraries/${library}/test_plans/${test_plan}/runs/${run}/run_attachments/${run_attachment}',
+    'projects/${project}/test_plans/${test_plan}/runs/${run}/run_attachments/${run_attachment}',
+    'test_cases/${test_case}/runs/${run}/run_attachments/${run_attachment}',
+    'test_plans/${test_plan}/runs/${run}/run_attachments/${run_attachment}',
+    'runs/${run}/run_attachments/${run_attachment}',
+  ],
 };

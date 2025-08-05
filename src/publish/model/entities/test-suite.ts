@@ -1226,6 +1226,7 @@ export default {
       codeName: 'test_suites',
       majorAppDataEntityId: 'plmweb.library',
       parentAppDEFieldId: 'library_id',
+      parentTextAppDEFieldId: 'library_name',
       rsmode: 2,
       name: 'DER1N_TEST_SUITE_LIBRARY_LIBRARY_ID',
       id: 'test_suites',

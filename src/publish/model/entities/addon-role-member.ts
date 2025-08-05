@@ -556,5 +556,12 @@ export default {
   name: 'ADDON_ROLE_MEMBER',
   id: 'plmweb.addon_role_member',
   codeName2: 'addon_role_members',
-  requestPaths: ['addons/${addon}/addon_role_members/${addon_role_member}'],
+  requestPaths: [
+    'libraries/${library}/addons/${addon}/addon_role_members/${addon_role_member}',
+    'portfolios/${portfolio}/addons/${addon}/addon_role_members/${addon_role_member}',
+    'products/${product}/addons/${addon}/addon_role_members/${addon_role_member}',
+    'projects/${project}/addons/${addon}/addon_role_members/${addon_role_member}',
+    'spaces/${space}/addons/${addon}/addon_role_members/${addon_role_member}',
+    'addons/${addon}/addon_role_members/${addon_role_member}',
+  ],
 };

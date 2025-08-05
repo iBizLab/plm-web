@@ -1591,5 +1591,5 @@ export default {
   name: 'REVIEW_STAGE',
   id: 'plmweb.review_stage',
   codeName2: 'review_stages',
-  requestPaths: ['guidelines/${guideline}/review_stages/${review_stage}'],
+  requestPaths: [],
 };

@@ -1195,6 +1195,7 @@ export default {
       codeName: 'test_case_templates',
       majorAppDataEntityId: 'plmweb.library',
       parentAppDEFieldId: 'test_library_id',
+      parentTextAppDEFieldId: 'test_library_name',
       rsmode: 2,
       name: 'DER1N_TEST_CASE_TEMPLATE_LIBRARY_TEST_LIBRARY_ID',
       id: 'test_case_templates',

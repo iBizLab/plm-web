@@ -751,6 +751,7 @@ export default {
       codeName: 'product_tags',
       majorAppDataEntityId: 'plmweb.product',
       parentAppDEFieldId: 'product_id',
+      parentTextAppDEFieldId: 'product_name',
       rsmode: 2,
       name: 'DER1N_PRODUCT_TAG_PRODUCT_PRODUCT_ID',
       id: 'product_tags',

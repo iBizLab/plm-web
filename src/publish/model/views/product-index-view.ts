@@ -458,12 +458,18 @@ export default {
           {
             dedrbarGroupId: 'usrdrgroup0425581290',
             caption: '评审',
+            counterId: 'review',
+            counterMode: 1,
+            enableMode: 'COUNT_GTE_ZERO',
             appViewId: 'plmweb.review_idea_tree_exp_view',
             id: 'review',
           },
           {
             dedrbarGroupId: 'usrdrgroup1203616060',
             caption: '项目',
+            counterId: 'project',
+            counterMode: 1,
+            enableMode: 'COUNT_GTE_ZERO',
             appViewId: 'plmweb.relation_product_re_project_grid_view',
             id: 'project',
           },

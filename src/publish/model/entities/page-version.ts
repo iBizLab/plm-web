@@ -842,5 +842,9 @@ export default {
   name: 'PAGE_VERSION',
   id: 'plmweb.page_version',
   codeName2: 'page_versions',
-  requestPaths: ['article_pages/${article_page}/page_versions/${page_version}'],
+  requestPaths: [
+    'shared_spaces/${shared_space}/article_pages/${article_page}/page_versions/${page_version}',
+    'spaces/${space}/article_pages/${article_page}/page_versions/${page_version}',
+    'article_pages/${article_page}/page_versions/${page_version}',
+  ],
 };

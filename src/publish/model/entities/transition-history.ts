@@ -613,6 +613,7 @@ export default {
   id: 'plmweb.transition_history',
   codeName2: 'transition_histories',
   requestPaths: [
+    'projects/${project}/work_items/${work_item}/transition_histories/${transition_history}',
     'work_items/${work_item}/transition_histories/${transition_history}',
   ],
 };

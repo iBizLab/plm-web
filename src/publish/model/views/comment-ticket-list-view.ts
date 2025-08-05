@@ -866,14 +866,15 @@ export default {
         },
         delistDataItems: [
           {
-            appDEFieldId: 'id',
-            dataType: 25,
-            id: 'id',
+            appDEFieldId: 'create_time',
+            dataType: 5,
+            format: 'YYYY-MM-DD HH:mm:ss',
+            id: 'create_time',
           },
           {
-            appDEFieldId: 'pcontent',
+            appDEFieldId: 'content',
             dataType: 21,
-            id: 'pcontent',
+            id: 'content',
           },
           {
             appDEFieldId: 'create_man',
@@ -882,15 +883,9 @@ export default {
             id: 'create_man',
           },
           {
-            appDEFieldId: 'content',
-            dataType: 21,
-            id: 'content',
-          },
-          {
-            appDEFieldId: 'create_time',
-            dataType: 5,
-            format: 'YYYY-MM-DD HH:mm:ss',
-            id: 'create_time',
+            appDEFieldId: 'id',
+            dataType: 25,
+            id: 'id',
           },
           {
             appDEFieldId: 'pcreate_man',
@@ -902,6 +897,11 @@ export default {
             appDEFieldId: 'pid',
             dataType: 25,
             id: 'pid',
+          },
+          {
+            appDEFieldId: 'pcontent',
+            dataType: 21,
+            id: 'pcontent',
           },
           {
             appDEFieldId: 'id',

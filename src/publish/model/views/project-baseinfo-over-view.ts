@@ -448,7 +448,7 @@ export default {
                 },
                 {
                   dataType: 6,
-                  inputTip: '已完成状态类型的工作项 / 所有工作项',
+                  inputTip: '状态类型为已完成的工作项 / 所有工作项',
                   labelPos: 'TOP',
                   labelWidth: 130,
                   noPrivDisplayMode: 1,

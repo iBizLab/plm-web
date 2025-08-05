@@ -117,6 +117,15 @@ export default {
       id: 'title',
     },
     {
+      codeName: 'open_user_tag',
+      logicName: '第三方用户标识',
+      predefinedType: 'NONE',
+      stdDataType: 25,
+      stringLength: 100,
+      name: 'OPEN_USER_TAG',
+      id: 'open_user_tag',
+    },
+    {
       codeName: 'id',
       lnlanguageRes: {
         lanResTag: 'DEF.LNAME.ID',
@@ -345,6 +354,16 @@ export default {
           type: 'SIMPLE',
           allowEmpty: true,
           id: 'title',
+        },
+        {
+          codeName: 'open_user_tag',
+          logicName: '第三方用户标识',
+          appDEFieldId: 'open_user_tag',
+          sourceType: 'DEFIELD',
+          stdDataType: 25,
+          type: 'SIMPLE',
+          allowEmpty: true,
+          id: 'open_user_tag',
         },
         {
           codeName: 'create_man',
@@ -2515,6 +2534,7 @@ export default {
       codeName: 'users',
       majorAppDataEntityId: 'plmweb.department',
       parentAppDEFieldId: 'department_id',
+      parentTextAppDEFieldId: 'department_name',
       rsmode: 2,
       name: 'DER1N_USER_DEPARTMENT_DEPARTMENT_ID',
       id: 'users',

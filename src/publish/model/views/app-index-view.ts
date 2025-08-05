@@ -910,6 +910,10 @@ export default {
             id: 'menuitem61',
           },
         ],
+        layout: {
+          columnCount: 24,
+          layout: 'TABLE_24COL',
+        },
         enableCustomized: true,
         autoLoad: true,
         showBusyIndicator: true,

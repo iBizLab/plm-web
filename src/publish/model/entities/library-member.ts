@@ -1277,6 +1277,7 @@ export default {
       codeName: 'library_members',
       majorAppDataEntityId: 'plmweb.library',
       parentAppDEFieldId: 'library_id',
+      parentTextAppDEFieldId: 'library_name',
       rsmode: 2,
       name: 'DER1N_LIBRARY_MEMBER_LIBRARY_LIBRARY_ID',
       id: 'library_members',
@@ -1286,6 +1287,7 @@ export default {
       codeName: 'library_members',
       majorAppDataEntityId: 'plmweb.user',
       parentAppDEFieldId: 'user_id',
+      parentTextAppDEFieldId: 'name',
       rsmode: 2,
       name: 'DER1N_LIBRARY_MEMBER_USER_USER_ID',
       id: 'library_members',
@@ -1301,6 +1303,7 @@ export default {
   id: 'plmweb.library_member',
   codeName2: 'library_members',
   requestPaths: [
+    'departments/${department}/users/${user}/library_members/${library_member}',
     'libraries/${library}/library_members/${library_member}',
     'users/${user}/library_members/${library_member}',
   ],

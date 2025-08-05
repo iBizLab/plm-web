@@ -59,6 +59,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '优先级',
   id: 'plmweb.projmgmt__work_item_priority',
 };

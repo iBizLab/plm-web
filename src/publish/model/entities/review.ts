@@ -4445,6 +4445,7 @@ export default {
       codeName: 'reviews',
       majorAppDataEntityId: 'plmweb.library',
       parentAppDEFieldId: 'library_id',
+      parentTextAppDEFieldId: 'library_name',
       rsmode: 2,
       name: 'DER1N_REVIEW_LIBRARY_LIBRARY_ID',
       id: 'reviews',

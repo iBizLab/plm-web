@@ -328,6 +328,7 @@ export default {
           codeName: 'run_parameter',
           logicName: '执行用例参数',
           appDEFieldId: 'run_parameter',
+          refAppDEDataSetId: 'fetch_default',
           refAppDEMethodDTOId: 'parameter_dto',
           refAppDataEntityId: 'plmweb.parameter',
           refPickupAppDEFieldId: 'owner_id',

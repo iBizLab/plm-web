@@ -1602,6 +1602,11 @@ export default {
   id: 'plmweb.version',
   codeName2: 'versions',
   requestPaths: [
+    'products/${product}/ideas/${idea}/versions/${version}',
+    'projects/${project}/work_items/${work_item}/versions/${version}',
+    'libraries/${library}/test_cases/${test_case}/versions/${version}',
+    'shared_spaces/${shared_space}/article_pages/${article_page}/versions/${version}',
+    'spaces/${space}/article_pages/${article_page}/versions/${version}',
     'ideas/${idea}/versions/${version}',
     'work_items/${work_item}/versions/${version}',
     'test_cases/${test_case}/versions/${version}',

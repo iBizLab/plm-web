@@ -925,6 +925,7 @@ export default {
       codeName: 'idea_templates',
       majorAppDataEntityId: 'plmweb.product',
       parentAppDEFieldId: 'product_id',
+      parentTextAppDEFieldId: 'product_name',
       rsmode: 2,
       name: 'DER1N_IDEA_TEMPLATE_PRODUCT_PRODUCT_ID',
       id: 'idea_templates',

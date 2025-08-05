@@ -88,6 +88,7 @@ export async function registerCodeList(
   setCodeList(
     await import('./code-list/base-workload-type').then(m => m.default),
   );
+  setCodeList(await import('./code-list/base-wxwork').then(m => m.default));
   setCodeList(await import('./code-list/code-list-46').then(m => m.default));
   setCodeList(await import('./code-list/code-list-54').then(m => m.default));
   setCodeList(await import('./code-list/ftr-search-menu').then(m => m.default));
@@ -673,6 +674,11 @@ export async function getAppDataEntityModel(
       return import('./entities/psde-form').then(
         m => m.default as unknown as IAppDataEntity,
       );
+    case 'plmweb.role_member':
+    case 'role_member':
+      return import('./entities/role-member').then(
+        m => m.default as unknown as IAppDataEntity,
+      );
     case 'plmweb.psdenotifytarget':
     case 'psdenotifytarget':
       return import('./entities/psde-notify-target').then(
@@ -863,6 +869,11 @@ export async function getAppDataEntityModel(
       return import('./entities/psde-logic-node').then(
         m => m.default as unknown as IAppDataEntity,
       );
+    case 'plmweb.role':
+    case 'role':
+      return import('./entities/role').then(
+        m => m.default as unknown as IAppDataEntity,
+      );
     case 'plmweb.review_stage':
     case 'review_stage':
       return import('./entities/review-stage').then(
@@ -931,6 +942,11 @@ export async function getAppDataEntityModel(
     case 'plmweb.review_result':
     case 'review_result':
       return import('./entities/review-result').then(
+        m => m.default as unknown as IAppDataEntity,
+      );
+    case 'plmweb.sysemployee':
+    case 'sysemployee':
+      return import('./entities/sys-employee').then(
         m => m.default as unknown as IAppDataEntity,
       );
     case 'plmweb.baseline_page':
@@ -1013,6 +1029,11 @@ export async function getAppDataEntityModel(
       return import('./entities/test-suite').then(
         m => m.default as unknown as IAppDataEntity,
       );
+    case 'plmweb.review_content_idea':
+    case 'review_content_idea':
+      return import('./entities/review-content-idea').then(
+        m => m.default as unknown as IAppDataEntity,
+      );
     case 'plmweb.portfolio_member':
     case 'portfolio_member':
       return import('./entities/portfolio-member').then(
@@ -1021,6 +1042,11 @@ export async function getAppDataEntityModel(
     case 'plmweb.workload':
     case 'workload':
       return import('./entities/workload').then(
+        m => m.default as unknown as IAppDataEntity,
+      );
+    case 'plmweb.organization':
+    case 'organization':
+      return import('./entities/organization').then(
         m => m.default as unknown as IAppDataEntity,
       );
     case 'plmweb.pssysbireportitem':
@@ -1158,6 +1184,11 @@ export async function getAppDataEntityModel(
       return import('./entities/dyna-appmenu').then(
         m => m.default as unknown as IAppDataEntity,
       );
+    case 'plmweb.openuser':
+    case 'openuser':
+      return import('./entities/openuser').then(
+        m => m.default as unknown as IAppDataEntity,
+      );
     case 'plmweb.review_content':
     case 'review_content':
       return import('./entities/review-content').then(
@@ -1273,29 +1304,9 @@ export async function getAppDataEntityModel(
       return import('./entities/test-case').then(
         m => m.default as unknown as IAppDataEntity,
       );
-    case 'plmweb.role_member':
-    case 'role_member':
-      return import('./entities/role-member').then(
-        m => m.default as unknown as IAppDataEntity,
-      );
-    case 'plmweb.role':
-    case 'role':
-      return import('./entities/role').then(
-        m => m.default as unknown as IAppDataEntity,
-      );
-    case 'plmweb.sysemployee':
-    case 'sysemployee':
-      return import('./entities/sys-employee').then(
-        m => m.default as unknown as IAppDataEntity,
-      );
-    case 'plmweb.review_content_idea':
-    case 'review_content_idea':
-      return import('./entities/review-content-idea').then(
-        m => m.default as unknown as IAppDataEntity,
-      );
-    case 'plmweb.organization':
-    case 'organization':
-      return import('./entities/organization').then(
+    case 'plmweb.dependency':
+    case 'dependency':
+      return import('./entities/dependency').then(
         m => m.default as unknown as IAppDataEntity,
       );
     default:

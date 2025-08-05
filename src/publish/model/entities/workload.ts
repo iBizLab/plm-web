@@ -4791,6 +4791,7 @@ export default {
       codeName: 'workloads',
       majorAppDataEntityId: 'plmweb.workload_type',
       parentAppDEFieldId: 'type_id',
+      parentTextAppDEFieldId: 'type_name',
       rsmode: 2,
       name: 'DER1N_WORKLOAD_WORKLOAD_TYPE_TYPE_ID',
       id: 'workloads',

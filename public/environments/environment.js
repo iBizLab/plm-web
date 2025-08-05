@@ -1,4 +1,5 @@
 window.Environment = {
+  appVersion: '0.7.41-alpha.2',
   cookieDomain: 'plm.ibizlab.cn',
   customParams: '{"file_preview_address":"http://172.16.100.60:30012","ENABLEMULTILOGIN":false}',
   uploadFileUrl: '/ibizutil/upload/ibizplm',
@@ -20,4 +21,5 @@ window.Environment = {
   environmentTag: 'development',
   AppTitle: '',
   favicon: './favicon.ico',
+  runContainer: 'FULLCODE',
 };

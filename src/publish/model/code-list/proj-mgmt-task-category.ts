@@ -63,6 +63,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '任务类别',
   id: 'plmweb.projmgmt__task_category',
 };

@@ -448,6 +448,7 @@ export default {
         name: 'simplelist_itempanel',
         id: 'plmweb.idea.usr1225429007',
       },
+      orderValueAppDEFieldId: 'sequence',
       delistDataItems: [
         {
           appDEFieldId: 'name',
@@ -521,14 +522,14 @@ export default {
       autoLoad: true,
       showBusyIndicator: true,
       codeName: 'simplelist',
-      controlStyle: 'SAMPLE_LIST',
+      controlStyle: 'MOB_SIMPLE_LIST',
       controlType: 'LIST',
       logicName: 'simplelist',
       appDataEntityId: 'plmweb.idea',
       controlParam: {
         id: 'simplelist',
       },
-      sysPFPluginId: 'sample_list',
+      sysPFPluginId: 'mob_simple_list',
       modelId: 'c53f7b9a6a8fcd83721a0565aa6028bc',
       modelType: 'PSDELIST',
       name: 'simplelist',

@@ -594,6 +594,7 @@ export default {
       codeName: 'PSDENotify',
       majorAppDataEntityId: 'plmweb.psdenotify',
       parentAppDEFieldId: 'psdenotifyid',
+      parentTextAppDEFieldId: 'psdenotifyname',
       rsmode: 1,
       rstype: 'DER1N',
       tempDataOrder: 10,
@@ -605,6 +606,7 @@ export default {
       codeName: 'PSDENotifyTargets',
       majorAppDataEntityId: 'plmweb.psdenotify',
       parentAppDEFieldId: 'psdenotifyid',
+      parentTextAppDEFieldId: 'psdenotifyname',
       rsmode: 2,
       tempDataOrder: 10,
       name: 'DER1N_PSDENOTIFYTARGET_PSDENOTIFY_PSDENOTIFYID',
@@ -619,7 +621,6 @@ export default {
   id: 'plmweb.psdenotifytarget',
   codeName2: 'PSDENotifyTargets',
   requestPaths: [
-    'psdenotifies/${psdenotify}/psdenotifytargets/${psdenotifytarget}',
     'psdenotifies/${psdenotify}/psdenotifytargets/${psdenotifytarget}',
   ],
 };

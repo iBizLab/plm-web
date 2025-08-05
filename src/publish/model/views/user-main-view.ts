@@ -12,7 +12,7 @@ export default {
   },
   caption: '设置成员信息',
   codeName: 'user_main_view',
-  height: 700,
+  height: 765,
   appDataEntityId: 'plmweb.user',
   appViewEngines: [
     {
@@ -462,6 +462,83 @@ export default {
               },
               showCaption: true,
               id: 'grouppanel2',
+            },
+            {
+              titleBarCloseMode: 2,
+              layout: {
+                columnCount: 24,
+                layout: 'TABLE_24COL',
+              },
+              deformDetails: [
+                {
+                  rawItem: {
+                    caption:
+                      '由于企业微信用户接口安全性限制，企业微信用户与PLM用户需手动绑定对应关系以实现统一认证',
+                    halign: 'LEFT',
+                    valign: 'MIDDLE',
+                    wrapMode: 'NOWRAP',
+                    contentType: 'RAW',
+                    id: 'rawitem1',
+                  },
+                  codeName: 'rawitem1',
+                  detailStyle: 'DEFAULT',
+                  detailType: 'RAWITEM',
+                  layoutPos: {
+                    colMD: 24,
+                    layout: 'TABLE_24COL',
+                  },
+                  showCaption: true,
+                  id: 'rawitem1',
+                },
+                {
+                  dataType: 25,
+                  enableCond: 3,
+                  labelPos: 'NONE',
+                  noPrivDisplayMode: 1,
+                  appDEFieldId: 'open_user_tag',
+                  editor: {
+                    singleSelect: true,
+                    appCodeListId: 'plmweb.base__wxwork',
+                    editorParams: {
+                      'SRFNAVPARAM.N_OPEN_TYPE_EQ': 'wxwork',
+                    },
+                    editorType: 'DROPDOWNLIST',
+                    placeHolder: '请选择企业微信账号',
+                    valueType: 'SIMPLE',
+                    editable: true,
+                    navigateParams: [
+                      {
+                        key: 'n_open_type_eq',
+                        value: 'wxwork',
+                        rawValue: true,
+                        id: 'n_open_type_eq',
+                      },
+                    ],
+                    id: 'open_user_tag',
+                  },
+                  allowEmpty: true,
+                  needCodeListConfig: true,
+                  caption: '企业微信绑定',
+                  codeName: 'open_user_tag',
+                  detailStyle: 'DEFAULT',
+                  detailType: 'FORMITEM',
+                  layoutPos: {
+                    colMD: 24,
+                    layout: 'TABLE_24COL',
+                  },
+                  id: 'open_user_tag',
+                },
+              ],
+              caption: '第三方认证',
+              codeName: 'grouppanel1',
+              detailStyle: 'DEFAULT',
+              detailType: 'GROUPPANEL',
+              layoutPos: {
+                colMD: 24,
+                layout: 'TABLE_24COL',
+              },
+              showCaption: true,
+              id: 'grouppanel1',
             },
             {
               dataType: 9,

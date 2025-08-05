@@ -15,6 +15,7 @@ import {
   ModelLoaderProvider,
 } from '@ibiz-template/runtime';
 import { kebabCase } from 'lodash-es';
+import { clone } from 'ramda';
 import {
   getAppDataEntityModel,
   getAppViewModel,
@@ -154,12 +155,14 @@ export class ModelLoader implements ModelLoaderProvider {
       }
     });
     // 子应用模型相关处理
-    const microApps = ibiz.hub.microAppConfigCenter.getMicroApps();
-    if (microApps && microApps.length > 0) {
-      for (let i = 0; i < microApps.length; i++) {
-        const microApp = microApps[i];
-        // eslint-disable-next-line no-await-in-loop
-        await this.initSubApp(appService, microApp);
+    if (!appId || appId === ibiz.env.appId) {
+      const microApps = ibiz.hub.microAppConfigCenter.getMicroApps();
+      if (microApps && microApps.length > 0) {
+        for (let i = 0; i < microApps.length; i++) {
+          const microApp = microApps[i];
+          // eslint-disable-next-line no-await-in-loop
+          await this.initSubApp(appService, microApp);
+        }
       }
     }
     return true;
@@ -205,6 +208,8 @@ export class ModelLoader implements ModelLoaderProvider {
     app: IAppService,
     microAppConfig: IMicroAppConfig,
   ): Promise<void> {
+    const targetSubAppRef = await this.getSubAppRef(microAppConfig.name);
+    if (targetSubAppRef) return;
     const res = await ibiz.net.axios({
       method: 'get',
       headers: { 'Access-Control-Allow-Origin': '*' },
@@ -215,7 +220,12 @@ export class ModelLoader implements ModelLoaderProvider {
       const subApp = this.dsl.subAppRef(sourceSubApp);
       subApp.appId = microAppConfig.name;
       subApp.serviceId = microAppConfig?.baseUrl;
-      this.subAppRefs.push(subApp as ISubAppRef);
+      if (subApp.appMenuModel) {
+        this.deepFillSubAppId(subApp.appMenuModel, microAppConfig.name);
+      }
+      if (!targetSubAppRef) {
+        this.subAppRefs.push(subApp as ISubAppRef);
+      }
       // 设置视图到hub中
       const views = sourceSubApp.getAllPSAppViews || [];
       views.forEach((view: IModel) => {
@@ -234,6 +244,7 @@ export class ModelLoader implements ModelLoaderProvider {
         sourceSubApp.getAllPSDEDRControls || [],
       );
       drCtrls.forEach((drCtrl: IModel) => {
+        this.deepFillSubAppId(drCtrl, microAppConfig.name);
         ibiz.hub.registerSubAppDrControls(
           microAppConfig.name || ibiz.env.appId,
           drCtrl,
@@ -374,17 +385,17 @@ export class ModelLoader implements ModelLoaderProvider {
    */
   async getAppView(appId: string, codeName: string): Promise<IAppView> {
     if (appId === ibiz.env.appId) {
-      const dsl = await getAppViewModel(codeName);
+      const viewModel = await getAppViewModel(codeName);
+      const dsl = clone(viewModel);
       this.deepFillSubAppId(dsl, appId);
       this.calcAppViewSubAppModel(dsl);
       return dsl;
     }
     const microAppConfig = ibiz.hub.microAppConfigCenter.getMicroApp(appId);
     const module = await System.import(
-      `${microAppConfig!.entry}/static/js/model/views/${codeName.replaceAll(
-        '_',
-        '-',
-      )}-legacy.js`,
+      `${microAppConfig!.entry}/static/js/model/views/${kebabCase(
+        codeName,
+      ).toLowerCase()}-legacy.js`,
     );
     this.deepFillSubAppId(module.default, appId);
     return module.default;
@@ -403,9 +414,9 @@ export class ModelLoader implements ModelLoaderProvider {
     }
     const microAppConfig = ibiz.hub.microAppConfigCenter.getMicroApp(appId);
     const module = await System.import(
-      `${microAppConfig!.entry}/static/js/model/entities/${id
-        .split('.')[1]
-        .replaceAll('_', '-')}-legacy.js`,
+      `${microAppConfig!.entry}/static/js/model/entities/${
+        id.indexOf('.') !== -1 ? kebabCase(id.split('.')[1]).toLowerCase() : id
+      }-legacy.js`,
     );
     this.deepFillSubAppId(module.default, appId);
     return module.default;

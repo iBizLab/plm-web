@@ -972,6 +972,7 @@ export default {
       codeName: 'insight_members',
       majorAppDataEntityId: 'plmweb.user',
       parentAppDEFieldId: 'user_id',
+      parentTextAppDEFieldId: 'name',
       rsmode: 2,
       name: 'DER1N_INSIGHT_MEMBER_USER_USER_ID',
       id: 'insight_members',
@@ -987,6 +988,7 @@ export default {
   id: 'plmweb.insight_member',
   codeName2: 'insight_members',
   requestPaths: [
+    'departments/${department}/users/${user}/insight_members/${insight_member}',
     'insight_views/${insight_view}/insight_members/${insight_member}',
     'users/${user}/insight_members/${insight_member}',
   ],

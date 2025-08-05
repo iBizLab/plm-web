@@ -276,6 +276,7 @@ export default {
                       MAXHEIGHT: '600',
                       LINKVIEWID: 'plmweb.recent_custom_redirect_view',
                       QUOTECODELISTMAP: '{"type":"plmweb.base__recent_visite"}',
+                      ISSHOWANCHOR: 'true',
                       QUOTEFIELDMAP:
                         '{"identifier":"show_identifier","name":"name","id":"id","owner_subtype":"owner_subtype","owner_id":"owner_id","owner_type":"owner_type","recent_parent":"recent_parent"}',
                       QUOTEPARAMS: '{"sort":"update_time,desc"}',

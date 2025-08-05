@@ -70,6 +70,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '工单优先级',
   id: 'plmweb.prodmgmt__ticket_priority',
 };

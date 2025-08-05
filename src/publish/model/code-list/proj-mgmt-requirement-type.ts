@@ -1,9 +1,15 @@
 export default {
+  cacheTimeout: 1000,
+  clsAppDEFieldId: 'style',
   codeListTag: 'ProjMgmt__requirement_type',
-  codeListType: 'STATIC',
+  codeListType: 'DYNAMIC',
   codeName: 'ProjMgmt__requirement_type',
+  colorAppDEFieldId: 'color',
   emptyText: '未定义',
-  appDataEntityId: 'plmweb.work_item',
+  minorSortDir: 'ASC',
+  minorSortAppDEFieldId: 'sequence',
+  appDEDataSetId: 'fetch_idea_type',
+  appDataEntityId: 'plmweb.dictionary_data',
   codeItems: [
     {
       codeName: 'item_10',
@@ -30,7 +36,12 @@ export default {
       id: 'item_40',
     },
   ],
+  textAppDEFieldId: 'name',
+  valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '需求类型',
   id: 'plmweb.projmgmt__requirement_type',
 };

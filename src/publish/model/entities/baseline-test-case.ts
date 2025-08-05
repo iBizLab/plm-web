@@ -1436,6 +1436,10 @@ export default {
   id: 'plmweb.baseline_test_case',
   codeName2: 'baseline_test_cases',
   requestPaths: [
+    'libraries/${library}/baselines/${baseline}/baseline_test_cases/${baseline_test_case}',
+    'products/${product}/baselines/${baseline}/baseline_test_cases/${baseline_test_case}',
+    'projects/${project}/baselines/${baseline}/baseline_test_cases/${baseline_test_case}',
+    'spaces/${space}/baselines/${baseline}/baseline_test_cases/${baseline_test_case}',
     'baselines/${baseline}/baseline_test_cases/${baseline_test_case}',
   ],
 };

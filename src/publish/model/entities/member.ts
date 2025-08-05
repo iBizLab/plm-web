@@ -1548,6 +1548,9 @@ export default {
   id: 'plmweb.member',
   codeName2: 'members',
   requestPaths: [
+    'sections/${section}/groups/${group}/members/${member}',
+    'shared_spaces/${shared_space}/article_pages/${article_page}/members/${member}',
+    'spaces/${space}/article_pages/${article_page}/members/${member}',
     'groups/${group}/members/${member}',
     'article_pages/${article_page}/members/${member}',
     'projects/${project}/members/${member}',

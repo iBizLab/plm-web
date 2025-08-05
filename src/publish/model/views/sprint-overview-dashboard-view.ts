@@ -1,5 +1,6 @@
 export default {
   showDataInfoBar: true,
+  enableSearch: true,
   expandSearchForm: true,
   loadDefault: true,
   deviewCodeName: 'overview_dashboard_view',
@@ -2935,6 +2936,15 @@ export default {
       modelType: 'PSSYSDASHBOARD',
       name: 'dashboard',
       id: 'plmweb.sprint.overview_dashboard_view_dashboard',
+    },
+    {
+      groupMode: 'SINGLE',
+      controlType: 'SEARCHBAR',
+      appDataEntityId: 'plmweb.sprint',
+      controlParam: {
+        id: 'searchbar',
+      },
+      id: 'searchbar',
     },
     {
       capLanguageRes: {

@@ -3207,6 +3207,10 @@ export default {
   id: 'plmweb.review_content',
   codeName2: 'review_contents',
   requestPaths: [
+    'libraries/${library}/reviews/${review}/review_contents/${review_content}',
+    'products/${product}/reviews/${review}/review_contents/${review_content}',
+    'libraries/${library}/review_wizards/${review_wizard}/review_contents/${review_content}',
+    'libraries/${library}/test_cases/${test_case}/review_contents/${review_content}',
     'reviews/${review}/review_contents/${review_content}',
     'review_wizards/${review_wizard}/review_contents/${review_content}',
     'test_cases/${test_case}/review_contents/${review_content}',

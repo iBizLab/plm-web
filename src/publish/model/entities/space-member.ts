@@ -1029,6 +1029,7 @@ export default {
       codeName: 'space_members',
       majorAppDataEntityId: 'plmweb.space',
       parentAppDEFieldId: 'space_id',
+      parentTextAppDEFieldId: 'space_name',
       rsmode: 2,
       name: 'DER1N_SPACE_MEMBER_SPACE_SPACE_ID',
       id: 'space_members',
@@ -1038,6 +1039,7 @@ export default {
       codeName: 'space_members',
       majorAppDataEntityId: 'plmweb.user',
       parentAppDEFieldId: 'user_id',
+      parentTextAppDEFieldId: 'name',
       rsmode: 2,
       name: 'DER1N_SPACE_MEMBER_USER_USER_ID',
       id: 'space_members',
@@ -1053,6 +1055,7 @@ export default {
   id: 'plmweb.space_member',
   codeName2: 'space_members',
   requestPaths: [
+    'departments/${department}/users/${user}/space_members/${space_member}',
     'spaces/${space}/space_members/${space_member}',
     'users/${user}/space_members/${space_member}',
   ],

@@ -3037,6 +3037,7 @@ export default {
       codeName: 'customers',
       majorAppDataEntityId: 'plmweb.product',
       parentAppDEFieldId: 'product_id',
+      parentTextAppDEFieldId: 'product_name',
       rsmode: 2,
       name: 'DER1N_CUSTOMER_PRODUCT_PRODUCT_ID',
       id: 'customers',

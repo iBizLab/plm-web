@@ -64,6 +64,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '需求状态',
   id: 'plmweb.prodmgmt__idea_state',
 };

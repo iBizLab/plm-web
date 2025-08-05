@@ -2972,6 +2972,7 @@ export default {
       codeName: 'releases',
       majorAppDataEntityId: 'plmweb.project',
       parentAppDEFieldId: 'project_id',
+      parentTextAppDEFieldId: 'project_name',
       rsmode: 2,
       name: 'DER1N_RELEASE_PROJECT_PROJECT_ID',
       id: 'releases',

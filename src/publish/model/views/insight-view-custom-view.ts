@@ -91,6 +91,7 @@ export default {
                     ENABLESEARCH: 'FALSE',
                     AC: 'TRUE',
                     SUFFIX: 'chevron-down-outline',
+                    IMMEDIATE: 'TRUE',
                     PICKUPVIEW: 'TRUE',
                     ENABLECACHE: 'TRUE',
                   },

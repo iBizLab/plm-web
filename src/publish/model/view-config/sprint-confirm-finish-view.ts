@@ -3,7 +3,7 @@ export default {
   codeName: 'sprint_confirm_finish_view',
   openMode: 'POPUPMODAL',
   viewType: 'DEOPTVIEW',
-  width: 650,
+  width: 500,
   height: 300,
   appDataEntityId: 'plmweb.sprint',
   redirectView: false,

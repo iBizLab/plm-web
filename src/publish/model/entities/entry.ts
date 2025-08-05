@@ -684,6 +684,7 @@ export default {
   id: 'plmweb.entry',
   codeName2: 'entries',
   requestPaths: [
+    'projects/${project}/boards/${board}/entries/${entry}',
     'boards/${board}/entries/${entry}',
     'projects/${project}/entries/${entry}',
   ],

@@ -14,7 +14,8 @@ import '@/publish/sys.css';
 //     {
 //       name: 'plmcomweb',
 //       entry: 'http://localhost:4173',
-//       baseUrl: '4178bef3e0e0f43479aea070a3ee4188__plmweb__plmcomweb',
+//       baseUrl: '0887f742467822fadc6d27196587a993__plmweb__plmcomweb',
+//       pluginBaseUrl: './plugins',
 //     },
 //   ]);
 // });

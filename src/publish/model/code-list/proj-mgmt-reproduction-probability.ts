@@ -39,6 +39,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '复现概率',
   id: 'plmweb.projmgmt__reproduction_probability',
 };

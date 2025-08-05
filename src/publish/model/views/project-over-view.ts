@@ -1,5 +1,6 @@
 export default {
   showDataInfoBar: true,
+  enableSearch: true,
   expandSearchForm: true,
   loadDefault: true,
   deviewCodeName: 'over_view',
@@ -485,7 +486,7 @@ export default {
                           },
                           {
                             dataType: 6,
-                            inputTip: '已完成状态类型的工作项 / 所有工作项',
+                            inputTip: '状态类型为已完成的工作项 / 所有工作项',
                             labelPos: 'TOP',
                             labelWidth: 130,
                             noPrivDisplayMode: 1,
@@ -2382,6 +2383,15 @@ export default {
       modelType: 'PSSYSDASHBOARD',
       name: 'dashboard',
       id: 'plmweb.project.overview',
+    },
+    {
+      groupMode: 'SINGLE',
+      controlType: 'SEARCHBAR',
+      appDataEntityId: 'plmweb.project',
+      controlParam: {
+        id: 'searchbar',
+      },
+      id: 'searchbar',
     },
     {
       caption: '概览',

@@ -688,6 +688,7 @@ export default {
       {
         groupMode: 'NONE',
         groupStyle: 'DEFAULT',
+        orderValueAppDEFieldId: 'sequence',
         delistDataItems: [
           {
             appDEFieldId: 'id',

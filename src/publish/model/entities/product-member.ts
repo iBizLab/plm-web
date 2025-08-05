@@ -1306,6 +1306,7 @@ export default {
       codeName: 'product_members',
       majorAppDataEntityId: 'plmweb.product',
       parentAppDEFieldId: 'product_id',
+      parentTextAppDEFieldId: 'product_name',
       rsmode: 2,
       name: 'DER1N_PRODUCT_MEMBER_PRODUCT_PRODUCT_ID',
       id: 'product_members',
@@ -1315,6 +1316,7 @@ export default {
       codeName: 'product_members',
       majorAppDataEntityId: 'plmweb.user',
       parentAppDEFieldId: 'user_id',
+      parentTextAppDEFieldId: 'name',
       rsmode: 2,
       name: 'DER1N_PRODUCT_MEMBER_USER_USER_ID',
       id: 'product_members',
@@ -1330,6 +1332,7 @@ export default {
   id: 'plmweb.product_member',
   codeName2: 'product_members',
   requestPaths: [
+    'departments/${department}/users/${user}/product_members/${product_member}',
     'products/${product}/product_members/${product_member}',
     'users/${user}/product_members/${product_member}',
   ],

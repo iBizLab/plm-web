@@ -1079,6 +1079,7 @@ export default {
       codeName: 'stencils',
       majorAppDataEntityId: 'plmweb.space',
       parentAppDEFieldId: 'space_id',
+      parentTextAppDEFieldId: 'space_name',
       rsmode: 2,
       name: ' DER1N_STENCIL_SPACE_SPACE_ID',
       id: 'stencils',

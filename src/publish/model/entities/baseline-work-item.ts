@@ -1777,6 +1777,10 @@ export default {
   id: 'plmweb.baseline_work_item',
   codeName2: 'baseline_work_items',
   requestPaths: [
+    'libraries/${library}/baselines/${baseline}/baseline_work_items/${baseline_work_item}',
+    'products/${product}/baselines/${baseline}/baseline_work_items/${baseline_work_item}',
+    'projects/${project}/baselines/${baseline}/baseline_work_items/${baseline_work_item}',
+    'spaces/${space}/baselines/${baseline}/baseline_work_items/${baseline_work_item}',
     'baselines/${baseline}/baseline_work_items/${baseline_work_item}',
   ],
 };

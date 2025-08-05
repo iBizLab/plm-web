@@ -826,6 +826,7 @@ export default {
           name: 'simplelist_itempanel',
           id: 'plmweb.idea.usr0306299894',
         },
+        orderValueAppDEFieldId: 'sequence',
         delistDataItems: [
           {
             appDEFieldId: 'id',

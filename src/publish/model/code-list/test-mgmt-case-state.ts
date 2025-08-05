@@ -45,6 +45,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '用例状态',
   id: 'plmweb.testmgmt__case_state',
 };

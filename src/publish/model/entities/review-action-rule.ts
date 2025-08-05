@@ -491,7 +491,5 @@ export default {
   name: 'REVIEW_ACTION_RULE',
   id: 'plmweb.review_action_rule',
   codeName2: 'review_action_rules',
-  requestPaths: [
-    'guidelines/${guideline}/review_action_rules/${review_action_rule}',
-  ],
+  requestPaths: [],
 };

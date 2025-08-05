@@ -1551,6 +1551,7 @@ export default {
       codeName: 'project_members',
       majorAppDataEntityId: 'plmweb.project',
       parentAppDEFieldId: 'project_id',
+      parentTextAppDEFieldId: 'project_name',
       rsmode: 2,
       name: 'DER1N_PROJECT_MEMBER_PROJECT_PROJECT_ID',
       id: 'project_members',
@@ -1560,6 +1561,7 @@ export default {
       codeName: 'project_members',
       majorAppDataEntityId: 'plmweb.user',
       parentAppDEFieldId: 'user_id',
+      parentTextAppDEFieldId: 'name',
       rsmode: 2,
       name: 'DER1N_PROJECT_MEMBER_USER_USER_ID',
       id: 'project_members',
@@ -1575,6 +1577,7 @@ export default {
   id: 'plmweb.project_member',
   codeName2: 'project_members',
   requestPaths: [
+    'departments/${department}/users/${user}/project_members/${project_member}',
     'projects/${project}/project_members/${project_member}',
     'users/${user}/project_members/${project_member}',
   ],

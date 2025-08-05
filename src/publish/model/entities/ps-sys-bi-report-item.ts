@@ -855,6 +855,7 @@ export default {
       codeName: 'PSSysBIReport',
       majorAppDataEntityId: 'plmweb.pssysbireport',
       parentAppDEFieldId: 'pssysbireportid',
+      parentTextAppDEFieldId: 'pssysbireportname',
       rsmode: 1,
       rstype: 'DER1N',
       removeActionType: 1,
@@ -871,7 +872,5 @@ export default {
   name: 'PSSYSBIREPORTITEM',
   id: 'plmweb.pssysbireportitem',
   codeName2: 'PSSysBIReportItems',
-  requestPaths: [
-    'pssysbireports/${pssysbireport}/pssysbireportitems/${pssysbireportitem}',
-  ],
+  requestPaths: [],
 };

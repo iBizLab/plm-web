@@ -1224,6 +1224,7 @@ export default {
       codeName: 'groups',
       majorAppDataEntityId: 'plmweb.section',
       parentAppDEFieldId: 'section_id',
+      parentTextAppDEFieldId: 'section_name',
       rsmode: 2,
       name: 'DER1N_GROUP_SECTION_SECTION_ID',
       id: 'groups',

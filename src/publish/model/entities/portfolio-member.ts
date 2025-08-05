@@ -913,6 +913,7 @@ export default {
       codeName: 'portfolio_members',
       majorAppDataEntityId: 'plmweb.portfolio',
       parentAppDEFieldId: 'portfolio_id',
+      parentTextAppDEFieldId: 'portfolio_name',
       rsmode: 2,
       name: 'DER1N_PORTFOLIO_MEMBER_PORTFOLIO_PORTFOLIO_ID',
       id: 'portfolio_members',
@@ -922,6 +923,7 @@ export default {
       codeName: 'portfolio_members',
       majorAppDataEntityId: 'plmweb.user',
       parentAppDEFieldId: 'user_id',
+      parentTextAppDEFieldId: 'name',
       rsmode: 2,
       name: 'DER1N_PORTFOLIO_MEMBER_USER_USER_ID',
       id: 'portfolio_members',
@@ -937,6 +939,7 @@ export default {
   id: 'plmweb.portfolio_member',
   codeName2: 'portfolio_members',
   requestPaths: [
+    'departments/${department}/users/${user}/portfolio_members/${portfolio_member}',
     'portfolios/${portfolio}/portfolio_members/${portfolio_member}',
     'users/${user}/portfolio_members/${portfolio_member}',
   ],

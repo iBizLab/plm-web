@@ -49,6 +49,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '工单状态',
   id: 'plmweb.prodmgmt__ticket_state',
 };

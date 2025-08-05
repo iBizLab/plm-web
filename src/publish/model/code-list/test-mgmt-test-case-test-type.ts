@@ -27,6 +27,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '测试类型',
   id: 'plmweb.testmgmt__test_case_test_type',
 };

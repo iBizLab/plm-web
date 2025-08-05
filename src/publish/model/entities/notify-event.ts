@@ -515,7 +515,5 @@ export default {
   name: 'NOTIFY_EVENT',
   id: 'plmweb.notify_event',
   codeName2: 'notify_events',
-  requestPaths: [
-    'notify_settings/${notify_setting}/notify_events/${notify_event}',
-  ],
+  requestPaths: [],
 };

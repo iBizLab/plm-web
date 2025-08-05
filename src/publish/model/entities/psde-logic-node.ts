@@ -1125,6 +1125,7 @@ export default {
       codeName: 'PSDELogic',
       majorAppDataEntityId: 'plmweb.psdelogic',
       parentAppDEFieldId: 'psdelogicid',
+      parentTextAppDEFieldId: 'psdelogicname',
       rsmode: 1,
       rstype: 'DER1N',
       removeActionType: 1,
@@ -1141,5 +1142,5 @@ export default {
   name: 'PSDELOGICNODE',
   id: 'plmweb.psdelogicnode',
   codeName2: 'PSDELogicNodes',
-  requestPaths: ['psdelogics/${psdelogic}/psdelogicnodes/${psdelogicnode}'],
+  requestPaths: [],
 };

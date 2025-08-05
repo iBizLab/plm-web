@@ -1027,6 +1027,7 @@ export default {
       codeName: 'discuss_members',
       majorAppDataEntityId: 'plmweb.user',
       parentAppDEFieldId: 'user_id',
+      parentTextAppDEFieldId: 'name',
       rsmode: 2,
       name: 'DER1N_DISCUSS_MEMBER_USER_USER_ID',
       id: 'discuss_members',
@@ -1042,6 +1043,7 @@ export default {
   id: 'plmweb.discuss_member',
   codeName2: 'discuss_members',
   requestPaths: [
+    'departments/${department}/users/${user}/discuss_members/${discuss_member}',
     'discuss_topics/${discuss_topic}/discuss_members/${discuss_member}',
     'users/${user}/discuss_members/${discuss_member}',
   ],

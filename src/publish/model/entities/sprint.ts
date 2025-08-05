@@ -3124,6 +3124,7 @@ export default {
       codeName: 'sprints',
       majorAppDataEntityId: 'plmweb.project',
       parentAppDEFieldId: 'project_id',
+      parentTextAppDEFieldId: 'project_name',
       rsmode: 2,
       name: 'DER1N_SPRINT_PROJECT_PROJECT_ID',
       id: 'sprints',

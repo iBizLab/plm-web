@@ -2280,6 +2280,7 @@ export default {
       codeName: 'insight_reports',
       majorAppDataEntityId: 'plmweb.insight_view',
       parentAppDEFieldId: 'view_id',
+      parentTextAppDEFieldId: 'view_name',
       rsmode: 2,
       name: 'DER1N_INSIGHT_REPORT_INSIGHT_VIEW_VIEW_ID',
       id: 'insight_reports',

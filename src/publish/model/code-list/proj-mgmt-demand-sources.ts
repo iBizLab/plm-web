@@ -45,6 +45,9 @@ export default {
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'val',
   enableCache: true,
+  userParam: {
+    globalCache: 'true',
+  },
   name: '需求来源',
   id: 'plmweb.projmgmt__demand_sources',
 };

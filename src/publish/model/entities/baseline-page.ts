@@ -961,5 +961,11 @@ export default {
   name: 'BASELINE_PAGE',
   id: 'plmweb.baseline_page',
   codeName2: 'baseline_pages',
-  requestPaths: ['baselines/${baseline}/baseline_pages/${baseline_page}'],
+  requestPaths: [
+    'libraries/${library}/baselines/${baseline}/baseline_pages/${baseline_page}',
+    'products/${product}/baselines/${baseline}/baseline_pages/${baseline_page}',
+    'projects/${project}/baselines/${baseline}/baseline_pages/${baseline_page}',
+    'spaces/${space}/baselines/${baseline}/baseline_pages/${baseline_page}',
+    'baselines/${baseline}/baseline_pages/${baseline_page}',
+  ],
 };

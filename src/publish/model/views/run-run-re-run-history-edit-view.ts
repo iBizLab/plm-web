@@ -705,6 +705,9 @@ export default {
       id: 'run_re_run_history_edit_view_captionbar',
     },
   ],
+  sysCss: {
+    cssName: 'run_history_style',
+  },
   viewLayoutPanel: {
     layoutBodyOnly: true,
     useDefaultLayout: true,

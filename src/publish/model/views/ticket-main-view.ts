@@ -912,8 +912,9 @@ export default {
               {
                 actionLevel: 100,
                 noPrivDisplayMode: 2,
-                uiactionId: 'toolbar_link_work_item@ticket',
-                uiactionTarget: 'NONE',
+                uiactionId:
+                  'toolbar_main_view_toolbar_deuiaction2_click@ticket',
+                uiactionTarget: 'SINGLEDATA',
                 valid: true,
                 caption: '工作项',
                 itemType: 'DEUIACTION',

@@ -692,9 +692,5 @@ export default {
   name: 'STEP',
   id: 'plmweb.step',
   codeName2: 'steps',
-  requestPaths: [
-    'runs/${run}/steps/${step}',
-    'test_cases/${test_case}/steps/${step}',
-    'test_case_templates/${test_case_template}/steps/${step}',
-  ],
+  requestPaths: [],
 };
