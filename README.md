@@ -43,23 +43,23 @@ iBizPLM前端项目基于iBiz平台产出的模型，采用了模板技术结合
 
 作为框架的核心抽象层，提供标准化的模型接口规范与转换能力：
 
-- 模型规范体系：通过[`@ibiz/model-core`](https://gitee.com/ibizlab-cloud/ibiz-web-model/tree/master/model-core) 建立统一的前端模型对象接口标准，覆盖应用、视图、部件等核心领域对象。
+- 模型规范体系：通过[`@ibiz/model-core`](https://github.com/ibizlab-cloud/ibiz-web-model/tree/master/model-core) 建立统一的前端模型对象接口标准，覆盖应用、视图、部件等核心领域对象。
 
-- 模型转换引擎：[`@ibiz/rt-model-api`](https://gitee.com/ibizlab-cloud/ibiz-web-model/tree/master/rt-model-api)实现可视化业务建模工具完成建模后的建模数据到运行时模型的编译转换，架起设计与实现的桥梁。
+- 模型转换引擎：[`@ibiz/rt-model-api`](https://github.com/ibizlab-cloud/ibiz-web-model/tree/master/rt-model-api)实现可视化业务建模工具完成建模后的建模数据到运行时模型的编译转换，架起设计与实现的桥梁。
 
 ### 核心类库
 
 构建框架基础能力的支柱性模块：
 
-- 基础设施：[`@ibiz-template/core`](https://gitee.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/core)提供公共的、通用性的工具、类型定义等基础能力。
+- 基础设施：[`@ibiz-template/core`](https://github.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/core)提供公共的、通用性的工具、类型定义等基础能力。
 
-- 模型操作：[`@ibiz-template/model-helper`](https://gitee.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/model-helper)封装模型动态处理、合并等高级能力。
+- 模型操作：[`@ibiz-template/model-helper`](https://github.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/model-helper)封装模型动态处理、合并等高级能力。
 
-- 运行时引擎：[`@ibiz-template/runtime`](https://gitee.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/runtime)实现从应用中心、应用、视图、部件的完整运行时架构。
+- 运行时引擎：[`@ibiz-template/runtime`](https://github.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/runtime)实现从应用中心、应用、视图、部件的完整运行时架构。
 
-- 样式体系：[`@ibiz-template/theme`](https://gitee.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/theme)建立基于Sass的样式变量与功能集。
+- 样式体系：[`@ibiz-template/theme`](https://github.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/theme)建立基于Sass的样式变量与功能集。
 
-- Vue3通用：[`@ibiz-template/vue3-util`](https://gitee.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/vue3-util)提供与Vue3深度集成的组件和工具方法，web端和移动端均可使用。
+- Vue3通用：[`@ibiz-template/vue3-util`](https://github.com/ibizlab-cloud/ibiz-web-core/tree/master/packages/vue3-util)提供与Vue3深度集成的组件和工具方法，web端和移动端均可使用。
 
 ### UI类库
 
@@ -67,29 +67,29 @@ iBizPLM前端项目基于iBiz平台产出的模型，采用了模板技术结合
 
 - 主题系统：
 
-Web端：[`@ibiz-template/web-theme`](https://gitee.com/ibizlab-cloud/ibiz-web-theme/tree/master/packages/web-theme)web端主题样式库，提供web端的界面布局模型和主题配置。
+Web端：[`@ibiz-template/web-theme`](https://github.com/ibizlab-cloud/ibiz-web-theme/tree/master/packages/web-theme)web端主题样式库，提供web端的界面布局模型和主题配置。
 
 - 组件体系：
 
-PC端组件：[`@ibiz-template/vue3-components`](https://gitee.com/ibizlab-cloud/ibiz-web-components/tree/master/ibiz-next-vue3)基于Element Plus扩展的web端组件库。
+PC端组件：[`@ibiz-template/vue3-components`](https://github.com/ibizlab-cloud/ibiz-web-components/tree/master/ibiz-next-vue3)基于Element Plus扩展的web端组件库。
 
 ### 插件类库
 
 可插拔的业务能力扩展方案：
 
-- 智能交互：[`@ibiz-template-plugin/ai-chat`](https://gitee.com/ibizlab-cloud/ibiz-web-plugin/tree/master/ibiz-ai-chat)提供AI对话能力。
+- 智能交互：[`@ibiz-template-plugin/ai-chat`](https://github.com/ibizlab-cloud/ibiz-web-plugin/tree/master/ibiz-ai-chat)提供AI对话能力。
 
 - 数据可视化：
 
-[`@ibiz-template-plugin/bi-report`](https://gitee.com/ibizlab-cloud/ibiz-web-plugin/tree/master/ibiz-bi-report)实现动态BI报表。
+[`@ibiz-template-plugin/bi-report`](https://github.com/ibizlab-cloud/ibiz-web-plugin/tree/master/ibiz-bi-report)实现动态BI报表。
 
-[`@ibiz-template-plugin/data-view`](https://gitee.com/ibizlab-cloud/ibiz-web-plugin/tree/master/ibiz-data-view)支持大屏构建。
+[`@ibiz-template-plugin/data-view`](https://github.com/ibizlab-cloud/ibiz-web-plugin/tree/master/ibiz-data-view)支持大屏构建。
 
-- 开发工具：[`@ibiz-template/devtool`](https://gitee.com/ibizlab-cloud/ibiz-web-plugin/tree/master/ibiz-template-devtools)提供可视化调试能力。
+- 开发工具：[`@ibiz-template/devtool`](https://github.com/ibizlab-cloud/ibiz-web-plugin/tree/master/ibiz-template-devtools)提供可视化调试能力。
 
 ### 工具链类库
 
-- 工程化支持：[`ibiz-template-cli`](https://gitee.com/ibizlab-cloud/ibiz-web-toolkits/blob/master/ibiz-template-cli/packages/cli)实现对项目中的插件进行高效计算、快速下载、生成文档和自动化打包操作，显著提升插件开发效率和工作流程。 
+- 工程化支持：[`ibiz-template-cli`](https://github.com/ibizlab-cloud/ibiz-web-toolkits/blob/master/ibiz-template-cli/packages/cli)实现对项目中的插件进行高效计算、快速下载、生成文档和自动化打包操作，显著提升插件开发效率和工作流程。 
 
 ## 核心依赖关系图
 
@@ -165,9 +165,9 @@ $ pnpm run preview
 
 使用Git拉取以下仓库代码
 
-- 核心包：[ibiz-web-core](https://gitee.com/ibizlab-cloud/ibiz-web-core)
+- 核心包：[ibiz-web-core](https://github.com/ibizlab-cloud/ibiz-web-core)
 
-- 组件包: [ibiz-web-components](https://gitee.com/ibizlab-cloud/ibiz-web-components)
+- 组件包: [ibiz-web-components](https://github.com/ibizlab-cloud/ibiz-web-components)
 
 ### 启动项目
 
@@ -246,5 +246,6 @@ pnpm dev
 ### 2. 预览效果和本地开发，界面有一些地方不一致？
  
    解决方法: 不一致的地方大概率是使用插件的地方，插件成果物是SystemJS格式，而开发环境是es格式，2种格式暂时不兼容导致界面不一致。这时我们按需link插件的方式来解决，插件内容和使用方式在plugins子模块中有所描述。
+
 
 
