@@ -8,7 +8,8 @@ export default defineDownloadPkgConfig({
   outDir: './public/plugins',
   dependencies: [
     ...refAppPkgConfig,
-    '@ibiz-template-plm/html-comment@0.0.3-alpha.232',
+    '@ibiz-template-plm/html-comment@0.0.3-alpha.253',
+    '@ibiz-template-plm/html-comment@0.0.3-alpha.259',
     '@ibiz-template-plm/lucky-sheet-editor@0.0.3-dev.125',
     '@ibiz-template-plugins/cron-editor@0.0.1-dev.4',
     '@ibiz-template-plm/team-select@0.0.3-alpha.154',
@@ -18,7 +19,7 @@ export default defineDownloadPkgConfig({
     '@ibiz-template-plugin/change-password@0.0.3-dev.60',
     '@ibiz-template-plm/shared-check-page@0.0.3-alpha.182',
     '@ibiz-template-plm/attention@0.0.3-alpha.198',
-    '@ibiz-template-plm/group-tree@0.0.3-alpha.196',
+    '@ibiz-template-plm/group-tree@0.0.3-alpha.252',
     '@ibiz-template-plm/tab-exp-select@0.0.3-dev.254',
     '@ibiz-template-plm/list-tree@0.0.3-alpha.225',
     '@ibiz-template-plm/team-picker@0.0.3-alpha.71',
@@ -70,7 +71,7 @@ export default defineDownloadPkgConfig({
     '@ibiz-template-plm/ancho-html@0.0.3-alpha.216',
     '@ibiz-template-plm/stage-progress-bar@0.0.3-dev.280',
     '@ibiz-template-plm/attachment-grid@0.0.3-alpha.219',
-    '@ibiz-template-plm/breadcrumb-nav-pos@0.0.3-alpha.244',
+    '@ibiz-template-plm/breadcrumb-nav-pos@0.0.3-alpha.247',
     '@ibiz-template-plm/project-attributes@0.0.3-alpha.183',
   ],
 });

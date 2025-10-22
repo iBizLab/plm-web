@@ -24,6 +24,18 @@ export default {
       value: 'IDEA',
       id: 'idea',
     },
+    {
+      codeName: 'page',
+      text: '页面评审',
+      value: 'PAGE',
+      id: 'page',
+    },
+    {
+      codeName: 'work_item',
+      text: '工作项评审',
+      value: 'WORK_ITEM',
+      id: 'work_item',
+    },
   ],
   textAppDEFieldId: 'name',
   valueAppDEFieldId: 'id',

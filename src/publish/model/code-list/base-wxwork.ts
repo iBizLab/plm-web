@@ -6,7 +6,7 @@ export default {
   appDEDataSetId: 'fetchdefault',
   appDataEntityId: 'plmweb.openuser',
   textAppDEFieldId: 'openusername',
-  valueAppDEFieldId: 'openuserid',
+  valueAppDEFieldId: 'userid',
   name: '企业微信',
   id: 'plmweb.base__wxwork',
 };

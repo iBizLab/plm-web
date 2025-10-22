@@ -5,10 +5,10 @@ export default {
   emptyText: '未定义',
   codeItems: [
     {
-      codeName: 'ticket_status',
+      codeName: 'ticket_state',
       text: '工单状态',
-      value: 'ticket_status',
-      id: 'ticket_status',
+      value: 'ticket_state',
+      id: 'ticket_state',
     },
     {
       codeName: 'ticket_solution',

@@ -486,6 +486,29 @@ export default {
       id: 'check_key',
     },
     {
+      codeName: 'copy',
+      methodType: 'DEACTION',
+      appDEMethodInput: {
+        appDEMethodDTOId: 'board_dto',
+        type: 'DTO',
+        id: '输入对象',
+      },
+      appDEMethodReturn: {
+        type: 'VOID',
+        id: '返回对象',
+      },
+      requestMethod: 'POST',
+      requestParamType: 'ENTITY',
+      requestPath: '/copy',
+      needResourceKey: true,
+      actionMode: 'UNKNOWN',
+      actionTag: 'Copy',
+      actionType: 'REMOTE',
+      dataSetType: 'REMOTE',
+      name: 'Copy',
+      id: 'copy',
+    },
+    {
       codeName: 'create',
       methodType: 'DEACTION',
       appDEMethodInput: {

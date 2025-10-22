@@ -853,6 +853,20 @@ export default {
     },
     {
       logicName: '建立',
+      mapDEName: 'SPACE',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'CREATE',
+      id: 'space__create',
+    },
+    {
+      logicName: '建立',
+      mapDEName: 'PROJECT',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'CREATE',
+      id: 'project__create',
+    },
+    {
+      logicName: '建立',
       name: 'CREATE',
       id: 'create',
     },
@@ -865,6 +879,13 @@ export default {
     },
     {
       logicName: '删除',
+      mapDEName: 'SPACE',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'DELETE',
+      id: 'space__delete',
+    },
+    {
+      logicName: '删除',
       mapDEName: 'PRODUCT',
       mapDEOPPrivName: 'SUBDATA',
       name: 'DELETE',
@@ -874,6 +895,13 @@ export default {
       logicName: '删除',
       name: 'DELETE',
       id: 'delete',
+    },
+    {
+      logicName: '删除',
+      mapDEName: 'PROJECT',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'DELETE',
+      id: 'project__delete',
     },
     {
       logicName: '读取',
@@ -889,10 +917,31 @@ export default {
     },
     {
       logicName: '读取',
+      mapDEName: 'PROJECT',
+      mapDEOPPrivName: 'READ',
+      name: 'READ',
+      id: 'project__read',
+    },
+    {
+      logicName: '读取',
       mapDEName: 'PRODUCT',
       mapDEOPPrivName: 'READ',
       name: 'READ',
       id: 'product__read',
+    },
+    {
+      logicName: '读取',
+      mapDEName: 'SPACE',
+      mapDEOPPrivName: 'READ',
+      name: 'READ',
+      id: 'space__read',
+    },
+    {
+      logicName: '更新',
+      mapDEName: 'PROJECT',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'UPDATE',
+      id: 'project__update',
     },
     {
       logicName: '更新',
@@ -900,6 +949,13 @@ export default {
       mapDEOPPrivName: 'SUBDATA',
       name: 'UPDATE',
       id: 'library__update',
+    },
+    {
+      logicName: '更新',
+      mapDEName: 'SPACE',
+      mapDEOPPrivName: 'SUBDATA',
+      name: 'UPDATE',
+      id: 'space__update',
     },
     {
       logicName: '更新',
@@ -946,6 +1002,24 @@ export default {
       name: 'DERCUSTOM_GUIDELINE_PRODUCT_PRODUCT_ID',
       id: 'guidelines',
     },
+    {
+      actionRSMode: 1,
+      codeName: 'guidelines',
+      majorAppDataEntityId: 'plmweb.project',
+      parentAppDEFieldId: 'scope_id',
+      rsmode: 2,
+      name: 'DERCUSTOM_GUIDELINE_PROJECT_PROJECT_ID',
+      id: 'guidelines',
+    },
+    {
+      actionRSMode: 1,
+      codeName: 'guidelines',
+      majorAppDataEntityId: 'plmweb.space',
+      parentAppDEFieldId: 'scope_id',
+      rsmode: 2,
+      name: 'DERCUSTOM_GUIDELINE_SPACE_SPACE_ID',
+      id: 'guidelines',
+    },
   ],
   quickSearchAppDEFieldIds: ['name'],
   sysAPITag: 'ServiceAPI',
@@ -958,5 +1032,7 @@ export default {
   requestPaths: [
     'libraries/${library}/guidelines/${guideline}',
     'products/${product}/guidelines/${guideline}',
+    'projects/${project}/guidelines/${guideline}',
+    'spaces/${space}/guidelines/${guideline}',
   ],
 };

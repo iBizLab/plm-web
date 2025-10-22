@@ -24,6 +24,11 @@ export default {
       value: 'product_plan',
       id: 'principal_id',
     },
+    {
+      key: 'product_id',
+      value: 'product',
+      id: 'product_id',
+    },
   ],
   controls: [
     {

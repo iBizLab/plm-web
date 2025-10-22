@@ -76,6 +76,12 @@ export default {
           id: 'expitem:node_15',
         },
         {
+          realTitle: '流程准则全部表格视图',
+          refAppViewId: 'plmweb.guideline_all_grid_view',
+          name: 'EXPITEM:node_16',
+          id: 'expitem:node_16',
+        },
+        {
           realTitle: '项目集管理分页导航视图',
           refAppViewId: 'plmweb.portfolio_project_set_tab_exp_view',
           name: 'EXPITEM:node_2',
@@ -129,19 +135,19 @@ export default {
               id: '通用 - 项目管理',
             },
             {
+              childDETreeNodeId: 'node_6',
+              parentDETreeNodeId: 'node_12',
+              parentValueLevel: 1,
+              searchMode: 3,
+              id: '配置 - 工作项配置',
+            },
+            {
               childDETreeNodeId: 'node_3',
               parentDETreeNodeId: 'node_11',
               parentValueLevel: 1,
               searchMode: 3,
               name: '流程 - Scrum项目',
               id: '流程 - scrum项目',
-            },
-            {
-              childDETreeNodeId: 'node_6',
-              parentDETreeNodeId: 'node_12',
-              parentValueLevel: 1,
-              searchMode: 3,
-              id: '配置 - 工作项配置',
             },
             {
               childDETreeNodeId: 'node_9',
@@ -172,13 +178,6 @@ export default {
               id: '通用 - 项目集管理',
             },
             {
-              childDETreeNodeId: 'node_7',
-              parentDETreeNodeId: 'node_12',
-              parentValueLevel: 1,
-              searchMode: 3,
-              id: '配置 - 项目配置',
-            },
-            {
               childDETreeNodeId: 'node_4',
               parentDETreeNodeId: 'node_11',
               parentValueLevel: 1,
@@ -194,18 +193,18 @@ export default {
               id: '默认根节点 - 配置',
             },
             {
+              childDETreeNodeId: 'node_7',
+              parentDETreeNodeId: 'node_12',
+              parentValueLevel: 1,
+              searchMode: 3,
+              id: '配置 - 项目配置',
+            },
+            {
               childDETreeNodeId: 'node_1',
               parentDETreeNodeId: 'node_10',
               parentValueLevel: 1,
               searchMode: 3,
               id: '通用 - 标签管理',
-            },
-            {
-              childDETreeNodeId: 'node_8',
-              parentDETreeNodeId: 'node_12',
-              parentValueLevel: 1,
-              searchMode: 3,
-              id: '配置 - 发布配置',
             },
             {
               childDETreeNodeId: 'node_5',
@@ -220,6 +219,13 @@ export default {
               parentValueLevel: 1,
               searchMode: 3,
               id: '流程 - 混合项目',
+            },
+            {
+              childDETreeNodeId: 'node_8',
+              parentDETreeNodeId: 'node_12',
+              parentValueLevel: 1,
+              searchMode: 3,
+              id: '配置 - 发布配置',
             },
           ],
           detreeNodes: [
@@ -302,6 +308,22 @@ export default {
               enableCheck: true,
               name: '混合项目',
               id: 'node_15',
+            },
+            {
+              text: '评审配置',
+              navAppViewId: 'plmweb.guideline_all_grid_view',
+              nodeType: 'node_16',
+              navigateParams: [
+                {
+                  key: 'n_object_type_eq',
+                  value: 'PROJECT',
+                  rawValue: true,
+                  id: 'n_object_type_eq',
+                },
+              ],
+              treeNodeType: 'STATIC',
+              name: '评审配置',
+              id: 'node_16',
             },
             {
               text: '项目集管理',

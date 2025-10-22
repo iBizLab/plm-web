@@ -3116,6 +3116,16 @@
       "uniqueTag": "product__Usr1220913174"
     },
     {
+      "codeName": "product_index_ext_action",
+      "memo": "扩展占位",
+      "name": "产品主数据扩展行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/plmweb/PSAPPDATAENTITIES/product.json"
+      },
+      "uniqueTag": "product__product_index_ext_action"
+    },
+    {
       "codeName": "Usr0408666162",
       "name": "结果附件下载",
       "getPSAppDataEntity": {
@@ -4617,7 +4627,7 @@
         {
           "actionLevel": 200,
           "detailType": "DEUIACTION",
-          "name": "u3695842",
+          "name": "u5746dc5",
           "getPSSysImage": {
             "rawContent": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M9.54013,6.48742551 L8,3.36677551 L6.45987,6.48742551 L3.01604,6.98784551 L5.50802,9.41692551 L4.91975,12.8468255 L8,11.2274255 L11.08025,12.8468255 L10.49195,9.41692551 L12.98395,6.98784551 L9.54013,6.48742551 Z M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"#557DA5\" fill-rule=\"nonzero\"></path>\n</svg>"
           },
@@ -4669,7 +4679,7 @@
         {
           "actionLevel": 250,
           "detailType": "DEUIACTION",
-          "name": "u1f10be1",
+          "name": "uc25a4a1",
           "getPSSysImage": {
             "rawContent": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"#FFB31A\" fill-rule=\"nonzero\"></path>\n</svg>"
           },
@@ -4721,7 +4731,7 @@
         {
           "actionLevel": 200,
           "detailType": "DEUIACTION",
-          "name": "u1c54e14",
+          "name": "u2b43a40",
           "getPSSysImage": {
             "rawContent": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M7.875,1.75 C7.94375,1.75 8,1.80625 8,1.875 L8,2.75 C8,2.81875 7.94375,2.875 7.875,2.875 L2.875,2.875 L2.875,13.125 L13.125,13.125 L13.125,8.125 C13.125,8.05625 13.18125,8 13.25,8 L14.125,8 C14.19375,8 14.25,8.05625 14.25,8.125 L14.25,13.75 C14.25,14.0265625 14.0265625,14.25 13.75,14.25 L2.25,14.25 C1.9734375,14.25 1.75,14.0265625 1.75,13.75 L1.75,2.25 C1.75,1.9734375 1.9734375,1.75 2.25,1.75 Z M12.7666777,2.4349185 C12.7666777,2.333356 12.8838652,2.277106 12.9635527,2.339606 L14.9635527,3.917731 C15.0260527,3.9661685 15.0260527,4.0599185 14.9635527,4.1099185 L12.9619902,5.689606 C12.8823027,5.752106 12.7651152,5.695856 12.7651152,5.5942935 L12.7651152,4.595856 C12.5635527,4.5974185 12.3619902,4.6099185 12.1588652,4.6349185 C11.4994902,4.7161685 10.8760527,4.9192935 10.2979277,5.2411685 C9.70261522,5.570856 9.18542772,6.0161685 8.76042772,6.558356 C8.33699022,7.1005435 8.03074022,7.708356 7.85261522,8.367731 C7.68074022,9.0036685 7.63386522,9.6599185 7.71355272,10.317731 C7.72449022,10.402106 7.73699022,10.486481 7.75105272,10.5692935 L6.58074022,10.5692935 C6.35261522,8.9474185 6.76042772,7.2380435 7.84792772,5.8442935 C9.07917772,4.2692935 10.9104277,3.442731 12.7635527,3.4349185 Z\" fill=\"#557DA5\" fill-rule=\"nonzero\"></path>\n</svg>"
           },
@@ -4751,7 +4761,7 @@
         {
           "caption": "项目信息",
           "detailType": "DEUIACTION",
-          "name": "u186f340",
+          "name": "uf110384",
           "getPSSysImage": {
             "glyph": "xf05a@FontAwesome",
             "cssClass": "fa fa-info-circle"
@@ -4788,7 +4798,7 @@
         {
           "caption": "项目成员",
           "detailType": "DEUIACTION",
-          "name": "ub4fa962",
+          "name": "u842209c",
           "getPSSysImage": {
             "glyph": "xf0c0@FontAwesome",
             "cssClass": "fa fa-users"
@@ -4829,7 +4839,7 @@
         {
           "caption": "编辑基本信息",
           "detailType": "DEUIACTION",
-          "name": "uef96384",
+          "name": "u20ca925",
           "getPSSysImage": {
             "glyph": "xf044@FontAwesome",
             "cssClass": "fa fa-edit"
@@ -4881,9 +4891,54 @@
           "showIcon": true
         },
         {
+          "caption": "复制项目",
+          "detailType": "DEUIACTION",
+          "name": "u6215ebd",
+          "getPSSysImage": {
+            "glyph": "xf0c5@FontAwesome",
+            "cssClass": "fa fa-copy"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "复制项目",
+            "codeName": "copy_project",
+            "dataAccessAction": "UPDATE",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/project_copy_wizard_view.json",
+              "viewType": "DEWIZARDVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "project_copy_project",
+            "memo": "项目快速建立视图",
+            "name": "复制项目",
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/plmweb/PSAPPDATAENTITIES/project.json"
+            },
+            "getPSDEOPPriv": {
+              "modelref": true,
+              "id": "UPDATE"
+            },
+            "getPSSysImage": {
+              "glyph": "xf0c5@FontAwesome",
+              "cssClass": "fa fa-copy"
+            },
+            "refreshMode": 1,
+            "uIActionMode": "FRONT",
+            "uIActionTag": "copy_project",
+            "uIActionType": "DEUIACTION",
+            "reloadData": true,
+            "id": "copy_project@project"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
           "caption": "更多设置",
           "detailType": "DEUIACTION",
-          "name": "u769958e",
+          "name": "u3213b79",
           "getPSSysImage": {
             "glyph": "xf00b@FontAwesome",
             "cssClass": "fa fa-th-list"
@@ -4937,7 +4992,7 @@
         {
           "caption": "回收站",
           "detailType": "DEUIACTION",
-          "name": "u2fc4c44",
+          "name": "u0d28e68",
           "getPSSysImage": {
             "glyph": "xf014@FontAwesome",
             "cssClass": "fa fa-trash-o"
@@ -5789,6 +5844,15 @@
         }
       ],
       "uniqueTag": "idea__Usr1229641605"
+    },
+    {
+      "codeName": "idea_tree_node_ext_action",
+      "name": "树节点扩展界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/plmweb/PSAPPDATAENTITIES/idea.json"
+      },
+      "uniqueTag": "idea__idea_tree_node_ext_action"
     },
     {
       "codeName": "Usr0104465165",
@@ -8857,18 +8921,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -8882,11 +8946,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -9396,18 +9460,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -9421,11 +9485,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -11303,18 +11367,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -11328,11 +11392,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -12286,18 +12350,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -12311,11 +12375,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -12782,18 +12846,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -12807,11 +12871,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -13278,18 +13342,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -13303,11 +13367,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -14302,18 +14366,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -14327,11 +14391,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -14696,18 +14760,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -14721,11 +14785,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -18978,18 +19042,18 @@
           "getPSUIAction": {
             "actionTarget": "MULTIKEY",
             "caption": "复制",
-            "codeName": "copy",
+            "codeName": "copy_item",
             "getFrontPSAppView": {
               "modelref": true,
               "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_copy_view.json",
               "viewType": "DEOPTVIEW"
             },
             "frontProcessType": "WIZARD",
-            "fullCodeName": "work_item_copy",
+            "fullCodeName": "work_item_copy_item",
             "name": "复制工作项",
             "getPSAppDEMethod": {
               "modelref": true,
-              "id": "copy"
+              "id": "copy_item"
             },
             "getPSAppDataEntity": {
               "modelref": true,
@@ -19003,11 +19067,11 @@
             "successMsg": "复制成功",
             "timeout": 60000,
             "uIActionMode": "BACKEND",
-            "uIActionTag": "copy",
+            "uIActionTag": "copy_item",
             "uIActionType": "DEUIACTION",
             "enableConfirm": true,
             "reloadData": true,
-            "id": "copy@work_item"
+            "id": "copy_item@work_item"
           },
           "addSeparator": false,
           "showCaption": true,
@@ -26242,7 +26306,7 @@
               {
                 "key": "CHILDREN_WORK_ITEM_TYPE_ID",
                 "name": "CHILDREN_WORK_ITEM_TYPE_ID",
-                "value": "n_work_item_type_id_in",
+                "value": "work_item_sub_type",
                 "rawValue": false
               }
             ],
@@ -28764,7 +28828,7 @@
       "pluginCode": "COMMENT",
       "pluginType": "EDITOR_CUSTOMSTYLE",
       "rTObjectName": "IBizHtmlComment",
-      "rTObjectRepo": "@ibiz-template-plm/html-comment@0.0.3-alpha.232",
+      "rTObjectRepo": "@ibiz-template-plm/html-comment@0.0.3-alpha.259",
       "refMode": "EDITORSTYPE",
       "runtimeObject": true
     },
@@ -28944,7 +29008,7 @@
       "pluginCode": "GROUP_TREE",
       "pluginType": "TREE_RENDER",
       "rTObjectName": "IBizGroupTreeControl",
-      "rTObjectRepo": "@ibiz-template-plm/group-tree@0.0.3-alpha.196",
+      "rTObjectRepo": "@ibiz-template-plm/group-tree@0.0.3-alpha.252",
       "refMode": "CONTROL",
       "refTag": "TREEVIEW",
       "runtimeObject": true
@@ -29823,7 +29887,7 @@
       "pluginCode": "BREADCRUMB_NAV_POS",
       "pluginType": "CUSTOM",
       "rTObjectName": "BREADCRUMB_NAV_POS",
-      "rTObjectRepo": "@ibiz-template-plm/breadcrumb-nav-pos@0.0.3-alpha.244",
+      "rTObjectRepo": "@ibiz-template-plm/breadcrumb-nav-pos@0.0.3-alpha.247",
       "refMode": "CONTROLITEM",
       "refTag": "VIEWLAYOUTPANEL",
       "refTag2": "RAWITEM",
@@ -29999,6 +30063,14 @@
       "resource": "work_item",
       "view": "bug_state_statement",
       "name": "work_itembug_state_statement"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_wizard_page_create_wizard_view.json",
+      "viewType": "DEWIZARDVIEW",
+      "resource": "review_wizard",
+      "view": "page_create_wizard_view",
+      "name": "review_wizardpage_create_wizard_view"
     },
     {
       "modelref": true,
@@ -30187,7 +30259,7 @@
     },
     {
       "modelref": true,
-      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/INDEX.json",
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/references_index_index_pick_up_data_view.json",
       "viewType": "DEINDEXPICKUPDATAVIEW",
       "resource": "references_index",
       "view": "index_pick_up_data_view",
@@ -30575,6 +30647,14 @@
     },
     {
       "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_content_page_grid_view_all.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "review_content",
+      "view": "page_grid_view_all",
+      "name": "review_contentpage_grid_view_all"
+    },
+    {
+      "modelref": true,
       "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/workload_quick_create_view.json",
       "viewType": "DEOPTVIEW",
       "resource": "workload",
@@ -30599,7 +30679,7 @@
     },
     {
       "modelref": true,
-      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/INDEX.json",
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/references_index_index_pick_up_view.json",
       "viewType": "DEPICKUPVIEW",
       "resource": "references_index",
       "view": "index_pick_up_view",
@@ -30660,6 +30740,14 @@
       "resource": "test_plan",
       "view": "quick_create_view",
       "name": "test_planquick_create_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_work_item_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "review",
+      "view": "work_item_main_view",
+      "name": "reviewwork_item_main_view"
     },
     {
       "modelref": true,
@@ -31320,6 +31408,14 @@
     },
     {
       "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_page_tree_exp_view.json",
+      "viewType": "DETREEEXPVIEW",
+      "resource": "review",
+      "view": "page_tree_exp_view",
+      "name": "reviewpage_tree_exp_view"
+    },
+    {
+      "modelref": true,
       "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/space_category_tree_exp_view.json",
       "viewType": "DETREEEXPVIEW",
       "resource": "space",
@@ -31814,6 +31910,22 @@
     },
     {
       "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_content_work_item_grid_view_all.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "review_content",
+      "view": "work_item_grid_view_all",
+      "name": "review_contentwork_item_grid_view_all"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_work_item_tree_exp_view.json",
+      "viewType": "DETREEEXPVIEW",
+      "resource": "review",
+      "view": "work_item_tree_exp_view",
+      "name": "reviewwork_item_tree_exp_view"
+    },
+    {
+      "modelref": true,
       "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_content_edit_view.json",
       "viewType": "DEEDITVIEW",
       "resource": "review_content",
@@ -31915,6 +32027,14 @@
       "resource": "test_case",
       "view": "others_re_mpick_up_grid_view",
       "name": "test_caseothers_re_mpick_up_grid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_page_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "review",
+      "view": "page_main_view",
+      "name": "reviewpage_main_view"
     },
     {
       "modelref": true,
@@ -32603,6 +32723,14 @@
     },
     {
       "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/article_page_not_add_pick_up_grid_view_review.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "article_page",
+      "view": "not_add_pick_up_grid_view_review",
+      "name": "article_pagenot_add_pick_up_grid_view_review"
+    },
+    {
+      "modelref": true,
       "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/ticket_others_re_ticket_mpick_up_view.json",
       "viewType": "DEMPICKUPVIEW2",
       "resource": "ticket",
@@ -33104,6 +33232,14 @@
       "resource": "work_item",
       "view": "global_setting_view",
       "name": "work_itemglobal_setting_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_page_pick_up_tree_view.json",
+      "viewType": "DEPICKUPTREEVIEW",
+      "resource": "review",
+      "view": "page_pick_up_tree_view",
+      "name": "reviewpage_pick_up_tree_view"
     },
     {
       "modelref": true,
@@ -33887,6 +34023,14 @@
       "resource": "test_case",
       "view": "filter_grid_view",
       "name": "test_casefilter_grid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/project_member_assigned_copy_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "project_member",
+      "view": "assigned_copy_grid_view",
+      "name": "project_memberassigned_copy_grid_view"
     },
     {
       "modelref": true,
@@ -34791,6 +34935,14 @@
       "resource": "library",
       "view": "index_view",
       "name": "libraryindex_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_review_re_work_item_view.json",
+      "viewType": "DEMPICKUPVIEW2",
+      "resource": "work_item",
+      "view": "review_re_work_item_view",
+      "name": "work_itemreview_re_work_item_view"
     },
     {
       "modelref": true,
@@ -36249,6 +36401,22 @@
     },
     {
       "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/article_page_review_re_page_view.json",
+      "viewType": "DEMPICKUPVIEW2",
+      "resource": "article_page",
+      "view": "review_re_page_view",
+      "name": "article_pagereview_re_page_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_content_page_no_grid_view_all.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "review_content",
+      "view": "page_no_grid_view_all",
+      "name": "review_contentpage_no_grid_view_all"
+    },
+    {
+      "modelref": true,
       "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/stencil_show_edit_view.json",
       "viewType": "DEEDITVIEW",
       "resource": "stencil",
@@ -36647,6 +36815,14 @@
       "resource": "comment",
       "view": "idea_list_view",
       "name": "commentidea_list_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_work_item_pick_up_tree_view.json",
+      "viewType": "DEPICKUPTREEVIEW",
+      "resource": "review",
+      "view": "work_item_pick_up_tree_view",
+      "name": "reviewwork_item_pick_up_tree_view"
     },
     {
       "modelref": true,
@@ -38795,6 +38971,14 @@
     },
     {
       "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_content_work_item_no_grid_view_all.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "review_content",
+      "view": "work_item_no_grid_view_all",
+      "name": "review_contentwork_item_no_grid_view_all"
+    },
+    {
+      "modelref": true,
       "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/article_page_baseline_mpick_up_view.json",
       "viewType": "DEMPICKUPVIEW2",
       "resource": "article_page",
@@ -38945,6 +39129,14 @@
       "resource": "library",
       "view": "in_progress_grid_view",
       "name": "libraryin_progress_grid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/work_item_not_add_pick_up_grid_view_review.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "work_item",
+      "view": "not_add_pick_up_grid_view_review",
+      "name": "work_itemnot_add_pick_up_grid_view_review"
     },
     {
       "modelref": true,
@@ -39473,6 +39665,14 @@
       "resource": "PSDEField",
       "view": "quick_cfg_view",
       "name": "PSDEFieldquick_cfg_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/guideline_project_all_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "guideline",
+      "view": "project_all_grid_view",
+      "name": "guidelineproject_all_grid_view"
     },
     {
       "modelref": true,
@@ -40058,6 +40258,14 @@
     },
     {
       "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/review_wizard_work_create_wizard_view.json",
+      "viewType": "DEWIZARDVIEW",
+      "resource": "review_wizard",
+      "view": "work_create_wizard_view",
+      "name": "review_wizardwork_create_wizard_view"
+    },
+    {
+      "modelref": true,
       "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/portfolio_member_edit_view.json",
       "viewType": "DEEDITVIEW",
       "resource": "portfolio_member",
@@ -40454,6 +40662,14 @@
       "resource": "work_item",
       "view": "waterfall_story_grid_view",
       "name": "work_itemwaterfall_story_grid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/plmweb/PSAPPDEVIEWS/project_copy_wizard_view.json",
+      "viewType": "DEWIZARDVIEW",
+      "resource": "project",
+      "view": "copy_wizard_view",
+      "name": "projectcopy_wizard_view"
     },
     {
       "modelref": true,

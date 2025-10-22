@@ -856,6 +856,23 @@ export default {
               {
                 actionLevel: 100,
                 noPrivDisplayMode: 2,
+                uiactionId: 'copy_project@project',
+                uiactionTarget: 'SINGLEKEY',
+                valid: true,
+                caption: '复制项目',
+                itemType: 'DEUIACTION',
+                sysImage: {
+                  cssClass: 'fa fa-copy',
+                  glyph: 'xf0c5@FontAwesome',
+                },
+                tooltip: '复制项目',
+                showCaption: true,
+                showIcon: true,
+                id: 'deuiaction6',
+              },
+              {
+                actionLevel: 100,
+                noPrivDisplayMode: 2,
                 uiactionId: 'open_setting_view@project',
                 uiactionTarget: 'SINGLEKEY',
                 valid: true,

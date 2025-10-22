@@ -531,6 +531,27 @@ export default {
       id: 'update',
     },
     {
+      codeName: 'FetchAttachments',
+      methodType: 'FETCH',
+      appDEMethodInput: {
+        appDEMethodDTOId: 'attachment_filter_dto',
+        type: 'DTO',
+        name: 'AttachmentsInput',
+        id: 'attachmentsinput',
+      },
+      appDEMethodReturn: {
+        appDEMethodDTOId: 'attachment_dto',
+        type: 'PAGE',
+        name: 'AttachmentsResult',
+        id: 'attachmentsresult',
+      },
+      actionType: 'REMOTE',
+      dataSetTag: 'attachments',
+      dataSetType: 'DATAQUERY',
+      name: 'attachments',
+      id: 'fetchattachments',
+    },
+    {
       codeName: 'FetchDefault',
       methodType: 'FETCH',
       appDEMethodInput: {
@@ -1730,6 +1751,7 @@ export default {
       actionRSMode: 1,
       codeName: 'WORK_ITEM',
       majorAppDataEntityId: 'plmweb.work_item',
+      nestedAppDEDataSetId: 'fetchdefault',
       parentAppDEFieldId: 'owner_id',
       rsmode: 1,
       rstype: 'DER1N',

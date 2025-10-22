@@ -292,7 +292,7 @@ export default {
             'srfnavparam.size': '20',
             'srfnavparam.principal_id': '%principal_id%',
             lastlabel: '更多工作项',
-            'srfnavparam.n_work_item_type_id_in': '%n_work_item_type_id_in%',
+            'srfnavparam.n_work_item_type_id_in': '%work_item_sub_type%',
             AC: 'TRUE',
             'srfnavparam.project': '%project%',
             toplabel: '最近浏览',
@@ -319,7 +319,7 @@ export default {
             },
             {
               key: 'n_work_item_type_id_in',
-              value: 'n_work_item_type_id_in',
+              value: 'work_item_sub_type',
               id: 'n_work_item_type_id_in',
             },
             {

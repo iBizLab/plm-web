@@ -1,5 +1,5 @@
 window.Environment = {
-  appVersion: '0.7.41-alpha.4',
+  appVersion: '0.7.41-alpha.10',
   cookieDomain: 'plm.ibizlab.cn',
   customParams: '{"file_preview_address":"http://172.16.100.60:30012","ENABLEMULTILOGIN":false}',
   uploadFileUrl: '/ibizutil/upload/ibizplm',

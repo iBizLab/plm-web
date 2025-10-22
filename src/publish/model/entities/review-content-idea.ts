@@ -1072,6 +1072,8 @@ export default {
   requestPaths: [
     'libraries/${library}/reviews/${review}/review_content_ideas/${review_content_idea}',
     'products/${product}/reviews/${review}/review_content_ideas/${review_content_idea}',
+    'projects/${project}/reviews/${review}/review_content_ideas/${review_content_idea}',
+    'spaces/${space}/reviews/${review}/review_content_ideas/${review_content_idea}',
     'libraries/${library}/review_wizards/${review_wizard}/review_content_ideas/${review_content_idea}',
     'reviews/${review}/review_content_ideas/${review_content_idea}',
     'review_wizards/${review_wizard}/review_content_ideas/${review_content_idea}',

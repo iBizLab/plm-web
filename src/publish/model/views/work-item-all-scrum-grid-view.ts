@@ -363,7 +363,7 @@ export default {
                 buttonStyle: 'DEFAULT',
                 caption: '复制',
                 detailType: 'DEUIACTION',
-                uiactionId: 'copy@work_item',
+                uiactionId: 'copy_item@work_item',
                 showCaption: true,
                 showIcon: true,
                 sysImage: {

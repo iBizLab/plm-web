@@ -453,9 +453,11 @@ export default {
                 childDETreeNodeId: 'node',
                 parentFilter: 'ower_id',
                 parentDER1N: {
+                  cloneOrder: 10,
                   masterOrder: 100,
                   masterRS: 5,
                   pickupDEFName: 'PROJECT_ID',
+                  cloneRS: true,
                   codeName: 'project',
                   dertype: 'DER1N',
                   logicName: '项目-迭代',

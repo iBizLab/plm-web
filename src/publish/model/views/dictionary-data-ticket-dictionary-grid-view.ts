@@ -432,7 +432,7 @@ export default {
           data: '{"theme_model":{"searchconds":[{"condtype":"GROUP","condop":"AND","bnotmode":false,"searchconds":[{"condtype":"DEFIELD","fieldname":"catalog","condop":"EQ","value":"ticket_state"}]}]}}',
           itemType: 'GROUP',
           appDEFieldId: 'catalog',
-          id: 'ticket_status',
+          id: 'ticket_state',
         },
         {
           caption: '工单解决方案',

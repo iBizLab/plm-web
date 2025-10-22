@@ -467,8 +467,8 @@ export default {
         id: 'mpickupview:idea',
       },
       {
-        name: 'MPICKUPVIEW:REVIEW_WIZARD',
-        id: 'mpickupview:review_wizard',
+        name: 'MPICKUPVIEW:PAGE',
+        id: 'mpickupview:page',
       },
     ],
     controls: [

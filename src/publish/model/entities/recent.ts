@@ -3127,7 +3127,7 @@ export default {
         },
         {
           key: 'CHILDREN_WORK_ITEM_TYPE_ID',
-          value: 'n_work_item_type_id_in',
+          value: 'work_item_sub_type',
           name: 'CHILDREN_WORK_ITEM_TYPE_ID',
           id: 'children_work_item_type_id',
         },

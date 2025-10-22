@@ -2071,6 +2071,11 @@ export default {
       appDataEntityId: 'plmweb.work_item',
       controlParam: {
         ctrlParams: {
+          LINKNODEDATANAME: 'dependencies',
+          TODATAITEMNAME: 'target_id',
+          FROMDATAITEMNAME: 'principal_id',
+          ALLOWLINK: 'true',
+          LINKDATASOURCETYPE: 'NODEDATA',
           ENABLECUSTOMIZED: 'true',
           LIMITSIZE: '7',
         },

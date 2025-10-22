@@ -56,6 +56,12 @@ export default {
       showBusyIndicator: true,
       appViewRefs: [
         {
+          realTitle: '流程准则全部表格视图',
+          refAppViewId: 'plmweb.guideline_all_grid_view',
+          name: 'EXPITEM:node_10',
+          id: 'expitem:node_10',
+        },
+        {
           realTitle: '空间管理',
           refAppViewId: 'plmweb.space_tab_exp_view',
           name: 'EXPITEM:node_4',
@@ -180,6 +186,22 @@ export default {
               expanded: true,
               name: '页面',
               id: 'node_1',
+            },
+            {
+              text: '评审配置',
+              navAppViewId: 'plmweb.guideline_all_grid_view',
+              nodeType: 'node_10',
+              navigateParams: [
+                {
+                  key: 'n_object_type_eq',
+                  value: 'SPACE',
+                  rawValue: true,
+                  id: 'n_object_type_eq',
+                },
+              ],
+              treeNodeType: 'STATIC',
+              name: '评审配置',
+              id: 'node_10',
             },
             {
               text: '配置',

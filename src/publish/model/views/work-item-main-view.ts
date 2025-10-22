@@ -846,7 +846,7 @@ export default {
               {
                 actionLevel: 100,
                 noPrivDisplayMode: 2,
-                uiactionId: 'copy@work_item',
+                uiactionId: 'copy_item@work_item',
                 uiactionTarget: 'MULTIKEY',
                 valid: true,
                 caption: '复制',
@@ -2063,6 +2063,14 @@ export default {
                         deformDetails: [
                           {
                             appViewId: 'plmweb.work_item_child_grid_view',
+                            navigateContexts: [
+                              {
+                                key: 'WORK_ITEM_SUB_TYPE',
+                                value: 'work_item_sub_type',
+                                name: 'WORK_ITEM_SUB_TYPE',
+                                id: 'work_item_sub_type',
+                              },
+                            ],
                             parentDataJO: {
                               SRFPARENTTYPE: 'DER1N',
                               srfparentdename: 'WORK_ITEM',

@@ -1027,7 +1027,7 @@ export default {
           },
           dewizardForm: {
             formTag: 'review_connect',
-            deformName: '新建时规划需求表单',
+            deformName: '新建时规划通用表单',
             dewizardStepId: '评审内容',
             stepActions: ['PREV', 'FINISH'],
             stepTag: 'review_connect',
@@ -1135,9 +1135,9 @@ export default {
           noTabHeader: true,
           autoLoad: true,
           showBusyIndicator: true,
-          codeName: 'create_re_idea_form',
+          codeName: 'create_common_form',
           controlType: 'FORM',
-          logicName: '新建时规划需求表单',
+          logicName: '新建时规划通用表单',
           appDataEntityId: 'plmweb.review_wizard',
           controlLogics: [
             {
@@ -1161,11 +1161,11 @@ export default {
           modelId: 'f0902d087f7a34c1ea65d7526bc7253a',
           modelType: 'PSDEFORM_EDITFORM',
           name: 'wizardpanel_form_review_connect',
-          id: 'plmweb.review_wizard.create_re_idea_form',
+          id: 'plmweb.review_wizard.create_common_form',
         },
       ],
       dewizard: {
-        codeName: 'idea_create_wizard_view_Wizard',
+        codeName: 'idea_create_wizard',
         firstDEWizardFormId: 'fill_info',
         nextCaption: '下一步',
         dewizardForms: [
@@ -1180,7 +1180,7 @@ export default {
           },
           {
             formTag: 'review_connect',
-            deformName: '新建时规划需求表单',
+            deformName: '新建时规划通用表单',
             dewizardStepId: '评审内容',
             stepActions: ['PREV', 'FINISH'],
             stepTag: 'review_connect',
@@ -1200,17 +1200,17 @@ export default {
           },
         ],
         wizardStyle: 'DEFAULT',
-        name: '需求评审新建向导视图_向导',
-        id: 'testmgmt.review_wizard.idea_create_wizard_view_wizard',
+        name: '需求评审新建向导',
+        id: 'testmgmt.review_wizard.idea_create_wizard',
       },
       wizardStyle: 'DEFAULT',
       showActionBar: true,
       showStepBar: true,
       autoLoad: true,
       showBusyIndicator: true,
-      codeName: 'idea_create_wizard_view_wizard',
+      codeName: 'idea_create_wizard',
       controlType: 'WIZARDPANEL',
-      logicName: '需求评审新建向导视图_向导',
+      logicName: '需求评审新建向导',
       appDataEntityId: 'plmweb.review_wizard',
       controlParam: {
         id: 'wizardpanel',
@@ -1218,7 +1218,7 @@ export default {
       modelId: '6cea2502ead9164766a587d0ff705246',
       modelType: 'PSDEWIZARDPANEL',
       name: 'wizardpanel',
-      id: 'plmweb.review_wizard.idea_create_wizard_view_wizard',
+      id: 'plmweb.review_wizard.idea_create_wizard',
     },
     {
       capLanguageRes: {

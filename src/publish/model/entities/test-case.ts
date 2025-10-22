@@ -3011,6 +3011,28 @@ export default {
       id: 'fetch_idea_relation_test_case',
     },
     {
+      codeName: 'fetch_ideas_relation_test_case',
+      methodType: 'FETCH',
+      appDEMethodInput: {
+        appDEMethodDTOId: 'test_case_filter_dto',
+        type: 'DTO',
+        id: '输入对象',
+      },
+      appDEMethodReturn: {
+        appDEMethodDTOId: 'test_case_dto',
+        type: 'PAGE',
+        id: '返回对象',
+      },
+      requestMethod: 'POST',
+      requestParamType: 'ENTITY',
+      requestPath: '/fetch_ideas_relation_test_case',
+      actionType: 'REMOTE',
+      dataSetName: 'ideas_relation_test_case',
+      dataSetTag: 'ideas_relation_test_case',
+      dataSetType: 'REMOTE',
+      id: 'fetch_ideas_relation_test_case',
+    },
+    {
       codeName: 'fetch_implementation_results',
       methodType: 'FETCH',
       appDEMethodInput: {

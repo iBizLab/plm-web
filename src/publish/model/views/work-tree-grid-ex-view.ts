@@ -109,6 +109,7 @@ export default {
           id: 'name',
         },
         {
+          align: 'LEFT',
           caption: '状态',
           codeName: 'state',
           columnType: 'DEFGRIDCOLUMN',
@@ -117,6 +118,7 @@ export default {
           id: 'state',
         },
         {
+          align: 'LEFT',
           caption: '负责人',
           codeName: 'assignee_name',
           columnType: 'DEFGRIDCOLUMN',
@@ -125,6 +127,7 @@ export default {
           id: 'assignee_name',
         },
         {
+          align: 'LEFT',
           caption: '开始时间',
           codeName: 'start_at',
           columnType: 'DEFGRIDCOLUMN',
@@ -133,6 +136,7 @@ export default {
           id: 'start_at',
         },
         {
+          align: 'LEFT',
           caption: '结束时间',
           codeName: 'end_at',
           columnType: 'DEFGRIDCOLUMN',

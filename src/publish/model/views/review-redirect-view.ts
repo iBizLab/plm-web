@@ -42,6 +42,26 @@ export default {
       realTitleLanguageRes: {
         lanResTag: 'PAGE.TITLE.REVIEW.MAIN_VIEW',
       },
+      refAppViewId: 'plmweb.review_main_view',
+      name: 'TEST_CASE',
+      id: 'test_case',
+    },
+    {
+      realOpenMode: 'INDEXVIEWTAB_POPUPMODAL',
+      realTitle: '评审主视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.REVIEW.MAIN_VIEW',
+      },
+      refAppViewId: 'plmweb.review_page_main_view',
+      name: 'PAGE',
+      id: 'page',
+    },
+    {
+      realOpenMode: 'INDEXVIEWTAB_POPUPMODAL',
+      realTitle: '评审主视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.REVIEW.MAIN_VIEW',
+      },
       refAppViewId: 'plmweb.review_idea_main_view',
       name: 'IDEA',
       id: 'idea',
@@ -52,9 +72,9 @@ export default {
       realTitleLanguageRes: {
         lanResTag: 'PAGE.TITLE.REVIEW.MAIN_VIEW',
       },
-      refAppViewId: 'plmweb.review_main_view',
-      name: 'TEST_CASE',
-      id: 'test_case',
+      refAppViewId: 'plmweb.review_work_item_main_view',
+      name: 'WORK_ITEM',
+      id: 'work_item',
     },
   ],
   controls: [

@@ -135,7 +135,7 @@ export default {
                         editable: true,
                         id: 'formitem2',
                       },
-                      updateDV: '吗？',
+                      updateDV: '吗?',
                       allowEmpty: true,
                       codeName: 'formitem2',
                       detailStyle: 'DEFAULT',

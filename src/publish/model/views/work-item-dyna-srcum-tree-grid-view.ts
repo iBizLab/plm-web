@@ -341,15 +341,6 @@ export default {
     ],
     appViewRefs: [
       {
-        realTitle: '工作项编辑视图',
-        realTitleLanguageRes: {
-          lanResTag: 'PAGE.TITLE.WORK_ITEM.EDITVIEW',
-        },
-        refAppViewId: 'plmweb.work_item_edit_view',
-        name: 'NEWDATA',
-        id: 'newdata',
-      },
-      {
         openMode: 'INDEXVIEWTAB_POPUPMODAL',
         navigateContexts: [
           {
@@ -377,6 +368,15 @@ export default {
         refAppViewId: 'plmweb.work_item_dyna_main_view',
         name: 'EDITDATA',
         id: 'editdata',
+      },
+      {
+        realTitle: '工作项编辑视图',
+        realTitleLanguageRes: {
+          lanResTag: 'PAGE.TITLE.WORK_ITEM.EDITVIEW',
+        },
+        refAppViewId: 'plmweb.work_item_edit_view',
+        name: 'NEWDATA',
+        id: 'newdata',
       },
       {
         realOpenMode: 'POPUPMODAL',
@@ -666,7 +666,7 @@ export default {
                   buttonStyle: 'DEFAULT',
                   caption: '复制',
                   detailType: 'DEUIACTION',
-                  uiactionId: 'copy@work_item',
+                  uiactionId: 'copy_item@work_item',
                   showCaption: true,
                   showIcon: true,
                   sysImage: {
@@ -1038,7 +1038,7 @@ export default {
             columnType: 'DEFGRIDCOLUMN',
             hideMode: 1,
             noPrivDisplayMode: 1,
-            width: 110,
+            width: 150,
             widthUnit: 'PX',
             enableSort: true,
             hideDefault: true,

@@ -1231,7 +1231,7 @@ export default {
         },
       ],
       dewizard: {
-        codeName: 'create_wizard_view_Wizard',
+        codeName: 'create_wizard',
         firstDEWizardFormId: 'fill_info',
         nextCaption: '下一步',
         dewizardForms: [
@@ -1266,17 +1266,17 @@ export default {
           },
         ],
         wizardStyle: 'DEFAULT',
-        name: '评审新建向导视图_向导',
-        id: 'testmgmt.review_wizard.create_wizard_view_wizard',
+        name: '评审新建向导',
+        id: 'testmgmt.review_wizard.create_wizard',
       },
       wizardStyle: 'DEFAULT',
       showActionBar: true,
       showStepBar: true,
       autoLoad: true,
       showBusyIndicator: true,
-      codeName: 'create_wizard_view_wizard',
+      codeName: 'create_wizard',
       controlType: 'WIZARDPANEL',
-      logicName: '评审新建向导视图_向导',
+      logicName: '评审新建向导',
       appDataEntityId: 'plmweb.review_wizard',
       controlParam: {
         id: 'wizardpanel',
@@ -1284,7 +1284,7 @@ export default {
       modelId: 'f0ea1b38fdb4d8e2e94b4d26362047c7',
       modelType: 'PSDEWIZARDPANEL',
       name: 'wizardpanel',
-      id: 'plmweb.review_wizard.create_wizard_view_wizard',
+      id: 'plmweb.review_wizard.create_wizard',
     },
     {
       capLanguageRes: {

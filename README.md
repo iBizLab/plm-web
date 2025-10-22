@@ -135,7 +135,7 @@ PC端组件：[`@ibiz-template/vue3-components`](https://github.com/ibizlab-clou
 | ----- | ----- |
 | Node  | 18+   |
 | pnpm  | 8.x   |
-| Lerna | 5.5.2 |
+| Lerna | 7.4.2+ |
 
 ### 安装依赖
 
@@ -143,6 +143,14 @@ PC端组件：[`@ibiz-template/vue3-components`](https://github.com/ibizlab-clou
 
 ```bash
 $ pnpm install
+```
+
+### 打包
+
+在工作空间下，执行打包命令
+
+```bash
+$ pnpm run build
 ```
 
 ### 预览
@@ -192,6 +200,15 @@ pnpm link --global "@ibiz-template/web-theme"
 pnpm link --global "@ibiz-template/vue3-components"
 # 执行dev
 pnpm dev
+```
+
+## 本地代码发布
+
+当模型更新后，通常需要发布代码查看最新效果，调整pub:code命令参数，其中m表示模型路径，o表示输出目录，app表示应用名称，tv表示模板版本，local-mode表示启用本地模式。
+
+```bash
+# "pub:code": "generate -m /root/workspace/ibizlab-plm/model -o ./ --app plmweb -tv 0.7.41-alpha.8 --local-mode",
+$ pnpm pub:code
 ```
 
 ## 更新日志

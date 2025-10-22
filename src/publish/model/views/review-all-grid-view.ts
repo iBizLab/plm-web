@@ -79,17 +79,6 @@ export default {
     {
       openMode: 'INDEXVIEWTAB_POPUPMODAL',
       realOpenMode: 'INDEXVIEWTAB_POPUPMODAL',
-      realTitle: '评审新建向导',
-      realTitleLanguageRes: {
-        lanResTag: 'PAGE.TITLE.REVIEW.CREATE_WIZARD_VIEW',
-      },
-      refAppViewId: 'plmweb.review_wizard_create_wizard_view',
-      name: 'NEWDATA',
-      id: 'newdata',
-    },
-    {
-      openMode: 'INDEXVIEWTAB_POPUPMODAL',
-      realOpenMode: 'INDEXVIEWTAB_POPUPMODAL',
       realTitle: '评审数据重定向视图',
       realTitleLanguageRes: {
         lanResTag: 'PAGE.TITLE.REVIEW.REDIRECTVIEW',
@@ -97,6 +86,17 @@ export default {
       refAppViewId: 'plmweb.review_redirect_view',
       name: 'EDITDATA',
       id: 'editdata',
+    },
+    {
+      openMode: 'INDEXVIEWTAB_POPUPMODAL',
+      realOpenMode: 'INDEXVIEWTAB_POPUPMODAL',
+      realTitle: '评审新建向导',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.REVIEW.CREATE_WIZARD_VIEW',
+      },
+      refAppViewId: 'plmweb.review_wizard_create_wizard_view',
+      name: 'NEWDATA',
+      id: 'newdata',
     },
   ],
   controls: [
@@ -162,6 +162,62 @@ export default {
           showCaption: true,
           showIcon: true,
           id: 'deuiaction2',
+        },
+        {
+          actionLevel: 100,
+          noPrivDisplayMode: 2,
+          uiactionId: 'new_page_review@review',
+          uiactionTarget: 'NONE',
+          valid: true,
+          caption: '新建评审',
+          itemType: 'DEUIACTION',
+          controlLogics: [
+            {
+              itemName: 'page',
+              logicTag: 'toolbar',
+              logicType: 'SCRIPT',
+              scriptCode:
+                '(context.srfreadonly != true)&&((context.space != null) || (context.space != undefined))',
+              triggerType: 'ITEMVISIBLE',
+              id: 'page',
+            },
+          ],
+          sysImage: {
+            cssClass: 'fa fa-plus',
+            glyph: 'xf067@FontAwesome',
+          },
+          tooltip: '新建评审',
+          showCaption: true,
+          showIcon: true,
+          id: 'page',
+        },
+        {
+          actionLevel: 100,
+          noPrivDisplayMode: 2,
+          uiactionId: 'new_work_item_review@review',
+          uiactionTarget: 'NONE',
+          valid: true,
+          caption: '新建评审',
+          itemType: 'DEUIACTION',
+          controlLogics: [
+            {
+              itemName: 'work_item',
+              logicTag: 'toolbar',
+              logicType: 'SCRIPT',
+              scriptCode:
+                '(context.srfreadonly != true)&&((context.project != null) || (context.project != undefined))',
+              triggerType: 'ITEMVISIBLE',
+              id: 'work_item',
+            },
+          ],
+          sysImage: {
+            cssClass: 'fa fa-plus',
+            glyph: 'xf067@FontAwesome',
+          },
+          tooltip: '新建评审',
+          showCaption: true,
+          showIcon: true,
+          id: 'work_item',
         },
       ],
       xdataControlName: 'grid',

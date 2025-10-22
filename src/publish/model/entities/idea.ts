@@ -3499,6 +3499,28 @@ export default {
       id: 'fetch_deleted',
     },
     {
+      codeName: 'fetch_ideas_relation_idea',
+      methodType: 'FETCH',
+      appDEMethodInput: {
+        appDEMethodDTOId: 'idea_filter_dto',
+        type: 'DTO',
+        id: '输入对象',
+      },
+      appDEMethodReturn: {
+        appDEMethodDTOId: 'idea_dto',
+        type: 'PAGE',
+        id: '返回对象',
+      },
+      requestMethod: 'POST',
+      requestParamType: 'ENTITY',
+      requestPath: '/fetch_ideas_relation_idea',
+      actionType: 'REMOTE',
+      dataSetName: 'ideas_relation_idea',
+      dataSetTag: 'ideas_relation_idea',
+      dataSetType: 'REMOTE',
+      id: 'fetch_ideas_relation_idea',
+    },
+    {
       codeName: 'fetch_mob_not_archived',
       methodType: 'FETCH',
       appDEMethodInput: {
@@ -4345,6 +4367,45 @@ export default {
       ],
       name: 'deleted',
       id: 'fetchtempdeleted',
+    },
+    {
+      codeName: 'FetchTempIdeas_relation_idea',
+      methodType: 'FETCHTEMP',
+      appDEMethodInput: {
+        appDEMethodDTOId: 'idea_filter_dto',
+        type: 'DTO',
+        name: 'Ideas_relation_ideaInput',
+        id: 'ideas_relation_ideainput',
+      },
+      appDEMethodReturn: {
+        appDEMethodDTOId: 'idea_dto',
+        type: 'PAGE',
+        name: 'Ideas_relation_ideaResult',
+        id: 'ideas_relation_idearesult',
+      },
+      tempDataMode: 2,
+      actionType: 'REMOTE',
+      dataSetTag: 'ideas_relation_idea',
+      dataSetType: 'DATAQUERY',
+      dedqgroupConditions: [
+        {
+          condOp: 'AND',
+          dedqconditions: [
+            {
+              condOp: 'NOTEQ',
+              condValue: '1',
+              fieldName: 'IS_DELETED',
+              condType: 'SINGLE',
+              name: '(IS_DELETED) 不等于(<>) 1',
+              id: '(is_deleted) 不等于(<>) 1',
+            },
+          ],
+          condType: 'GROUP',
+          id: '连接条件',
+        },
+      ],
+      name: 'ideas_relation_idea',
+      id: 'fetchtempideas_relation_idea',
     },
     {
       codeName: 'FetchTempMob_not_archived',

@@ -4230,6 +4230,8 @@ export default {
     'products/${product}/ideas/${idea}/comments/${comment}',
     'libraries/${library}/reviews/${review}/comments/${comment}',
     'products/${product}/reviews/${review}/comments/${comment}',
+    'projects/${project}/reviews/${review}/comments/${comment}',
+    'spaces/${space}/reviews/${review}/comments/${comment}',
     'libraries/${library}/test_cases/${test_case}/comments/${comment}',
     'products/${product}/tickets/${ticket}/comments/${comment}',
     'projects/${project}/work_items/${work_item}/comments/${comment}',

@@ -2663,6 +2663,28 @@ export default {
       id: 'fetch_idea_relation_ticket',
     },
     {
+      codeName: 'fetch_ideas_relation_ticket',
+      methodType: 'FETCH',
+      appDEMethodInput: {
+        appDEMethodDTOId: 'ticket_filter_dto',
+        type: 'DTO',
+        id: '输入对象',
+      },
+      appDEMethodReturn: {
+        appDEMethodDTOId: 'ticket_dto',
+        type: 'PAGE',
+        id: '返回对象',
+      },
+      requestMethod: 'POST',
+      requestParamType: 'ENTITY',
+      requestPath: '/fetch_ideas_relation_ticket',
+      actionType: 'REMOTE',
+      dataSetName: 'ideas_relation_ticket',
+      dataSetTag: 'ideas_relation_ticket',
+      dataSetType: 'REMOTE',
+      id: 'fetch_ideas_relation_ticket',
+    },
+    {
       codeName: 'fetch_mob_ticket_list',
       methodType: 'FETCH',
       appDEMethodInput: {

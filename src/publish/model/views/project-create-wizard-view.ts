@@ -52,7 +52,7 @@ export default {
             deformName: '新建表单',
             dewizardStepId: '项目信息',
             stepActions: ['NEXT', 'FINISH'],
-            stepTag: 'fill_info',
+            stepTag: 'fill_info1',
             firstForm: true,
             id: 'fill_info',
           },
@@ -1458,7 +1458,7 @@ export default {
             deformName: '新建表单',
             dewizardStepId: '项目信息',
             stepActions: ['NEXT', 'FINISH'],
-            stepTag: 'fill_info',
+            stepTag: 'fill_info1',
             firstForm: true,
             id: 'fill_info',
           },
@@ -1473,7 +1473,7 @@ export default {
         ],
         dewizardSteps: [
           {
-            stepTag: 'fill_info',
+            stepTag: 'fill_info1',
             title: '项目信息',
             id: '项目信息',
           },
